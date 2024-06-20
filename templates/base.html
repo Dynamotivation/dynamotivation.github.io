@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyBlog</title>
+    <link rel="stylesheet" href= {{ get_url(path="css/main.css") }} >
+    <link rel="stylesheet" href= {{ get_url(path="fonts/rubik/css/rubik.css") }} >
+    <link rel="stylesheet" href= {{ get_url(path="fonts/fontawesome/css/fontawesome.min.css") }} />
+    <link rel="stylesheet" href= {{ get_url(path="fonts/fontawesome/css/brands.min.css") }} />
+</head>
+
+<body>
+    {% include "header.html" %}
+
+    <section class="section">
+        <div class="container">
+            {% block content %} {% endblock %}
+        </div>
+    </section>
+</body>
+
+</html>
