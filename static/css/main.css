@@ -1,0 +1,70 @@
+:root {
+    --main-color: #ff4c4a;
+    --accent-color: #3dffe6;
+    --background-color: #ffffff;
+}
+
+* {
+    font-family: Rubik;
+}
+
+html, body, div, head {
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#header {
+    height: 5rem;
+    background-color: var(--main-color);
+    margin: 0px;
+    padding: 0;
+}
+
+#header #headerContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header #logoLink {
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: inline-block;
+}
+
+#header #logo {
+    height: 100%;
+    width: auto;
+}
+
+#header #sectionLinks {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#header #sectionLinks > a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#header #sectionLinks > a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+#header #githubLogo {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+}
