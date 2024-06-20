@@ -1,6 +1,6 @@
 :root {
     --main-color: #ff4c4a;
-    --accent-color: #3dffe6;
+    --accent-color: #4AFF83;
     --background-color: #ffffff;
 }
 
@@ -19,14 +19,16 @@ body {
 }
 
 #header {
-    height: 5rem;
+    height: 2.5rem;
     background-color: var(--main-color);
-    margin: 0px;
-    padding: 0;
+    padding: .7rem;
+    display: flex;
+    justify-content: center;
 }
 
 #header #headerContent {
     height: 100%;
+    max-width: 80rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -35,7 +37,7 @@ body {
 
 #header #logoLink {
     height: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 268.835/208.368;
     display: inline-block;
 }
 
@@ -45,7 +47,7 @@ body {
 }
 
 #header #sectionLinks {
-    margin-left: 2rem;
+    margin-left: 3rem;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -54,17 +56,19 @@ body {
 #header #sectionLinks > a {
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
 #header #sectionLinks > a:hover {
     text-decoration: underline;
-    color: var(--accent-color);
 }
 
-#header #githubLogo {
+#header #userLinks {
     margin-left: auto;
+}
+
+#header #userLinks > a {
     color: white;
     text-decoration: none;
 }
