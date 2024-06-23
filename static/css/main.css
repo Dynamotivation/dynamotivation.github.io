@@ -2,6 +2,7 @@
     --main-color: #ff4c4a;
     --accent-color: #4AFF83;
     --background-color: #ffffff;
+    --gradient: linear-gradient(to right top, #4aff80, #3dffe5);
 }
 
 * {
@@ -38,15 +39,37 @@ body {
     align-items: center;
 }
 
+
+
+/* Logo */
 #header #logoLink {
     height: 100%;
     aspect-ratio: 268.835/208.368;
     display: inline-block;
 }
 
-#header #logo {
+#header #logoLink div {
+    position: relative;
+    height: 100%;
+}
+
+#header #logo,
+#header #logoDuplicate {
     height: 100%;
     width: auto;
+    position: absolute;
+    z-index: 2;
+    scale: 1;
+    transition: scale .15s ease-out;
+}
+
+#header #logoDuplicate {
+    pointer-events: none;
+    z-index: 1;
+}
+
+#header #logo:hover+#logoDuplicate {
+    scale: 1.065;
 }
 
 
@@ -92,7 +115,8 @@ body {
     right: 0;
     width: 0;
     bottom: 0;
-    background: linear-gradient(to right top, #4aff80, #3dffe5);
+    background: var(--gradient);
+    border-radius: .075rem;
     height: .22rem;
     transition-property: width;
     transition-duration: 0.3s;
@@ -116,7 +140,26 @@ body {
     margin-left: auto;
 }
 
-#header #userLinks>a {
+.socialLink {
+    background: var(--gradient);
+    background-clip: text;
     color: white;
+    padding: .22rem;
+    transition: all .3s ease-out;
     text-decoration: none;
+    scale: 1;
+}
+
+.socialLink:hover {
+    color: transparent;
+    scale: 1.05;
+}
+
+#header #userLinks div {
+    position: relative;
+    height: 100%;
+}
+
+.socialLink {
+    position:relative;
 }
