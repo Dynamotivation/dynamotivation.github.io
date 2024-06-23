@@ -8,7 +8,10 @@
     font-family: Rubik;
 }
 
-html, body, div, head {
+html,
+body,
+div,
+head {
     padding: 0px;
     margin: 0px;
     border: 0;
@@ -46,6 +49,9 @@ body {
     width: auto;
 }
 
+
+
+/* Section Links */
 #header #sectionLinks {
     margin-left: 3rem;
     display: flex;
@@ -53,22 +59,64 @@ body {
     gap: 2rem;
 }
 
-#header #sectionLinks > a {
-    color: white;
+#sectionLinks div {
+    position: relative;
+}
+
+.sectionLink,
+.sectionLinkHitbox {
     font-weight: bold;
     font-size: 1.4rem;
     text-decoration: none;
 }
 
-#header #sectionLinks > a:hover {
-    text-decoration: underline;
+.sectionLink {
+    color: white;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    top: 0;
+    transition: all 250ms;
 }
 
+.sectionLinkHitbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.sectionLinkHitbox::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    background: linear-gradient(to right top, #4aff80, #3dffe5);
+    height: .22rem;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.sectionLinkHitbox:hover::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.sectionLinkHitbox:hover+.sectionLink {
+    top: -.1rem;
+}
+
+
+
+/* Social Links */
 #header #userLinks {
     margin-left: auto;
 }
 
-#header #userLinks > a {
+#header #userLinks>a {
     color: white;
     text-decoration: none;
 }
