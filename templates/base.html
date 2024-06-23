@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MyBlog</title>
-    <link rel="stylesheet" href= {{ get_url(path="css/main.css") }} >
-    <link rel="stylesheet" href= {{ get_url(path="fonts/rubik/css/rubik.css") }} >
-    <link rel="stylesheet" href= {{ get_url(path="fonts/fontawesome/css/fontawesome.min.css") }} />
-    <link rel="stylesheet" href= {{ get_url(path="fonts/fontawesome/css/brands.min.css") }} />
+    <title>Dynamotivation</title>
+    <link rel="stylesheet" href={{ get_url(path="css/base.css" ) }}>
+    <link rel="stylesheet" href={{ get_url(path="css/header.css" ) }}>
+    <link rel="stylesheet" href={{ get_url(path="css/footer.css" ) }}>
+    <link rel="stylesheet" href={{ get_url(path="fonts/rubik/css/rubik.css" ) }}>
+    <link rel="stylesheet" href={{ get_url(path="fonts/fontawesome/css/fontawesome.min.css" ) }} />
+    <link rel="stylesheet" href={{ get_url(path="fonts/fontawesome/css/brands.min.css" ) }} />
+    {% block additionalStylesheets %} {% endblock %}
 </head>
 
 <body>
@@ -18,6 +21,8 @@
             {% block content %} {% endblock %}
         </div>
     </section>
+
+    {% include "footer.html" %}
 </body>
 
 </html>
