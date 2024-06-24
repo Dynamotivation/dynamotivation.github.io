@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block additionalStylesheets %}
+{% endblock additionalStylesheets %}
+
+{% block content %}
+<div id="pageContainer">
+    <div id="titleContainer">
+        <h1>{{ page.title }}</h1>
+        <hr>
+    </div>
+    {{ page.content | safe }}
+</div>
+{% endblock content %}
