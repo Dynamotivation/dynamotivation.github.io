@@ -4,6 +4,9 @@
     padding: .7rem;
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #header #headerContent {
