@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block additionalResources %}
+<link rel="stylesheet" href={{ get_url(path="css/blogPage.css" ) }}>
+<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+{% endblock additionalResources %}
+
+{% block content %}
+<div id="pageContainer">
+    <div id="titleContainer">
+        <h1 id="pageTitle">{{ page.title }}</h1>
+        <noscript>
+            <hr>
+        </noscript>
+    </div>
+    <hr id="progressHr" class="jsOnly">
+    {{ page.content | safe }}
+</div>
+{% endblock content %}
