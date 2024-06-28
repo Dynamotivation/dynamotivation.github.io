@@ -16,6 +16,10 @@
     <div id="stickyContainer" class="jsOnly">
         <hr id="progressHr">
     </div>
-    {{ page.content | safe }}
+    <div id="contentContainer">
+        {{ page.content | safe }}
+    </div>
+    <div id="fade-out-top"></div>
+    <div id="fade-out-bottom"></div>
 </div>
 {% endblock content %}
