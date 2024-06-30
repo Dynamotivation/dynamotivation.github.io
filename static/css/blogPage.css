@@ -79,3 +79,8 @@
     pointer-events: none;
     z-index: 1;
 }
+
+#contentContainer * {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
