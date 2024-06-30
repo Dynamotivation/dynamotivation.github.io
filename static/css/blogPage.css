@@ -42,7 +42,7 @@
     top: -1px;
 }
 
-#progressHr {
+#pageContainer>#stickyContainer>#progressHr {
     transition: width .7s ease-out;
 }
 
