@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const titleWidth = pageTitle.offsetWidth;
             progressHr.style.width = `${titleWidth + convertRemToPixels(3.2)}px`;
         }
+        else {
+            progressHr.style.width = `${stickyContainer.offsetWidth + convertRemToPixels(0.4)}px`;
+        }
     }
 
     setHRWidth();
