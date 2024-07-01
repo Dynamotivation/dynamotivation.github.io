@@ -3,6 +3,7 @@
     --main-color-dark: #893750;
     --accent-color: #4AFF83;
     --background-color: #ffffff;
+    --disabled-color: #909090;
     --gradient: linear-gradient(to right top, #4aff80, #3dffe5);
 }
 
