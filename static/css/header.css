@@ -55,14 +55,14 @@
 
 
 /* Section Links */
-#header #sectionLinks {
+#header>#headerContent>#sectionLinks {
     margin-left: 3rem;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
 
-#sectionLinks div {
+#header>#headerContent>#sectionLinks>div {
     position: relative;
 }
 
@@ -120,7 +120,7 @@
     margin-left: auto;
 }
 
-.socialLink {
+#header .socialLink {
     background: var(--gradient);
     background-clip: text;
     color: white;
@@ -130,7 +130,7 @@
     scale: 1;
 }
 
-.socialLink:hover {
+#header .socialLink:hover {
     color: transparent;
     scale: 1.05;
 }
@@ -138,8 +138,4 @@
 #header #userLinks div {
     position: relative;
     height: 100%;
-}
-
-.socialLink {
-    position:relative;
 }
