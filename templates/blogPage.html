@@ -7,6 +7,7 @@
 
 {% block content %}
 <div id="pageContainer">
+    <div id="fade-out-top"></div>
     <div id="titleContainer">
         <h1 id="pageTitle">{{ page.title }}</h1>
         <noscript>
@@ -19,7 +20,6 @@
     <div id="contentContainer">
         {{ page.content | safe }}
     </div>
-    <div id="fade-out-top"></div>
     <div id="fade-out-bottom"></div>
 </div>
 {% endblock content %}
