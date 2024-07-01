@@ -1,0 +1,142 @@
+#header {
+    height: 2.5rem;
+    background-color: var(--main-color);
+    padding: .7rem 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+#header #headerContent {
+    height: 100%;
+    max-width: 80rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 .7rem;
+}
+
+
+
+/* Logo */
+#header #logoLink {
+    height: 100%;
+    aspect-ratio: 268.835/208.368;
+    display: inline-block;
+}
+
+#header #logoLink div {
+    position: relative;
+    height: 100%;
+}
+
+#header #logo,
+#header #logoDuplicate {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 2;
+    scale: 1;
+    transition: scale .15s ease-out;
+}
+
+#header #logoDuplicate {
+    pointer-events: none;
+    z-index: 1;
+}
+
+#header #logo:hover+#logoDuplicate {
+    scale: 1.06;
+}
+
+
+
+/* Section Links */
+#header>#headerContent>#sectionLinks {
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#header>#headerContent>#sectionLinks>div {
+    position: relative;
+}
+
+.sectionLink,
+.sectionLinkHitbox {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.sectionLink {
+    color: white;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    top: 0;
+    transition: all 250ms;
+}
+
+.sectionLinkHitbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.sectionLinkHitbox::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    background: var(--gradient);
+    border-radius: .075rem;
+    height: .22rem;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.sectionLinkHitbox:hover::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.sectionLinkHitbox:hover+.sectionLink {
+    top: -.1rem;
+}
+
+
+
+/* Social Links */
+#header #userLinks {
+    margin-left: auto;
+}
+
+#header .socialLink {
+    background: var(--gradient);
+    background-clip: text;
+    color: white;
+    padding: .22rem;
+    transition: all .3s ease-out;
+    text-decoration: none;
+    scale: 1;
+}
+
+#header .socialLink:hover {
+    color: transparent;
+    scale: 1.05;
+}
+
+#header #userLinks div {
+    position: relative;
+    height: 100%;
+}
