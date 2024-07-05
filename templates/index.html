@@ -5,7 +5,32 @@
 {% endblock additionalResources%}
 
 {% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
-</h1>
+<div id="splashScreen">
+  <div id="introductionContainer">
+  </div>
+  <div id="coverContainer">
+    <div id="leftIconStack">
+      <div class="wrapper">
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div>
+    </div>
+    <div id="centreLogoStack">
+      <div class="wrapper">
+        <div class="placeholder"></div>
+        <img id="logo" src={{ get_url(path="images/innerLogo.svg" ) }} draggable="false">
+        <div class="placeholder"></div>
+      </div>
+    </div>
+    <div id="rightIconStack">
+      <div class="wrapper">
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock content %}

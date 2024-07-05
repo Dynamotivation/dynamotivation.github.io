@@ -1,0 +1,71 @@
+#splashScreen {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#splashScreen>#introductionContainer {
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+}
+
+#splashScreen>#coverContainer {
+    width: auto;
+    height: auto;
+    background-color: #787878;
+    display: flex;
+}
+
+#splashScreen>#coverContainer>div {
+    width: auto;
+    display: flex;
+}
+
+#splashScreen>#coverContainer>div>.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#splashScreen>#coverContainer>*>.wrapper>* {
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+#splashScreen>#coverContainer>*>.wrapper>#logo {
+    width: 32vw;
+    aspect-ratio: 268.835/208.368;
+    margin: 0 -2rem;
+    background-color: transparent;
+}
+
+#splashScreen>#coverContainer>#leftIconStack>.wrapper,
+#splashScreen>#coverContainer>#rightIconStack>.wrapper {
+    width: 24vw;
+    display: flex;
+    margin: auto 0;
+}
+
+#splashScreen>#coverContainer>#leftIconStack>.wrapper>* {
+    margin: 0 0 0 auto;
+}
+
+#splashScreen>#coverContainer>#rightIconStack>.wrapper>* {
+    margin: 0 auto 0 0;
+}
+
+#splashScreen>#coverContainer>#leftIconStack>.wrapper>:nth-child(2) {
+    margin: 0 4rem 0 0;
+}
+
+#splashScreen>#coverContainer>#rightIconStack>.wrapper>:nth-child(2) {
+    margin: 0 0 0 4rem;
+}
+
+#splashScreen>#coverContainer>#centreLogoStack {
+    width: 28vw;
+}
