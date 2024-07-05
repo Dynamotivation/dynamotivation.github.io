@@ -33,39 +33,24 @@
     width: 20vw;
     aspect-ratio: 1/1;
     background-color: aquamarine;
+    border-radius: 2rem;
     margin: 0 auto;
 }
 
 #splashScreen>#coverContainer>*>.wrapper>#logo {
-    width: 32vw;
+    width: 22vw;
     aspect-ratio: 268.835/208.368;
-    margin: 0 -2rem;
     background-color: transparent;
 }
 
 #splashScreen>#coverContainer>#leftIconStack>.wrapper,
 #splashScreen>#coverContainer>#rightIconStack>.wrapper {
-    width: 24vw;
+    width: 20vw;
     display: flex;
     margin: auto 0;
-}
-
-#splashScreen>#coverContainer>#leftIconStack>.wrapper>* {
-    margin: 0 0 0 auto;
-}
-
-#splashScreen>#coverContainer>#rightIconStack>.wrapper>* {
-    margin: 0 auto 0 0;
-}
-
-#splashScreen>#coverContainer>#leftIconStack>.wrapper>:nth-child(2) {
-    margin: 0 4rem 0 0;
-}
-
-#splashScreen>#coverContainer>#rightIconStack>.wrapper>:nth-child(2) {
-    margin: 0 0 0 4rem;
+    gap: 4rem;
 }
 
 #splashScreen>#coverContainer>#centreLogoStack {
-    width: 28vw;
+    width: 24vw;
 }
