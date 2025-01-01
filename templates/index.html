@@ -7,28 +7,46 @@
 {% block content %}
 <div id="splashScreen">
   <div id="introductionContainer">
-    <h1>Lorem Ipsum</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <h1>Hi, I'm Dynamotivation</h1>
+    <p>Software developer</p>
   </div>
   <div id="coverWrapper">
     <div id="coverContainer">
       <div id="leftIconStack">
         <div class="wrapper">
-          <div class="placeholder"></div>
-          <div class="placeholder"></div>
+          <div id="battleMemeGeneratorIcon">
+            <img class="icon" src={{ get_url(path="images/JoinsTheBattleIconNoBackground.webp" ) }} alt="Everybody Joins the Battle Meme Generator Icon" draggable="false">
+          </div>
+          <div id="allOutAttackGeneratorIcon">
+            <img class="icon" src={{ get_url(path="images/AllOutAttackIconNoBackground.webp" ) }} alt="All-out Attack Animation Generator Icon" draggable="false">
+          </div>
         </div>
       </div>
       <div id="centreLogoStack">
         <div class="wrapper">
-          <div class="placeholder"></div>
-          <img id="logo" src={{ get_url(path="images/innerLogo.svg" ) }} draggable="false">
-          <div class="placeholder"></div>
+          <div id="ordinarySpaceShooterIcon">
+            <img class="icon" src={{ get_url(path="images/OrdinarySpaceShooterIconNoBackground.webp" ) }} alt="OSS Space Adventure Icon" draggable="false">
+          </div>
+          <div id="logo">
+            <div></div>
+            <img src={{ get_url(path="images/innerLogoForeground.svg" ) }} draggable="false">
+          </div>
+          <div id="geoBackgroundGeneratorIcon">
+            <img src={{ get_url(path="images/GeoBackgroundGeneratorIconBackground.svg" ) }} alt="" draggable="false">
+            <img class="icon" src={{ get_url(path="images/GeoBackgroundGeneratorIconNoBackground.svg" ) }} alt="Geo Background Generator Icon" draggable="false">
+          </div>
         </div>
       </div>
       <div id="rightIconStack">
         <div class="wrapper">
-          <div class="placeholder"></div>
-          <div class="placeholder"></div>
+          <div id="benPlaysGamesSoundboardIcon">
+            <img src={{ get_url(path="images/BenPlaysGamesSoundboardIconBackground.webp" ) }} alt="" draggable="false">
+            <img class="icon" src={{ get_url(path="images/BenPlaysGamesSoundboardIconForeground.webp" ) }} alt="BenPlaysGames Soundboard Icon" draggable="false">
+          </div>
+          <div id="mysteryProjectIcon">
+            <img src={{ get_url(path="images/MysteryProjectBackground.svg" ) }} alt="" draggable="false">
+            <img class="icon" src={{ get_url(path="images/MysteryProjectForeground.svg" ) }} alt="Mystery Project Icon" draggable="false">
+          </div>
         </div>
       </div>
     </div>
