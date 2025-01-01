@@ -5,7 +5,8 @@
     --background-color: #ffffff;
     --disabled-color: #909090;
     --footer-color: #2c2c2c;
-    --gradient: linear-gradient(to right top, #4aff80, #3dffe5);
+    --gradient: linear-gradient(45deg, #4aff80, #3dffe5);
+    --gradient-pulse: linear-gradient(45deg, #4aff80 40%, #3dffe5 60%);
 }
 
 * {

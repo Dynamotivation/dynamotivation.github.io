@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   sodipodi:docname="MysteryProjectBackground.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.6633333"
+     inkscape:cx="150"
+     inkscape:cy="149.24906"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-7"
+     inkscape:window-y="-7"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <rect
+       x="44.280443"
+       y="216.23616"
+       width="337.63838"
+       height="73.800738"
+       id="rect4" />
+    <rect
+       x="43.173432"
+       y="138.74539"
+       width="357.93358"
+       height="66.789668"
+       id="rect3" />
+    <rect
+       x="28.782288"
+       y="74.538745"
+       width="74.907749"
+       height="76.752768"
+       id="rect1" />
+  </defs>
+  <circle
+     style="fill:#774809;fill-opacity:1;stroke-width:1.50369"
+     id="path1"
+     cx="44.890781"
+     cy="44.890781"
+     r="16.646063" />
+  <circle
+     style="fill:#774809;fill-opacity:1;stroke-width:1.50369"
+     id="path1-2"
+     cx="255.10922"
+     cy="44.890781"
+     r="16.646063" />
+  <circle
+     style="fill:#774809;fill-opacity:1;stroke-width:1.50369"
+     id="path1-2-2"
+     cx="255.10922"
+     cy="255.10922"
+     r="16.646063" />
+  <circle
+     style="fill:#774809;fill-opacity:1;stroke-width:1.50369"
+     id="path1-2-2-6"
+     cx="44.890781"
+     cy="255.10922"
+     r="16.646063" />
+</svg>
