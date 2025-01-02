@@ -1,8 +1,8 @@
 +++
 
-title = ""
+title = "Blog"
 
-description = ""
+description = "This blog mostly focuses on technical topics that interest me.<br>Content will be a mix of guides to specific problems I faced and the opinions I hold on available solutions."
 
 # A draft section is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false

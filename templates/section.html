@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block additionalResources %}
+<link rel="stylesheet" href={{ get_url(path="css/section.css" ) }}>
+<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+{% endblock additionalResources %}
+
+{% block content %}
+
+{%- if pages is defined %}
+{%- elif paginator is defined %}
+{%- set pages = paginator.pages %}
+{%- elif term is defined %}
+{%- set pages = term.pages %}
+{%- elif section is defined %}
+{%- set pages = section.pages %}
+{%- else %}
+{%- set pages = [] %}
+{%- endif %}
+
+<div id="pageContainer">
+    <div id="fade-out-top"></div>
+    <div id="titleContainer">
+        <h1 id="pageTitle">{{ section.title }}</h1>
+    </div>
+
+    <div id="descriptionContainer">
+        <p>
+            {{ section.description | safe }}
+        </p>
+    </div>
+
+    {% if pages|length == 0 %}
+    <p>
+        <i>There is nothing to see here yet.</i>
+    </p>
+    {% else %}
+    {% for page in pages %}
+    <div class="postContainer">
+        <div class="postShadow"></div>
+
+        <div class="postBorder">
+            <div class="postContent">
+                <div class="postMetadata">
+                    <strong class="postTitle">{{ page.title }}</strong>
+                    <span class="postDate">{{ page.date }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <div id="fade-out-bottom"></div>
+</div>
+{% endblock content %}

@@ -1,10 +1,10 @@
 @keyframes pulse {
     0%, 100% {
-        filter: saturate(70%);
+        filter: saturate(60%);
     }
 
     50% {
-        filter: saturate(150%);
+        filter: saturate(120%);
     }
 }
 
@@ -96,6 +96,8 @@
 #splashScreen>#coverWrapper>#coverContainer>#centreLogoStack>.wrapper #logo>div {
     background: var(--gradient);
     color: transparent;
+    animation: pulse 5s infinite;
+    animation-play-state: paused;
     mask-image: url(/images/innerLogoBackground.svg);
     mask-size: contain;
 }
