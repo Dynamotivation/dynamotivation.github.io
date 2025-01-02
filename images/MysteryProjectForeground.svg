@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   sodipodi:docname="MysteryProjectForeground.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.6633333"
+     inkscape:cx="150"
+     inkscape:cy="150"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-7"
+     inkscape:window-y="-7"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <rect
+       x="44.280443"
+       y="216.23616"
+       width="337.63838"
+       height="73.800738"
+       id="rect4" />
+    <rect
+       x="43.173432"
+       y="138.74539"
+       width="357.93358"
+       height="66.789668"
+       id="rect3" />
+    <rect
+       x="28.782288"
+       y="74.538745"
+       width="74.907749"
+       height="76.752768"
+       id="rect1" />
+  </defs>
+  <g
+     id="g3"
+     transform="matrix(0.79493872,0,0,0.79493872,30.759173,30.759221)">
+    <text
+       xml:space="preserve"
+       style="font-size:359.079px;font-family:'Chakra Petch';-inkscape-font-specification:'Chakra Petch';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#372001;fill-opacity:1;stroke-width:6.73274"
+       x="55.791794"
+       y="279.6778"
+       id="text2-8"><tspan
+         id="tspan2-5"
+         x="55.791794"
+         y="279.6778"
+         style="fill:#372001;fill-opacity:1;stroke-width:6.73274">?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:359.079px;font-family:'Chakra Petch';-inkscape-font-specification:'Chakra Petch';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fff5dd;fill-opacity:1;stroke-width:6.73274"
+       x="47.791794"
+       y="271.6778"
+       id="text2"><tspan
+         id="tspan2"
+         x="47.791794"
+         y="271.6778"
+         style="fill:#fff5dd;fill-opacity:1;stroke-width:6.73274">?</tspan></text>
+  </g>
+</svg>
