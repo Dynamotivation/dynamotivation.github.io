@@ -97,7 +97,7 @@
     width: 0;
     bottom: 0;
     background: var(--gradient);
-    border-radius: .075rem;
+    border-radius: .1rem;
     height: .22rem;
     transition-property: width;
     transition-duration: 0.3s;
