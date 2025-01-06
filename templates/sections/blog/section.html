@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block additionalResources %}
-<link rel="stylesheet" href={{ get_url(path="css/section.css" ) }}>
+<link rel="stylesheet" href={{ get_url(path="css/sections/blog/section.css" ) }}>
 <script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
 {% endblock additionalResources %}
 
@@ -37,7 +37,9 @@
     {% else %}
     {% for page in pages %}
     <div class="postContainer">
-        <div class="postShadow"></div>
+        <a href="{{ page.permalink }}" class="postLink">
+            <div class="postShadow"></div>
+        </a>
 
         <div class="postBorder">
             <div class="postContent">
