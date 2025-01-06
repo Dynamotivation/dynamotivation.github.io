@@ -110,7 +110,7 @@
     transition: --gradient-color-1 .5s, --gradient-color-2 .5s;
 }
 
-.postShadow:hover+.postBorder {
+.postLink:hover+.postBorder {
     --gradient-color-1: var(--accent-color);
     --gradient-color-2: var(--accent-color-alt);
 }

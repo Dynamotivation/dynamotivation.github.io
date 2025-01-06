@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block additionalResources %}
+<link rel="stylesheet" href={{ get_url(path="css/sections/blog/page.css" ) }}>
+<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+{% endblock additionalResources %}
+
+{% block content %}
+<div id="pageContainer">
+    <div id="fade-out-top"></div>
+    <div id="titleContainer">
+        <h1 id="pageTitle">{{ page.title }}</h1>
+        <noscript>
+            <hr>
+        </noscript>
+    </div>
+    <div id="stickyContainer" class="jsOnly">
+        <hr id="progressHr">
+    </div>
+    <div id="contentContainer">
+        {{ page.content | safe }}
+    </div>
+    <div id="fade-out-bottom"></div>
+</div>
+{% endblock content %}
