@@ -1,0 +1,2 @@
+{% set file_path = "/" ~ path %}
+{{ load_data(path=file_path, format="plain") | markdown | safe }}
