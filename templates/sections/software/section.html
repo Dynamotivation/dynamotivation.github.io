@@ -29,14 +29,17 @@
             {{ section.description | safe }}
         </p>
     </div>
+
+    {% if pages|length == 0 %}
+    <p>
+        <i>There is nothing to see here yet.</i>
+    </p>
+    {% endif %}
+
     <div id="fade-out-bottom"></div>
 </div>
 
-{% if pages|length == 0 %}
-<p>
-    <i>There is nothing to see here yet.</i>
-</p>
-{% else %}
+{% if pages|length != 0 %}
 <div id="postGrid">
     {% for page in pages %}
     <div class="postContainer">
