@@ -72,7 +72,7 @@
     margin: 0 auto;
     scale: 1;
     filter: grayscale(30%);
-    transition: all .8s ease;
+    transition: all 0.8s ease;
     overflow: clip;
 }
 
@@ -168,5 +168,5 @@
 }
 
 #splashScreen>#coverWrapper>#coverContainer>*>.wrapper>#benPlaysGamesSoundboardIcon {
-    background-color: transparent;
+    background: #1c1e76;
 }
