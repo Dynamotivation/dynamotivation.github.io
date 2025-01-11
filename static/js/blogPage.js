@@ -4,7 +4,7 @@ const progressHr = document.getElementById('progressHr');
 const stickyContainer = document.getElementById('stickyContainer');
 const pageContainer = document.getElementById('pageContainer');
 const contentContainer = document.getElementById("contentContainer");
-const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
+// const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color'); Already defined in fixOverscroll.js
 const mainColorDark = getComputedStyle(document.documentElement).getPropertyValue('--main-color-dark');
 let jsOnlyIsHidden = true;
 
