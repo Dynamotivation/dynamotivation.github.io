@@ -26,3 +26,8 @@ head {
 body {
     background-color: var(--background-color);
 }
+
+#scroll-bottom-indicator {
+    position: sticky;
+    bottom: -10px;
+}

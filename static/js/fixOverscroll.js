@@ -1,15 +1,19 @@
-let reachedTop = false;
-const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
-const footerColor = getComputedStyle(document.documentElement).getPropertyValue('--footer-color');
+document.addEventListener('DOMContentLoaded', function () {
+    const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
+    const footerColor = getComputedStyle(document.documentElement).getPropertyValue('--footer-color');
+    const scrollBottomIndicator = document.getElementById('scroll-bottom-indicator');
 
-window.addEventListener('wheel', (e) => {
-    const delta = e.deltaY;
+    const observer = new IntersectionObserver(
+        ([e]) => {
+            if (e.intersectionRatio < 1) {
+                document.documentElement.style.background = mainColor;
+            }
+            else {
+                document.documentElement.style.background = footerColor;
+            }
+        },
+        { threshold: [1] }
+    );
 
-    if (delta < 0 && !reachedTop) {
-        document.documentElement.style.background = mainColor;
-        reachedTop = true;
-    } else if (delta > 0 && reachedTop) {
-        document.documentElement.style.background = footerColor;
-        reachedTop = false;
-    }
+    observer.observe(scrollBottomIndicator);
 });
