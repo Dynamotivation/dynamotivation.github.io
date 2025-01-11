@@ -1,14 +1,14 @@
-const pageTitle = document.getElementById('pageTitle');
-const jsOnlyElements = document.querySelectorAll('.jsOnly');
-const progressHr = document.getElementById('progressHr');
-const stickyContainer = document.getElementById('stickyContainer');
-const pageContainer = document.getElementById('pageContainer');
-const contentContainer = document.getElementById("contentContainer");
-// const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color'); Already defined in fixOverscroll.js
-const mainColorDark = getComputedStyle(document.documentElement).getPropertyValue('--main-color-dark');
-let jsOnlyIsHidden = true;
-
 document.addEventListener('DOMContentLoaded', function () {
+    const pageTitle = document.getElementById('pageTitle');
+    const jsOnlyElements = document.querySelectorAll('.jsOnly');
+    const progressHr = document.getElementById('progressHr');
+    const stickyContainer = document.getElementById('stickyContainer');
+    const pageContainer = document.getElementById('pageContainer');
+    const contentContainer = document.getElementById("contentContainer");
+    const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
+    const mainColorDark = getComputedStyle(document.documentElement).getPropertyValue('--main-color-dark');
+    let jsOnlyIsHidden = true;
+
     // Unhide elements without layout shifting
     pageTitle.style.marginBottom = "0";
     jsOnlyElements.forEach(function (element) {
