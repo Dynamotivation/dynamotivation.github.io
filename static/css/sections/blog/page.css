@@ -1,5 +1,6 @@
 .jsOnly {
     display: none;
+    visibility: hidden;
 }
 
 #pageContainer {
@@ -15,6 +16,7 @@
 }
 
 #pageContainer #pageTitle {
+    /* Avoids layout shifting upon unhiding the JsOnly elements, by precomputing their height in the margins */
     margin: 0 0 .7rem 0;
     font-size: 5rem;
 }
@@ -31,10 +33,12 @@
     border-radius: .5rem;
     background-color: var(--main-color-dark);
     position: relative;
+    transition: width .7s ease-out;
 }
 
 #pageContainer>#titleContainer>noscript>hr {
     padding-right: 3.2rem;
+    /* Corrects for the precomputation done above */
     margin-top: -.7rem;
     display: flex;
 }
@@ -44,11 +48,8 @@
     z-index: 2;
     padding-top: 4.1rem;
     margin-top: -4.1rem;
+    /* Necessary to allow the observer to detect stickiness */
     top: -1px;
-}
-
-#pageContainer>#stickyContainer>#progressHr {
-    transition: width .7s ease-out;
 }
 
 .isSticky {

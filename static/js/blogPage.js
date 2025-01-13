@@ -1,5 +1,12 @@
+// Unhide elements immediately without layout shifting
+document.getElementById('pageTitle').style.marginBottom = "0";
+document.getElementById('progressHr').style.width = "0";
+document.querySelectorAll('.jsOnly').forEach(function (element) {
+    element.style.display = "block";
+    element.style.visibility = "visible";
+});
+
 document.addEventListener('DOMContentLoaded', function () {
-    const pageTitle = document.getElementById('pageTitle');
     const jsOnlyElements = document.querySelectorAll('.jsOnly');
     const progressHr = document.getElementById('progressHr');
     const stickyContainer = document.getElementById('stickyContainer');
@@ -7,13 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const contentContainer = document.getElementById("contentContainer");
     const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
     const mainColorDark = getComputedStyle(document.documentElement).getPropertyValue('--main-color-dark');
-    let jsOnlyIsHidden = true;
-
-    // Unhide elements without layout shifting
-    pageTitle.style.marginBottom = "0";
-    jsOnlyElements.forEach(function (element) {
-        element.style.display = "hidden";
-    });
+    let initialized = false;
 
     // Fake resize event to set initial width
     window.addEventListener('load', _ => {
@@ -38,12 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', _ => {
         setHRWidth();
 
-        if (jsOnlyIsHidden) {
-            jsOnlyIsHidden = false;
-            jsOnlyElements.forEach(function (element) {
-                element.style.display = "block";
-            });
-
+        if (!initialized) {
+            initialized = true;
             observer.observe(stickyContainer)
         }
     });
