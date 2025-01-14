@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let rect = contentContainer.getBoundingClientRect();
         let windowHeight = window.innerHeight;
 
-        let start = rect.top + window.scrollY - convertRemToPixels(5);
-        let end = rect.bottom + window.scrollY - windowHeight;
+        let start = rect.top + window.scrollY - convertRemToPixels(10);
+        let end = rect.bottom + window.scrollY - 0.7*windowHeight;
         let progress = Math.min(Math.max((window.scrollY - start) / (end - start) * 100, 0), 100);
 
         progressHr.style.background = `linear-gradient(to right, ${mainColor}, ${mainColor} ${progress}%, ${mainColorDark} ${progress}%, ${mainColorDark})`;
