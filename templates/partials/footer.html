@@ -2,11 +2,14 @@
     <div id="footerContainer">
         <div id="footerTop">
             <div id="logos">
-                <a id="logoPlaceholder" href="/" title="Home">
+                <a class="socialLink" href="/" title="Home">
+                    <img id="logo" src="{{ get_url(path='images/innerLogoOutline.svg') }}" alt="Dynamotivation Logo"
+                        draggable="false"/>
                 </a>
-                <a class="socialLink fa-brands fa-github fa-2x" href="https://github.com/Dynamotivation"
-                    title="Dynamotivation on GitHub"></a>
-                <a class="socialLink fa-brands fa-youtube fa-2x" href="TODO" title="Dynamotivation on Youtube"></a>
+                <a class="socialLink" href="https://github.com/Dynamotivation"
+                    title="Dynamotivation on GitHub">
+                    <img src="{{ get_url(path='images/github/icon.svg') }}" alt="GitHub" draggable="false"/>
+                </a>
             </div>
             <div id="linkColumns">
                 <div id="categories">

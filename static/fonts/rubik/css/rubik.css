@@ -1,13 +1,15 @@
 @font-face {
+    font-display: block;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    src: url(../webfonts/Rubik-Regular.ttf) format('truetype'); 
+    src: url('../webfonts/rubik-v28-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
+    font-display: block;
     font-family: 'Rubik';
-    font-style: bold;
+    font-style: normal;
     font-weight: 700;
-    src: url(../webfonts/Rubik-Bold.ttf) format('truetype'); 
+    src: url('../webfonts/rubik-v28-latin-700.woff2') format('woff2');
 }

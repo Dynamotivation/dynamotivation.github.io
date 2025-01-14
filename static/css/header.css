@@ -119,24 +119,20 @@
 /* Social Links */
 #header #userLinks {
     margin-left: auto;
+    height: 80%;
 }
 
 #header .socialLink {
-    background: var(--gradient);
-    background-clip: text;
-    color: white;
-    padding: .22rem;
-    transition: all .3s ease-out;
-    text-decoration: none;
-    scale: 1;
-}
-
-#header .socialLink:hover {
-    color: transparent;
-    scale: 1.05;
-}
-
-#header #userLinks div {
-    position: relative;
     height: 100%;
+    display: inline-block;
+}
+
+#header .socialLink>img{
+    height: 100%;
+    transition: all .2s ease-out;
+    transform: scale(1);
+}
+
+#header .socialLink:hover>img {
+    transform: scale(1.05);
 }
