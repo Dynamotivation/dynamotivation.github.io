@@ -5,7 +5,7 @@
 
 #pageContainer {
     max-width: 65rem;
-    margin: 30vh auto 50vh auto;
+    margin: 25vh auto 50vh auto;
 }
 
 #pageContainer>#titleContainer {
@@ -60,8 +60,8 @@
     margin-right: -.2rem;
 }
 
-#pageContainer>#contentContainer {
-    margin-top: 2.4rem;
+#pageContainer>#dateContainer {
+    margin: 2.6rem 0 6rem 0;
 }
 
 #fade-out-top {
