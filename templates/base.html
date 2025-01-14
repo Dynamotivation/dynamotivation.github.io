@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Dynamotivation</title>
+    <link rel="preload" as="font" href={{ get_url(path="fonts/rubik/webfonts/rubik-v28-latin-regular.woff2") }} crossorigin>
+    <link rel="preload" as="font" href={{ get_url(path="fonts/rubik/webfonts/rubik-v28-latin-700.woff2") }} crossorigin>
+    <link rel="stylesheet" href={{ get_url(path="fonts/rubik/css/rubik.css" ) }}>
     <link rel="stylesheet" href={{ get_url(path="css/base.css" ) }}>
     <link rel="stylesheet" href={{ get_url(path="css/header.css" ) }}>
     <link rel="stylesheet" href={{ get_url(path="css/footer.css" ) }}>
-    <link rel="stylesheet" href={{ get_url(path="fonts/rubik/css/rubik.css" ) }}>
-    <link rel="stylesheet" href={{ get_url(path="fonts/fontawesome/css/fontawesome.min.css" ) }} />
-    <link rel="stylesheet" href={{ get_url(path="fonts/fontawesome/css/brands.min.css" ) }} />
     <script src={{ get_url(path="js/fixOverscroll.js" ) }} defer></script>
     {% block additionalResources %} {% endblock %}
 </head>
