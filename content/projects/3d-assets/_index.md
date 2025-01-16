@@ -1,8 +1,8 @@
 +++
 
-title = "Blog"
+title = "3D Assets"
 
-description = "This blog mostly focuses on technical topics that interest me.<br>Content will be a mix of guides to specific problems I faced and the opinions I hold on available solutions."
+description = "3D Assets created by Dynamotivation."
 
 # A draft section is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
@@ -15,7 +15,7 @@ sort_by = "none"
 weight = 0
 
 # Template to use to render this section page.
-template = "sections/section.html"
+template = "sections/software/section.html"
 
 # The given template is applied to ALL pages below the section, recursively.
 # If you have several nested sections, each with a page_template set, the page

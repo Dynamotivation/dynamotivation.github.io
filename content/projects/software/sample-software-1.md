@@ -3,7 +3,7 @@ draft = true
 title = "Sample Software #1"
 
 [extra]
-logo = "images/logos/SampleLogo.svg"
+logo = "../images/fullLogo.svg"
 available_on_android = true
 available_on_windows = true
 available_on_mac = true

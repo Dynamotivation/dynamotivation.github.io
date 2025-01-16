@@ -1,8 +1,8 @@
 +++
 
-title = "Blog"
+title = "Projects"
 
-description = "This blog mostly focuses on technical topics that interest me.<br>Content will be a mix of guides to specific problems I faced and the opinions I hold on available solutions."
+description = "Projects carried out by Dynamotivation."
 
 # A draft section is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
@@ -54,7 +54,7 @@ render = true
 # Useful for the same reason as `render` but when you don't want a 404 when
 # landing on the root section page.
 # Example: redirect_to = "documentation/content/overview"
-# redirect_to =
+redirect_to = "/"
 
 # If set to "true", the section will pass its pages on to the parent section. Defaults to `false`.
 # Useful when the section shouldn't split up the parent section, like
