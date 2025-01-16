@@ -99,7 +99,6 @@
     pointer-events: none; /* Allow hover detection by shadow element */
     position: relative;
     margin-top: 2.4rem;
-    box-shadow: 0 0 1rem bar;
     background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     padding: .2rem;
     width: 95%;
@@ -111,8 +110,8 @@
 }
 
 .postLink:hover+.postBorder {
-    --gradient-color-1: var(--accent-color);
-    --gradient-color-2: var(--accent-color-alt);
+    --gradient-color-1: color-mix(in srgb, var(--accent-color) 90%, black 10%);
+    --gradient-color-2: color-mix(in srgb, var(--accent-color-alt) 90%, black 10%);
 }
 
 .postContent {

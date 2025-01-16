@@ -1,8 +1,8 @@
 +++
 
-title = "Software"
+title = "Hoaxes"
 
-description = "Portfolio of software developed by Dynamotivation."
+description = "Behind the scenes for various internet hoaxes carried out by Dynamotivation in the past."
 
 # A draft section is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
@@ -15,14 +15,14 @@ sort_by = "none"
 weight = 0
 
 # Template to use to render this section page.
-template = "sections/software/section.html"
+template = "sections/section.html"
 
 # The given template is applied to ALL pages below the section, recursively.
 # If you have several nested sections, each with a page_template set, the page
 # will always use the closest to itself.
 # However, a page's own `template` variable will always have priority.
 # Not set by default.
-page_template = "sections/software/page.html"
+page_template = "sections/page.html"
 
 # This sets the number of pages to be displayed per paginated page.
 # No pagination will happen if this isn't set or if the value is 0.

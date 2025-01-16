@@ -1,7 +1,7 @@
 +++
 title = "Third Party Licenses"
 path = "third-party-licenses"
-template = "sections/blog/page.html"
+template = "sections/page.html"
 +++
 
 {{ big_heading(name="Rubik Font") }}

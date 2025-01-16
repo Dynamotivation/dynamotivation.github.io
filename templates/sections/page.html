@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block additionalResources %}
-<link rel="stylesheet" href={{ get_url(path="css/sections/blog/page.css" ) }}>
+<link rel="stylesheet" href={{ get_url(path="css/sections/page.css" ) }}>
 <script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
 {% endblock additionalResources %}
 
@@ -16,6 +16,9 @@
     </div>
     <div id="stickyContainer" class="jsOnly">
         <hr id="progressHr">
+    </div>
+    <div id="dateContainer">
+        <p id="date">{{ page.date }}</p>
     </div>
     <div id="contentContainer">
         {{ page.content | safe }}

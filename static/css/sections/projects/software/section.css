@@ -120,8 +120,8 @@
 }
 
 .postLink:hover+.postBorder {
-    --gradient-color-1: var(--accent-color);
-    --gradient-color-2: var(--accent-color-alt);
+    --gradient-color-1: color-mix(in srgb, var(--accent-color) 90%, black 10%);
+    --gradient-color-2: color-mix(in srgb, var(--accent-color-alt) 90%, black 10%);
 }
 
 .logo {

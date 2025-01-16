@@ -1,7 +1,7 @@
 +++
 title = "Privacy Notice"
 path = "privacy-notice"
-template = "sections/blog/page.html"
+template = "sections/page.html"
 +++
 
 {{ big_heading(name="Hosting") }}

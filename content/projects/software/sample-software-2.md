@@ -1,9 +1,9 @@
 +++
 draft = true
-title = "Sample Software #3"
+title = "Sample Software #2"
 
 [extra]
-logo = "images/logos/SampleLogo.svg"
+logo = "../images/fullLogo.svg"
 available_on_android = true
 available_on_windows = true
 available_on_mac = true
