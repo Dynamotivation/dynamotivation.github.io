@@ -12,7 +12,7 @@
     width: 100%;
     height: min(100vh, 45vw);
     display: flex;
-    background-color: #da403d;
+    background: linear-gradient(0deg, #893750 0%, #ff4c4a 100%);
 }
 
 #splashScreen>#introductionContainer {
@@ -46,7 +46,7 @@
 #splashScreen>#coverWrapper>#coverContainer {
     width: 64vw;
     height: auto;
-    background-color: #504355;
+    background: linear-gradient(180deg, #373737 0%, var(--footer-color) 70%);
     display: flex;
     transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(-20deg) rotateZ(10deg) translateX(5vw) translateY(-12vw) translateZ(0px) skewX(0deg) skewY(0deg);
     padding: 2vw;
@@ -71,7 +71,7 @@
     border-radius: 20%;
     margin: 0 auto;
     scale: 1;
-    filter: grayscale(30%);
+    filter: grayscale(40%);
     transition: all 0.8s ease;
     overflow: clip;
 }
@@ -162,8 +162,9 @@
 }
 
 #splashScreen>#coverWrapper>#coverContainer>*>.wrapper>#geoBackgroundGeneratorIcon {
-    background: linear-gradient(217deg, rgb(255, 0, 0), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgb(0, 255, 0), rgba(0, 255, 0, 0) 70.71%),
+    background: 
+        linear-gradient(127deg, rgb(216, 4, 14), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(217deg, rgb(248, 244, 3), rgba(255, 0, 0, 0) 70.71%),
         linear-gradient(336deg, rgb(0, 0, 255), rgba(0, 0, 255, 0) 70.71%);
 }
 
