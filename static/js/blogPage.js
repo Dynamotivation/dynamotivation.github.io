@@ -26,12 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ([e]) => {
             e.target.classList.toggle('isSticky', e.intersectionRatio < 1)
 
-            if (e.intersectionRatio < 1) {
-                progressHr.style.width = `${pageContainer.offsetWidth + convertRemToPixels(0.4)}px`
-            }
-            else {
-                setHRWidth();
-            }
+            setHRWidth();
         },
         { threshold: [1] }
     );
