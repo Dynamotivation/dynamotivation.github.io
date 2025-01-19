@@ -15,7 +15,7 @@
     max-width: 80rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 .7rem;
 }
@@ -57,10 +57,16 @@
 
 /* Section Links */
 #header>#headerContent>#sectionLinks {
-    margin-left: 3rem;
+    margin: 0 auto 0 3rem;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+}
+
+@media (max-width: 28rem) {
+    #header>#headerContent>#sectionLinks {
+        display: none;
+    }
 }
 
 #header>#headerContent>#sectionLinks>div {
@@ -85,7 +91,6 @@
 
 .sectionLinkHitbox {
     position: absolute;
-    width: 100%;
     height: 100%;
     color: transparent;
 }
@@ -118,7 +123,7 @@
 
 /* Social Links */
 #header #userLinks {
-    margin-left: auto;
+    margin-left: 1rem;
     height: 80%;
 }
 
@@ -127,7 +132,7 @@
     display: inline-block;
 }
 
-#header .socialLink>img{
+#header .socialLink>img {
     height: 100%;
     transition: all .2s ease-out;
     transform: scale(1);
@@ -135,4 +140,130 @@
 
 #header .socialLink:hover>img {
     transform: scale(1.05);
+}
+
+
+
+/* Hamburger Menu */
+.hamburgerMenuContainer {
+    margin-left: auto;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 28rem) {
+    .hamburgerMenuContainer {
+        display: none;
+    }
+}
+
+.hamburgerToggle {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    opacity: 0;
+}
+
+.hamburgerIcon {
+    margin: -4rem 0 0 0;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    display: block;
+    pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamburgerToggle:checked+.hamburgerIcon {
+    transform: rotate(45deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--background-color);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.hamburgerIcon .top {
+    stroke-dasharray: 40 160;
+}
+
+.hamburgerIcon .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+
+.hamburgerIcon .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.hamburgerToggle:checked+.hamburgerIcon .top {
+    stroke-dashoffset: -64px;
+}
+
+.hamburgerToggle:checked+.hamburgerIcon .middle {
+    transform: rotate(90deg);
+}
+
+.hamburgerToggle:checked+.hamburgerIcon .bottom {
+    stroke-dashoffset: -64px;
+}
+
+#hamburgerMenu {
+    position: fixed;
+    right: -70vw;
+    top: 3.9rem;
+    width: calc(70vw - 2rem);
+    height: calc(100vh - 3.9rem - 2rem);
+    background: var(--main-color);
+    z-index: 100;
+    transition: right 0.3s ease;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 28rem) {
+    #header:has(.hamburgerToggle:checked)+#hamburgerMenu {
+        right: 0;
+    }
+}
+
+#hamburgerMenu>div {
+    position: relative;
+}
+
+#screenTint {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    z-index: 99;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 28rem) {
+    #header:has(.hamburgerToggle:checked)+#hamburgerMenu+#screenTint {
+        opacity: 0.6;
+    }
 }
