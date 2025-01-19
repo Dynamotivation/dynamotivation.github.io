@@ -54,6 +54,7 @@
 
 .isSticky {
     width: 100%;
+    overflow: hidden;
 }
 
 .isSticky>#progressHr {
