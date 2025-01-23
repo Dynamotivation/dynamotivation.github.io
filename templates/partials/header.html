@@ -18,8 +18,8 @@
             </a>
         </nav>
 
-        <div class=hamburgerMenuContainer>
-            <input class="hamburgerToggle" type="checkbox">
+        <div class="hamburgerMenuContainer" >
+            <input class="hamburgerToggle" id="sidebarToggle" type="checkbox">
 
             <svg class="hamburgerIcon" viewBox="0 0 100 100">
                 <path class="line top"
@@ -35,5 +35,5 @@
     {% include 'partials/section_links.html' %}
 </div>
 <div id="screenTint">
-
+    <label for="sidebarToggle" id="sidebarToggleSecondary"></label>
 </div>

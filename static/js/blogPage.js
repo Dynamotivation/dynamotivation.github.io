@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Resize separator to initially be slightly wider than the title
 function setHRWidth() {
     if (!stickyContainer.classList.contains('isSticky')) {
-        const titleWidth = pageTitle.offsetWidth;
+        const titleWidth = document.getElementById('pageTitle').offsetWidth;
         progressHr.style.width = `${titleWidth + convertRemToPixels(3.2)}px`;
     }
     else {
