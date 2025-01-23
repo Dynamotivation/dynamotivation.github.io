@@ -27,6 +27,10 @@ body {
     background-color: var(--background-color);
 }
 
+body:has(#sidebarToggle:checked) {
+    overflow: hidden;
+}
+
 #scroll-bottom-indicator {
     position: sticky;
     bottom: -10px;

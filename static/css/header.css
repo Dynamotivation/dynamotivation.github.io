@@ -244,7 +244,7 @@
 }
 
 @media (max-width: 28rem) {
-    #header:has(.hamburgerToggle:checked)+#hamburgerMenu {
+    #header:has(#sidebarToggle:checked)+#hamburgerMenu {
         right: 0;
     }
 }
@@ -253,19 +253,66 @@
     position: relative;
 }
 
+/* Having these two animations, makes it possible to hide the invisible screen tint when the sidebar is closed to make debugging easier */
+@keyframes snapToVisible {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    0.01% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 0.6;
+    }
+}
+
+@keyframes snapToInvisible {
+    0% {
+        display: block;
+        opacity: 0.6;
+    }
+    99.99% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
 #screenTint {
     width: 100%;
     height: 100%;
     background: black;
     position: fixed;
     z-index: 99;
-    transition: all 0.3s ease;
     opacity: 0;
-    pointer-events: none;
+    display: none;
 }
 
 @media (max-width: 28rem) {
-    #header:has(.hamburgerToggle:checked)+#hamburgerMenu+#screenTint {
-        opacity: 0.6;
+    #header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint {
+        display: block;
+        animation: snapToVisible 0.3s ease forwards;
+    }
+
+    #header:has(#sidebarToggle:not(:checked))+ #hamburgerMenu + #screenTint {
+        animation: snapToInvisible 0.3s ease forwards;
+    }
+}
+
+#sidebarToggleSecondary {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 28rem) {
+    #header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint>#sidebarToggleSecondary {
+        display: block;
     }
 }

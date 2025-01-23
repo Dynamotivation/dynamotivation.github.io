@@ -19,6 +19,13 @@
     display: flex;
 }
 
+@media (max-width: 28rem) {
+    #footer>#footerContainer>#footerTop {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 /* Logos Column */
@@ -28,6 +35,14 @@
     flex-direction: column;
     gap: 1rem;
     margin-right: 5vw;
+}
+
+@media (max-width: 28rem) {
+    #footerContainer>#footerTop>#logos {
+        flex-direction: row;
+        margin: 1rem 0 0 0;
+        width: 40%;
+    }
 }
 
 #footerContainer>#footerTop>#logos>.socialLink {
@@ -67,6 +82,13 @@
     width: 100%;
     margin-right: 3.2rem;
     padding-right: 5vw;
+    max-width: 80vw;
+}
+
+@media (max-width: 28rem) {
+    #footerContainer>#footerTop>#linkColumns {
+        margin-right: 0;
+    }
 }
 
 #footerContainer>#footerTop>#linkColumns>div {
