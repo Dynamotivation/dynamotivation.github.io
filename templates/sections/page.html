@@ -1,12 +1,71 @@
 {% extends "base.html" %}
 
 {% block additionalResources %}
+
+<title>{{ page.title }} | Dynamotivation</title>
 <link rel="stylesheet" href={{ get_url(path="css/sections/page.css" ) }}>
+
+<meta name="title" content="{{ page.title }} | Dynamotivation">
+<meta name="description" content="{{ page.description }}">
+<meta name="author" content="Dynamotivation">
+{% if page.taxonomies %}
+<meta name="keywords" content="{{ page.taxonomies.tags | join(sep=", ") }}">
+{% endif %}
+
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }} | Dynamotivation">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="{{ page.extra.image | default(value=get_url(path='images/fullLogo.svg')) }}">
+<meta property="og:url" content="{{ page.permalink | safe }}">
+<meta property="og:site_name" content="Dynamotivation">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.permalink | safe }}">
+
 <script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    {% block additionalSchema %} {% endblock %}
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "author": {
+        "@type": "Person",
+        "name": "Dynamotivation"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Dynamotivation",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ get_url(path='images/fullLogo.svg') }}"
+        }
+    },
+    "datePublished": "{{ page.date }}",
+    {% if page.updated %}
+    "dateModified": "{{ page.updated }}",
+    {% endif %}
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.permalink | safe }}"
+    }
+    {% if page.image %}
+    ,
+    "image": "{{ page.image }}"
+    {% endif %}
+}
+</script>
+
 {% endblock additionalResources %}
 
 {% block content %}
-<div id="pageContainer">
+<main id="pageContainer">
     <div id="fade-out-top"></div>
     <div id="titleContainer">
         <h1 id="pageTitle">{{ page.title }}</h1>
@@ -18,11 +77,14 @@
         <hr id="progressHr">
     </div>
     <div id="dateContainer">
-        <p id="date">{{ page.date }}</p>
+        <p>Date: {{ page.date }}</p>
+        {% if page.updated %}
+        <p>Updated: {{ page.updated }}</p>
+        {% endif %}
     </div>
     <div id="contentContainer">
         {{ page.content | safe }}
     </div>
     <div id="fade-out-bottom"></div>
-</div>
+</main>
 {% endblock content %}

@@ -2,8 +2,7 @@
 document.getElementById('pageTitle').style.marginBottom = "0";
 document.getElementById('progressHr').style.width = "0";
 document.querySelectorAll('.jsOnly').forEach(function (element) {
-    element.style.display = "block";
-    element.style.visibility = "visible";
+    element.classList.remove('jsOnly');
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -66,4 +65,35 @@ function setHRWidth() {
 
 function convertRemToPixels(rem) {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
+function copyLink(link) {
+    navigator.clipboard.writeText(link);
+    const tooltip = document.createElement('div');
+    tooltip.innerText = "Link copied to clipboard!";
+    tooltip.style.position = 'fixed';
+    tooltip.style.bottom = '20px';
+    tooltip.style.left = '50%';
+    tooltip.style.transform = 'translateX(-50%)';
+    tooltip.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    tooltip.style.color = 'white';
+    tooltip.style.padding = '10px';
+    tooltip.style.borderRadius = '5px';
+    tooltip.style.zIndex = '1000';
+    tooltip.style.opacity = '0';
+    tooltip.style.transition = 'opacity 0.5s';
+    document.body.appendChild(tooltip);
+
+    // Fade in
+    requestAnimationFrame(() => {
+        tooltip.style.opacity = '1';
+    });
+
+    setTimeout(() => {
+        // Fade out
+        tooltip.style.opacity = '0';
+        tooltip.addEventListener('transitionend', () => {
+            document.body.removeChild(tooltip);
+        });
+    }, 2000);
 }

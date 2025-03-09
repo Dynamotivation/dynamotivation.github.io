@@ -5,7 +5,7 @@
     --accent-color-alt: #3DFFE5;
     --background-color: #ffffff;
     --footer-color: #2c2c2c;
-    --footer-text-color: #909090;
+    --footer-text-color: #b1b1b1;
     --gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color-alt));
     --gradient-pulse: linear-gradient(45deg, var(--accent-color), 40%, var(--accent-color-alt), 60%);
 }
@@ -27,7 +27,16 @@ body {
     background-color: var(--background-color);
 }
 
+a {
+    word-wrap: break-word;
+}
+
 #scroll-bottom-indicator {
     position: sticky;
     bottom: -10px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }

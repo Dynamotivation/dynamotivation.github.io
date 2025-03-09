@@ -1,8 +1,10 @@
-{% extends "base.html" %}
+{% extends "sections/section_seo.html" %}
 
 {% block additionalResources %}
+
+{{ super() }}
 <link rel="stylesheet" href={{ get_url(path="css/sections/section.css" ) }}>
-<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+
 {% endblock additionalResources %}
 
 {% block content %}
@@ -18,7 +20,7 @@
 {%- set pages = [] %}
 {%- endif %}
 
-<div id="pageContainer">
+<main id="pageContainer">
     <div id="fade-out-top"></div>
     <div id="titleContainer">
         <h1 id="pageTitle">{{ section.title }}</h1>
@@ -54,5 +56,5 @@
     {% endif %}
 
     <div id="fade-out-bottom"></div>
-</div>
+</main>
 {% endblock content %}

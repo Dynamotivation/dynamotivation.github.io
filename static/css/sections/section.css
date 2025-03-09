@@ -71,19 +71,23 @@
 }
 
 .postContainer {
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 1rem;
+    display: flex;
+    width: calc(100% - 2rem); /* Account for margins */
+}
+
+.postLink {
+    flex: 1;
+    display: flex;
 }
 
 .postShadow {
     --gradient-color-1: var(--footer-color);
     --gradient-color-2: var(--footer-color);
-    position: absolute;
-    width: min(95%, calc(var(--page-max-width) * 0.95));
-    margin: 0 0 1rem min(2.5%, calc(var(--page-max-width) * 0.025));
-    height: var(--post-height);
     background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     filter: blur(1rem);
     opacity: 0.5;
+    width: 100%;
 
     transition: --gradient-color-1 .5s, --gradient-color-2 .5s;
 }
@@ -94,16 +98,15 @@
 }
 
 .postBorder {
+    flex: 1;
     --gradient-color-1: var(--footer-color);
     --gradient-color-2: var(--footer-color);
     pointer-events: none; /* Allow hover detection by shadow element */
     position: relative;
-    margin-top: 2.4rem;
     background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     padding: .2rem;
     width: 95%;
-    height: calc(var(--post-height) - .4rem);
-    margin: 0 auto;
+    margin: 0 auto 0 -100%; /* Adjusted margin to be -50% of its own size */
     border-radius: 1rem;
 
     transition: --gradient-color-1 .5s, --gradient-color-2 .5s;

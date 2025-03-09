@@ -1,8 +1,10 @@
-{% extends "base.html" %}
+{% extends "sections/section_seo.html" %}
 
 {% block additionalResources %}
+
+{{ super() }}
 <link rel="stylesheet" href={{ get_url(path="css/sections/projects/software/section.css" ) }}>
-<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+
 {% endblock additionalResources %}
 
 {% block content %}
