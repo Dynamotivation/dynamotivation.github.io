@@ -1,15 +1,15 @@
-<div id="header">
+<header>
     <div id="headerContent">
         <a id="logoLink" href="/" title="Home">
             <div>
-                <img id="logo" src={{ get_url(path="images/innerLogoForeground.svg" ) }} alt="Dynamotivation Logo"
+                <img id="logo" src={{ get_url(path="images/innerLogo.svg" ) }} alt="Dynamotivation Logo Foreground"
                     draggable="false">
-                <img id="logoDuplicate" src={{ get_url(path="images/innerLogoBackground.svg" ) }} draggable="false">
+                <img id="logoDuplicate" src={{ get_url(path="images/innerLogoBackground.svg" ) }} alt="Dynamotivation Logo Background" draggable="false" aria-hidden="true">
             </div>
         </a>
 
         <nav id="sectionLinks">
-            {% include 'partials/section_links.html' %}
+            {{ section_links::section_links(tabbing=true) }}
         </nav>
 
         <nav id="userLinks">
@@ -30,10 +30,12 @@
             </svg>
         </div>
     </div>
-</div>
-<div id="hamburgerMenu">
-    {% include 'partials/section_links.html' %}
-</div>
+</header>
+
+<nav id="hamburgerMenu">
+    {{ section_links::section_links(tabbing=false) }}
+</nav>
+
 <div id="screenTint">
-    <label for="sidebarToggle" id="sidebarToggleSecondary"></label>
+    <label for="sidebarToggle" id="sidebarToggleSecondary" aria-hidden="true">Hitbox</label> 
 </div>

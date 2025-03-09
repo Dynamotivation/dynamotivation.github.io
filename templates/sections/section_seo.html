@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block additionalResources %}
+
+{% if section.title %}
+<title>{{ section.title }}</title>
+{% endif %}
+{% if section.description %}
+<meta name="description" content="{{ section.description }}">
+{% endif %}
+<meta name="author" content="Dynamotivation">
+{% if section.taxonomies %}
+<meta name="keywords" content="{{ section.taxonomies.tags | join(sep=" , ") }}">
+{% endif %}
+
+<!-- OpenGraph -->
+{% if section.title %}
+<meta property="og:title" content="{{ section.title }}">
+{% endif %}
+{% if section.description %}
+<meta property="og:description" content="{{ section.description }}">
+{% endif %}
+<meta property="og:image" content="{{ section.extra.image | default(value=get_url(path='images/fullLogo.svg')) }}">
+<meta property="og:url" content="{{ section.permalink | safe }}">
+<meta property="og:site_name" content="Dynamotivation">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+
+<!-- Canonical URL (Avoid duplicate content issues) -->
+<link rel="canonical" href="{{ section.permalink | safe }}">
+
+<script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      {% block additionalSchema %} {% endblock %}
+      {% if section.title %}
+      "headline": "{{ section.title }}",
+      {% endif %}
+      {% if section.description %}
+      "description": "{{ section.description }}",
+      {% endif %}
+      "author": {
+          "@type": "Person",
+          "name": "Dynamotivation"
+      },
+      "publisher": {
+          "@type": "Organization",
+          "name": "Dynamotivation",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "{{ get_url(path='images/fullLogo.svg') }}"
+          }
+      },
+      {% if section.date %}
+      "datePublished": "{{ section.date }}",
+      {% endif %}
+      {% if page.updated %}
+      "dateModified": "{{ section.updated }}",
+      {% endif %}
+      {% if section.image %}
+      "image": "{{ section.image }}",
+      {% endif %}
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ section.permalink | safe }}"
+      }
+  }
+  </script>
+
+  {% endblock additionalResources %}

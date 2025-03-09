@@ -8,6 +8,12 @@
     margin: 25vh auto 50vh auto;
 }
 
+@media (max-width: 30rem) {
+    #pageContainer {
+        margin: 15vh auto 25vh auto; 
+    }
+}
+
 #pageContainer>#titleContainer {
     display: block;
     max-width: 45.5rem;
@@ -21,7 +27,7 @@
     margin: 0 0 .7rem 0;
     font-size: 3rem;
     width: auto;
-    display: inline;
+    display: inline-block;
 }
 
 #pageContainer>#titleContainer>noscript>hr,
@@ -69,7 +75,7 @@
 #fade-out-top {
     position: sticky;
     height: 2.8rem;
-    top: 3.9rem; /*Header height + margins*/
+    top: calc(3.9rem - 1px); /*Header height + margins - pixel because of rounding issue*/
     left: 0;
     width: 100%;
     background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, var(--background-color) 70%, var(--background-color) 100%);
@@ -98,4 +104,41 @@
     font-weight: bold;
     margin: 6rem 0 2rem 0;
     display: block;
+}
+
+@media (max-width: 30rem) {
+    .blogImage {
+        min-width: 100%;
+    }
+}
+
+/* Section headings */
+.howto-step {
+    display: flex;
+    align-items: center;
+}
+
+.howto-step a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.howto-step h2 {
+    margin: 0;
+}
+
+.copy-anchor-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin: -1rem 0;
+}
+
+.howto-step:hover .copy-anchor-button {
+    display: inline-block;
+}
+
+.hidden-text {
+    display: none;
 }

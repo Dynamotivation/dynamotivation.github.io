@@ -1,0 +1,11 @@
+<div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#{{ name | slugify }}">
+            <h2 tabindex="0" id="{{ name | slugify }}">{{ name }}</h2>
+        </a>
+        <button onclick="copyLink('{{ name | slugify }}')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="{{ name }}">
+    <div itemprop="text" class="hidden-text">{{ description }}</div>
+    <div itemprop="text">{{ body | markdown | safe }}</div>
+</div>
