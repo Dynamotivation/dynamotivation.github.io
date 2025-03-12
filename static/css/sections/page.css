@@ -125,6 +125,7 @@
 
 .howto-step h2 {
     margin: 0;
+    scroll-margin-top: 6rem;
 }
 
 .copy-anchor-button {
@@ -135,7 +136,8 @@
     margin: -1rem 0;
 }
 
-.howto-step:hover .copy-anchor-button {
+.howto-step:hover .copy-anchor-button,
+.howto-step:focus-within .copy-anchor-button {
     display: inline-block;
 }
 
