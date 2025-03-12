@@ -9,7 +9,7 @@ footer {
 }
 
 footer>#footerContainer {
-    margin-bottom: 1rem;
+    margin: .7rem;
 }
 
 footer>#footerContainer>#footerTop {
@@ -79,6 +79,7 @@ footer>#footerContainer>#footerTop {
 #footerContainer>#footerTop>#linkColumns {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     width: 100%;
     margin-right: 3.2rem;
     padding-right: 5vw;

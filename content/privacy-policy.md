@@ -2,7 +2,7 @@
 title = "Privacy Notice"
 path = "privacy-notice"
 template = "sections/page.html"
-date = 2025-02-25
+updated = 2025-02-25
 +++
 
 {{ big_heading(name="Website Hosting") }}

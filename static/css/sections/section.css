@@ -1,5 +1,4 @@
 :root {
-    --page-max-width: 50rem;
     --post-height: 12rem;
 }
 
@@ -8,7 +7,7 @@
 }
 
 #pageContainer {
-    max-width: var(--page-max-width);
+    max-width: min(65rem, 90vw);
     margin: 10vh auto 50vh auto;
 }
 
@@ -106,7 +105,7 @@
     background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
     padding: .2rem;
     width: 95%;
-    margin: 0 auto 0 -100%; /* Adjusted margin to be -50% of its own size */
+    margin: 0 auto 0 -100%;
     border-radius: 1rem;
 
     transition: --gradient-color-1 .5s, --gradient-color-2 .5s;
