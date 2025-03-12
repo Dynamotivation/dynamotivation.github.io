@@ -2,6 +2,7 @@
 title = "Third Party Licenses"
 path = "third-party-licenses"
 template = "sections/page.html"
+updated = 2025-01-19
 +++
 
 {{ big_heading(name="Rubik Font") }}

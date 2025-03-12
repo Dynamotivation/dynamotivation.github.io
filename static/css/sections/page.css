@@ -94,7 +94,8 @@
     z-index: 1;
 }
 
-#contentContainer * {
+#contentContainer p,
+#contentContainer span {
     font-size: 1.1rem;
     line-height: 1.8rem;
 }
@@ -104,6 +105,7 @@
     font-weight: bold;
     margin: 6rem 0 2rem 0;
     display: block;
+    line-height: 3rem;
 }
 
 @media (max-width: 30rem) {
@@ -132,13 +134,14 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    display: none;
-    margin: -1rem 0;
+    visibility: hidden;
+    margin: 6rem 0 auto 0;
+    font-size: 2.5rem;
 }
 
 .howto-step:hover .copy-anchor-button,
 .howto-step:focus-within .copy-anchor-button {
-    display: inline-block;
+    visibility: visible;
 }
 
 .hidden-text {
