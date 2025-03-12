@@ -67,7 +67,8 @@ function convertRemToPixels(rem) {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
-function copyLink(link) {
+function copyLink(id) {
+    const link = `${window.location.origin}${window.location.pathname}#${id}`;
     navigator.clipboard.writeText(link);
     const tooltip = document.createElement('div');
     tooltip.innerText = "Link copied to clipboard!";
