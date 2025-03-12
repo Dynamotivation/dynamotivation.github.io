@@ -249,7 +249,7 @@ header .socialLink:hover>img {
         opacity: 1;
     }
 
-    #header:has(#sidebarToggle:checked)+#hamburgerMenu {
+    header:has(#sidebarToggle:checked)+#hamburgerMenu {
         right: 0;
     }
 }
@@ -269,12 +269,12 @@ header .socialLink:hover>img {
 }
 
 @media (max-width: 30rem) {
-    #header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint {
+    header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint {
         opacity: 0.6;
         width: 100%;
     }
 
-    #header:has(#sidebarToggle:not(:checked))+ #hamburgerMenu + #screenTint {
+    header:has(#sidebarToggle:not(:checked))+ #hamburgerMenu + #screenTint {
         opacity: 0;
         width: 0;
         /* This is literally just here so we can get the tint out of the way for easier element inspection */
@@ -294,7 +294,7 @@ header .socialLink:hover>img {
 }
 
 @media (max-width: 30rem) {
-    #header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint>#sidebarToggleSecondary {
+    header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint>#sidebarToggleSecondary {
         display: block;
     }
 }
