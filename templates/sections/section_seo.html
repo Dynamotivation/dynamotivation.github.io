@@ -20,7 +20,7 @@
 {% if section.description %}
 <meta property="og:description" content="{{ section.description }}">
 {% endif %}
-<meta property="og:image" content="{{ section.extra.image | default(value=get_url(path='images/fullLogo.svg')) }}">
+<meta property="og:image" content="{{ section.extra.image | default(value=get_url(path='images/fullLogo.png')) }}">
 <meta property="og:url" content="{{ section.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
@@ -50,7 +50,7 @@
           "name": "Dynamotivation",
           "logo": {
               "@type": "ImageObject",
-              "url": "{{ get_url(path='images/fullLogo.svg') }}"
+              "url": "{{ get_url(path='images/fullLogo.png') }}"
           }
       },
       {% if section.date %}
