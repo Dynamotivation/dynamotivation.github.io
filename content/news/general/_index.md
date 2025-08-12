@@ -1,8 +1,8 @@
 +++
 
-title = "All News"
+title = "General News"
 
-description = "News about upcoming projects and updates."
+description = "General news about Dynamotivation."
 
 # A draft section is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
 draft = false
@@ -59,7 +59,7 @@ render = true
 # If set to "true", the section will pass its pages on to the parent section. Defaults to `false`.
 # Useful when the section shouldn't split up the parent section, like
 # sections for each year under a posts section.
-transparent = false
+transparent = true
 
 # Use aliases if you are moving content but want to redirect previous URLs to the
 # current one. This takes an array of paths, not URLs.
