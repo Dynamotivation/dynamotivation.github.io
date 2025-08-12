@@ -2,12 +2,19 @@
 
 {% block additionalResources %}
 
+<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+
 <title>{{ page.title }} | Dynamotivation</title>
 <link rel="stylesheet" href={{ get_url(path="css/sections/page.css" ) }}>
 
 <meta name="title" content="{{ page.title }} | Dynamotivation">
+
+{% if page.extra.in_sitemap is defined and page.extra.in_sitemap == false %}
+<meta name="robots" content="noindex, nofollow">
+{% else %}
 <meta name="description" content="{{ page.description }}">
 <meta name="author" content="Dynamotivation">
+
 {% if page.taxonomies %}
 <meta name="keywords" content="{{ page.taxonomies.tags | join(sep=", ") }}">
 {% endif %}
@@ -26,8 +33,6 @@
 
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ page.permalink | safe }}">
-
-<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
 
 <script type="application/ld+json">
 {
@@ -60,6 +65,7 @@
     "image": "{{ page.image }}"
     {% endif %}
 }
+{% endif %}
 </script>
 
 {% endblock additionalResources %}
