@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title> - All News</title>
+      <link>https://dynamotivation.com/news/</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://dynamotivation.com/news/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>RSS and Atom Feeds Are Now Available</title>
+          <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/</link>
+          <guid>https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/</guid>
+          <description xml:base="https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/">&lt;p&gt;RSS and Atom feeds will be rolled out for all categories and aggregate categories of content.&lt;br &#x2F;&gt;
+You can now easily get notified by your favorite reader apps about new posts!&lt;&#x2F;p&gt;
+&lt;p&gt;For the time being, please add &quot;&#x2F;atom.xml&quot; or &quot;&#x2F;rss.xml&quot; to the URL of the desired category to subscribe.&lt;br &#x2F;&gt;
+Example: &lt;a href=&quot;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;rss.xml&quot;&gt;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;rss.xml&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;atom.xml&quot;&gt;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;atom.xml&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Feed buttons for easier integration will be added to the category pages shortly.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

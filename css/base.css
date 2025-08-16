@@ -1,0 +1,41 @@
+:root {
+    --main-color: #ff4c4a;
+    --main-color-dark: #893750;
+    --accent-color: #4AFF83;
+    --accent-color-alt: #3DFFE5;
+    --background-color: #ffffff;
+    --footer-color: #2c2c2c;
+    --footer-text-color: #b1b1b1;
+    --gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color-alt));
+    --gradient-pulse: linear-gradient(45deg, var(--accent-color), 40%, var(--accent-color-alt), 60%);
+}
+
+* {
+    font-family: Rubik;
+}
+
+html,
+body,
+div,
+head {
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    word-wrap: break-word;
+}
+
+#scroll-bottom-indicator {
+    position: sticky;
+    bottom: -10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

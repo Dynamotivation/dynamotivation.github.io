@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - General News</title>
+    <link rel="self" type="application/atom+xml" href="https://dynamotivation.com/news/general/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dynamotivation.com/news/general/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-08-16T00:00:00+00:00</updated>
+    <id>https://dynamotivation.com/news/general/atom.xml</id>
+    <entry xml:lang="en">
+        <title>RSS and Atom Feeds Are Now Available</title>
+        <published>2025-08-16T00:00:00+00:00</published>
+        <updated>2025-08-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/"/>
+        <id>https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/</id>
+        
+        <content type="html" xml:base="https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/">&lt;p&gt;RSS and Atom feeds will be rolled out for all categories and aggregate categories of content.&lt;br &#x2F;&gt;
+You can now easily get notified by your favorite reader apps about new posts!&lt;&#x2F;p&gt;
+&lt;p&gt;For the time being, please add &quot;&#x2F;atom.xml&quot; or &quot;&#x2F;rss.xml&quot; to the URL of the desired category to subscribe.&lt;br &#x2F;&gt;
+Example: &lt;a href=&quot;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;rss.xml&quot;&gt;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;rss.xml&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;atom.xml&quot;&gt;https:&#x2F;&#x2F;dynamotivation.com&#x2F;news&#x2F;atom.xml&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Feed buttons for easier integration will be added to the category pages shortly.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
