@@ -147,3 +147,23 @@
 .hidden-text {
     display: none;
 }
+
+/* --- Table Styling --- */
+div > table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+div > table td {
+    padding: 0.625rem;
+    vertical-align: top;
+}
+
+div > table td > img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
