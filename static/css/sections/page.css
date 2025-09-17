@@ -5,12 +5,12 @@
 
 #pageContainer {
     max-width: min(65rem, 90vw);
-    margin: 25vh auto 50vh auto;
+    margin: min(25vh, 15rem) auto 50vh auto;
 }
 
 @media (max-width: 30rem) {
     #pageContainer {
-        margin: 15vh auto 25vh auto; 
+        margin: min(15vh, 15rem) auto 25vh auto; 
     }
 }
 
@@ -28,6 +28,12 @@
     font-size: 3rem;
     width: auto;
     display: inline-block;
+}
+
+@media (max-width: 30rem) {
+    #pageContainer #pageTitle {
+        font-size: 2.5rem;
+    }
 }
 
 #pageContainer>#titleContainer>noscript>hr,
@@ -109,6 +115,12 @@
 }
 
 @media (max-width: 30rem) {
+    #contentContainer .bigHeading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 30rem) {
     .blogImage {
         min-width: 100%;
     }
@@ -146,6 +158,10 @@
 
 .hidden-text {
     display: none;
+}
+
+h1 {
+    word-break: break-word;
 }
 
 /* --- Table Styling --- */
