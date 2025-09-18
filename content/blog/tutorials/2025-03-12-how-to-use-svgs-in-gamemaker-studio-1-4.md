@@ -1,7 +1,6 @@
 +++
 title = "How to Use SVG Vector Graphics in any Version of GameMaker + Studio 1.4 & 2"
 description = "This tutorial will teach you how to convert SVG files to SWF files for use in GameMaker, GameMaker Studio 2, and GameMaker: Studio 1.4"
-updated = "2026-01-01"
 +++
 
 GameMaker has supported vector graphics for a long time, but few people know how to use them due to the ancient format we are stuck with.\
