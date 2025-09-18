@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /legal-notice.html
+Allow: /
+Sitemap: https://dynamotivation.com/sitemap.xml
