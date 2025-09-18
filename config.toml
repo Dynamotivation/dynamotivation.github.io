@@ -13,6 +13,7 @@ generate_sitemap = true
 # When set to "false", robots.txt is not generated
 generate_robots_txt = true
 
+generate_feeds = true
 feed_filenames = ["rss.xml", "atom.xml"]
 
 [markdown]
