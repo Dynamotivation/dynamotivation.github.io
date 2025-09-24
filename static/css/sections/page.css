@@ -120,9 +120,15 @@
     }
 }
 
+.blogImage {
+    min-width: 15rem;
+    max-width: 50vw;
+}
+
 @media (max-width: 30rem) {
     .blogImage {
         min-width: 100%;
+        max-width: unset;
     }
 }
 
@@ -164,7 +170,39 @@ h1 {
     word-break: break-word;
 }
 
-/* --- Table Styling --- */
+ul {
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
+}
+
+@media (max-width: 30rem) {
+    ul {
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+    }
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Image List Styling --- */
+.blogImageList {
+    display: flex;
+}
+
+.blogImageList > div {
+    padding: 0.625rem;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.blogImageList .blogImage {
+    min-width: unset;
+}
+
+/* --- To be removed, replaced by above --- */
 div > table {
     width: 100%;
     border-collapse: collapse;
@@ -172,7 +210,6 @@ div > table {
 }
 
 div > table td {
-    padding: 0.625rem;
     vertical-align: top;
 }
 

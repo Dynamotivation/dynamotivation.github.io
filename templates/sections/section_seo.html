@@ -38,9 +38,7 @@
       {% if section.title %}
       "headline": "{{ section.title }}",
       {% endif %}
-      {% if section.description %}
-      "description": "{{ section.description }}",
-      {% endif %}
+      {% if section.description %}"description": "{{ section.description }}",{% endif %}
       "author": {
           "@type": "Person",
           "name": "Dynamotivation"

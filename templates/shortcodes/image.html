@@ -1,3 +1,2 @@
-<div>
-    <img src="{{ path }}" alt="{{ description }}" style="height: {{ heightPixels }}; width: {{ scalePercentage }}%;{% if radius %}border-radius: {{ radius }};{% endif %}{% if rendering %}image-rendering: {{ rendering }};{% endif %}" class="blogImage">
-</div>
+<img src="{{ path }}" alt="{{ description }}" {% if itemprop %}itemprop="{{itemprop}}"{% endif %} style="{% if height %}height: calc({{ height }} * {{ scalePercentage | default(value=100) }} / 100);{% endif %} {% if width %}width: calc({{ width }} * {{ scalePercentage | default(value=100) }} / 100);{% endif %}{% if radius %}border-radius: {{ radius }};{% endif %}{% if rendering %}image-rendering: {{ rendering }};{% endif %}" class="blogImage">
+{% if figcaption %}<figcaption>{{ description }}</figcaption>{% endif %}

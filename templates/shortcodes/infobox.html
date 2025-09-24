@@ -1,0 +1,8 @@
+<aside class="infobox">
+    {% if title %}
+        <h3 class="infobox-title">{{ title }}</h3>
+    {% endif %}
+    <div class="infobox-content">
+        {{ body | safe }}
+    </div>
+</aside>

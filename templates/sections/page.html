@@ -2,10 +2,12 @@
 
 {% block additionalResources %}
 
-<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
-
 <title>{{ page.title }} | Dynamotivation</title>
 <link rel="stylesheet" href={{ get_url(path="css/sections/page.css" ) }}>
+{% block moreAdditionalResources %} {% endblock %}
+
+<script src={{ get_url(path="js/blogPage.js" ) }} defer></script>
+
 
 <meta name="title" content="{{ page.title }} | Dynamotivation">
 
@@ -60,9 +62,9 @@
         "@type": "WebPage",
         "@id": "{{ page.permalink | safe }}"
     }
-    {% if page.image %}
+    {% if page.extra.logo %}
     ,
-    "image": "{{ page.image }}"
+    "image": "{{ page.extra.logo | safe }}"
     {% endif %}
 }
 {% endif %}

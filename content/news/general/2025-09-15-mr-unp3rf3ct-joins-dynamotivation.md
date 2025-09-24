@@ -4,7 +4,7 @@ title = "Mr. Unp3rf3ct Joins Dynamotivation"
 description = "Mr. Unp3rf3ct's legacy applications are joining the Dynamotivation family."
 +++
 
-{{ image(path="https://ucarecdn.com/8edbe6b7-c42f-4004-8b45-806e0fb93d5a/DynamotivationXMrUnp3rf3ct.svg", widthPixels="1920", heightPixels="1080", scalePercentage="100", description="Mr. Unp3rf3ct joins Dynamotivation", radius="1rem") }}
+{{ image(path="https://ucarecdn.com/8edbe6b7-c42f-4004-8b45-806e0fb93d5a/DynamotivationXMrUnp3rf3ct.svg", width="1920", height="1080", scalePercentage="100", description="Mr. Unp3rf3ct joins Dynamotivation", radius="1rem") }}
 
 Today it's a pleasure to announce the applications of Mr. Unp3rf3ct are joining the Dynamotivation portfolio!
 
@@ -26,10 +26,10 @@ This means that there will be no need to rebuild assets or recreate core functio
     <table>
         <tr>
             <td>
-                {{ image(path="https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif", widthPixels="512", heightPixels="512", scalePercentage="100", description="...Joins the Battle! Meme Generator Logo", radius="20%") }}
+                {{ image(path="https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif", width="512", height="512", scalePercentage="100", description="...Joins the Battle! Meme Generator Logo", radius="20%") }}
             </td>
             <td>
-                {{ image(path="https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif", widthPixels="512", heightPixels="512", scalePercentage="100", description="Geo Background Generator Logo", radius="20%") }}
+                {{ image(path="https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif", width="512", height="512", scalePercentage="100", description="Geo Background Generator Logo", radius="20%") }}
             </td>
         </tr>
         <tr>
@@ -69,10 +69,10 @@ That said, sadly not all apps can be brought back.
     <table>
         <tr>
             <td>
-                {{ image(path="https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp", widthPixels="96", heightPixels="96", scalePercentage="100", description="O.S.S.: Space Adventure Logo", radius="20%", rendering="pixelated") }}
+                {{ image(path="https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp", width="96", height="96", scalePercentage="100", description="O.S.S.: Space Adventure Logo", radius="20%", rendering="pixelated") }}
             </td>
             <td>
-                {{ image(path="https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif", widthPixels="512", heightPixels="512", scalePercentage="100", description="BenPlaysGames Soundboard Logo", radius="20%") }}
+                {{ image(path="https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif", width="512", height="512", scalePercentage="100", description="BenPlaysGames Soundboard Logo", radius="20%") }}
             </td>
         </tr>
         <tr>

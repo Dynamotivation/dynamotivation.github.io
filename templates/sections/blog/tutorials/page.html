@@ -1,5 +1,11 @@
 {% extends "sections/page.html" %}
 
 {% block additionalSchema %}
-"@type": "HowTo",
+"@type": "SoftwareApplication",
+{% if page.extra.operatingSystem %}"operatingSystem": "{{ page.extra.operatingSystem }}",{% endif %}
+{% if page.extra.applicationCategory %}"applicationCategory": "{{ page.extra.applicationCategory }}",{% endif %}
+{% if page.extra.releaseNotes %}"releaseNotes": "{{ page.extra.releaseNotes }}",{% endif %}
+{% if page.extra.programmingLanguage %}"programmingLanguage": "{{ page.extra.programmingLanguage }}",{% endif %}
+{% if page.extra.developmentEnvironment %}"developmentEnvironment": "{{ page.extra.developmentEnvironment }}",{% endif %}
+{% if page.extra.license %}"license": "{{ page.extra.license }}",{% endif %}
 {% endblock %}
