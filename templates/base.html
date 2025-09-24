@@ -20,8 +20,27 @@
     <link rel="stylesheet" href={{ get_url(path="css/base.css" ) }}>
     <link rel="stylesheet" href={{ get_url(path="css/header.css" ) }}>
     <link rel="stylesheet" href={{ get_url(path="css/footer.css" ) }}>
-    <script src={{ get_url(path="js/fixOverscroll.js" ) }} defer></script>
-    <link rel="icon" href={{ get_url(path="images/innerLogo.svg") }} type="image/svg+xml">
+    <script src={{ get_url(path="js/fixOverscroll.js") }} defer></script>
+
+    <!-- Favicon PNGs for different sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href={{ get_url(path="favicon/favicon-32x32.png") }} />
+    <link rel="icon" type="image/png" sizes="48x48" href={{ get_url(path="favicon/favicon-48x48.png") }} />
+    <link rel="icon" type="image/png" sizes="96x96" href={{ get_url(path="favicon/favicon-96x96.png") }} />
+    <link rel="icon" type="image/png" sizes="192x192" href={{ get_url(path="favicon/favicon-192x192.png") }} />
+    <link rel="icon" type="image/png" sizes="512x512" href={{ get_url(path="favicon/favicon-512x512.png") }} />
+
+    <!-- SVG for modern browsers -->
+    <link rel="icon" type="image/svg+xml" href={{ get_url(path="images/favicon.svg") }} />
+
+    <!-- Legacy ICO fallback -->
+    <link rel="shortcut icon" href={{ get_url(path="images/favicon.ico") }} />
+
+    <!-- iOS home screen -->
+    <link rel="apple-touch-icon" sizes="180x180" href={{ get_url(path="images/apple-touch-icon.png") }} />
+    <meta name="apple-mobile-web-app-title" content="Dynamotivation" />
+
+    <!-- Progressive Web App -->
+    <link rel="manifest" href={{ get_url(path="images/site.webmanifest") }} />
     {% block additionalResources %} {% endblock %}
 </head>
 
