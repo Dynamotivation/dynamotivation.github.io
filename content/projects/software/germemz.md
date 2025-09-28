@@ -15,18 +15,16 @@ applicationCategory = "MobileApplication"
 releaseNotes = "Unreleased"
 programmingLanguage = "Java"
 developmentEnvironment = "Android Studio"
-license = "Closed Source (Preserved - Decompiled)"
+license = "Closed Source (Source Code Decompiled)"
 +++
 
 {% infobox(title="GerMemz") %}
 {{ image(path="https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif", width="512", height="512", scalePercentage="10", description="GerMemz Logo") }}
 <dl>
-    <dt>Developer</dt>
-    <dd>Dynamotivation</dd>
     <dt>Availability</dt>
     <dd>Unreleased</dd>
-    <dt>Initial release</dt>
-    <dd>13 February 2017</dd>
+    <dt>Initial development</dt>
+    <dd>February 13, 2017</dd>
     <dt>Development Environment</dt>
     <dd>Android Studio</dd>
     <dt>Written in</dt>
@@ -45,7 +43,7 @@ license = "Closed Source (Preserved - Decompiled)"
 
 ---
 
-Development for *GerMemz* commenced around early to mid 2017 at age 15, with the first proof of concept build created on February 13, 2017.
+Development for *GerMemz* commenced around early 2017 at age 14, with the first proof of concept build created on February 13, 2017.
 
 It was written in Java utilising Android Studio.
 
