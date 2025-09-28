@@ -1,0 +1,103 @@
+.infobox {
+    --infobox-border-color: #d6d6d6;
+    --infobox-title-bg: #f2f2f2;
+    --infobox-text-color: #333;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+
+    float: right;
+    width: 20rem;
+    margin: 1rem 0 1rem 2rem;
+    padding: 0;
+    border: 0.0625rem solid var(--infobox-border-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background-color: var(--background-color, #fff);
+    color: var(--infobox-text-color);
+    overflow: hidden;
+}
+
+.infobox-title {
+    margin: 0;
+    padding: 0.8rem 1rem;
+    background-color: var(--infobox-title-bg);
+    border-bottom: 0.0625rem solid var(--infobox-border-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color-dark);
+}
+
+.infobox-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.infobox-content > img {
+    margin: 0 auto;
+    max-width: calc(20rem - 2rem); /* Adjust for padding */
+    min-width: unset;
+}
+
+.infobox-content dl {
+    margin: 1rem auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.5rem 1rem;
+    max-width: calc(20rem - 3rem); /* Adjust for padding and gap */
+}
+
+.infobox-content dt {
+    font-weight: 700;
+    color: var(--main-color-dark);
+    text-align: left;
+}
+
+.infobox-content dd {
+    margin-left: 0;
+    text-align: left;
+}
+
+.infobox-content dd ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.infobox-content dd ul li {
+    margin-bottom: 0.2rem;
+}
+
+.infobox-content dd a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.infobox-content dd a:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
+}
+
+@media (max-width: 40rem) {
+    .infobox {
+        float: none;
+        width: 100%;
+        margin: 1.5rem auto;
+        box-sizing: border-box;
+    }
+
+    .infobox-content dd {
+        text-align: right;
+    }
+
+    aside.infobox .infobox-content > div {
+        max-width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
