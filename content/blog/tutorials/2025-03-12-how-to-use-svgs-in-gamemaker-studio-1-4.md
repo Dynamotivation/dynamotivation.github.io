@@ -35,16 +35,29 @@ First of all, use **Inkscape** or something else to create your SVG.
 Set the canvas size to the size you'd want the sprite to be in GameMaker. Make sure nothing is outside of the canvas.
 When saving the file, make sure to save a copy as a **plain / normal SVG**, **not** as an optimized or "Inkscape SVG" this ensures the other tools understand your file.
 
-{{ image(path="https://ucarecdn.com/99d9b5b8-ea3d-490e-bff4-dd3e0bf5a621/saveAsPlainSvg.webp", width="363", height="395", scalePercentage="50", description="Selecting the correct export format in Inkscape") }}
+{{ image(
+    path="https://ucarecdn.com/99d9b5b8-ea3d-490e-bff4-dd3e0bf5a621/saveAsPlainSvg.webp",
+    width="50%",
+    imageWidthPx=363,
+    imageHeightPx=395,
+    description="Selecting the correct export format in Inkscape"
+) }}
+
 *Note how almost all file types end in .svg, yet the difference is in their metadata, encoding, and compression.*
 
 {% end %}
 
 {% step(name="Step 2a: reaConverter Online", description="Use reaConverter online to convert your SVG to an SWF file") %}
 
-Next, use reaConverter online to convert your SVG to an SWF file.\
+Next, use reaConverter online to convert your SVG to an SWF file.
 
-{{ image(path="https://ucarecdn.com/c97b7d28-d37f-4378-880c-90a2596cb8d2/reaConverterWeb.webp", width="468", height="473", scalePercentage="50", description="Screenshot from the reaConverter online website.") }}
+{{ image(
+    path="https://ucarecdn.com/c97b7d28-d37f-4378-880c-90a2596cb8d2/reaConverterWeb.webp",
+    width="50%",
+    imageWidthPx=468,
+    imageHeightPx=473,
+    description="Screenshot from the reaConverter online website."
+) }}
 
 Normally I'd advise you NOT to use online converters for data protection reasons, but here it's by far the easiest and most straightforward way. So go ahead.
 I've tried out dozens of websites, but there's only one that actually works - when it works!
@@ -94,7 +107,13 @@ You'll have to install JPEXS on your PC for this to work.
 
 Just import your SWF into JPEXS to delete the added background layer(s) and save/recompile the SWF file.
 
-{{ image(path="https://ucarecdn.com/b3ca8a4e-08be-447f-85e0-b9e399bf1309/jpexsRestoreTransparency.webp", width="1000", height="700", scalePercentage="100", description="Screenshot from JPEXS.") }}
+{{ image(
+    path="https://ucarecdn.com/b3ca8a4e-08be-447f-85e0-b9e399bf1309/jpexsRestoreTransparency.webp",
+    width="100%",
+    imageWidthPx=1000,
+    imageHeightPx=700,
+    description="Screenshot from JPEXS."
+) }}
 
 {% end %}
 

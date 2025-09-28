@@ -121,8 +121,8 @@
 }
 
 .blogImage {
-    min-width: 15rem;
-    max-width: 50vw;
+    margin: 0 auto;
+    display: block
 }
 
 @media (max-width: 30rem) {
@@ -184,6 +184,10 @@ ul {
 
 li {
     margin-bottom: 0.5rem;
+}
+
+ul ul {
+    margin-top: 0.5rem;
 }
 
 /* --- Image List Styling --- */

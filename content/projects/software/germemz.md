@@ -1,5 +1,6 @@
 +++
 title = "GerMemz"
+date = 2017-02-13
 
 [extra]
 logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif"
@@ -15,18 +16,22 @@ applicationCategory = "MobileApplication"
 releaseNotes = "Unreleased"
 programmingLanguage = "Java"
 developmentEnvironment = "Android Studio"
-license = "Closed Source (Preserved - Decompiled)"
+license = "Closed Source (Source Code Decompiled)"
 +++
 
 {% infobox(title="GerMemz") %}
-{{ image(path="https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif", width="512", height="512", scalePercentage="10", description="GerMemz Logo") }}
+{{ image(
+    path="https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif",
+    width="100%",
+    description="GerMemz Logo",
+    imageWidthPx=512,
+    imageHeightPx=512
+) }}
 <dl>
-    <dt>Developer</dt>
-    <dd>Dynamotivation</dd>
     <dt>Availability</dt>
     <dd>Unreleased</dd>
-    <dt>Initial release</dt>
-    <dd>13 February 2017</dd>
+    <dt>Initial development</dt>
+    <dd>February 13, 2017</dd>
     <dt>Development Environment</dt>
     <dd>Android Studio</dd>
     <dt>Written in</dt>
@@ -45,7 +50,7 @@ license = "Closed Source (Preserved - Decompiled)"
 
 ---
 
-Development for *GerMemz* commenced around early to mid 2017 at age 15, with the first proof of concept build created on February 13, 2017.
+Development for *GerMemz* commenced around early 2017 at age 14, with the first proof of concept build created on February 13, 2017.
 
 It was written in Java utilising Android Studio.
 
@@ -80,13 +85,39 @@ The visual design of the application pages was a tweaked, bolder Material Design
         }
     </style>
     <div>
-        {{ image(path="https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif", width="100%", scalePercentage="100", description="GerMemz Main Menu Screenshot", radius="1rem", figcaption="true", itemprop="screenshot") }}
+    {{ image(
+        path="https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
+        width="100%",
+        description="GerMemz Main Menu Screenshot", radius="1rem",
+        figcaption="true",
+        itemprop="screenshot",
+        imageWidthPx=1080,
+        imageHeightPx=1920
+    ) }}
     </div>
     <div>
-        {{ image(path="https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif", width="100%", scalePercentage="100", description="GerMemz Page 1 Screenshot", radius="1rem", figcaption="true", itemprop="screenshot") }}
+    {{ image(
+        path="https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif",
+        width="100%",
+        description="GerMemz Page 1 Screenshot",
+        radius="1rem",
+        figcaption="true",
+        itemprop="screenshot",
+        imageWidthPx=1080,
+        imageHeightPx=1920
+    ) }}
     </div>
     <div>
-        {{ image(path="https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif", width="100%", scalePercentage="100", description="GerMemz Page 2 Screenshot", radius="1rem", figcaption="true", itemprop="screenshot") }}
+    {{ image(
+        path="https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif",
+        width="100%",
+        description="GerMemz Page 2 Screenshot",
+        radius="1rem",
+        figcaption="true",
+        itemprop="screenshot",
+        imageWidthPx=1080,
+        imageHeightPx=1920
+    ) }}
     </div>
 </div>
 

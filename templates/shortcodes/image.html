@@ -1,2 +1,4 @@
-<img src="{{ path }}" alt="{{ description }}" {% if itemprop %}itemprop="{{itemprop}}"{% endif %} style="{% if height %}height: calc({{ height }} * {{ scalePercentage | default(value=100) }} / 100);{% endif %} {% if width %}width: calc({{ width }} * {{ scalePercentage | default(value=100) }} / 100);{% endif %}{% if radius %}border-radius: {{ radius }};{% endif %}{% if rendering %}image-rendering: {{ rendering }};{% endif %}" class="blogImage">
-{% if figcaption %}<figcaption>{{ description }}</figcaption>{% endif %}
+<img src="{{ path }}" alt="{{ description }}" {% if itemprop %}itemprop="{{ itemprop }}"{% endif %} style="{% if height %}height: {{ height }}; {% endif %}{% if width %}width: {{ width }}; {% endif %}{% if imageWidthPx and imageHeightPx %}aspect-ratio: {{ imageWidthPx }} / {{ imageHeightPx }}; {% endif %}{% if radius %}border-radius: {{ radius }}; {% endif %}{% if rendering %}image-rendering: {{ rendering }}; {% endif %}" class="blogImage"/>
+{% if figcaption %}
+  <figcaption>{{ description | markdown(inline=true) | safe }}</figcaption>
+{% endif %}
