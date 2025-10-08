@@ -101,3 +101,18 @@
         margin-right: auto;
     }
 }
+
+/* Only target first-level ULs (exclude ULs nested inside other ULs) */
+ul li {
+    font-weight: bold;
+}
+
+ul ul li {
+    font-weight: normal;
+}
+
+ul > * > ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

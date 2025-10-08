@@ -224,3 +224,7 @@ div > table td > img {
     display: block;
     margin: 0 auto;
 }
+
+figcaption {
+    margin: .5rem;
+}
