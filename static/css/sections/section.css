@@ -112,8 +112,8 @@
 }
 
 .postLink:hover+.postBorder {
-    --gradient-color-1: color-mix(in srgb, var(--accent-color) 90%, black 10%);
-    --gradient-color-2: color-mix(in srgb, var(--accent-color-alt) 90%, black 10%);
+    --gradient-color-1: color-mix(in srgb, var(--accent-color) 80%, var(--footer-color) 20%);
+    --gradient-color-2: color-mix(in srgb, var(--accent-color-alt) 80%, var(--footer-color) 20%);
 }
 
 .postContent {

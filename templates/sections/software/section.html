@@ -3,7 +3,8 @@
 {% block additionalResources %}
 
 {{ super() }}
-<link rel="stylesheet" href={{ get_url(path="css/sections/projects/software/section.css" ) }}>
+<link rel="stylesheet" href={{ get_url(path="css/sections/section.css" ) }}>
+<link rel="stylesheet" href={{ get_url(path="css/sections/projects/software/section-additional.css" ) }}>
 
 {% endblock additionalResources %}
 
@@ -51,11 +52,13 @@
 
         <div class="postBorder">
             <div class="postContent">
-                <img class="logo" src="{{ page.extra["logo"] }}" alt="{{ page.title }} logo">
+                <div class="logoContainer">
+                    <img class="logo" src="{{ page.extra["logo"] }}" alt="{{ page.title }} logo">
+                </div>
                 <div class="postMetadata">
                     <strong class="postTitle">{{ page.title }}</strong>
                     <div class="postDate">
-                        <span>Initial Release</span>
+                        <span>Initial Completion</span>
                         <span>{{ page.date }}</span>
                     </div>
                 </div>
