@@ -25,17 +25,20 @@
     justify-content: space-between;
     max-width: var(--software-section-max-width);
     margin: 0 auto;
+    padding: 2rem 0;
+    overflow: hidden;
 }
 
 .postContainer {
     flex: 1 1 calc(var(--post-min-width) + 1rem);
     max-width: var(--post-max-width);
-    margin: 0 0 2rem 0;
+    margin: 0;
     display: unset;
+    aspect-ratio: var(--post-aspect-ratio);
 }
 
 .postShadow {
-    min-height: var(--post-height);
+    aspect-ratio: var(--post-aspect-ratio);
     filter: blur(.5rem);
     opacity: 0.3;
     position: relative;
@@ -55,9 +58,8 @@
     --gradient-color-1: color-mix(in srgb, var(--footer-color) 80%, var(--background-color) 20%);
     --gradient-color-2: color-mix(in srgb, var(--footer-color) 80%, var(--background-color) 20%);
     pointer-events: none;
-    /* height: calc(var(--post-height) - .4rem); */
     aspect-ratio: var(--post-aspect-ratio);
-    margin: calc(-1 * var(--post-height)) auto 0 auto;
+    margin: -132% auto 0 auto; /* Visually overlap the content and shadow */
 }
 
 .logoContainer {
