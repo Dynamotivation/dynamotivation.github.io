@@ -1,6 +1,6 @@
 +++
 
-title = "Projects"
+title = "Portfolio"
 
 description = "Projects carried out by Dynamotivation."
 

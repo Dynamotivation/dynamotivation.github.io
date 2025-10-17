@@ -53,7 +53,7 @@ license = "Closed Source"
 
 Development for *... Joins the Battle! Meme Generator* first started in October 2018 and continued up till April 2019, using GameMaker Studio 1.4. The project was inspired by a perceived gap in the market: Despite the rising popularity of the "X Joins the Battle!" meme template, especially coinciding with the announcement of a major all-star fighting game, no dedicated feature-rich generator existed.
 
-This application represented a combination of the previous concept "style it yourself", from [Geo Background Generator](/projects/software/geo-background-generator), and riding the popularity of external content, as [GerMemz](/projects/software/germemz) did years prior. Importantly it also carved the way back from game development to traditional software utilities.
+This application represented a combination of the previous concept "style it yourself", from [Geo Background Generator](/portfolio/software/geo-background-generator), and riding the popularity of external content, as [GerMemz](/portfolio/software/germemz) did years prior. Importantly it also carved the way back from game development to traditional software utilities.
 
 
 {{ big_heading(name="Challenges") }}
@@ -71,7 +71,7 @@ Developing *... Joins the Battle! Meme Generator* presented a set of challenges,
     Inheritance structures were an afterthought at first, but were eventually implemented to enable sharing and reuse of components, bringing back the learnings from other Java-based projects. This significantly deepened the understanding and practical application of Object-Oriented Programming (OOP) concepts in a tangible way.
 *   Reuse of components:
     *   These OOP advancements allowed for the efficient creation of different submenus and editors for the different game styles featured in this editor.\
-    In this process the resolution and aspect ratio handling, and UI were spun out into the private Libraries. The *DynaScale Framework* was used and evolved in all future GameMaker projects and *GMS Material Design Lite* was used in [Stellenwerttafel Plus](/projects/software/stellenwerttafel-plus) and backported to [Geo Background Generator](/projects/software/geo-background-generator).
+    In this process the resolution and aspect ratio handling, and UI were spun out into the private Libraries. The *DynaScale Framework* was used and evolved in all future GameMaker projects and *GMS Material Design Lite* was used in [Stellenwerttafel Plus](/portfolio/software/stellenwerttafel-plus) and backported to [Geo Background Generator](/portfolio/software/geo-background-generator).
 
 
 {{ big_heading(name="Features") }}
@@ -223,4 +223,4 @@ The application has been unavailable for several years due to educational and em
 *   Practical object-oriented programming
     *   Deepened understanding of OOP by retroactively implementing inheritance and reusable components, demonstrating the practical application of architectural design for scalability.
 *   Market niche identification
-    *   Proved the ability to identify an underrepresented, yet marketable market niche and develop a highly successful product to fill it, unlike the copyright setbacks encountered with [GerMemz](/projects/software/germemz).
+    *   Proved the ability to identify an underrepresented, yet marketable market niche and develop a highly successful product to fill it, unlike the copyright setbacks encountered with [GerMemz](/portfolio/software/germemz).
