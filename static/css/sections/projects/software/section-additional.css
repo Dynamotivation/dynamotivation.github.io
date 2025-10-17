@@ -1,10 +1,10 @@
 :root {
     --page-max-width: 50rem;
     --software-section-max-width: 70rem;
-    --post-height: 40rem;
-    --post-min-width: 10rem;
-    --post-max-width: 30rem;
-    --post-aspect-ratio: 30/40;
+    --post-height: 50rem;
+    --post-min-width: 16rem;
+    --post-max-width: 26rem;
+    --post-aspect-ratio: 30/50;
 }
 
 @media (max-width: 42rem) {
@@ -12,6 +12,10 @@
         --post-min-width: 20rem;
         --post-max-width: 40rem;
     }
+}
+
+.container {
+    overflow: clip;
 }
 
 #pageContainer {
@@ -22,11 +26,10 @@
 #postGrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: var(--software-section-max-width);
     margin: 0 auto;
     padding: 2rem 0;
-    overflow: hidden;
 }
 
 .postContainer {
@@ -59,7 +62,7 @@
     --gradient-color-2: color-mix(in srgb, var(--footer-color) 80%, var(--background-color) 20%);
     pointer-events: none;
     aspect-ratio: var(--post-aspect-ratio);
-    margin: -132% auto 0 auto; /* Visually overlap the content and shadow */
+    margin: -165% auto 0 auto; /* Visually overlap the content and shadow */
 }
 
 .logoContainer {
