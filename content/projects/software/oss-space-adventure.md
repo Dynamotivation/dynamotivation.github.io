@@ -20,13 +20,19 @@ license = "Closed Source (Source Code Preserved)"
 +++
 
 {% infobox(title="O.S.S.: Space Adventure") %}
-{{ image(path="https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp", width="100%", description="O.S.S.: Space Adventure Logo", rendering="pixelated", radius="20%") }}
+{{ image(
+    path="https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp",
+    width="100%",
+    description="O.S.S.: Space Adventure Logo",
+    rendering="pixelated",
+    radius="20%"
+) }}
 <dl>
     <dt>Availability</dt>
-    <dd>Unpublished<br>Formerly on Google Play</dd>
+    <dd>Delisted<br>Formerly on Google Play</dd>
     <dt>Initial development</dt>
     <dd>February 25, 2018</dd>
-    <dt>Development Environment</dt>
+    <dt>Development environment</dt>
     <dd>GameMaker Studio 1.4</dd>
     <dt>Written in</dt>
     <dd>GML (GameMaker Language)</dd>

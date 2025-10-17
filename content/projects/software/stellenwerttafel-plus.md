@@ -20,10 +20,16 @@ license = "Closed Source (Source Code Preserved)"
 +++
 
 {% infobox(title="Stellenwerttafel Plus") %}
-{{ image(path="https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif", width="100%", description="Stellenwerttafel Plus Placeholder Image", rendering="pixelated", radius="20%") }}
+{{ image(
+    path="https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif",
+    width="100%",
+    description="Stellenwerttafel Plus Placeholder Image",
+    rendering="pixelated",
+    radius="20%"
+) }}
 <dl>
     <dt>Availability</dt>
-    <dd>Never Released</dd>
+    <dd>Unreleased</dd>
     <dt>Initial development</dt>
     <dd>January 2019</dd>
     <dt>Development environment</dt>
