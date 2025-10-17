@@ -1,0 +1,230 @@
+.jsOnly {
+    display: none;
+    visibility: hidden;
+}
+
+#pageContainer {
+    max-width: min(65rem, 90vw);
+    margin: min(25vh, 15rem) auto 50vh auto;
+}
+
+@media (max-width: 30rem) {
+    #pageContainer {
+        margin: min(15vh, 15rem) auto 25vh auto; 
+    }
+}
+
+#pageContainer>#titleContainer {
+    display: block;
+    max-width: 45.5rem;
+    width: fit-content;
+    position: relative;
+    z-index: 3;
+}
+
+#pageContainer #pageTitle {
+    /* Avoids layout shifting upon unhiding the JsOnly elements, by precomputing their height in the margins */
+    margin: 0 0 .7rem 0;
+    font-size: 3rem;
+    width: auto;
+    display: inline-block;
+}
+
+@media (max-width: 30rem) {
+    #pageContainer #pageTitle {
+        font-size: 2.5rem;
+    }
+}
+
+#pageContainer>#titleContainer>noscript>hr,
+#pageContainer>#stickyContainer>hr
+{
+    width: auto;
+    /* Allowing it to be a bit wider allows us to define negative margins below without awkward cutoffs */
+    max-width: calc(100% + .5rem);
+    height: .7rem;
+    margin: 0 -3rem 0 -.25rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--main-color-dark);
+    position: relative;
+    transition: width .7s ease-out;
+}
+
+#pageContainer>#titleContainer>noscript>hr {
+    /* Max width is page width + negative margins defined above */
+    max-width: min(calc(100% + .5rem + 3.2rem), calc(90vw + 0.5rem));
+    width: calc(100% + 3.2rem);
+}
+
+#stickyContainer {
+    position: sticky;
+    z-index: 2;
+    padding-top: 4.1rem;
+    margin-top: -4.1rem;
+    /* Necessary to allow the observer to detect stickiness */
+    top: -1px;
+}
+
+.isSticky {
+    width: 100%;
+}
+
+.isSticky>#progressHr {
+    margin-right: -.2rem;
+}
+
+#pageContainer>#dateContainer {
+    margin: 2.6rem 0 6rem 0;
+}
+
+#fade-out-top {
+    position: sticky;
+    height: 2.8rem;
+    top: calc(3.9rem - 1px); /*Header height + margins - pixel because of rounding issue*/
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, var(--background-color) 70%, var(--background-color) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#fade-out-bottom {
+    position: sticky;
+    height: 2rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background-color) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#contentContainer p,
+#contentContainer span {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+#contentContainer .bigHeading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 6rem 0 2rem 0;
+    display: block;
+    line-height: 3rem;
+}
+
+@media (max-width: 30rem) {
+    #contentContainer .bigHeading {
+        font-size: 2.5rem;
+    }
+}
+
+.blogImage {
+    margin: 0 auto;
+    display: block
+}
+
+@media (max-width: 30rem) {
+    .blogImage {
+        min-width: 100%;
+        max-width: unset;
+    }
+}
+
+/* Section headings */
+.howto-step {
+    display: flex;
+    align-items: center;
+}
+
+.howto-step a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.howto-step h2 {
+    margin: 0;
+    scroll-margin-top: 6rem;
+}
+
+.copy-anchor-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    margin: 6rem 0 auto 0;
+    font-size: 2.5rem;
+}
+
+.howto-step:hover .copy-anchor-button,
+.howto-step:focus-within .copy-anchor-button {
+    visibility: visible;
+}
+
+.hidden-text {
+    display: none;
+}
+
+h1 {
+    word-break: break-word;
+}
+
+ul {
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
+}
+
+@media (max-width: 30rem) {
+    ul {
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+    }
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+ul ul {
+    margin-top: 0.5rem;
+}
+
+/* --- Image List Styling --- */
+.blogImageList {
+    display: flex;
+}
+
+.blogImageList > div {
+    padding: 0.625rem;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.blogImageList .blogImage {
+    min-width: unset;
+}
+
+/* --- To be removed, replaced by above --- */
+div > table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+div > table td {
+    vertical-align: top;
+}
+
+div > table td > img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    margin: .5rem;
+}
