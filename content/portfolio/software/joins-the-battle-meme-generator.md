@@ -13,25 +13,25 @@ available_on_ios = false
 # SEO
 operatingSystem = "Android"
 applicationCategory = "MobileApplication"
-releaseNotes = "Released"
+releaseNotes = "Delisted from Google Play"
 programmingLanguage = "GameMaker Language"
 developmentEnvironment = "GameMaker Studio 1.4"
 license = "Closed Source"
 +++
 
-{% infobox(title="...Joins the Battle! Meme Generator") %}
+{% infobox(title="... Joins the Battle! Meme Generator") %}
 {{ image(
 	path="https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif",
 	width="100%",
-	description="...Joins the Battle! Meme Generator logo",
+	description="... Joins the Battle! Meme Generator logo",
 	imageWidthPx=512,
 	imageHeightPx=512,
     radius="20%"
 ) }}
 <dl>
     <dt>Availability</dt>
-    <dd>Unreleased</dd>
-    <dt>Initial development</dt>
+    <dd>Delisted<br>Formerly on Google Play</dd>
+    <dt>Initial completion</dt>
     <dd>November 3, 2018</dd>
     <dt>Development environment</dt>
     <dd>GameMaker Studio 1.4</dd>
@@ -199,13 +199,14 @@ The target audience for the generator was broad, encompassing fighting game fans
     </div>
 </div>
 
-{{ big_heading(name="Reception and Status") }}
+
+{{ big_heading(name="Reception and Availability") }}
 
 ---
 
 *... Joins the Battle! Meme Generator* received stellar feedback, achieving an average rating of approximately 4.5 stars across 350,000 installs on Google Play alone, over half a million in total. This success led to a high volume of reviews, user emails, and even attracted multiple sponsorship and acquisition offers, demonstrating its significant impact and popularity within its niche.
 
-The application has been unavailable for several years due to educational and employment obligations, and a disconnect with the initial publisher. However, maintenance has reportedly resumed behind the scenes, with plans for the application to return soon, integrating lessons learned in the years since.
+The application has been unavailable for several years due to educational and employment obligations, and a disconnect with the initial publisher. However, maintenance has resumed behind the scenes, with plans for the application to return soon, integrating lessons learned in the years since.
 
 
 {{ big_heading(name="Lessons Learned") }}

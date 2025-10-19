@@ -23,14 +23,15 @@ license = "Closed Source (Source Code Preserved)"
 {{ image(
     path="https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif",
     width="100%",
-    description="Stellenwerttafel Plus Placeholder Image",
-    rendering="pixelated",
+    imageWidthPx=512,
+    imageHeightPx=512,
+    description="Stellenwerttafel Plus Logo",
     radius="20%"
 ) }}
 <dl>
     <dt>Availability</dt>
     <dd>Unreleased</dd>
-    <dt>Initial development</dt>
+    <dt>Initial completion</dt>
     <dd>January 2019</dd>
     <dt>Development environment</dt>
     <dd>GameMaker Studio 1.4</dd>
@@ -55,7 +56,7 @@ Development for *Stellenwerttafel Plus* took place over a few days in late Janua
 At the time the school faced a challenge: A lack of iPads for IT classes, reliance on old Windows 7 PCs, and prohibition of private phone use met with demand from parents and the curriculum to adequately teach in a digital manner.\
 This necessitated a solution to bring the elected original "Stellenwerttafel" educational tool to cheaper platforms.
 
-For its Windows and Android, GameMaker Studio 1.4 was chosen as the platform after being proven to be viable through [*O.S.S.: Space Adventure*](/portfolio/software/oss-space-adventure) and the [*Everyone Joins The Battle Generator*](/portfolio/software/everyone-joins-the-battle-generator) respectively. This effort addressed the school's immediate needs by extending the live of their old devices. The original "Stellenwerttafel" app, by Ulrich Kortenkamp, was not ported directly, but rather its interactive approach to teaching number systems through visual manipulation remade in the new engine.
+For its Windows and Android, GameMaker Studio 1.4 was chosen as the platform after being proven to be viable through [*O.S.S.: Space Adventure*](/portfolio/software/oss-space-adventure) and the [*... Joins The Battle! Meme Generator*](/portfolio/software/joins-the-battle-meme-generator) respectively. This effort addressed the school's immediate needs by extending the live of their old devices. The original "Stellenwerttafel" app, by Ulrich Kortenkamp, was not ported directly, but rather its interactive approach to teaching number systems through visual manipulation remade in the new engine.
 
 Although development was brought to completion after school within a week and the final result was accepted, the app went ultimately unused due to other teachers disproving the enablement of old devices as a strategy going forwards.\
 Any and all payment in form of credit was refused despite a 1-hour presentation detailing the application's capabilities, mathematical implementations and coding style being explored in detail as proof of work.
@@ -148,7 +149,6 @@ Key features included:
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
-    </div>
     </div>
 </div>
 

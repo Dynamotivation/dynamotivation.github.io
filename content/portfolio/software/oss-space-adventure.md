@@ -13,7 +13,7 @@ available_on_ios = false
 # SEO
 operatingSystem = "Android"
 applicationCategory = "MobileApplication"
-releaseNotes = "Unpublished from Google Play"
+releaseNotes = "Delisted from Google Play"
 programmingLanguage = "GML (GameMaker Language)"
 developmentEnvironment = "GameMaker Studio 1.4"
 license = "Closed Source (Source Code Preserved)"
@@ -23,6 +23,8 @@ license = "Closed Source (Source Code Preserved)"
 {{ image(
     path="https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp",
     width="100%",
+    imageWidthPx=512,
+    imageHeightPx=512,
     description="O.S.S.: Space Adventure Logo",
     rendering="pixelated",
     radius="20%"
@@ -30,7 +32,7 @@ license = "Closed Source (Source Code Preserved)"
 <dl>
     <dt>Availability</dt>
     <dd>Delisted<br>Formerly on Google Play</dd>
-    <dt>Initial development</dt>
+    <dt>Initial completion</dt>
     <dd>February 25, 2018</dd>
     <dt>Development environment</dt>
     <dd>GameMaker Studio 1.4</dd>

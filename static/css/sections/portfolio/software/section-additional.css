@@ -93,6 +93,8 @@
 
 .postTitle {
     line-break: anywhere;
+        contain: inline-size;
+    hyphens: auto;
 }
 
 .postDate {

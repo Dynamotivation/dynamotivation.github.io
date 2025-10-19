@@ -108,7 +108,7 @@
     margin: 0 auto 0 -100%;
     border-radius: 1rem;
 
-    transition: --gradient-color-1 .5s, --gradient-color-2 .5s;
+    transition: --gradient-color-1 .3s, --gradient-color-2 .3s;
 }
 
 .postLink:hover+.postBorder {

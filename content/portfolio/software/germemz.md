@@ -30,7 +30,7 @@ license = "Closed Source (Source Code Decompiled)"
 <dl>
     <dt>Availability</dt>
     <dd>Unreleased</dd>
-    <dt>Initial development</dt>
+    <dt>Initial completion</dt>
     <dd>February 13, 2017</dd>
     <dt>Development environment</dt>
     <dd>Android Studio</dd>

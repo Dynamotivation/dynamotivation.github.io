@@ -109,6 +109,11 @@ ul li {
 
 ul ul li {
     font-weight: normal;
+    padding-left: 0;
+}
+
+ul ul li::before {
+    content: unset;
 }
 
 ul > * > ul {
