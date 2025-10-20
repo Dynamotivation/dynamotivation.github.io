@@ -4,6 +4,9 @@ date = 2018-11-03
 
 [extra]
 logo = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif"
+infobox_images = [
+    { path = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "... Joins the Battle! Meme Generator logo", radius = "20%" }
+]
 available_on_android = true
 available_on_windows = false
 available_on_mac = false
@@ -20,14 +23,7 @@ license = "Closed Source"
 +++
 
 {% infobox(title="... Joins the Battle! Meme Generator") %}
-{{ image(
-	path="https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif",
-	width="100%",
-	description="... Joins the Battle! Meme Generator logo",
-	imageWidthPx=512,
-	imageHeightPx=512,
-    radius="20%"
-) }}
+{{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
     <dd>Delisted<br>Formerly on Google Play</dd>

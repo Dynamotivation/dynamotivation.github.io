@@ -4,6 +4,9 @@ date = 2018-10-10
 
 [extra]
 logo = "https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif"
+infobox_images = [
+    { path = "https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif", imageWidthPx = 512, imageHeightPx = 512, description = "BenPlaysGames Soundboard Logo", radius = "20%" }
+]
 available_on_android = true
 available_on_windows = false
 available_on_mac = false
@@ -20,14 +23,7 @@ license = "Closed Source (Source Code Decompiled)"
 +++
 
 {% infobox(title="BenPlaysGames Soundboard") %}
-{{ image(
-    path="https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif",
-    width="100%",
-    description="BenPlaysGames Soundboard Logo",
-    imageWidthPx=512,
-    imageHeightPx=512,
-    radius="20%"
-) }}
+{{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
     <dd>Delisted<br>Formerly on Google Play</dd>

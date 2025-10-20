@@ -4,6 +4,9 @@ date = 2017-02-13
 
 [extra]
 logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif"
+infobox_images = [
+    { path = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "GerMemz Logo", radius = "" }
+]
 available_on_android = true
 available_on_windows = false
 available_on_mac = false
@@ -20,13 +23,7 @@ license = "Closed Source (Source Code Decompiled)"
 +++
 
 {% infobox(title="GerMemz") %}
-{{ image(
-    path="https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif",
-    width="100%",
-    description="GerMemz Logo",
-    imageWidthPx=512,
-    imageHeightPx=512
-) }}
+{{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
     <dd>Unreleased</dd>

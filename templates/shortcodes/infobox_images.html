@@ -1,0 +1,76 @@
+{# Choose images from the passed `images` param or from page.extra.infobox_images #}
+{% if images is defined %}
+  {% set imgs = images %}
+{% elif page.extra.infobox_images is defined %}
+  {% set imgs = page.extra.infobox_images %}
+{% else %}
+  {% set imgs = [] %}
+{% endif %}
+
+{% if imgs | length == 1 %}
+  {# Render single image (no switcher needed) #}
+  {% set main = imgs[0] %}
+  {% if main.width is defined %}
+    {% set main_width = main.width %}
+  {% else %}
+    {% set main_width = "100%" %}
+  {% endif %}
+  {% if main.description is defined %}
+    {% set main_description = main.description %}
+  {% else %}
+    {% set main_description = "" %}
+  {% endif %}
+  {% if main.radius is defined %}
+    {% set main_radius = main.radius %}
+  {% else %}
+    {% set main_radius = "" %}
+  {% endif %}
+
+  {% if main.figcaption is defined %}
+    <figure>
+  {% endif %}
+    <img src="{{ main.path }}"
+      alt="{{ main_description
+          | replace(from="*", to="")
+          | replace(from="`", to="")
+          | replace(from="[", to="")
+          | replace(from="]", to="")
+          | replace(from="(", to="")
+          | replace(from=")", to="")
+          | replace(from="  ", to=" ")
+          | replace(from="-", to="_") }}"
+      {% if main.itemprop is defined %}itemprop="{{ main.itemprop }}"{% endif %}
+      style="{% if main_width %}width: {{ main_width }}; {% endif %}{% if main.imageWidthPx and main.imageHeightPx %}aspect-ratio: {{ main.imageWidthPx }} / {{ main.imageHeightPx }}; {% endif %}{% if main_radius %}border-radius: {{ main_radius }}; {% endif %}"
+      class="blogImage"/>
+  {% if main.figcaption is defined %}
+    <figcaption>{{ main_description | markdown(inline=true) | safe }}</figcaption>
+  </figure>
+  {% endif %}
+
+{% elif imgs | length > 1 %}
+  {# Multiple images: render CSS switcher #}
+  {% if page.permalink is defined %}
+    {% set base_id = page.permalink | replace(from="/", to="") | replace(from=".", to="") %}
+  {% else %}
+    {% set base_id = page.title | replace(from=" ", to="") %}
+  {% endif %}
+  {% set base_id = base_id | replace(from=":", to="") | replace(from="-", to="") %}
+
+  <div class="infobox-switcher">
+    {% for im in imgs %}
+      {% set input_id = base_id ~ "-img-" ~ loop.index0 %}
+      {% set im_description = im.description | default(value="") %}
+      {% set im_radius = im.radius | default(value="") %}
+
+      <input type="radio" name="switch-{{ base_id }}" id="{{ input_id }}" class="infobox-switcher-radio" {% if loop.index0 == 0 %}checked{% endif %} hidden />
+
+      <div class="infobox-big-item">
+        <img src="{{ im.path }}" alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to="") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-big-img" {% if im.imageWidthPx and im.imageHeightPx %}style="aspect-ratio: {{ im.imageWidthPx }} / {{ im.imageHeightPx }};{% if im_radius %} border-radius: {{ im_radius }};{% endif %}"{% elif im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
+      </div>
+
+      <label for="{{ input_id }}" class="infobox-thumb-label">
+        <img src="{{ im.path }}" alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to="") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-thumb" {% if im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
+      </label>
+    {% endfor %}
+  </div>
+{% endif %}

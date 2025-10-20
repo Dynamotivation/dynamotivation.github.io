@@ -4,6 +4,9 @@ date = 2018-02-25
 
 [extra]
 logo = "https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp"
+infobox_images = [
+    { path = "https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp", imageWidthPx = 512, imageHeightPx = 512, description = "O.S.S.: Space Adventure Logo", rendering = "pixelated", radius = "20%" }
+]
 available_on_android = true
 available_on_windows = false
 available_on_mac = false
@@ -20,15 +23,7 @@ license = "Closed Source (Source Code Preserved)"
 +++
 
 {% infobox(title="O.S.S.: Space Adventure") %}
-{{ image(
-    path="https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp",
-    width="100%",
-    imageWidthPx=512,
-    imageHeightPx=512,
-    description="O.S.S.: Space Adventure Logo",
-    rendering="pixelated",
-    radius="20%"
-) }}
+{{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
     <dd>Delisted<br>Formerly on Google Play</dd>

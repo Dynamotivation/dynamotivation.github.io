@@ -43,6 +43,106 @@
     min-width: unset;
 }
 
+/* Thumbnail preview row for infoboxes */
+.infobox-thumbs {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    justify-content: center;
+    flex-wrap: nowrap; /* keep them in a single row */
+    overflow-x: auto; /* allow horizontal scrolling if there are too many thumbnails */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Target generic image output inside the thumbs container so the shortcode remains generic */
+.infobox-thumbs .blogImage {
+    width: 3.25rem !important;
+    height: 3.25rem !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-width: 0 !important; /* override .blogImage min-width on small screens */
+    flex: 0 0 auto; /* don't grow or shrink */
+    object-fit: cover;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.08);
+    cursor: default;
+}
+
+@media (max-width: 40rem) {
+    .infobox-thumbs {
+        gap: 0.5rem;
+    }
+    .infobox-thumbs .blogImage {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+}
+
+/* CSS-only image switcher: inputs, big items, and labels are rendered by the `infobox_images` shortcode */
+.infobox-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Reorder items visually: big-items first (full width), then labels (horizontal row), inputs hidden */
+.infobox-switcher .infobox-big-item { 
+    order: 1;
+    flex-basis: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+    position: absolute;
+    width: calc(20rem - 2rem);
+}
+
+.infobox-switcher .infobox-thumb-label { order: 2; }
+.infobox-switcher input[type="radio"] { order: 3; }
+
+/* Show only the big item immediately after a checked radio */
+.infobox-switcher input[type="radio"]:checked + .infobox-big-item { 
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s ease;
+    position: static;
+    width: auto;
+    transform: none;
+}
+
+.infobox-switcher .infobox-thumb-label { 
+    cursor: pointer; 
+    display: inline-block;
+}
+
+.infobox-switcher .infobox-thumb { 
+    width: 3.25rem; 
+    height: 3.25rem; 
+    object-fit: cover; 
+    border-radius: 0.375rem; 
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.infobox-switcher .infobox-big-img { 
+    max-width: calc(20rem - 2rem); 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* Fade in shadow with gap for selected thumbnail */
+.infobox-switcher input[type="radio"]:checked + .infobox-big-item + .infobox-thumb-label .infobox-thumb { 
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.08), 0 0 0 0.125rem var(--background-color, #fff), 0 0 0 0.25rem var(--main-color-dark);
+}
+
+/* Make sure inputs are visually hidden but still focusable */
+.infobox-switcher input[type="radio"] { 
+    position: absolute; 
+    
+    outline: none;
+}
+
 .infobox-content dl {
     margin: 1rem auto;
     padding: 0;

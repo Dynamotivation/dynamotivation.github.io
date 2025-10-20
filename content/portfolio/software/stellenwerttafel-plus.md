@@ -4,6 +4,9 @@ date = 2019-02-07
 
 [extra]
 logo = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif"
+infobox_images = [
+    { path = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Stellenwerttafel Plus Logo", radius = "20%" }
+]
 available_on_android = true
 available_on_windows = true
 available_on_mac = false
@@ -20,14 +23,7 @@ license = "Closed Source (Source Code Preserved)"
 +++
 
 {% infobox(title="Stellenwerttafel Plus") %}
-{{ image(
-    path="https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif",
-    width="100%",
-    imageWidthPx=512,
-    imageHeightPx=512,
-    description="Stellenwerttafel Plus Logo",
-    radius="20%"
-) }}
+{{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
     <dd>Unreleased</dd>

@@ -4,6 +4,9 @@ date = 2018-04-01
 
 [extra]
 logo = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif"
+infobox_images = [
+    { path = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Geo Background Generator Logo", radius = "20%" }
+]
 available_on_android = true
 available_on_windows = false
 available_on_mac = false
@@ -20,14 +23,7 @@ license = "Closed Source (Source Code Lost)"
 +++
 
 {% infobox(title="Geo Background Generator") %}
-{{ image(
-    path="https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif",
-    width="100%",
-    imageWidthPx=512,
-    imageHeightPx=512,
-    description="Geo Background Generator Logo",
-    radius="20%"
-) }}
+{{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
     <dd>Delisted<br>Formerly on Google Play</dd>
