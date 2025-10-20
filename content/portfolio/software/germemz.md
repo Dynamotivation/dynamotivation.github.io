@@ -4,8 +4,8 @@ date = 2017-02-13
 
 [extra]
 logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif"
-available_on_android = false
-available_on_windows = true
+available_on_android = true
+available_on_windows = false
 available_on_mac = false
 available_on_linux = false
 available_on_ios = false

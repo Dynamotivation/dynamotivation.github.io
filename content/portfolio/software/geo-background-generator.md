@@ -32,7 +32,7 @@ license = "Closed Source (Source Code Lost)"
     <dt>Availability</dt>
     <dd>Delisted<br>Formerly on Google Play</dd>
     <dt>Initial completion</dt>
-    <dd>April 1st, 2018</dd>
+    <dd>April 1, 2018</dd>
     <dt>Development environment</dt>
     <dd>GameMaker Studio 1.4</dd>
     <dt>Written in</dt>
@@ -40,7 +40,7 @@ license = "Closed Source (Source Code Lost)"
     <dt>Operating system(s)</dt>
     <dd>Android</dd>
     <dt>Source code</dt>
-    <dd>Lost</dd>
+    <dd>Lost<br>Closed Source</dd>
 </dl>
 {% end %}
 
