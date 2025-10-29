@@ -19,7 +19,7 @@ applicationCategory = "MobileApplication"
 releaseNotes = "Unreleased"
 programmingLanguage = "Java"
 developmentEnvironment = "Android Studio"
-license = "Closed Source (Source Code Decompiled)"
+license = "Closed Source"
 +++
 
 {% infobox(title="GerMemz") %}
@@ -36,7 +36,7 @@ license = "Closed Source (Source Code Decompiled)"
     <dt>Operating system(s)</dt>
     <dd>Android</dd>
     <dt>Source code</dt>
-    <dd>Preserved (Decompiled)<br>Closed Source</dd>
+    <dd>Lost</dd>
 </dl>
 {% end %}
 

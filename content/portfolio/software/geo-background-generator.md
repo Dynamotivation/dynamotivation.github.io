@@ -3,9 +3,10 @@ title = "Geo Background Generator"
 date = 2018-04-01
 
 [extra]
-logo = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif"
+logo = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Geo Background Generator Logo", radius = "20%" }
+    { path = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Geo Background Generator* remastered logo", radius = "20%" },
+    { path = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Geo Background Generator* old logo", radius = "20%" }
 ]
 available_on_android = true
 available_on_windows = false

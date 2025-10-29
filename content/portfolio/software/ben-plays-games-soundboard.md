@@ -3,9 +3,10 @@ title = "BenPlaysGames Soundboard"
 date = 2018-10-10
 
 [extra]
-logo = "https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif"
+logo = "https://ucarecdn.com/6d67fb50-8a57-4fb5-bc12-8ab6b20857b4/benplaysgamessoundboardlogoremastered.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif", imageWidthPx = 512, imageHeightPx = 512, description = "BenPlaysGames Soundboard Logo", radius = "20%" }
+    { path = "https://ucarecdn.com/6d67fb50-8a57-4fb5-bc12-8ab6b20857b4/benplaysgamessoundboardlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*BenPlaysGames Soundboard* new logo", radius = "20%" },
+    { path = "https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*BenPlaysGames Soundboard* original logo", radius = "20%" }
 ]
 available_on_android = true
 available_on_windows = false
@@ -156,4 +157,4 @@ The *BenPlaysGames Soundboard* was a well received, low effort gag application f
 
 ---
 
-Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in [Stellenwerttafel Plus](portfolio/software/stellenwerttafel-plus)
+Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in [Stellenwerttafel Plus](portfolio/software/stellenwerttafel-plus).
