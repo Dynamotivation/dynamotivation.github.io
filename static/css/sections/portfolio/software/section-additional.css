@@ -92,9 +92,9 @@
 }
 
 .postTitle {
-    line-break: anywhere;
-        contain: inline-size;
+    contain: inline-size;
     hyphens: auto;
+    font-size: 1.4em;
 }
 
 .postDate {
