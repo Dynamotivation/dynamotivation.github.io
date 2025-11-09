@@ -13,12 +13,19 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
+application_category = "Educational"
+
+screenshot_urls = [
+    "https://ucarecdn.com/7ff7d6d6-e097-40d1-a531-fb6207b25651/stellenwerttafelplusbinaryscreenshot.avif",
+    "https://ucarecdn.com/394b018b-1655-4ebe-884e-23d263e6ef11/stellenwerttafelplusdecimalscreenshot.avif",
+    "https://ucarecdn.com/f00b51f6-ba74-4a81-a9df-f4aaa2f04e89/stellenwerttafelplusdecimalscreenshotoverflow.avif"
+]
+
 # SEO
 operatingSystem = "Windows, Android"
-applicationCategory = "Educational"
-releaseNotes = "Unreleased"
-programmingLanguage = "GML (GameMaker Language)"
-developmentEnvironment = "GameMaker Studio 1.4"
+release_notes = "Unreleased"
+programming_language = "GML (GameMaker Language)"
+development_environment = "GameMaker Studio 1.4"
 license = "Closed Source (Source Code Preserved)"
 +++
 
@@ -108,8 +115,8 @@ Key features included:
         }
     </style>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/7ff7d6d6-e097-40d1-a531-fb6207b25651/stellenwerttafelplusbinaryscreenshot.avif",
+        {{ screenshot(
+            index=0,
             width="100%",
             
             description="*Stellenwerttafel Plus* binary mode screenshot",
@@ -121,8 +128,8 @@ Key features included:
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/394b018b-1655-4ebe-884e-23d263e6ef11/stellenwerttafelplusdecimalscreenshot.avif",
+        {{ screenshot(
+            index=1,
             width="100%",
             
             description="*Stellenwerttafel Plus* decimal mode screenshot",
@@ -134,8 +141,8 @@ Key features included:
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/f00b51f6-ba74-4a81-a9df-f4aaa2f04e89/stellenwerttafelplusdecimalscreenshotoverflow.avif",
+        {{ screenshot(
+            index=2,
             width="100%",
             
             description="*Stellenwerttafel Plus* decimal mode with overflow screenshot",

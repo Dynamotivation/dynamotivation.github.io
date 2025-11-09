@@ -29,7 +29,7 @@
   {% if main.figcaption is defined %}
     <figure>
   {% endif %}
-    <img src="{{ main.path }}"
+  <img src="{{ main.path }}" fetchpriority="high"
       alt="{{ main_description
           | replace(from="*", to="")
           | replace(from="`", to="")
@@ -65,11 +65,11 @@
       <input type="radio" name="switch-{{ base_id }}" id="{{ input_id }}" class="infobox-switcher-radio" {% if loop.index0 == 0 %}checked{% endif %} hidden />
 
       <div class="infobox-big-item">
-        <img src="{{ im.path }}" alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to="") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-big-img" {% if im.imageWidthPx and im.imageHeightPx %}style="aspect-ratio: {{ im.imageWidthPx }} / {{ im.imageHeightPx }};{% if im_radius %} border-radius: {{ im_radius }};{% endif %}"{% elif im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
+        <img src="{{ im.path }}" {% if loop.index0 == 0 %}fetchpriority="high"{% endif %} alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to=")") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-big-img" {% if im.imageWidthPx and im.imageHeightPx %}style="aspect-ratio: {{ im.imageWidthPx }} / {{ im.imageHeightPx }};{% if im_radius %} border-radius: {{ im_radius }};{% endif %}"{% elif im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
       </div>
 
       <label for="{{ input_id }}" class="infobox-thumb-label">
-        <img src="{{ im.path }}" alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to="") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-thumb" {% if im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
+        <img src="{{ im.path }}" loading="lazy" alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to="") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-thumb" {% if im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
       </label>
     {% endfor %}
   </div>

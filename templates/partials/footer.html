@@ -2,7 +2,7 @@
     <div id="footerContainer">
         <div id="footerTop">
             <div id="logos">
-                <a class="socialLink" href="/" title="Home">
+                <a class="socialLink" href="{{ get_url(path='', trailing_slash=true) }}" title="Home">
                     <img id="logo" src="{{ get_url(path='images/innerLogoOutline.svg') }}" alt="Dynamotivation Logo"
                         draggable="false"/>
                 </a>
@@ -14,24 +14,24 @@
             <div id="linkColumns">
                 <div id="main">
                     <p>Main</p>
-                    <a href="/news">News</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/portfolio/software">Software</a>
+                    <a href="{{ get_url(path='news/', trailing_slash=true) }}">News</a>
+                    <a href="{{ get_url(path='blog/', trailing_slash=true) }}">Blog</a>
+                    <a href="{{ get_url(path='portfolio/software/', trailing_slash=true) }}">Software</a>
                 </div>
 
                 <div id="portfolio">
                     <p>Portfolio</p>
-                    <a href="/portfolio/software">Software</a>
-                    <a href="/portfolio/3d-assets">3D Assets</a>
+                    <a href="{{ get_url(path='portfolio/software/', trailing_slash=true) }}">Software</a>
+                    <a href="{{ get_url(path='portfolio/3d-assets/', trailing_slash=true) }}">3D Assets</a>
                     {# <a href="/portfolio/hoaxes">Hoaxes</a> #}
                 </div>
 
                 <div id="about">
                     <p>About</p>
                     {# <a href="/contact">Contact</a> #}
-                    <a href="/legal-notice">Legal Notice</a>
-                    <a href="/privacy-notice">Privacy Notice</a>
-                    <a href="/third-party-licenses">Third Party Licenses</a>
+                    <a href="{{ get_url(path='legal-notice/', trailing_slash=true) }}">Legal Notice</a>
+                    <a href="{{ get_url(path='privacy-notice/', trailing_slash=true) }}">Privacy Notice</a>
+                    <a href="{{ get_url(path='third-party-licenses/', trailing_slash=true) }}">Third Party Licenses</a>
                 </div>
             </div>
         </div>

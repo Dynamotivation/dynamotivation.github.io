@@ -13,12 +13,19 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
+application_category = "MobileApplication"
+
+screenshot_urls = [
+    "https://ucarecdn.com/3031c98e-aa6f-48bf-86b7-24a844c5f643/ossspaceadventuretitlescreen.avif",
+    "https://ucarecdn.com/075a0dda-92ce-46c3-8374-2524a5c4315e/ossspaceadventureendlessmode.avif",
+    "https://ucarecdn.com/9536dd98-62af-4392-98ca-77542c13ef32/ossspaceadventureprotectmode.avif"
+]
+
 # SEO
 operatingSystem = "Android"
-applicationCategory = "MobileApplication"
-releaseNotes = "Delisted from Google Play"
-programmingLanguage = "GML (GameMaker Language)"
-developmentEnvironment = "GameMaker Studio 1.4"
+release_notes = "Delisted from Google Play"
+programming_language = "GML (GameMaker Language)"
+development_environment = "GameMaker Studio 1.4"
 license = "Closed Source (Source Code Preserved)"
 +++
 
@@ -86,36 +93,34 @@ The game included an achievement system leveraging Google Play's services.
         }
     </style>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/3031c98e-aa6f-48bf-86b7-24a844c5f643/ossspaceadventuretitlescreen.avif",
+    {{ screenshot(
+        index=0,
         width="100%",
-        description="O.S.S.: Space Adventure Main Menu Screenshot", radius="1rem",
+        description="O.S.S.: Space Adventure Main Menu Screenshot",
+        radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}
     </div>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/075a0dda-92ce-46c3-8374-2524a5c4315e/ossspaceadventureendlessmode.avif",
+    {{ screenshot(
+        index=1,
         width="100%",
         description="O.S.S.: Space Adventure Endless Mode Screenshot",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}
     </div>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/9536dd98-62af-4392-98ca-77542c13ef32/ossspaceadventureprotectmode.avif",
+    {{ screenshot(
+        index=2,
         width="100%",
         description="O.S.S.: Space Adventure Protect Mode Screenshot",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}

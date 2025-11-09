@@ -21,54 +21,13 @@
 <meta name="keywords" content="{{ page.taxonomies.tags | join(sep=", ") }}">
 {% endif %}
 
-<!-- OpenGraph -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="{{ page.title }} | Dynamotivation">
-<meta property="og:description" content="{{ page.description }}">
-<meta property="og:image" content="{{ page.extra.image | default(value=get_url(path='images/fullLogo.png')) }}">
-<meta property="og:url" content="{{ page.permalink | safe }}">
-<meta property="og:site_name" content="Dynamotivation">
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:creator" content="@Dynamotivation">
-
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ page.permalink | safe }}">
+{% block article_meta %}{% endblock %}
 
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    {% block additionalSchema %} {% endblock %}
-    "headline": "{{ page.title }}",
-    "description": "{{ page.description }}",
-    "author": {
-        "@type": "Person",
-        "name": "Dynamotivation"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Dynamotivation",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "{{ get_url(path='images/fullLogo.png') }}"
-        }
-    },
-    "datePublished": "{{ page.date }}",
-    {% if page.updated %}
-    "dateModified": "{{ page.updated }}",
-    {% endif %}
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ page.permalink | safe }}"
-    }
-    {% if page.extra.logo %}
-    ,
-    "image": "{{ page.extra.logo | safe }}"
-    {% endif %}
-}
+{% block jsonld %}{% endblock %}
+
 {% endif %}
-</script>
 
 {% endblock additionalResources %}
 

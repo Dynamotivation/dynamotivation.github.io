@@ -8,14 +8,11 @@
     <meta name="theme-color" content="#ff4c4a" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#893750" media="(prefers-color-scheme: dark)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if page.date %}
-    <meta property="article:published_time" content="{{ page.date }}">
-    {% endif %}
-    {% if page.updated %}
-    <meta property="article:modified_time" content="{{ page.updated }}">
-    {% endif %}
+    
     <link rel="preload" as="font" href={{ get_url(path="fonts/rubik/webfonts/rubik-v28-latin-regular.woff2") }} crossorigin>
     <link rel="preload" as="font" href={{ get_url(path="fonts/rubik/webfonts/rubik-v28-latin-700.woff2") }} crossorigin>
+    <link rel="dns-prefetch" href="//ucarecdn.com">
+    <link rel="preconnect" href="https://ucarecdn.com" crossorigin>
     <link rel="stylesheet" href={{ get_url(path="fonts/rubik/css/rubik.css" ) }}>
     <link rel="stylesheet" href={{ get_url(path="css/base.css" ) }}>
     <link rel="stylesheet" href={{ get_url(path="css/header.css" ) }}>
@@ -41,6 +38,7 @@
 
     <!-- Progressive Web App -->
     <link rel="manifest" href={{ get_url(path="favicon/site.webmanifest") }} />
+
     {% block additionalResources %} {% endblock %}
 </head>
 

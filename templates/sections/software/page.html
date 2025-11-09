@@ -1,5 +1,152 @@
 {% extends "sections/page.html" %}
 
 {% block moreAdditionalResources %}
-<link rel="stylesheet" href={{ get_url(path="css/sections/portfolio/software/page-additional.css" ) }}>
+<link rel="stylesheet" href="{{ get_url(path='css/sections/portfolio/software/page-additional.css') }}">
+{% endblock %}
+
+{% block article_meta %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title }} | Dynamotivation">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
+<meta property="og:url" content="{{ page.permalink | safe }}">
+<meta property="og:site_name" content="Dynamotivation">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+{% endblock %}
+
+{% block jsonld %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "{{ page.permalink | safe }}#software",
+  "inLanguage": "{{ page.lang | default(value='en') }}",
+  "url": "{{ page.permalink | safe }}",
+  "publisher": {
+    "@type": "{{ page.extra.publisher_type | default(value='Organization') }}",
+    "name": "{{ page.extra.publisher_name | default(value='Dynamotivation') }}",
+    "url": "{{ page.extra.publisher_url | default(value=get_url(path='', trailing_slash=true)) | safe }}",
+    "logo": {
+      "@type": "ImageObject",
+  "url": "{{ page.extra.publisher_logo | default(value=get_url(path='images/fullLogo.png')) | safe }}"
+    }
+  },
+  "creator": {
+    "@type": "{{ page.extra.creator_type | default(value='Person') }}",
+    "name": "{{ page.extra.creator_name | default(value='Dynamotivation') }}",
+    "url": "{{ page.extra.creator_url | default(value=get_url(path='', trailing_slash=true)) | safe }}"
+  }{% if page.title %},
+  "name": "{{ page.title }}"{% endif %}{% if page.extra.alternate_name %},
+  "alternateName": "{{ page.extra.alternate_name }}"{% endif %}{% if page.description %},
+  "description": "{{ page.description }}"{% endif %}{% if page.extra.application_category %},
+  "applicationCategory": "{{ page.extra.application_category }}"{% endif %}{% if page.extra.application_subcategory %},
+  "applicationSubCategory": "{{ page.extra.application_subcategory }}"{% endif %}{% if page.extra.operating_system or page.extra.available_on_android or page.extra.available_on_ios or page.extra.available_on_windows or page.extra.available_on_mac or page.extra.available_on_linux %},
+  "operatingSystem":
+  {% if page.extra.operating_system %}
+    "{{ page.extra.operating_system }}"
+  {% else %}
+    [
+      {% set first = true %}
+      {% if page.extra.available_on_android %}{% if not first %}, {% endif %}{% set first = false %}"Android"{% endif %}
+      {% if page.extra.available_on_ios %}{% if not first %}, {% endif %}{% set first = false %}"iOS"{% endif %}
+      {% if page.extra.available_on_windows %}{% if not first %}, {% endif %}{% set first = false %}"Windows"{% endif %}
+      {% if page.extra.available_on_mac %}{% if not first %}, {% endif %}{% set first = false %}"macOS"{% endif %}
+      {% if page.extra.available_on_linux %}{% if not first %}, {% endif %}{% set first = false %}"Linux"{% endif %}
+    ]
+  {% endif %}{% endif %}{% if page.extra.logo %},
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ page.extra.logo | safe }}",
+    "width": {{ page.extra.logo_width | default(value=512) }},
+    "height": {{ page.extra.logo_height | default(value=512) }},
+    "caption": "{{ page.title }} logo"
+  }{% endif %}{% if page.extra.screenshot_urls and page.extra.screenshot_urls | length > 0 %},
+  "screenshot": [{% for shot in page.extra.screenshot_urls %}
+    "{{ shot | safe }}"{% if not loop.last %}, {% endif %}{% endfor %}
+  ]{% endif %}{% if page.extra.same_as and page.extra.same_as | length > 0 %},
+  "sameAs": [{% for link in page.extra.same_as %}
+    "{{ link | safe }}"{% if not loop.last %}, {% endif %}{% endfor %}
+  ]{% endif %}{% if page.extra.price_usd is defined %},
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ page.extra.price_usd }}",
+    "priceCurrency": "USD"{% if page.extra.availability %},
+    "availability": "https://schema.org/{{ page.extra.availability | safe }}"{% endif %}
+  }{% endif %}{% if page.extra.release_notes %},
+  "release_notes": "{{ page.extra.release_notes }}"{% endif %}{% if page.extra.software_version %},
+  "softwareVersion": "{{ page.extra.software_version }}"{% endif %}{% if page.date %},
+  "dateCreated": "{{ page.date }}"{% endif %}{% if page.permalink %},
+  "mainEntity": { "@id": "{{ page.permalink | safe }}#webpage" }{% endif %}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ page.permalink | safe }}#webpage",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{ page.extra.site_name | default(value='Dynamotivation') }}",
+    "url": "{{ page.extra.site_url | default(value=get_url(path='', trailing_slash=true)) | safe }}"
+  }{% if page.permalink %},
+  "url": "{{ page.permalink | safe }}"{% endif %}{% if page.title %},
+  "name": "{{ page.title }} | Dynamotivation"{% endif %}{% if page.description %},
+  "description": "{{ page.description }}"{% endif %}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ get_url(path='', trailing_slash=true) | safe }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Portfolio",
+      "item": "{{ get_url(path='portfolio/', trailing_slash=true) | safe }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Software",
+      "item": "{{ get_url(path='portfolio/software/', trailing_slash=true) | safe }}"
+    }{% if page.title and page.permalink %},
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "{{ page.title }}",
+      "item": "{{ page.permalink | safe }}"
+    }{% endif %}
+  ]
+}
+</script>
+
+{% if page.extra.faq and page.extra.faq | length > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for qa in page.extra.faq %}
+    {
+      "@type": "Question",
+      "name": "{{ qa.q }}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{ qa.a | safe }}" }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
 {% endblock %}

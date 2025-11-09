@@ -14,12 +14,20 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
+application_category = "MobileApplication"
+
+screenshot_urls = [
+    "https://ucarecdn.com/5bb09828-843b-4877-958f-b01dd1e662ca/geobackgroundgeneratornewui.avif",
+    "https://ucarecdn.com/9bc23bd1-fed1-40a3-b889-77dd5203f44b/geobackgroundgeneratorcomplexexamplepattern.avif",
+    "https://ucarecdn.com/746df704-5b06-4b57-9558-2b092b119f58/geobackgroundgeneratorsimpleexamplepattern.avif",
+    "https://ucarecdn.com/489c6beb-7edb-4403-85a2-33bcbda91848/geobackgroundgeneratoroldui.avif"
+]
+
 # SEO
 operatingSystem = "Android"
-applicationCategory = "MobileApplication"
-releaseNotes = "Delisted from Google Play"
-programmingLanguage = "GML (GameMaker Language)"
-developmentEnvironment = "GameMaker Studio 1.4"
+release_notes = "Delisted from Google Play"
+programming_language = "GML (GameMaker Language)"
+development_environment = "GameMaker Studio 1.4"
 license = "Closed Source (Source Code Lost)"
 +++
 
@@ -90,49 +98,45 @@ In the latest version the features included:
         }
     </style>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/5bb09828-843b-4877-958f-b01dd1e662ca/geobackgroundgeneratornewui.avif",
+        {{ screenshot(
+            index=0,
             width="100%",
             description="Geo Background Generator screenshot of the new user interface.",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=432,
             imageHeightPx=768
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/9bc23bd1-fed1-40a3-b889-77dd5203f44b/geobackgroundgeneratorcomplexexamplepattern.avif",
+        {{ screenshot(
+            index=1,
             width="100%",
             description="Geo Background Generator screenshot of a simple horizontal gradient background with big squares.",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=432,
             imageHeightPx=768
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/746df704-5b06-4b57-9558-2b092b119f58/geobackgroundgeneratorsimpleexamplepattern.avif",
+        {{ screenshot(
+            index=2,
             width="100%",
             description="Geo Background Generator screenshot of a more complex quadricolor background with small triangles.",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=432,
             imageHeightPx=768
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/489c6beb-7edb-4403-85a2-33bcbda91848/geobackgroundgeneratoroldui.avif",
+        {{ screenshot(
+            index=3,
             width="100%",
             description="Geo Background Generator screenshot of the old user interface.",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=432,
             imageHeightPx=768
         ) }}

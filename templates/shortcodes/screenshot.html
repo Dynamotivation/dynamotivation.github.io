@@ -1,0 +1,34 @@
+{# Usage in content: {% screenshot index=0 description="Alt text" figcaption=true width="300px" %} #}
+
+{% set idx = index | default(value=0) %}
+{% set shots = page.extra.screenshot_urls | default(value=[]) %}
+
+{% if shots | length > idx %}
+  {% set path = shots[idx] %}
+  {% if figcaption %}
+<figure>
+  {% endif %}
+    <img src="{{ path }}"
+      alt="{{ description
+          | replace(from="*", to="")
+          | replace(from="`", to="")
+          | replace(from="[", to="")
+          | replace(from="]", to="")
+          | replace(from="(", to="")
+          | replace(from=")", to="")
+          | replace(from="  ", to=" ")
+          | replace(from="-", to="_") }}"
+      itemprop="screenshot"
+      decoding="async"
+      fetchpriority="low"
+      loading="lazy"
+      style="{% if height %}height: {{ height }}; {% endif %}{% if width %}width: {{ width }}; {% endif %}{% if imageWidthPx and imageHeightPx %}aspect-ratio: {{ imageWidthPx }} / {{ imageHeightPx }}; {% endif %}{% if radius %}border-radius: {{ radius }}; {% endif %}{% if rendering %}image-rendering: {{ rendering }}; {% endif %}"
+      class="blogImage"/>
+  {% if figcaption %}
+    <figcaption>{{ description | markdown(inline=true) | safe }}</figcaption>
+</figure>
+  {% endif %}
+{% else %}
+  {# Fallback if index is out of range #}
+  <p style="color: #b00">Screenshot index {{ idx }} not found. Available: {{ shots | length }}.</p>
+{% endif %}

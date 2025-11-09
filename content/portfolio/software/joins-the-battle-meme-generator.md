@@ -1,12 +1,16 @@
 +++
-title = "... Joins the Battle! Meme Generator"
+title = "Joins the Battle Meme Generator"
 date = 2018-11-03
+description = "Create authentic \"Joins the Battle\" fighting game splash screens and memes. Customize characters, text, colors and effects in multiple iconic styles!"
 
 [extra]
+alternate_name = "... Joins the Battle! Meme Generator"
+availability = "Preorder"
+price_usd = 0
 logo = "https://ucarecdn.com/868a8d31-de37-42ea-b2ce-138e841a9870/joinsthebattleeditorlogoremastered.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/868a8d31-de37-42ea-b2ce-138e841a9870/joinsthebattleeditorlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*... Joins the Battle! Meme Generator* remastered logo", radius = "20%" },
-    { path = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*... Joins the Battle! Meme Generator* original logo", radius = "20%" }
+    { path = "https://ucarecdn.com/868a8d31-de37-42ea-b2ce-138e841a9870/joinsthebattleeditorlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Joins the Battle Meme Generator* remastered logo", radius = "20%" },
+    { path = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Joins the Battle Meme Generator* original logo", radius = "20%" }
 ]
 available_on_android = true
 available_on_windows = false
@@ -14,16 +18,26 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
+application_category = "MultimediaApplication"
+
+screenshot_urls = [
+    "https://ucarecdn.com/324e7ae4-6169-4635-a49c-7c6563178caa/joinsthebattlemainmenu.avif",
+    "https://ucarecdn.com/8de5babc-76fe-48b4-8ecc-37dacbccdf61/joinsthebattleeditormenu.avif",
+    "https://ucarecdn.com/79a7577d-cf7f-4efa-a593-21121d70a5de/joinsthebattlebackgroundmenu.avif",
+    "https://ucarecdn.com/f1a1eab7-238f-429e-bba7-c6ba5e073eef/joinsthebattle2018style.avif",
+    "https://ucarecdn.com/3586305e-2e3c-43df-8345-04a1646145a3/joinsthebattle2014style.avif",
+    "https://ucarecdn.com/1047f267-98fa-4b83-a891-101a11a3cde5/joinsthebattle2018unlockstyle.avif",
+    "https://ucarecdn.com/c2794126-6cd2-4eaa-ad20-237246836ffb/joinsthebattle2018thumbnailstyle.avif"
+]
+
 # SEO
-operatingSystem = "Android"
-applicationCategory = "MobileApplication"
-releaseNotes = "Delisted from Google Play"
-programmingLanguage = "GameMaker Language"
-developmentEnvironment = "GameMaker Studio 1.4"
+release_notes = "Delisted from Google Play"
+programming_language = "GameMaker Language"
+development_environment = "GameMaker Studio 1.4"
 license = "Closed Source"
 +++
 
-{% infobox(title="... Joins the Battle! Meme Generator") %}
+{% infobox(title="Joins the Battle Meme Generator") %}
 {{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
@@ -41,14 +55,14 @@ license = "Closed Source"
 </dl>
 {% end %}
 
-***... Joins the Battle! Meme Generator*** was a successful Android application developed by Dynamotivation at age 16 and initially published by Mr. Unp3rf3ct. The application allowed users to create custom "X Joins the Battle!" style splash screen memes, replicating the visual makeup seen in fighting game character reveal trailers. This project marked a significant pivot towards developing specialized content creation tools, mimicking preestablished art styles without without incorporating copyrighted assets.
+***Joins the Battle Meme Generator*** (originally *... Joins the Battle Meme Generator*) was a successful Android application developed by Dynamotivation at age 16 and initially published by Mr. Unp3rf3ct. The application allowed users to create custom "X Joins the Battle" style splash screen memes, replicating the visual makeup seen in fighting game character reveal trailers. This project marked a significant pivot towards developing specialized content creation tools, mimicking preestablished art styles without without incorporating copyrighted assets.
 
 
 {{ big_heading(name="Development") }}
 
 ---
 
-Development for *... Joins the Battle! Meme Generator* first started in October 2018 and continued up till April 2019, using GameMaker Studio 1.4. The project was inspired by a perceived gap in the market: Despite the rising popularity of the "X Joins the Battle!" meme template, especially coinciding with the announcement of a major all-star fighting game, no dedicated feature-rich generator existed.
+Development for *Joins the Battle Meme Generator* first started in October 2018 and continued up till April 2019, using GameMaker Studio 1.4. The project was inspired by a perceived gap in the market: Despite the rising popularity of the "X Joins the Battle" meme template, especially coinciding with the announcement of a major all-star fighting game, no dedicated feature-rich generator existed.
 
 This application represented a combination of the previous concept "style it yourself", from [Geo Background Generator](/portfolio/software/geo-background-generator), and riding the popularity of external content, as [GerMemz](/portfolio/software/germemz) did years prior. Importantly it also carved the way back from game development to traditional software utilities.
 
@@ -57,7 +71,7 @@ This application represented a combination of the previous concept "style it you
 
 ---
 
-Developing *... Joins the Battle! Meme Generator* presented a set of challenges, extending from core UI implementation to post-launch updates and architectural design:
+Developing *Joins the Battle Meme Generator* presented a set of challenges, extending from core UI implementation to post-launch updates and architectural design:
 
 *   Custom UI implementation:
     *   GameMaker Studio 1.4 lacked native UI components, necessitating a partial reimplementation of Material Design elements. This included shadows, fonts, regular and floating action buttons (FABs), and a custom density-independent pixel (DIP) system. 
@@ -87,7 +101,7 @@ Being a specialized utility allowed users extensive customization to replicate t
     *   The biggest feature was that this app was more than a mere template for an image editor and instead utilizing a game engine. Everything was rendered dynamically leveraging shaders and surfaces offered by the engine. This is very much akin to "non destructive editing" workflows and effect stacks found in modern paid photo editing software, but for free, premade, and smarter!\
     Thanks to being in a game engine, a lot of features could be powered by pure math and constraints, such as the sadly never published video export feature. All animation featured was calculated based on composition and how reference trailers would behave, be it the timing, slide in or trajectory of lense flare effects.
 *   Stylized Text Manipulation
-    *   The "Joins the Battle!" text was editable and of course also dynamically rendered on the fly in terms of styling and appearance.
+    *   The "Joins the Battle" text was editable and of course also dynamically rendered on the fly in terms of styling and appearance.
 
 <div class="blogImageList">
     <style>
@@ -98,37 +112,34 @@ Being a specialized utility allowed users extensive customization to replicate t
         }
     </style>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/8de5babc-76fe-48b4-8ecc-37dacbccdf61/joinsthebattleeditormenu.avif",
+        {{ screenshot(
+            index=0,
             width="100%",
-            description="*... Joins the Battle! Meme Generator* main menu screenshot",
+            description="*Joins the Battle Meme Generator* main menu screenshot",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/8de5babc-76fe-48b4-8ecc-37dacbccdf61/joinsthebattleeditormenu.avif",
+        {{ screenshot(
+            index=1,
             width="100%",
-            description="*... Joins the Battle! Meme Generator* main editor menu screenshot",
+            description="*Joins the Battle Meme Generator* main editor menu screenshot",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/79a7577d-cf7f-4efa-a593-21121d70a5de/joinsthebattlebackgroundmenu.avif",
+        {{ screenshot(
+            index=2,
             width="100%",
-            description="*... Joins the Battle! Meme Generator* background editor menu screenshot",
+            description="*Joins the Battle Meme Generator* background editor menu screenshot",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
@@ -147,49 +158,45 @@ The target audience for the generator was broad, encompassing fighting game fans
         }
     </style>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/f1a1eab7-238f-429e-bba7-c6ba5e073eef/joinsthebattle2018style.avif",
+        {{ screenshot(
+            index=3,
             width="100%",
-            description="*... Joins the Battle! Meme Generator* 2018 trailer style example screenshot",
+            description="*Joins the Battle Meme Generator* 2018 trailer style example screenshot",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/3586305e-2e3c-43df-8345-04a1646145a3/joinsthebattle2014style.avif",
+        {{ screenshot(
+            index=4,
             width="100%",
-            description="*... Joins the Battle! Meme Generator* 2014 trailer style example screenshot",
+            description="*Joins the Battle Meme Generator* 2014 trailer style example screenshot",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
     </div>
     <div>
-        {{ image(
-            path="https://ucarecdn.com/1047f267-98fa-4b83-a891-101a11a3cde5/joinsthebattle2018unlockstyle.avif",
+        {{ screenshot(
+            index=5,
             width="100%",
-            description="*... Joins the Battle! Meme Generator* ingame unlock style example screenshot",
+            description="*Joins the Battle Meme Generator* ingame unlock style example screenshot",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
     </div>
         <div>
-        {{ image(
-            path="https://ucarecdn.com/c2794126-6cd2-4eaa-ad20-237246836ffb/joinsthebattle2018thumbnailstyle.avif",
+        {{ screenshot(
+            index=6,
             width="100%",
-            description="*... Joins the Battle! Meme Generator* video thumbnail style example screenshot",
+            description="*Joins the Battle Meme Generator* video thumbnail style example screenshot",
             radius="1rem",
             figcaption="true",
-            itemprop="screenshot",
             imageWidthPx=1920,
             imageHeightPx=1080
         ) }}
@@ -201,7 +208,7 @@ The target audience for the generator was broad, encompassing fighting game fans
 
 ---
 
-*... Joins the Battle! Meme Generator* received stellar feedback, achieving an average rating of approximately 4.5 stars across 350,000 installs on Google Play alone, over half a million in total. This success led to a high volume of reviews, user emails, and even attracted multiple sponsorship and acquisition offers, demonstrating its significant impact and popularity within its niche.
+*Joins the Battle Meme Generator* received stellar feedback, achieving an average rating of approximately 4.5 stars across 350,000 installs on Google Play alone, over half a million in total. This success led to a high volume of reviews, user emails, and even attracted multiple sponsorship and acquisition offers, demonstrating its significant impact and popularity within its niche.
 
 The application has been unavailable for several years due to educational and employment obligations, and a disconnect with the initial publisher. However, maintenance has resumed behind the scenes, with plans for the application to return soon, integrating lessons learned in the years since.
 
@@ -210,7 +217,7 @@ The application has been unavailable for several years due to educational and em
 
 ---
 
-*... Joins the Battle! Meme Generator* provided critical insights into mobile application development, user experience, and the realities of public software distribution.
+*Joins the Battle Meme Generator* provided critical insights into mobile application development, user experience, and the realities of public software distribution.
 
 *   UI considerations
     *   Learned to watch out for the strength and weaknesses in terms of UI of any given engine or framework. The need to create *GMX Material Design Lite* took away time and resources from developing the app, but taught valuable lessons in exchange about scaling and user experience.

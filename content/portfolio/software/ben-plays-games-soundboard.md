@@ -14,12 +14,20 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
+application_category = "MobileApplication"
+
+screenshot_urls = [
+    "https://ucarecdn.com/0ab91ca7-92ce-4992-8473-ef9bcf1e10f8/benplaysgamessoundboardnormal.avif",
+    "https://ucarecdn.com/3be5b8cd-8601-4c9e-949a-6b80a209e89d/benplaysgamessoundboardlive.avif",
+    "https://ucarecdn.com/e68a4eaa-d8e4-40c2-84ff-d59aabd4b236/benplaysgamessoundboardfavs.avif",
+    "https://ucarecdn.com/20c4aca4-ac43-4432-ab90-e96ced20efea/benplaysgamessoundboardlandscapetablet.avif"
+]
+
 # SEO
 operatingSystem = "Android"
-applicationCategory = "MobileApplication"
-releaseNotes = "Unreleased"
-programmingLanguage = "Java"
-developmentEnvironment = "Android Studio"
+release_notes = "Unreleased"
+programming_language = "Java"
+development_environment = "Android Studio"
 license = "Closed Source (Source Code Decompiled)"
 +++
 
@@ -68,37 +76,34 @@ Drawing more parallels with [*GerMemz*](portfolio/software/germemz), the templat
         }
     </style>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/0ab91ca7-92ce-4992-8473-ef9bcf1e10f8/benplaysgamessoundboardnormal.avif",
+    {{ screenshot(
+        index=0,
         width="100%",
         description="*BenPlaysGames Soundboard* screenshot.",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}
     </div>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/3be5b8cd-8601-4c9e-949a-6b80a209e89d/benplaysgamessoundboardlive.avif",
+    {{ screenshot(
+        index=1,
         width="100%",
         description="*BenPlaysGames Soundboard* screenshot with live stream indicator.",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}
     </div>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/e68a4eaa-d8e4-40c2-84ff-d59aabd4b236/benplaysgamessoundboardfavs.avif",
+    {{ screenshot(
+        index=2,
         width="100%",
         description="*BenPlaysGames Soundboard* favorites view screenshot.",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}
@@ -122,13 +127,12 @@ Drawing more parallels with [*GerMemz*](portfolio/software/germemz), the templat
         }
     </style>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/20c4aca4-ac43-4432-ab90-e96ced20efea/benplaysgamessoundboardlandscapetablet.avif",
+    {{ screenshot(
+        index=3,
         width="100%",
         description="*BenPlaysGames Soundboard* screenshot in landscape mode on a table.",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=3072,
         imageHeightPx=1920
     ) }}

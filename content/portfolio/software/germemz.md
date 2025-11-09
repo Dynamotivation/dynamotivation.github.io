@@ -12,13 +12,19 @@ available_on_windows = false
 available_on_mac = false
 available_on_linux = false
 available_on_ios = false
+application_category = "MobileApplication"
+
+screenshot_urls = [
+    "https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
+    "https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif",
+    "https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif"
+]
 
 # SEO
 operatingSystem = "Android"
-applicationCategory = "MobileApplication"
-releaseNotes = "Unreleased"
-programmingLanguage = "Java"
-developmentEnvironment = "Android Studio"
+release_notes = "Unreleased"
+programming_language = "Java"
+development_environment = "Android Studio"
 license = "Closed Source"
 +++
 
@@ -82,36 +88,34 @@ Highlights:
         }
     </style>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
+    {{ screenshot(
+        index=0,
         width="100%",
-        description="GerMemz Main Menu Screenshot", radius="1rem",
+        description="GerMemz Main Menu Screenshot",
+        radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}
     </div>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif",
+    {{ screenshot(
+        index=1,
         width="100%",
         description="GerMemz Page 1 Screenshot",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}
     </div>
     <div>
-    {{ image(
-        path="https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif",
+    {{ screenshot(
+        index=2,
         width="100%",
         description="GerMemz Page 2 Screenshot",
         radius="1rem",
         figcaption="true",
-        itemprop="screenshot",
         imageWidthPx=1080,
         imageHeightPx=1920
     ) }}

@@ -1,14 +1,14 @@
 {% macro section_links(tabbing=true) %}
     <div>
-        <a class="sectionLinkHitbox" href="/news" {% if not tabbing %}tabIndex="-1"{% endif %}>News</a>
+        <a class="sectionLinkHitbox" href="{{ get_url(path='news/', trailing_slash=true) }}" {% if not tabbing %}tabIndex="-1"{% endif %}>News</a>
         <span class="sectionLink">News</span>
     </div>
     <div>
-        <a class="sectionLinkHitbox" href="/blog" {% if not tabbing %}tabIndex="-1"{% endif %}>Blog</a>
+        <a class="sectionLinkHitbox" href="{{ get_url(path='blog/', trailing_slash=true) }}" {% if not tabbing %}tabIndex="-1"{% endif %}>Blog</a>
         <span class="sectionLink">Blog</span>
     </div>
     <div>
-        <a class="sectionLinkHitbox" href="/portfolio/software" {% if not tabbing %}tabIndex="-1"{% endif %}>Software</a>
+        <a class="sectionLinkHitbox" href="{{ get_url(path='portfolio/software/', trailing_slash=true) }}" {% if not tabbing %}tabIndex="-1"{% endif %}>Software</a>
         <span class="sectionLink">Software</span>
     </div>
 {% endmacro %}
