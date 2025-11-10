@@ -15,6 +15,8 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
+alternate_title = "Ben Plays Games Soundboard"
+
 application_category = "EntertainmentApplication"
 
 price_usd = 0
