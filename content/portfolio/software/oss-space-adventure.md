@@ -1,11 +1,13 @@
 +++
-title = "O.S.S.: Space Adventure"
+title = "OSS Space Adventure"
 date = 2018-02-25
+description = "Retro arcade shooter: You vs. the asteroids! Can you protect your planet or survive the onslaught? Collect power-ups to upgrade your ship."
 
 [extra]
+alternate_name = "O.S.S.: Space Adventure"
 logo = "https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp"
 infobox_images = [
-    { path = "https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp", imageWidthPx = 512, imageHeightPx = 512, description = "O.S.S.: Space Adventure Logo", rendering = "pixelated", radius = "20%" }
+    { path = "https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp", imageWidthPx = 512, imageHeightPx = 512, description = "OSS Space Adventure Logo", rendering = "pixelated", radius = "20%" }
 ]
 available_on_android = true
 available_on_windows = false
@@ -13,7 +15,9 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "MobileApplication"
+application_category = "GameApplication"
+
+price_usd = 0
 
 screenshot_urls = [
     "https://ucarecdn.com/3031c98e-aa6f-48bf-86b7-24a844c5f643/ossspaceadventuretitlescreen.avif",
@@ -27,9 +31,11 @@ release_notes = "Delisted from Google Play"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
 license = "Closed Source (Source Code Preserved)"
+aggregate_rating = { rating_value = 4.643, rating_count = 14, best_rating = 5, worst_rating = 1, rating_explanation = "Based on Google Play Console data of 10th October 2025" }
+availability = "LimitedAvailability"
 +++
 
-{% infobox(title="O.S.S.: Space Adventure") %}
+{% infobox(title="OSS Space Adventure") %}
 {{ infobox_images() }}
 <dl>
     <dt>Availability</dt>
@@ -47,13 +53,13 @@ license = "Closed Source (Source Code Preserved)"
 </dl>
 {% end %}
 
-***O.S.S.: Space Adventure*** was an arcady space shooter mobile game developed by Dynamotivation and published by Mr. Unp3rf3ct. Conceived as a personal technical demonstration, the project marked a pivotal point in the choice of programming languages, shifting focus from Java-based Android applications to cross platform game development using GameMaker Studio 1.4 and its GameMaker Language (GML). The acronym "O.S.S." stood for "Ordinary Space Shooter".
+***OSS Space Adventure*** (originally *O.S.S.: Space Adventure*) was an arcady space shooter mobile game developed by Dynamotivation and published by Mr. Unp3rf3ct. Conceived as a personal technical demonstration, the project marked a pivotal point in the choice of programming languages, shifting focus from Java-based Android applications to cross platform game development using GameMaker Studio 1.4 and its GameMaker Language (GML). The acronym "O.S.S." stood for "Ordinary Space Shooter".
 
 {{ big_heading(name="Development") }}
 
 ---
 
-Development for *O.S.S.: Space Adventure* began around February 2018 at age 15. The primary motivation was a desired shift in the tech stack. Following experience with Java for Android applications, the goal was to transition to a GameMaker as a more lenient and portable platform for game development, specifically GameMaker Studio 1.4 utilizing GameMaker Language (GML).
+Development for *OSS Space Adventure* began around February 2018 at age 15. The primary motivation was a desired shift in the tech stack. Following experience with Java for Android applications, the goal was to transition to a GameMaker as a more lenient and portable platform for game development, specifically GameMaker Studio 1.4 utilizing GameMaker Language (GML).
 
 Hence the project's core purpose was to serve as a proof-of-concept. The focus was on learning the GameMaker Studio tool stack and creating applications with adaptive resolutions, and to eventually develop multiplatform software.
 
@@ -64,7 +70,7 @@ Game design and content took a back seat.
 
 ---
 
-*O.S.S.: Space Adventure* presented an arcady gameplay experience where the player controlled a spaceship navigating through a field of incoming asteroids in a variety of modes. The game featured a pixel art aesthetic with clear on-screen bars for health and cooldowns.\
+*OSS Space Adventure* presented an arcady gameplay experience where the player controlled a spaceship navigating through a field of incoming asteroids in a variety of modes. The game featured a pixel art aesthetic with clear on-screen bars for health and cooldowns.\
 Destroying asteroids led to gear upgrades. Over time, bigger asteroids appeared. Power-ups could be dropped from destroyed asteroids.
 
 # Core Loop
@@ -96,7 +102,7 @@ The game included an achievement system leveraging Google Play's services.
     {{ screenshot(
         index=0,
         width="100%",
-        description="O.S.S.: Space Adventure Main Menu Screenshot",
+        description="OSS Space Adventure Main Menu Screenshot",
         radius="1rem",
         figcaption="true",
         imageWidthPx=1080,
@@ -107,7 +113,7 @@ The game included an achievement system leveraging Google Play's services.
     {{ screenshot(
         index=1,
         width="100%",
-        description="O.S.S.: Space Adventure Endless Mode Screenshot",
+        description="OSS Space Adventure Endless Mode Screenshot",
         radius="1rem",
         figcaption="true",
         imageWidthPx=1080,
@@ -118,7 +124,7 @@ The game included an achievement system leveraging Google Play's services.
     {{ screenshot(
         index=2,
         width="100%",
-        description="O.S.S.: Space Adventure Protect Mode Screenshot",
+        description="OSS Space Adventure Protect Mode Screenshot",
         radius="1rem",
         figcaption="true",
         imageWidthPx=1080,
@@ -132,7 +138,7 @@ The game included an achievement system leveraging Google Play's services.
 
 ---
 
-The transition to GameMaker during development of *O.S.S.: Space Adventure* involved several challenges
+The transition to GameMaker during development of *OSS Space Adventure* involved several challenges
 
 *   New Coding Paradigm
     *   A Complete transitioning from Java's, for a teenager, rather abstract object-oriented principles to GML's more direct, untyped, yet still object oriented principles.
@@ -148,7 +154,7 @@ The transition to GameMaker during development of *O.S.S.: Space Adventure* invo
 
 ---
 
-*O.S.S.: Space Adventure* was publicly available on the Google Play Store for free starting February 25, 2018. Feedback from testers indicated a bug-free yet at first dull experience. However the pixel art, while functional, was low-resolution and lacked shading. The chosen background music, conversely, was generally well-received.
+*OSS Space Adventure* was publicly available on the Google Play Store for free starting February 25, 2018. Feedback from testers indicated a bug-free yet at first dull experience. However the pixel art, while functional, was low-resolution and lacked shading. The chosen background music, conversely, was generally well-received.
 
 The game is no longer available on the Google Play Store, although the original source code is preserved.
 
@@ -157,7 +163,7 @@ The game is no longer available on the Google Play Store, although the original 
 
 ---
 
-Developing *O.S.S.: Space Adventure* provided valuable insights that profoundly influenced my approach to software and game development
+Developing *OSS Space Adventure* provided valuable insights that profoundly influenced my approach to software and game development
 
 *   Tech Stack Pivot
     *   Applying previously learned principles to an entirely new programming language and game engine.

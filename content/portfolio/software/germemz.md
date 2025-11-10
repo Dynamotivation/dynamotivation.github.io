@@ -1,6 +1,7 @@
 +++
 title = "GerMemz"
 date = 2017-02-13
+description = "A private German TV commercial soundboard that featured 45 iconic 1&1 and Carglass memes with Marcel D'Avis and Thorsten Bohms quotes."
 
 [extra]
 logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif"
@@ -12,7 +13,9 @@ available_on_windows = false
 available_on_mac = false
 available_on_linux = false
 available_on_ios = false
-application_category = "MobileApplication"
+application_category = "EntertainmentApplication"
+
+price_usd = 0
 
 screenshot_urls = [
     "https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
@@ -26,6 +29,7 @@ release_notes = "Unreleased"
 programming_language = "Java"
 development_environment = "Android Studio"
 license = "Closed Source"
+availability = "LimitedAvailability"
 +++
 
 {% infobox(title="GerMemz") %}
@@ -46,7 +50,7 @@ license = "Closed Source"
 </dl>
 {% end %}
 
-***GerMemz*** was a mobile soundboard application and first the first serious Dynamotivation project developed in 2017 at age 15. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.
+***GerMemz*** (from "German Memes") was a mobile soundboard application and first the first serious Dynamotivation project developed in 2017 at age 15. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.
 
 
 {{ big_heading(name="Development") }}

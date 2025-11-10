@@ -1,6 +1,7 @@
 +++
 title = "BenPlaysGames Soundboard"
 date = 2018-10-10
+description = "An Android soundboard for YouTuber and Twitch streamer BenPlaysGames."
 
 [extra]
 logo = "https://ucarecdn.com/6d67fb50-8a57-4fb5-bc12-8ab6b20857b4/benplaysgamessoundboardlogoremastered.avif"
@@ -14,7 +15,9 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "MobileApplication"
+application_category = "EntertainmentApplication"
+
+price_usd = 0
 
 screenshot_urls = [
     "https://ucarecdn.com/0ab91ca7-92ce-4992-8473-ef9bcf1e10f8/benplaysgamessoundboardnormal.avif",
@@ -29,6 +32,8 @@ release_notes = "Unreleased"
 programming_language = "Java"
 development_environment = "Android Studio"
 license = "Closed Source (Source Code Decompiled)"
+aggregate_rating = { rating_value = 4.5, rating_count = 8, best_rating = 5, worst_rating = 1, rating_explanation = "Based on Google Play Console data of 10th October 2025" }
+availability = "Discontinued"
 +++
 
 {% infobox(title="BenPlaysGames Soundboard") %}
@@ -56,7 +61,7 @@ license = "Closed Source (Source Code Decompiled)"
 
 ---
 
-The development of the first version of the *BenPlaysGames Soundboard* happened in around a day in October 2018. Rather than reuse the limited codebase of the previous soundboard [*GerMemz*](portfolio/software/germemz), the decision was made to base the entire project around an Apache-2.0 licensed template application developed [first](https://github.com/csabatini/android-Soundboard) by [Caleb Sabatini](https://github.com/csabatini/android-Soundboard/commits?author=csabatini) and having [its UI built](https://github.com/firekesti/Jay-Soundboard) by [Kate "firekesti" Kelly](https://github.com/firekesti).
+The development of the first version of the *BenPlaysGames Soundboard* happened in around a day in October 2018. Rather than reuse the limited codebase of the previous soundboard [*GerMemz*](/portfolio/software/germemz/), the decision was made to base the entire project around an Apache-2.0 licensed template application developed [first](https://github.com/csabatini/android-Soundboard) by [Caleb Sabatini](https://github.com/csabatini) and having [its UI built](https://github.com/firekesti/Jay-Soundboard) by [Kate "firekesti" Kelly](https://github.com/firekesti).
 
 The app was developed entirely free of charge and published with approval, but without direct involvement of the Ben.
 
@@ -65,7 +70,7 @@ The app was developed entirely free of charge and published with approval, but w
 
 ---
 
-Drawing more parallels with [*GerMemz*](portfolio/software/germemz), the template also relied exclusively on Java in an Android Studio project. Therefore, given the previous experience, it was not hard to modify. While the first version only included library updates, minor sorting state bug fixes, new sounds and a differently themes UI; the second version expanded upon the template by incorporating a livestream indicator utilizing the youtube API. What ordinarily used to be a simple channel link, turned into an "on the air" indicator during live streams.
+Drawing more parallels with [*GerMemz*](/portfolio/software/germemz/), the template also relied exclusively on Java in an Android Studio project. Therefore, given the previous experience, it was not hard to modify. While the first version only included library updates, minor sorting state bug fixes, new sounds and a differently themes UI; the second version expanded upon the template by incorporating a livestream indicator utilizing the youtube API. What ordinarily used to be a simple channel link, turned into an "on the air" indicator during live streams.
 
 <div class="blogImageList">
     <style>
@@ -161,4 +166,4 @@ The *BenPlaysGames Soundboard* was a well received, low effort gag application f
 
 ---
 
-Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in [Stellenwerttafel Plus](portfolio/software/stellenwerttafel-plus).
+Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in [Stellenwerttafel Plus](/portfolio/software/stellenwerttafel-plus/).

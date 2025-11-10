@@ -47,14 +47,7 @@
   {% if page.extra.operating_system %}
     "{{ page.extra.operating_system }}"
   {% else %}
-    [
-      {% set first = true %}
-      {% if page.extra.available_on_android %}{% if not first %}, {% endif %}{% set first = false %}"Android"{% endif %}
-      {% if page.extra.available_on_ios %}{% if not first %}, {% endif %}{% set first = false %}"iOS"{% endif %}
-      {% if page.extra.available_on_windows %}{% if not first %}, {% endif %}{% set first = false %}"Windows"{% endif %}
-      {% if page.extra.available_on_mac %}{% if not first %}, {% endif %}{% set first = false %}"macOS"{% endif %}
-      {% if page.extra.available_on_linux %}{% if not first %}, {% endif %}{% set first = false %}"Linux"{% endif %}
-    ]
+    "{% set first = true %}{% if page.extra.available_on_android %}{% if not first %}, {% endif %}{% set first = false %}Android{% endif %}{% if page.extra.available_on_ios %}{% if not first %}, {% endif %}{% set first = false %}iOS{% endif %}{% if page.extra.available_on_windows %}{% if not first %}, {% endif %}{% set first = false %}Windows{% endif %}{% if page.extra.available_on_mac %}{% if not first %}, {% endif %}{% set first = false %}macOS{% endif %}{% if page.extra.available_on_linux %}{% if not first %}, {% endif %}{% set first = false %}Linux{% endif %}"
   {% endif %}{% endif %}{% if page.extra.logo %},
   "image": {
     "@type": "ImageObject",
@@ -68,7 +61,16 @@
   ]{% endif %}{% if page.extra.same_as and page.extra.same_as | length > 0 %},
   "sameAs": [{% for link in page.extra.same_as %}
     "{{ link | safe }}"{% if not loop.last %}, {% endif %}{% endfor %}
-  ]{% endif %}{% if page.extra.price_usd is defined %},
+  ]{% endif %}{% if page.extra.aggregate_rating is defined and page.extra.aggregate_rating.rating_value is defined %},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": {{ page.extra.aggregate_rating.rating_value }}{% if page.extra.aggregate_rating.rating_count is defined %},
+    "ratingCount": {{ page.extra.aggregate_rating.rating_count }}{% endif %}{% if page.extra.aggregate_rating.review_count is defined %},
+    "reviewCount": {{ page.extra.aggregate_rating.review_count }}{% endif %}{% if page.extra.aggregate_rating.best_rating is defined %},
+    "bestRating": {{ page.extra.aggregate_rating.best_rating }}{% endif %}{% if page.extra.aggregate_rating.worst_rating is defined %},
+    "worstRating": {{ page.extra.aggregate_rating.worst_rating }}{% endif %}{% if page.extra.aggregate_rating.rating_explanation is defined %},
+    "ratingExplanation": "{{ page.extra.aggregate_rating.rating_explanation | safe }}"{% endif %}
+  }{% endif %}{% if page.extra.price_usd is defined %},
   "offers": {
     "@type": "Offer",
     "price": "{{ page.extra.price_usd }}",

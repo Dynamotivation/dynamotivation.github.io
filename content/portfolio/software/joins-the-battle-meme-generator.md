@@ -5,7 +5,7 @@ description = "Create authentic \"Joins the Battle\" fighting game splash screen
 
 [extra]
 alternate_name = "... Joins the Battle! Meme Generator"
-availability = "Preorder"
+availability = "LimitedAvailability"
 price_usd = 0
 logo = "https://ucarecdn.com/868a8d31-de37-42ea-b2ce-138e841a9870/joinsthebattleeditorlogoremastered.avif"
 infobox_images = [
@@ -18,7 +18,7 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "MultimediaApplication"
+application_category = "DesignApplication"
 
 screenshot_urls = [
     "https://ucarecdn.com/324e7ae4-6169-4635-a49c-7c6563178caa/joinsthebattlemainmenu.avif",
@@ -32,9 +32,10 @@ screenshot_urls = [
 
 # SEO
 release_notes = "Delisted from Google Play"
-programming_language = "GameMaker Language"
+programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
 license = "Closed Source"
+aggregate_rating = { rating_value = 4.3, rating_count = 2123, best_rating = 5, worst_rating = 1, rating_explanation = "Based on Google Play Console data of 10th October 2025; Historical data available at: https://web.archive.org/web/20190601032534/https://play.google.com/store/apps/details?id=de.unp3rf3ct.JoinsTheBattleGenerator" }
 +++
 
 {% infobox(title="Joins the Battle Meme Generator") %}
@@ -220,7 +221,7 @@ The application has been unavailable for several years due to educational and em
 *Joins the Battle Meme Generator* provided critical insights into mobile application development, user experience, and the realities of public software distribution.
 
 *   UI considerations
-    *   Learned to watch out for the strength and weaknesses in terms of UI of any given engine or framework. The need to create *GMX Material Design Lite* took away time and resources from developing the app, but taught valuable lessons in exchange about scaling and user experience.
+    *   Learned to watch out for the strength and weaknesses in terms of UI of any given engine or framework. The need to create *GMS Material Design Lite* took away time and resources from developing the app, but taught valuable lessons in exchange about scaling and user experience.
 *   User-centric design
     *   Successfully developed a tool that was easy to pick up and use across a wide target audience, providing powerful customization options for a popular meme format.
 *   Product lifecycle management

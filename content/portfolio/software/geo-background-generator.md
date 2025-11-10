@@ -1,6 +1,7 @@
 +++
 title = "Geo Background Generator"
 date = 2018-04-01
+description = "A geometric pattern background generator with customizable shapes, gradients, and multicolor effects."
 
 [extra]
 logo = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif"
@@ -14,7 +15,9 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "MobileApplication"
+application_category = "DesignApplication"
+
+price_usd = 0
 
 screenshot_urls = [
     "https://ucarecdn.com/5bb09828-843b-4877-958f-b01dd1e662ca/geobackgroundgeneratornewui.avif",
@@ -29,6 +32,8 @@ release_notes = "Delisted from Google Play"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
 license = "Closed Source (Source Code Lost)"
+aggregate_rating = { rating_value = 4.167, rating_count = 6, best_rating = 5, worst_rating = 1, rating_explanation = "Based on Google Play Console data of 10th October 2025" }
+availability = "LimitedAvailability"
 +++
 
 {% infobox(title="Geo Background Generator") %}
@@ -58,7 +63,7 @@ license = "Closed Source (Source Code Lost)"
 ---
 
 The development of *Geo Background Generator* came along quickly in a couple of days in 2018 after a few days spent working out the real time graphic capabilities of GameMaker Studio 1.4. The achieved effects proved to be pretty and a nice contrast with the at the time popular material design of Android. The core system was extracted from a game prototype being worked on and integrated with its own pixel art UI, reminiscent of said prototype.\
-Later on the small UI library *GMX Material Design Lite*, developed too by Dynamotivation for the [*... Joins the Battle! Meme Generator*](portfolio/software/joins-the-battle-meme-generator), was integrated to better show off the intended use as a contrast to the sterile system UI.
+Later on the small UI library *GMS Material Design Lite*, developed too by Dynamotivation for the [*... Joins the Battle! Meme Generator*](/portfolio/software/joins-the-battle-meme-generator/), was integrated to better show off the intended use as a contrast to the sterile system UI.
 
 
 {{ big_heading(name="Challenges") }}

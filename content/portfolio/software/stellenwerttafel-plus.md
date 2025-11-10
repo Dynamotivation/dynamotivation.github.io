@@ -1,8 +1,10 @@
 +++
 title = "Stellenwerttafel Plus"
 date = 2019-02-07
+description = "Interactive place value chart for learning binary, decimal, hexadecimal and more interactively for Windows and Android, based on Ulrich Kortenkamp original!"
 
 [extra]
+alternate_name = "Place Value Chart Plus"
 logo = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif"
 infobox_images = [
     { path = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Stellenwerttafel Plus Logo", radius = "20%" }
@@ -13,7 +15,10 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "Educational"
+application_category = "EducationalApplication"
+availability = "LimitedAvailability"
+
+price_usd = 0
 
 screenshot_urls = [
     "https://ucarecdn.com/7ff7d6d6-e097-40d1-a531-fb6207b25651/stellenwerttafelplusbinaryscreenshot.avif",
@@ -27,6 +32,7 @@ release_notes = "Unreleased"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
 license = "Closed Source (Source Code Preserved)"
+aggregate_rating = { rating_value = 5, rating_count = 1, best_rating = 5, worst_rating = 5, rating_explanation = "Based on the confirmed grade the teacher would have administered" }
 +++
 
 {% infobox(title="Stellenwerttafel Plus") %}
@@ -47,7 +53,7 @@ license = "Closed Source (Source Code Preserved)"
 </dl>
 {% end %}
 
-***Stellenwerttafel Plus*** (Place Value Chart Plus) was an educational application developed by Dynamotivation in early 2019 at age 16. It represented a multi-platform port and enhancement of [Ulrich Kortenkamp](https://kortenkamps.net)'s ["Stellenwerttafel" IOS app](https://apps.apple.com/us/app/place-value-chart/id568750442), designed to facilitate a playful understanding of various number systems for students in a visualized place value chart. The project was conceived as an internal school project with its creation provided significant insights into client-driven development and cross-platform adaptation.
+***Stellenwerttafel Plus*** (meaning *Place Value Chart Plus*) was an educational application developed by Dynamotivation in early 2019 at age 16. It represented a multi-platform port and enhancement of [Ulrich Kortenkamp](https://kortenkamps.net)'s ["Stellenwerttafel" IOS app](https://apps.apple.com/us/app/place-value-chart/id568750442), designed to facilitate a playful understanding of various number systems for students in a visualized place value chart. The project was conceived as an internal school project with its creation provided significant insights into client-driven development and cross-platform adaptation.
 
 
 {{ big_heading(name="Development") }}
