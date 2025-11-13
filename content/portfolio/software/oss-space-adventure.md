@@ -172,6 +172,6 @@ Developing *OSS Space Adventure* provided valuable insights that profoundly infl
 *   Adaptive Scaling
     *   Practical application of adaptive resolution techniques for mobile devices.
 *   Attribution
-    *   Hands-on experience with managing third-party integrations with proper attribution and license adherence. This is a strong contrast to the ill fated outcome of [GerMemz](/portfolio/software/germemz/).
+    *   Hands-on experience with managing third-party integrations with proper attribution and license adherence. This is a strong contrast to the ill fated outcome of [*GerMemz*](/portfolio/software/germemz/).
 *   Integration with Third Party APIs and SSO
     *   Achievements were handled by integrating with the Google Play APIs for signing in and tracking progress.

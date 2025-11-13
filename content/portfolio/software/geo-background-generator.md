@@ -63,7 +63,7 @@ availability = "LimitedAvailability"
 ---
 
 The development of *Geo Background Generator* came along quickly in a couple of days in 2018 after a few days spent working out the real time graphic capabilities of GameMaker Studio 1.4. The achieved effects proved to be pretty and a nice contrast with the at the time popular material design of Android. The core system was extracted from a game prototype being worked on and integrated with its own pixel art UI, reminiscent of said prototype.\
-Later on the small UI library *GMS Material Design Lite*, developed too by Dynamotivation for the [*... Joins the Battle! Meme Generator*](/portfolio/software/joins-the-battle-meme-generator/), was integrated to better show off the intended use as a contrast to the sterile system UI.
+Later on the small UI library *GMS Material Design Lite*, developed too by Dynamotivation for the [*Joins the Battle Meme Generator*](/portfolio/software/joins-the-battle-meme-generator/), was integrated to better show off the intended use as a contrast to the sterile system UI.
 
 
 {{ big_heading(name="Challenges") }}

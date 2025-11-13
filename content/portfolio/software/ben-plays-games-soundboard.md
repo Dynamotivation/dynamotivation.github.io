@@ -168,4 +168,4 @@ The *BenPlaysGames Soundboard* was a well received, low effort gag application f
 
 ---
 
-Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in [Stellenwerttafel Plus](/portfolio/software/stellenwerttafel-plus/).
+Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in [*Stellenwerttafel Plus*](/portfolio/software/stellenwerttafel-plus/).

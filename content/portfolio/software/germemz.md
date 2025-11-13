@@ -157,7 +157,7 @@ The original APKs and decompiled source code for GerMemz are still preserved and
 
 ---
 
-Regardless, developing GerMemz provided invaluable insights, significantly shaping my understanding of software development and influencing my subsequent career path:
+Regardless, developing *GerMemz* provided invaluable insights, significantly shaping my understanding of software development and influencing my subsequent career path:
 
 *   Niche Specialization:
     *   The project taught me how to recognise market niches and is responsible for the continued efforts towards creating highly specialized edit- and generation utilities.

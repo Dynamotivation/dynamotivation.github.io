@@ -56,7 +56,7 @@ This means that there will be no need to rebuild assets or recreate core functio
         </tr>
         <tr>
             <td>
-                <b>... Joins the Battle! Meme Generator</b>
+                <b>Joins the Battle Meme Generator</b>
             </td>
             <td>
                 <b>Geo Background Generator</b>
