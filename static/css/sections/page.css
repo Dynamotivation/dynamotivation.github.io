@@ -106,7 +106,7 @@
     line-height: 1.8rem;
 }
 
-#contentContainer .bigHeading {
+#contentContainer h2 {
     font-size: 3rem;
     font-weight: bold;
     margin: 6rem 0 2rem 0;
@@ -115,8 +115,25 @@
 }
 
 @media (max-width: 30rem) {
-    #contentContainer .bigHeading {
+    #contentContainer h2 {
         font-size: 2.5rem;
+    }
+}
+
+/* h3 styling: scale down from h2 while keeping consistent spacing rhythm */
+#contentContainer h3 {
+    /* Increased for clearer hierarchy vs h2 */
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 4.5rem 0 1.5rem 0;
+    display: block;
+    line-height: 2.75rem;
+}
+
+@media (max-width: 30rem) {
+    #contentContainer h3 {
+        font-size: 2rem;
+        line-height: 2.4rem;
     }
 }
 
@@ -144,7 +161,8 @@
     color: inherit;
 }
 
-.howto-step h2 {
+/* Ensure headings used inside howto-step keep their smaller margins—make the selector specific so it overrides the general #contentContainer h2 rule */
+#contentContainer .howto-step h2 {
     margin: 0;
     scroll-margin-top: 6rem;
 }

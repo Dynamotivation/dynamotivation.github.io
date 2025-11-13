@@ -25,7 +25,29 @@
 <link rel="canonical" href="{{ page.permalink | safe }}">
 {% block article_meta %}{% endblock %}
 
-{% block jsonld %}{% endblock %}
+{% block jsonld %}
+{# Emit NewsArticle JSON-LD for pages in the `news` section (including subsections) #}
+{% set section_root = page.section | default(value='') | split(pat="/") %}
+{% if section_root[0] == "news" %}
+    {# Prefer frontmatter image fields if present #}
+    {% set image_url = page.extra.image | default(value=page.extra.logo) %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "@id": "{{ page.permalink | safe }}#news",
+        "headline": "{{ page.title }}",
+        "description": "{{ page.description }}",
+        "datePublished": "{{ page.date }}",
+        "author": {"@type": "Person", "name": "Dynamotivation"},
+        "publisher": {"@type": "Organization", "name": "Dynamotivation", "url": "{{ get_url(path='', trailing_slash=true) | safe }}", "logo": {"@type": "ImageObject", "url": "{{ get_url(path='images/fullLogo.png') }}"}},
+        {% if page.updated %}"dateModified": "{{ page.updated }}",{% endif %}
+        {% if image_url %}"image": "{{ image_url | safe }}",{% endif %}
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ page.permalink | safe }}"}
+    }
+    </script>
+{% endif %}
+{% endblock %}
 
 {% endif %}
 

@@ -1,3 +1,4 @@
+{% set _is_hero = hero | default(value=false) %}
 {% if figcaption %}
 <figure>
 {% endif %}
@@ -12,7 +13,8 @@
         | replace(from="  ", to=" ")
         | replace(from="-", to="_") }}"
     {% if itemprop %}itemprop="{{ itemprop }}"{% endif %}
-    style="{% if height %}height: {{ height }}; {% endif %}{% if width %}width: {{ width }}; {% endif %}{% if imageWidthPx and imageHeightPx %}aspect-ratio: {{ imageWidthPx }} / {{ imageHeightPx }}; {% endif %}{% if radius %}border-radius: {{ radius }}; {% endif %}{% if rendering %}image-rendering: {{ rendering }}; {% endif %}"
+    {% if _is_hero %}fetchpriority="high"{% endif %}
+    style="{% if height %}height: {{ height }}; {% endif %}{% if width %}width: {{ width }}; {% endif %}{% if imageWidthPx and imageHeightPx %}aspect-ratio: {{ imageWidthPx }} / {{ imageHeightPx }}; {% endif %}{% if radius %}border-radius: {{ radius }}; {% endif %}"
     class="blogImage"/>
 {% if figcaption %}
   <figcaption>{{ description | markdown(inline=true) | safe }}</figcaption>

@@ -58,7 +58,7 @@ availability = "LimitedAvailability"
 ***Geo Background Generator*** was the first GameMaker Studio 1.4 powered utility developed by Dynamotivation and published by Mr. Unp3rf3ct in 2018 at age 16. It was used to generate aesthetically pleasing geometry pattern based backgrounds from user input colors and parameters.
 
 
-{{ big_heading(name="Development") }}
+## Development
 
 ---
 
@@ -66,7 +66,7 @@ The development of *Geo Background Generator* came along quickly in a couple of 
 Later on the small UI library *GMS Material Design Lite*, developed too by Dynamotivation for the [*Joins the Battle Meme Generator*](/portfolio/software/joins-the-battle-meme-generator/), was integrated to better show off the intended use as a contrast to the sterile system UI.
 
 
-{{ big_heading(name="Challenges") }}
+## Challenges
 
 ---
 
@@ -79,7 +79,7 @@ During the development of *Geo Background Generator* a few minor challenges aros
     This is necessitated by the sandboxing GameMaker Studio 1.4 imposes on applications for security. 
 
 
-{{ big_heading(name="Features") }}
+## Features
 
 ---
 
@@ -149,14 +149,14 @@ In the latest version the features included:
 </div>
 
 
-{{ big_heading(name="Availability") }}
+## Availability
 
 ---
 
 The application used to be officially available on Google Play, but has been unavailable for several years due to educational and employment obligations on top of lost interest by the initial publisher. The source code has also been lost in the meantime, but with the skill set achieved in the meantime would be easy to remake.
 
 
-{{ big_heading(name="Lessons Learned") }}
+## Lessons Learned
 
 ---
 

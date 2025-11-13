@@ -1,0 +1,137 @@
+{% extends "sections/page.html" %}
+
+{% block moreAdditionalResources %}{% endblock %}
+
+{% block jsonld %}
+{# Prepare an image URL: prefer frontmatter logo/image, otherwise try to extract first src from content #}
+{# Resolve image URL robustly: prefer top-level `page.image`, then `page.extra.image`, then `page.extra.logo` #}
+{% set image_url = "" %}
+{% if page.image is defined and page.image %}
+    {% set image_url = page.image %}
+{% elif page.extra is defined and page.extra.image is defined and page.extra.image %}
+    {% set image_url = page.extra.image %}
+{% elif page.extra is defined and page.extra.logo is defined and page.extra.logo %}
+    {% set image_url = page.extra.logo %}
+{% endif %}
+{# If still empty, try to extract the first src="..." from the rendered content as a fallback #}
+{% if not image_url and page.content is defined %}
+  {% set parts = page.content | split(pat='src="') %}
+  {% if parts | length > 1 %}
+    {% set after = parts[1] | split(pat='"') %}
+    {% if after | length > 0 %}
+      {% set image_url = after[0] %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "@id": "{{ page.permalink | safe }}#news",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "author": {
+        "@type": "Person",
+        "name": "Dynamotivation"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Dynamotivation",
+        "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ get_url(path='images/fullLogo.png') }}"
+        }
+    },
+    "datePublished": "{{ page.date }}"{% if page.updated %},
+    "dateModified": "{{ page.updated }}"{% endif %}{% if image_url %},
+    "image": "{{ image_url | safe }}"{% endif %},
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.permalink | safe }}"
+    }
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "{{ page.permalink | safe }}#webpage",
+    "isPartOf": {
+        "@type": "WebSite",
+        "name": "{{ page.extra.site_name | default(value='Dynamotivation') }}",
+        "url": "{{ page.extra.site_url | default(value=get_url(path='', trailing_slash=true)) | safe }}"
+    },
+    "url": "{{ page.permalink | safe }}",
+    "name": "{{ page.title }} | Dynamotivation",
+    "description": "{{ page.description }}"
+}
+</script>
+
+{# compute subsection parts and page position #}
+{% set section_parts = page.section | default(value='') | split(pat='/') %}
+{% set page_pos = 3 %}
+{% if section_parts | length > 1 %}
+    {% set page_pos = 4 %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ get_url(path='', trailing_slash=true) | safe }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "News",
+            "item": "{{ get_url(path='news/', trailing_slash=true) | safe }}"
+        }{% if section_parts | length > 1 %},
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ section_parts[1] | replace(pat='-', with=' ') }}",
+            "item": "{{ get_url(path=("news/" ~ section_parts[1] ~ "/"), trailing_slash=true) | safe }}"
+        }{% endif %},
+        {
+            "@type": "ListItem",
+            "position": {{ page_pos }},
+            "name": "{{ page.title }}",
+            "item": "{{ page.permalink | safe }}"
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+{% block article_meta %}
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }} | Dynamotivation">
+<meta property="og:description" content="{{ page.description }}">
+{# Prefer top-level page.image, then extra.image, then extra.logo, then site logo #}
+<meta property="og:image" content="{{ page.image | default(value=(page.extra.image | default(value=(page.extra.logo | default(value=get_url(path='images/fullLogo.png')))))) | safe }}">
+<meta property="og:url" content="{{ page.permalink | safe }}">
+<meta property="og:site_name" content="Dynamotivation">
+
+<!-- Article meta (published/modified) -->
+{% if page.date %}
+<meta property="article:published_time" content="{{ page.date }}">
+{% endif %}
+{% if page.updated %}
+<meta property="article:modified_time" content="{{ page.updated }}">
+{% endif %}
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+{# Ensure Twitter uses the same image as OpenGraph #}
+<meta name="twitter:image" content="{{ page.image | default(value=(page.extra.image | default(value=(page.extra.logo | default(value=get_url(path='images/fullLogo.png')))))) | safe }}">
+{% endblock %}

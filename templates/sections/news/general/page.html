@@ -1,0 +1,60 @@
+{% extends "sections/page.html" %}
+
+{% block moreAdditionalResources %}{% endblock %}
+
+{% block jsonld %}
+{# Prepare an image URL: prefer frontmatter logo/image #}
+{% set image_url = page.extra.logo | default(value=page.extra.image) %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "@id": "{{ page.permalink | safe }}#news",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "author": {
+        "@type": "Person",
+        "name": "Dynamotivation"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Dynamotivation",
+        "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ get_url(path='images/fullLogo.png') }}"
+        }
+    },
+    "datePublished": "{{ page.date }}"{% if page.updated %},
+    "dateModified": "{{ page.updated }}"{% endif %}{% if image_url %},
+    "image": "{{ image_url | safe }}"{% endif %},
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.permalink | safe }}"
+    }
+}
+</script>
+{% endblock %}
+
+{% block article_meta %}
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }} | Dynamotivation">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) }}">
+<meta property="og:url" content="{{ page.permalink | safe }}">
+<meta property="og:site_name" content="Dynamotivation">
+
+<!-- Article meta (published/modified) -->
+{% if page.date %}
+<meta property="article:published_time" content="{{ page.date }}">
+{% endif %}
+{% if page.updated %}
+<meta property="article:modified_time" content="{{ page.updated }}">
+{% endif %}
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+{% endblock %}

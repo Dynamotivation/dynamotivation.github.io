@@ -5,9 +5,9 @@ description = "Retro arcade shooter: You vs. the asteroids! Can you protect your
 
 [extra]
 alternate_name = "O.S.S.: Space Adventure"
-logo = "https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp"
+logo = "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp", imageWidthPx = 512, imageHeightPx = 512, description = "OSS Space Adventure Logo", rendering = "pixelated", radius = "20%" }
+    { path = "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif", imageWidthPx = 512, imageHeightPx = 512, description = "OSS Space Adventure Logo", radius = "20%" }
 ]
 available_on_android = true
 available_on_windows = false
@@ -55,7 +55,7 @@ availability = "LimitedAvailability"
 
 ***OSS Space Adventure*** (originally *O.S.S.: Space Adventure*) was an arcady space shooter mobile game developed by Dynamotivation and published by Mr. Unp3rf3ct. Conceived as a personal technical demonstration, the project marked a pivotal point in the choice of programming languages, shifting focus from Java-based Android applications to cross platform game development using GameMaker Studio 1.4 and its GameMaker Language (GML). The acronym "O.S.S." stood for "Ordinary Space Shooter".
 
-{{ big_heading(name="Development") }}
+## Development
 
 ---
 
@@ -66,7 +66,7 @@ Hence the project's core purpose was to serve as a proof-of-concept. The focus w
 Game design and content took a back seat.
 
 
-{{ big_heading(name="Gameplay") }}
+## Gameplay
 
 ---
 
@@ -134,7 +134,7 @@ The game included an achievement system leveraging Google Play's services.
 </div>
 
 
-{{ big_heading(name="Challenges") }}
+## Challenges
 
 ---
 
@@ -150,7 +150,7 @@ The transition to GameMaker during development of *OSS Space Adventure* involved
     *   Initial gameplay was perceived as dull. This led to the addition of new modes and visual effects.
 
 
-{{ big_heading(name="Availability") }}
+## Availability
 
 ---
 
@@ -159,7 +159,7 @@ The transition to GameMaker during development of *OSS Space Adventure* involved
 The game is no longer available on the Google Play Store, although the original source code is preserved.
 
 
-{{ big_heading(name="Lessons Learned") }}
+## Lessons Learned
 
 ---
 

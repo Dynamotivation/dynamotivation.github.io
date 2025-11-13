@@ -59,7 +59,7 @@ availability = "Discontinued"
 ***BenPlaysGames Soundboard*** was the second soundboard application for Android developed by Dynamotivation and published by Mr. Unp3rf3ct in late 2018. This time it featured sound clips of the UK based YouTuber [BenPlaysGames](https://www.youtube.com/@BensPlaysGames) which Dynamotivation befriended before age 16. Hence this time the stage was set for a release without copyright troubles.
 
 
-{{ big_heading(name="Development") }}
+## Development
 
 ---
 
@@ -68,7 +68,7 @@ The development of the first version of the *BenPlaysGames Soundboard* happened 
 The app was developed entirely free of charge and published with approval, but without direct involvement of the Ben.
 
 
-{{ big_heading(name="Features") }}
+## Features
 
 ---
 
@@ -147,7 +147,7 @@ Drawing more parallels with [*GerMemz*](/portfolio/software/germemz/), the templ
 </div>
 
 
-{{ big_heading(name="Challenges") }}
+## Challenges
 
 ---
 
@@ -157,14 +157,14 @@ There were only 2 real challenges this time around, both of which boiled down to
 * Finding out what mild foul language to censor store listing content
 
 
-{{ big_heading(name="Availability") }}
+## Availability
 
 ---
 
 The *BenPlaysGames Soundboard* was a well received, low effort gag application for a small circle of friends and audience members. It was mainly used in lieu of a proper stream deck. Availability was limited to Android as this is what most participants used at the time.
 
 
-{{ big_heading(name="Lessons Learned") }}
+## Lessons Learned
 
 ---
 

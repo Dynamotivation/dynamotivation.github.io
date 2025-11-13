@@ -53,7 +53,7 @@ availability = "LimitedAvailability"
 ***GerMemz*** (from "German Memes") was a mobile soundboard application and first the first serious Dynamotivation project developed in 2017 at age 15. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.
 
 
-{{ big_heading(name="Development") }}
+## Development
 
 ---
 
@@ -66,7 +66,7 @@ The project was conceived due to an overlap of perceived void in the market and 
 Content was periodically added in waves, starting with 9, then 15, 21, and 30 sounds from 1&1 commercials, followed by a separate addition of 15 Carglass sounds.
 
 
-{{ big_heading(name="Features") }}
+## Features
 
 ---
 
@@ -127,7 +127,7 @@ Highlights:
 </div>
 
 
-{{ big_heading(name="Challenges") }}
+## Challenges
 
 ---
 
@@ -139,7 +139,7 @@ Developing *GerMemz* presented several significant hurdles:
     *   A lack of English proficiency at the time hindered effective searching for and understanding of advanced or detailed online tutorials.
 
 
-{{ big_heading(name="Availability") }}
+## Availability
 
 ---
 
@@ -153,7 +153,7 @@ The application was however never publicly released on platforms such as the Goo
 The original APKs and decompiled source code for GerMemz are still preserved and remain unreleased.
 
 
-{{ big_heading(name="Lessons Learned") }}
+## Lessons Learned
 
 ---
 

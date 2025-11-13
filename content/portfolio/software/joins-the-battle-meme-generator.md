@@ -59,7 +59,7 @@ aggregate_rating = { rating_value = 4.3, rating_count = 2123, best_rating = 5, w
 ***Joins the Battle Meme Generator*** (originally *... Joins the Battle Meme Generator*) was a successful Android application developed by Dynamotivation at age 16 and initially published by Mr. Unp3rf3ct. The application allowed users to create custom "X Joins the Battle" style splash screen memes, replicating the visual makeup seen in fighting game character reveal trailers. This project marked a significant pivot towards developing specialized content creation tools, mimicking preestablished art styles without without incorporating copyrighted assets.
 
 
-{{ big_heading(name="Development") }}
+## Development
 
 ---
 
@@ -68,7 +68,7 @@ Development for *Joins the Battle Meme Generator* first started in October 2018 
 This application represented a combination of the previous concept "style it yourself", from [*Geo Background Generator*](/portfolio/software/geo-background-generator), and riding the popularity of external content, as [*GerMemz*](/portfolio/software/germemz) did years prior. Importantly it also carved the way back from game development to traditional software utilities.
 
 
-{{ big_heading(name="Challenges") }}
+## Challenges
 
 ---
 
@@ -86,7 +86,7 @@ Developing *Joins the Battle Meme Generator* presented a set of challenges, exte
     In this process the resolution and aspect ratio handling, and UI were spun out into the private Libraries. The *DynaScale Framework* was used and evolved in all future GameMaker projects and *GMS Material Design Lite* was used in [*Stellenwerttafel Plus*](/portfolio/software/stellenwerttafel-plus) and backported to [*Geo Background Generator*](/portfolio/software/geo-background-generator).
 
 
-{{ big_heading(name="Features") }}
+## Features
 
 ---
 
@@ -205,7 +205,7 @@ The target audience for the generator was broad, encompassing fighting game fans
 </div>
 
 
-{{ big_heading(name="Reception and Availability") }}
+## Reception and Availability
 
 ---
 
@@ -214,7 +214,7 @@ The target audience for the generator was broad, encompassing fighting game fans
 The application has been unavailable for several years due to educational and employment obligations, and a disconnect with the initial publisher. However, maintenance has resumed behind the scenes, with plans for the application to return soon, integrating lessons learned in the years since.
 
 
-{{ big_heading(name="Lessons Learned") }}
+## Lessons Learned
 
 ---
 

@@ -5,8 +5,8 @@ template = "sections/page.html"
 updated = 2025-01-19
 +++
 
-{{ big_heading(name="Rubik Font") }}
+## Rubik Font
 {{ load_data(path="static/fonts/rubik/OFL.txt") }}
 
-{{ big_heading(name="Hamburger Menu Button") }}
+## Hamburger Menu Button
 {{ load_data(path="static/other/licenses/hamburgerButtonLicense.txt") }}

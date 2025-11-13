@@ -22,7 +22,7 @@
       decoding="async"
       fetchpriority="low"
       loading="lazy"
-      style="{% if height %}height: {{ height }}; {% endif %}{% if width %}width: {{ width }}; {% endif %}{% if imageWidthPx and imageHeightPx %}aspect-ratio: {{ imageWidthPx }} / {{ imageHeightPx }}; {% endif %}{% if radius %}border-radius: {{ radius }}; {% endif %}{% if rendering %}image-rendering: {{ rendering }}; {% endif %}"
+      style="{% if height %}height: {{ height }}; {% endif %}{% if width %}width: {{ width }}; {% endif %}{% if imageWidthPx and imageHeightPx %}aspect-ratio: {{ imageWidthPx }} / {{ imageHeightPx }}; {% endif %}{% if radius %}border-radius: {{ radius }}; {% endif %}"
       class="blogImage"/>
   {% if figcaption %}
     <figcaption>{{ description | markdown(inline=true) | safe }}</figcaption>

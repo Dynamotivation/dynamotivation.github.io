@@ -5,7 +5,7 @@ template = "sections/page.html"
 updated = 2025-02-25
 +++
 
-{{ big_heading(name="Website Hosting") }}
+## Website Hosting
 
 The hosting provider making this website accessible to you over the internet is:\
 *GitHub Inc.\
@@ -17,7 +17,7 @@ GitHub strictly only provides hosting and does not endorse the website or any co
 
 The author of this website is generally considered the Data Controller under the GDPR. However, since the website is hosted on GitHub's infrastructure, GitHub independently controls and manages the server logs. Any requests related to deletion or modification of these logs should be directed to GitHub directly.
 
-{{ big_heading(name="Image Hosting") }}
+## Image Hosting
 
 The hosting provider making images accessible to you over the internet is:\
 *Uploadcare Inc.\
@@ -29,7 +29,7 @@ Uploadcare strictly only provides hosting and does not endorse the website or an
 
 The author of this website is generally considered the Data Controller under the GDPR. However, since the website is hosted on Uploadcare's infrastructure, Uploadcare independently controls and manages the server logs. Any requests related to deletion or modification of these logs should be directed to Uploadcare directly.
 
-{{ big_heading(name="Data Collection and Processing") }}
+## Data Collection and Processing
 
 Our hosting providers collect the following data in log files, which your browser transmits when requesting the website:
 - Your IP address
@@ -50,7 +50,7 @@ No tracking by the Data Controller occurs. The hosters do not make this data ava
 
 The collected data is deleted as soon as it is no longer needed for its purpose.
 
-{{ big_heading(name="International Data Transfers") }}
+## International Data Transfers
 
 Therefore, the hosters are the recipients of your personally identifiable information. This arrangement reflects the author's legitimate interest under Article 6(1)(f) GDPR in not having to maintain their own server on their premises.\
 GitHub's servers are located in the USA.\
@@ -65,7 +65,7 @@ The hosters have implemented compliance measures for international data transfer
 **WARNING: The following link redirects to one of the third parties (Google Drive) used by Uploadcare and not affiliated with this website!**
 ([https://uploadcare.com/about/dpa/](https://uploadcare.com/about/dpa/))
 
-{{ big_heading(name="Your Rights under the GDPR") }}
+## Your Rights under the GDPR
 Under the General Data Protection Regulation (GDPR), you have the following rights:
 
 - Right of Access (Article 15 GDPR): You have the right to request access to your personal data.
@@ -82,6 +82,6 @@ For more information on how to object to or remove your data from each hoster, p
 *Uploadcare Privacy Policy*\
 ([https://uploadcare.com/about/privacy-policy/](https://uploadcare.com/about/privacy-policy/))
 
-{{ big_heading(name="Cookies") }}
+## Cookies
 
 This website does not use cookies.
