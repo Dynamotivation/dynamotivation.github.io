@@ -1,0 +1,5 @@
+{% macro hash_letters(input) %}
+  {{ get_hash(literal=input, sha_type=256, base64=false)
+      | lower
+      | regex_replace(pattern="[0-9]", rep="") }}
+{% endmacro hash_letters %}

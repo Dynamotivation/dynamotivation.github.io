@@ -1,4 +1,5 @@
 {% extends "sections/section_seo.html" %}
+{% import "macros/hash_letters.html" as hash_letters %}
 
 {% block additionalResources %}
 
@@ -17,10 +18,15 @@
     <div id="coverContainer">
       <div id="leftIconStack">
         <div class="wrapper">
-          <div id="battleMemeGeneratorIcon">
+          <style>
+            #battleMemeGeneratorIcon:hover {
+              view-transition-name: {{ hash_letters::hash_letters(input="https://ucarecdn.com/868a8d31-de37-42ea-b2ce-138e841a9870/joinsthebattleeditorlogoremastered.avif") }};
+            }
+          </style>
+          <a id="battleMemeGeneratorIcon" href={{ get_url(path="portfolio/software/joins-the-battle-meme-generator/", trailing_slash=true) }}>
             <img class="icon" src={{ get_url(path="images/joinsTheBattle/iconForeground.webp" ) }}
               alt="Everyone Joins the Battle Meme Generator Icon" draggable="false">
-          </div>
+          </a>
           <div id="allOutAttackGeneratorIcon">
             <img class="icon" src={{ get_url(path="images/allOutAttackGenerator/iconForeground.webp" ) }}
               alt="All-out Attack Animation Generator Icon" draggable="false">
@@ -29,28 +35,41 @@
       </div>
       <div id="centreLogoStack">
         <div class="wrapper">
-          <div id="ordinarySpaceShooterIcon">
+          <style>
+            #ordinarySpaceShooterIcon:hover {
+              view-transition-name: {{ hash_letters::hash_letters(input="https://ucarecdn.com/f324ab78-ab77-419c-8725-8af4d571bd02/OSSSpaceAdventure.webp") }};
+            }
+            #geoBackgroundGeneratorIcon:hover {
+              view-transition-name: {{ hash_letters::hash_letters(input="https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif") }};
+            }
+          </style>
+          <a id="ordinarySpaceShooterIcon" href={{ get_url(path="portfolio/software/oss-space-adventure/", trailing_slash=true) }}>
             <img class="icon" src={{ get_url(path="images/ordinarySpaceShooter/iconForeground.webp" ) }}
               alt="OSS Space Adventure Icon" draggable="false">
-          </div>
+          </a>
           <div id="logo">
             <div></div>
             <img src={{ get_url(path="images/innerLogoForeground.svg" ) }} alt="Dynamotivation Logo" draggable="false">
           </div>
-          <div id="geoBackgroundGeneratorIcon">
-            <img src={{ get_url(path="images/geoBackgroundGenerator/iconBackground.svg" ) }} alt="" draggable="false">
+          <a id="geoBackgroundGeneratorIcon" href={{ get_url(path="portfolio/software/geo-background-generator/", trailing_slash=true) }}>
+            <img src=https://ucarecdn.com/a632d6aa-a684-454b-bf9f-69541b61ac4b/geobackgroundgeneratorlogoremasteredbackground.svg alt="" draggable="false">
             <img class="icon" src={{ get_url(path="images/geoBackgroundGenerator/iconForeground.svg" ) }}
               alt="Geo Background Generator Icon" draggable="false">
-          </div>
+          </a>
         </div>
       </div>
       <div id="rightIconStack">
         <div class="wrapper">
-          <div id="benPlaysGamesSoundboardIcon">
+          <style>
+            #benPlaysGamesSoundboardIcon:hover {
+              view-transition-name: {{ hash_letters::hash_letters(input="https://ucarecdn.com/6d67fb50-8a57-4fb5-bc12-8ab6b20857b4/benplaysgamessoundboardlogoremastered.avif") }};
+            }
+          </style>
+          <a id="benPlaysGamesSoundboardIcon" href={{ get_url(path="portfolio/software/ben-plays-games-soundboard/", trailing_slash=true) }}>
             <img src={{ get_url(path="images/benPlaysGamesSoundboard/iconBackground.webp" ) }} alt="" draggable="false">
             <img class="icon" src={{ get_url(path="images/benPlaysGamesSoundboard/iconForeground.webp" ) }}
               alt="BenPlaysGames Soundboard Icon" draggable="false">
-          </div>
+          </a>
           <div id="mysteryProjectIcon">
             <img src={{ get_url(path="images/placeholder/iconBackground.svg" ) }} alt="" draggable="false">
             <img class="icon" src={{ get_url(path="images/placeholder/iconForeground.svg" ) }}

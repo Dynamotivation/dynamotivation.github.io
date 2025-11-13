@@ -35,7 +35,7 @@
 <main id="pageContainer">
     <div id="fade-out-top"></div>
     <div id="titleContainer">
-        <h1 id="pageTitle">{{ page.title }}</h1>
+        <h1 id="pageTitle" style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }}">{{ page.title }}</h1>
         <noscript>
             <hr>
         </noscript>
@@ -45,7 +45,7 @@
     </div>
     <div id="dateContainer">
         {% if page.date %}
-        <p>Date: {{ page.date }}</p>
+        <p>Date: <span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date }}</span></p>
         {% endif %}
         {% if page.updated %}
         <p>Updated: {{ page.updated }}</p>

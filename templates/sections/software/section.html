@@ -1,4 +1,5 @@
 {% extends "sections/section_seo.html" %}
+{% import "macros/hash_letters.html" as hash_letters %}
 
 {% block additionalResources %}
 
@@ -52,14 +53,14 @@
 
         <div class="postBorder">
             <div class="postContent">
-                <div class="logoContainer">
-                    <img class="logo" src="{{ page.extra["logo"] }}" alt="{{ page.title }} logo">
+                <div class="logoContainer" style="view-transition-name: {{ hash_letters::hash_letters(input=page.extra["logo"]) }};">
+                    <img class="logo" src="{{ page.extra["logo"] }}" alt="{{ page.title }} Logo">
                 </div>
                 <div class="postMetadata">
-                    <strong class="postTitle">{{ page.title }}</strong>
+                    <strong class="postTitle" style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }}">{{ page.title }}</strong>
                     <div class="postDate">
                         <span>Initial Completion</span>
-                        <span>{{ page.date }}</span>
+                        <span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date }}</span>
                     </div>
                 </div>
             </div>

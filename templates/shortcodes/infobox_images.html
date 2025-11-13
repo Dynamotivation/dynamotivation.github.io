@@ -1,4 +1,5 @@
 {# Choose images from the passed `images` param or from page.extra.infobox_images #}
+{% import "macros/hash_letters.html" as hash_letters %}
 {% if images is defined %}
   {% set imgs = images %}
 {% elif page.extra.infobox_images is defined %}
@@ -40,7 +41,7 @@
           | replace(from="  ", to=" ")
           | replace(from="-", to="_") }}"
       {% if main.itemprop is defined %}itemprop="{{ main.itemprop }}"{% endif %}
-      style="{% if main_width %}width: {{ main_width }}; {% endif %}{% if main.imageWidthPx and main.imageHeightPx %}aspect-ratio: {{ main.imageWidthPx }} / {{ main.imageHeightPx }}; {% endif %}{% if main_radius %}border-radius: {{ main_radius }}; {% endif %}"
+      style="view-transition-name: {{ hash_letters::hash_letters(input=main.path) }}; {% if main_width %}width: {{ main_width }}; {% endif %}{% if main.imageWidthPx and main.imageHeightPx %}aspect-ratio: {{ main.imageWidthPx }} / {{ main.imageHeightPx }}; {% endif %}{% if main_radius %}border-radius: {{ main_radius }}; {% endif %}"
       class="blogImage"/>
   {% if main.figcaption is defined %}
     <figcaption>{{ main_description | markdown(inline=true) | safe }}</figcaption>
@@ -65,7 +66,7 @@
       <input type="radio" name="switch-{{ base_id }}" id="{{ input_id }}" class="infobox-switcher-radio" {% if loop.index0 == 0 %}checked{% endif %} hidden />
 
       <div class="infobox-big-item">
-        <img src="{{ im.path }}" {% if loop.index0 == 0 %}fetchpriority="high"{% endif %} alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to=")") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-big-img" {% if im.imageWidthPx and im.imageHeightPx %}style="aspect-ratio: {{ im.imageWidthPx }} / {{ im.imageHeightPx }};{% if im_radius %} border-radius: {{ im_radius }};{% endif %}"{% elif im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
+        <img src="{{ im.path }}" {% if loop.index0 == 0 %}fetchpriority="high"{% endif %} alt="{{ im_description | replace(from="*", to="") | replace(from="`", to="") | replace(from="[", to="") | replace(from="]", to="") | replace(from="(", to=")") | replace(from=")", to="") | replace(from="  ", to=" ") | replace(from="-", to="_") }}" class="blogImage infobox-big-img" {% if im.imageWidthPx and im.imageHeightPx %}style="view-transition-name: {{ hash_letters::hash_letters(input=im.path) }}; aspect-ratio: {{ im.imageWidthPx }} / {{ im.imageHeightPx }};{% if im_radius %} border-radius: {{ im_radius }};{% endif %}"{% elif im_radius %}style="border-radius: {{ im_radius }};"{% endif %}/>
       </div>
 
       <label for="{{ input_id }}" class="infobox-thumb-label">
