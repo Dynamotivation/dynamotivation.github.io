@@ -3,7 +3,7 @@ draft = false
 title = "Mr. Unp3rf3ct Joins Dynamotivation"
 description = "Mr. Unp3rf3ct's legacy applications are joining the Dynamotivation family."
 [extra]
-image = "https://ucarecdn.com/8edbe6b7-c42f-4004-8b45-806e0fb93d5a/DynamotivationXMrUnp3rf3ct.svg"
+image = "https://ucarecdn.com/cddd39cd-e800-4e83-837e-59a1f3054dad/DynamotivationXMrUnp3rf3ctLinkPreview.avif"
 screenshot_urls = [
     "https://ucarecdn.com/8edbe6b7-c42f-4004-8b45-806e0fb93d5a/DynamotivationXMrUnp3rf3ct.svg",
     "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif",
