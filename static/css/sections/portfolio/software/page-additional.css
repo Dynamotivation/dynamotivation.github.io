@@ -19,13 +19,13 @@
     color: var(--infobox-text-color);
     overflow: hidden;
 }
-
-.infobox-title {
+#contentContainer .infobox-title {
     margin: 0;
     padding: 0.8rem 1rem;
     background-color: var(--infobox-title-bg);
     border-bottom: 0.0625rem solid var(--infobox-border-color);
     font-size: 1.25rem;
+    line-height: 1.2;
     font-weight: 700;
     text-align: center;
     color: var(--main-color-dark);
