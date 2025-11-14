@@ -27,6 +27,12 @@
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@Dynamotivation">
+{% set _site_url = get_url(path='', trailing_slash=true) | safe %}
+{% set twitter_domain = _site_url | replace(from='https://', to='') | replace(from='http://', to='') | replace(from='/', to='') %}
+<meta property="twitter:domain" content="{{ twitter_domain }}">
+<meta property="twitter:url" content="{{ section.permalink | safe }}">
+<meta name="twitter:title" content="{{ section.title }} | Dynamotivation">
+<meta name="twitter:description" content="{{ section.description }}">
 
 <!-- Canonical URL (Avoid duplicate content issues) -->
 <link rel="canonical" href="{{ section.permalink | safe }}">
