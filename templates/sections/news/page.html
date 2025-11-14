@@ -31,9 +31,11 @@
     "@id": "{{ page.permalink | safe }}#news",
     "headline": "{{ page.title }}",
     "description": "{{ page.description }}",
+    {# Author: include url where possible to satisfy rich result expectations #}
     "author": {
         "@type": "Person",
-        "name": "Dynamotivation"
+        "name": "Dynamotivation",
+        "url": "{{ page.extra.author_url | default(value=get_url(path='', trailing_slash=true)) | safe }}"
     },
     "publisher": {
         "@type": "Organization",
@@ -44,8 +46,21 @@
             "url": "{{ get_url(path='images/fullLogo.png') }}"
         }
     },
-    "datePublished": "{{ page.date }}"{% if page.updated %},
-    "dateModified": "{{ page.updated }}"{% endif %}{% if image_url %},
+    {# Use an ISO 8601 date-time with timezone. If only a date is provided, append a time and UTC offset. #}
+    {# Use Tera's date filter to render an ISO 8601 datetime including timezone. #}
+    {% if page.date is defined %}
+        {% set published_iso = page.date | date(format="%Y-%m-%dT%H:%M:%S%:z", timezone="UTC") %}
+    {% else %}
+        {% set published_iso = "" %}
+    {% endif %}
+    {% if page.updated %}
+        {% set modified_iso = page.updated | date(format="%Y-%m-%dT%H:%M:%S%:z", timezone="UTC") %}
+    {% else %}
+        {% set modified_iso = "" %}
+    {% endif %}
+
+    "datePublished": "{{ published_iso }}"{% if modified_iso %},
+    "dateModified": "{{ modified_iso }}"{% endif %}{% if image_url %},
     "image": "{{ image_url | safe }}"{% endif %},
     "mainEntityOfPage": {
         "@type": "WebPage",

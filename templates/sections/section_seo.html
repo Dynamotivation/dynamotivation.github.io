@@ -41,21 +41,33 @@
       {% if section.description %}"description": "{{ section.description }}",{% endif %}
       "author": {
           "@type": "Person",
-          "name": "Dynamotivation"
+          "name": "Dynamotivation",
+          "url": "{{ section.extra.author_url | default(value=get_url(path='', trailing_slash=true)) | safe }}"
       },
       "publisher": {
           "@type": "Organization",
           "name": "Dynamotivation",
+          "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
           "logo": {
               "@type": "ImageObject",
               "url": "{{ get_url(path='images/fullLogo.png') }}"
           }
       },
-      {% if section.date %}
-      "datePublished": "{{ section.date }}",
+      {% if section.date is defined %}
+        {% set section_published_iso = section.date | date(format="%Y-%m-%dT%H:%M:%S%:z", timezone="UTC") %}
+      {% else %}
+        {% set section_published_iso = "" %}
       {% endif %}
-      {% if page.updated %}
-      "dateModified": "{{ section.updated }}",
+      {% if section.updated %}
+        {% set section_modified_iso = section.updated | date(format="%Y-%m-%dT%H:%M:%S%:z", timezone="UTC") %}
+      {% else %}
+        {% set section_modified_iso = "" %}
+      {% endif %}
+      {% if section_published_iso %}
+      "datePublished": "{{ section_published_iso }}",
+      {% endif %}
+      {% if section_modified_iso %}
+      "dateModified": "{{ section_modified_iso }}",
       {% endif %}
       {% if section.image %}
       "image": "{{ section.image }}",
