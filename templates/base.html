@@ -25,19 +25,32 @@
 
     <!-- Favicon PNGs for different sizes -->
     <link rel="icon" type="image/png" sizes="32x32" href={{ get_url(path="favicon/favicon-32x32.png") }} />
+    <link rel="icon" type="image/png" sizes="32x32" href={{ get_url(path="favicon/favicon-32x32.png") }} media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href={{ get_url(path="favicon/favicon-32x32-dark.png") }} media="(prefers-color-scheme: dark)" />
+
     <link rel="icon" type="image/png" sizes="48x48" href={{ get_url(path="favicon/favicon-48x48.png") }} />
+    <link rel="icon" type="image/png" sizes="48x48" href={{ get_url(path="favicon/favicon-48x48.png") }} media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="48x48" href={{ get_url(path="favicon/favicon-48x48-dark.png") }} media="(prefers-color-scheme: dark)" />
+
     <link rel="icon" type="image/png" sizes="96x96" href={{ get_url(path="favicon/favicon-96x96.png") }} />
+
     <link rel="icon" type="image/png" sizes="192x192" href={{ get_url(path="favicon/favicon-192x192.png") }} />
+
     <link rel="icon" type="image/png" sizes="512x512" href={{ get_url(path="favicon/favicon-512x512.png") }} />
 
-    <!-- SVG for modern browsers -->
+    <!-- SVG for modern browsers (light/dark variants) -->
     <link rel="icon" type="image/svg+xml" href={{ get_url(path="favicon/favicon.svg") }} />
+    <link rel="icon" type="image/svg+xml" href={{ get_url(path="favicon/favicon.svg") }} media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href={{ get_url(path="favicon/favicon-dark.svg") }} media="(prefers-color-scheme: dark)" />
 
     <!-- Legacy ICO fallback -->
     <link rel="shortcut icon" href={{ get_url(path="favicon/favicon.ico") }} />
+    <link rel="shortcut icon" href={{ get_url(path="favicon/favicon.ico") }} media="(prefers-color-scheme: light)" />
+    <link rel="shortcut icon" href={{ get_url(path="favicon/favicon-dark.ico") }} media="(prefers-color-scheme: dark)" />
 
     <!-- iOS home screen -->
     <link rel="apple-touch-icon" sizes="180x180" href={{ get_url(path="favicon/apple-touch-icon.png") }} />
+    <link rel="apple-touch-icon" sizes="180x180" href={{ get_url(path="favicon/apple-touch-icon-dark.png") }} media="(prefers-color-scheme: dark)" />
     <meta name="apple-mobile-web-app-title" content="Dynamotivation" />
 
     <!-- Progressive Web App -->
