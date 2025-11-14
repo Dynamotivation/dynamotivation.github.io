@@ -7,9 +7,9 @@ description = "Create authentic \"Joins the Battle\" fighting game splash screen
 alternate_name = "... Joins the Battle! Meme Generator"
 availability = "LimitedAvailability"
 price_usd = 0
-logo = "https://ucarecdn.com/868a8d31-de37-42ea-b2ce-138e841a9870/joinsthebattleeditorlogoremastered.avif"
+logo = "https://ucarecdn.com/20719464-83fb-4d9e-8940-29de5a3275ec/joinsthebattleeditorlogoremastered.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/868a8d31-de37-42ea-b2ce-138e841a9870/joinsthebattleeditorlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Joins the Battle Meme Generator* remastered logo", radius = "20%" },
+    { path = "https://ucarecdn.com/20719464-83fb-4d9e-8940-29de5a3275ec/joinsthebattleeditorlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Joins the Battle Meme Generator* remastered logo", radius = "20%" },
     { path = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Joins the Battle Meme Generator* original logo", radius = "20%" }
 ]
 available_on_android = true
