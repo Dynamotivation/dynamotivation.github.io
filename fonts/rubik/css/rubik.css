@@ -1,0 +1,15 @@
+@font-face {
+    font-display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../webfonts/rubik-v28-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../webfonts/rubik-v28-latin-700.woff2') format('woff2');
+}
