@@ -1,9 +1,6 @@
 .infobox {
     --infobox-border-color: #d6d6d6;
     --infobox-title-bg: #f2f2f2;
-    --infobox-text-color: #333;
-    --link-color: #007bff;
-    --link-hover-color: #0056b3;
 
     float: right;
     width: 20rem;
@@ -16,9 +13,18 @@
     font-size: 0.95rem;
     line-height: 1.5;
     background-color: var(--background-color, #fff);
-    color: var(--infobox-text-color);
+    color: var(--text-color);
     overflow: hidden;
 }
+
+/* Dark mode variants */
+@media (prefers-color-scheme: dark) {
+    .infobox {
+        --infobox-border-color: #2c2f35;
+        --infobox-title-bg: #1d2024;
+    }
+}
+
 #contentContainer .infobox-title {
     margin: 0;
     padding: 0.8rem 1rem;
@@ -28,7 +34,7 @@
     line-height: 1.2;
     font-weight: 700;
     text-align: center;
-    color: var(--main-color-dark);
+    color: var(--link-visited-color);
 }
 
 .infobox-content {
@@ -133,7 +139,7 @@
 
 /* Fade in shadow with gap for selected thumbnail */
 .infobox-switcher input[type="radio"]:checked + .infobox-big-item + .infobox-thumb-label .infobox-thumb { 
-    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.08), 0 0 0 0.125rem var(--background-color, #fff), 0 0 0 0.25rem var(--main-color-dark);
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.08), 0 0 0 0.125rem var(--background-color, #fff), 0 0 0 0.25rem var(--link-visited-color);
 }
 
 /* Make sure inputs are visually hidden but still focusable */
@@ -154,7 +160,7 @@
 
 .infobox-content dt {
     font-weight: 700;
-    color: var(--main-color-dark);
+    color: var(--link-visited-color);
     text-align: left;
 }
 
@@ -180,7 +186,6 @@
 
 .infobox-content dd a:hover {
     text-decoration: underline;
-    color: var(--link-hover-color);
 }
 
 @media (max-width: 40rem) {

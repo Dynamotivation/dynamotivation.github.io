@@ -46,7 +46,7 @@
     margin: 0 -3rem 0 -.25rem;
     border: 0;
     border-radius: .5rem;
-    background-color: var(--main-color-dark);
+    background-color: var(--link-visited-color);
     position: relative;
     transition: width .7s ease-out;
 }
@@ -209,11 +209,11 @@ li {
 }
 
 li::before {
-    content: "➤"; /* new marker */
+    content: "➤";
     position: absolute;
     left: 0;
     top: 0.25rem;
-    color: var(--main-color-dark);
+    color: var(--link-visited-color);
     font-size: 0.9rem;
     line-height: 1;
 }

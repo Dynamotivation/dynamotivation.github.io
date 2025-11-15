@@ -103,7 +103,7 @@ footer>#footerContainer>#footerTop {
 #footerContainer>#footerTop>#linkColumns>div>p {
     font-weight: bold;
     margin: .7rem 0 2rem 0;
-    color: var(--background-color);
+    color: var(--footer-text-color);
 }
 
 #footerContainer>#footerTop>#linkColumns>div>a {

@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const stickyContainer = document.getElementById('stickyContainer');
     const pageContainer = document.getElementById('pageContainer');
     const contentContainer = document.getElementById("contentContainer");
-    const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
-    const mainColorDark = getComputedStyle(document.documentElement).getPropertyValue('--main-color-dark');
+    const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--link-color');
+    const mainColorDark = getComputedStyle(document.documentElement).getPropertyValue('--link-visited-color');
     let initialized = false;
 
     // Fake resize event to set initial width
