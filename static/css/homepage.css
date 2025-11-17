@@ -12,7 +12,7 @@
     width: 100%;
     height: min(100vh, 45vw);
     display: flex;
-    background: linear-gradient(180deg, #ff4c4a 0%, #893750 100%);
+    background: linear-gradient(180deg, var(--main-color) 0%, var(--main-color-dark) 100%);
 }
 
 #splashScreen>#introductionContainer {

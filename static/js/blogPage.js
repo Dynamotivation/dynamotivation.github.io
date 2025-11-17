@@ -11,8 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const stickyContainer = document.getElementById('stickyContainer');
     const pageContainer = document.getElementById('pageContainer');
     const contentContainer = document.getElementById("contentContainer");
-    const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--link-color');
-    const mainColorDark = getComputedStyle(document.documentElement).getPropertyValue('--link-visited-color');
+    const computedStyles = getComputedStyle(document.documentElement);
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    const rawMainColor = prefersDark ? computedStyles.getPropertyValue('--link-color') : computedStyles.getPropertyValue('--main-color');
+    const rawMainColorDark = prefersDark ? computedStyles.getPropertyValue('--link-visited-color') : computedStyles.getPropertyValue('--main-color-dark');
+
+    const mainColor = (rawMainColor || computedStyles.getPropertyValue('--main-color') || computedStyles.getPropertyValue('--link-color')).trim();
+    const mainColorDark = (rawMainColorDark || computedStyles.getPropertyValue('--main-color-dark') || computedStyles.getPropertyValue('--link-visited-color')).trim();
     let initialized = false;
 
     // Fake resize event to set initial width
