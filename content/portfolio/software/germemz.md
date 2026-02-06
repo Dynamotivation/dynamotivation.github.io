@@ -50,7 +50,7 @@ availability = "LimitedAvailability"
 </dl>
 {% end %}
 
-***GerMemz*** (from "German Memes") was a mobile soundboard application and first the first serious Dynamotivation project developed in 2017 at age 15. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.
+***GerMemz*** (from "German Memes") was a mobile soundboard application and first the first serious Dynamotivation project developed in 2017 at age 14. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.
 
 
 ## Development
@@ -61,7 +61,8 @@ Development for *GerMemz* commenced around early 2017 at age 14, with the first 
 
 It was written in Java utilizing Android Studio.
 
-The project was conceived due to an overlap of perceived void in the market and demand among friend groups: a lack of dedicated, easy-to-use soundboard compilations of German TV commercial memes, as popularized by edits on YouTube, for Android.
+The project was conceived due to an overlap of perceived void in the market and demand among friend groups: A lack of dedicated and easy-to-use soundboard for German TV commercial memes.
+These ever present commercials on TV had been moved from annoyance to infamy by edits on YouTube.
 
 Content was periodically added in waves, starting with 9, then 15, 21, and 30 sounds from 1&1 commercials, followed by a separate addition of 15 Carglass sounds.
 
@@ -76,8 +77,7 @@ The sound clips were derived from widely recognized German television commercial
 
 Highlights:
 *   45 Sounds
-*   Playback Control:
-    *   Users had the ability to stop any currently playing sound at will.
+*   Stop button
 *   Introductory Tutorial
     *   Upon its initial launch, an interactive tutorial, highlighting clickable areas and their functions, was provided to the user, as was common in the Android 4 and 5 era.
 *   Themed Pages
@@ -143,7 +143,7 @@ Developing *GerMemz* presented several significant hurdles:
 
 ---
 
-*GerMemz* was initially well-received by the small circle of friends, who found its content humorous and engaging.
+*GerMemz* was initially well-received by the small circle of friends.
 
 The application was however never publicly released on platforms such as the Google Play Store due to significant intellectual property concerns. These included the unauthorized use of:
 *   Company logos (Carglass, 1&1)
@@ -157,7 +157,7 @@ The original APKs and decompiled source code for GerMemz are still preserved and
 
 ---
 
-Regardless, developing *GerMemz* provided invaluable insights, significantly shaping my understanding of software development and influencing my subsequent career path:
+Regardless, developing *GerMemz* provided lots of insights, significantly shaping my understanding of software development and influencing my subsequent career path:
 
 *   Niche Specialization:
     *   The project taught me how to recognise market niches and is responsible for the continued efforts towards creating highly specialized edit- and generation utilities.
