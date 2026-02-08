@@ -117,22 +117,7 @@ Drawing more parallels with [*GerMemz*](/portfolio/software/germemz/), the templ
     </div>
 </div>
 
-<div class="blogImageList" id="singleLandscapeTabletScreenshot">
-    <style>
-        #singleLandscapeTabletScreenshot {
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
-            min-width: 35rem;
-        }
-    </style>
-    <style>
-        @media (max-width: 40rem) {
-            #blogImageList {
-                width: 100%;
-            }
-        }
-    </style>
+<div class="blogImageList">
     <div>
     {{ screenshot(
         index=3,
@@ -146,26 +131,3 @@ Drawing more parallels with [*GerMemz*](/portfolio/software/germemz/), the templ
     </div>
 </div>
 
-
-## Challenges
-
----
-
-There were only 2 real challenges this time around, both of which boiled down to waiting on Googles confirmation:
-
-* Getting granted access to the YouTube Data API
-* Finding out what mild foul language to censor store listing content
-
-
-## Availability
-
----
-
-The *BenPlaysGames Soundboard* was a well received, low effort gag application for a small circle of friends and audience members. It was mainly used in lieu of a proper stream deck. Availability was limited to Android as this is what most participants used at the time.
-
-
-## Lessons Learned
-
----
-
-Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in [*Stellenwerttafel Plus*](/portfolio/software/stellenwerttafel-plus/).
