@@ -555,3 +555,115 @@ figcaption {
         font-size: 1rem;
     }
 }
+
+/* --- QnA shortcode (accordion) --- */
+@property --qna-border-color-1 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+}
+
+@property --qna-border-color-2 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+}
+
+#contentContainer .qna {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#contentContainer .qna-item {
+    position: relative;
+    border-radius: 0.75rem;
+    --qna-border-color-1: color-mix(in srgb, var(--footer-color) 25%, var(--background-color) 75%);
+    --qna-border-color-2: color-mix(in srgb, var(--footer-color) 25%, var(--background-color) 75%);
+    border: 0.125rem solid transparent;
+    background:
+        linear-gradient(var(--background-color), var(--background-color)) padding-box,
+        linear-gradient(45deg, var(--qna-border-color-1), var(--qna-border-color-2)) border-box;
+    overflow: clip;
+
+    transition: --qna-border-color-1 .3s, --qna-border-color-2 .3s;
+}
+
+#contentContainer .qna-item:hover {
+    --qna-border-color-1: color-mix(in srgb, var(--accent-color) 80%, var(--footer-color) 20%);
+    --qna-border-color-2: color-mix(in srgb, var(--accent-color-alt) 80%, var(--footer-color) 20%);
+}
+
+#contentContainer .qna-question {
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 1rem 1.2rem;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contentContainer .qna-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#contentContainer .qna-question::after {
+    content: "➤";
+    margin-left: auto;
+    color: var(--link-visited-color);
+    font-size: 0.95rem;
+    line-height: 1;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+#contentContainer .qna-toggle:checked + .qna-question::after {
+    transform: rotate(270deg);
+}
+
+#contentContainer .qna-question:focus-visible {
+    outline: 0.15rem solid var(--link-color);
+    outline-offset: 0.15rem;
+}
+
+#contentContainer .qna-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .3s ease;
+    overflow: clip;
+    padding-bottom: 0;
+}
+
+#contentContainer .qna-toggle:checked ~ .qna-answer {
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
+}
+
+#contentContainer .qna-toggle:not(:checked) ~ .qna-answer .qna-answer-inner {
+    border: 0;
+}
+
+#contentContainer .qna-answer-inner {
+    min-height: 0;
+    overflow: clip;
+    padding: 0 1.2rem;
+    border-top: 0.0625rem solid color-mix(in srgb, var(--footer-color) 18%, var(--background-color) 82%);
+}
+
+#contentContainer .qna-answer,
+#contentContainer .qna-answer * {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+}
+
+#contentContainer .qna-answer-label {
+    font-weight: 700;
+    margin-right: 0.5rem;
+    color: var(--link-visited-color);
+}

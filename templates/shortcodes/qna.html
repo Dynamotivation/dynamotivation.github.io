@@ -1,0 +1,23 @@
+{# Choose Q&A items from the passed `questions` param or from page.extra.questions #}
+{% if questions is defined %}
+  {% set items = questions %}
+{% elif page.extra.questions is defined %}
+  {% set items = page.extra.questions %}
+{% else %}
+  {% set items = [] %}
+{% endif %}
+
+<div class="qna">
+{% for item in items -%}
+  {% set qna_page_slug = page.slug | default(value="page") %}
+  {% set qna_question_slug = item.question | slugify %}
+  {% set qna_id = "qna-" ~ qna_page_slug ~ "-" ~ loop.index ~ "-" ~ qna_question_slug %}
+  <div class="qna-item">
+    <input class="qna-toggle" type="checkbox" id="{{ qna_id }}">
+    <label class="qna-question" for="{{ qna_id }}">Q: {{ item.question }}</label>
+    <div class="qna-answer">
+      <div class="qna-answer-inner"><span class="qna-answer-label">A:</span> {{ item.answer | markdown(inline=true) | safe }}</div>
+    </div>
+  </div>
+{% endfor %}
+</div>

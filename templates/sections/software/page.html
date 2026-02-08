@@ -155,17 +155,24 @@
 }
 </script>
 
+{% set faq_items = [] %}
 {% if page.extra.faq and page.extra.faq | length > 0 %}
+  {% set faq_items = page.extra.faq %}
+{% elif page.extra.questions and page.extra.questions | length > 0 %}
+  {% set faq_items = page.extra.questions %}
+{% endif %}
+
+{% if faq_items | length > 0 %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {% for qa in page.extra.faq %}
+    {% for qa in faq_items %}
     {
       "@type": "Question",
-      "name": "{{ qa.q }}",
-      "acceptedAnswer": { "@type": "Answer", "text": "{{ qa.a | safe }}" }
+      "name": "{% if qa.q is defined %}{{ qa.q }}{% else %}{{ qa.question }}{% endif %}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{% if qa.a is defined %}{{ qa.a | safe }}{% else %}{{ qa.answer | safe }}{% endif %}" }
     }{% if not loop.last %},{% endif %}
     {% endfor %}
   ]
