@@ -70,7 +70,7 @@ However, due to the teammate's inability to continue development, Dynamotivation
 The overarching narrative for *Project Tortuga* was intended to branch off the original Zombies lore following "Zetsubo No Shima".\
 The story envisioned the Zombies crew successfully capturing the Japanese ship in an alternate opening cutscene, avoiding destruction and stranding on a different island. This setting was supposed to draw architectural and environmental inspiration from Greek, Japanese, and potentially Gibraltarian aesthetics, becoming overrun with zombies upon the crew's arrival.
 
-# Conceptual Areas
+### Conceptual Areas
 
 *   The shore
 *   Town areas:
@@ -83,7 +83,7 @@ The story envisioned the Zombies crew successfully capturing the Japanese ship i
 *   Military base
 *   A volcano
 
-# Conceptual Features
+### Conceptual Features
 
 *   Main and side easter egg quests
 *   Evolving environment:
