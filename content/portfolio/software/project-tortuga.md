@@ -8,6 +8,14 @@ logo = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortuga
 infobox_images = [
     { path = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Project Tortuga Call of Duty Black Ops 3 Custom Zombies Map Concept Logo" }
 ]
+questions = [
+    { question = "Why was Project Tortuga cancelled?", answer = "The project's scope was too ambitious for a solo developer after the original teammate left the project. This led to a pragmatic decision to discontinue mapping and shift towards foundational learning." },
+    { question = "Can I play Project Tortuga?", answer = "No, Project Tortuga was never publicly released. An early version with temporary textures was recorded and is available on YouTube, but this is far from the final vision." },
+    { question = "What scripting languages were used?", answer = "Two custom scripting languages: GCS (Game Code Script) for server-side logic and CCS (Client Code Script) for client-side effects, both specific to the Call of Duty engine branch." },
+    { question = "What software was used for the 3D environment design?", answer = "The map was developed using the Radiant level editor (the official tool for the Black Ops 3 engine), involving environmental block outs, custom texturing, and architectural prefabs." },
+    { question = "Were any community assets or forums involved?", answer = "Yes, the project integrated third-party assets and documentation from the UGX-Mods and Modme communities, including custom weapon ports, perks, and UI elements." },
+    { question = "What was the total tech stack for this project?", answer = "The stack included the Call of Duty: Black Ops 3 Mod Tools (T7 Engine), Radiant (Level Design), APE (Asset Property Editor) for asset management, and GCS/CCS for gameplay scripting." }
+]
 available_on_android = false
 available_on_windows = true
 available_on_mac = false
@@ -50,7 +58,7 @@ project_title = "Project Tortuga"
 
 ---
 
-Development for *Project Tortuga* was a joined effort between Dynamotivation and another aspiring mapper from June 2017 onwards at age 15. This initial collaboration consisted of extensive brainstorming, resulting in an ambitious shared vision for the map. A core personal goal for Dynamotivation was to learn 3D environment design using the engines Radiant editor, and to grasp the GCS and CCS scripting languages for custom content.
+Development for *Project Tortuga* was a joint effort between Dynamotivation and another aspiring mapper from June 2017 onwards at age 15. This initial collaboration consisted of extensive brainstorming, resulting in an ambitious shared vision for the map. A core personal goal for Dynamotivation was to learn 3D environment design using the engines Radiant editor, and to grasp the GCS and CCS scripting languages for custom content.
 
 However, due to the teammate's inability to continue development, Dynamotivation transitioned to sole development. Recognizing the immense scope of the original concept for a single creator, a pragmatic decision was made made to discontinue mapping and shift towards foundational learning and partial implementation.
 
@@ -59,8 +67,8 @@ However, due to the teammate's inability to continue development, Dynamotivation
 
 ---
 
-The overarching narrative for *Project Tortuga* was intended to branch of the original Zombies lore following "Zetsubo No Shima".\
-The story envisioned the Zombies crew successfully capturing the japanese ship in an alternate opening cutscene, avoiding destruction and stranding on a different island. This setting was supposed to draw architectural and environmental inspiration from Greek, Japanese, and potentially Gibraltarian aesthetics, becoming overrun with zombies upon the crew's arrival.
+The overarching narrative for *Project Tortuga* was intended to branch off the original Zombies lore following "Zetsubo No Shima".\
+The story envisioned the Zombies crew successfully capturing the Japanese ship in an alternate opening cutscene, avoiding destruction and stranding on a different island. This setting was supposed to draw architectural and environmental inspiration from Greek, Japanese, and potentially Gibraltarian aesthetics, becoming overrun with zombies upon the crew's arrival.
 
 # Conceptual Areas
 
