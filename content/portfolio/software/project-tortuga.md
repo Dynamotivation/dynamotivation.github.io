@@ -2,36 +2,41 @@
 title = "Project Tortuga: CoD Black Ops 3 Custom Zombies Map"
 date = 2017-06-09
 description = "Post mortem exploration of Project Tortuga, a custom Call of Duty: Black Ops 3 Zombies map project covering mapping in Radiant and GCS/CCS scripting."
-
+ 
 [extra]
+# Graphic enrichment
+project_title = "Project Tortuga"
 logo = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif"
 infobox_images = [
     { path = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Project Tortuga Call of Duty Black Ops 3 Custom Zombies Map Concept Logo" }
 ]
+screenshot_urls = []
+available_on_android = false
+available_on_windows = true
+available_on_mac = false
+available_on_linux = false
+available_on_ios = false
+
+# JSON-LD SEO for Software
+operatingSystem = "Windows"
+release_notes = "Cancelled"
+programming_language = "GCS/CCS (Game Code Script/Client Code Script)"
+development_environment = "Call of Duty: Black Ops 3 Mod Tools (Radiant)"
+license = "Closed Source"
+availability = "Discontinued"
+application_category = "GameApplication"
+price_usd = 0
+
+# FAQ
 questions = [
     { question = "Why was Project Tortuga cancelled?", answer = "The project's scope was too ambitious for a solo developer after the original teammate left the project. This led to a pragmatic decision to discontinue mapping and shift towards foundational learning." },
     { question = "Can I play Project Tortuga?", answer = "No, Project Tortuga was never publicly released. An early version with temporary textures was recorded and is available on YouTube, but this is far from the final vision." },
     { question = "What scripting languages were used?", answer = "Two custom scripting languages: GCS (Game Code Script) for server-side logic and CCS (Client Code Script) for client-side effects, both specific to the Call of Duty engine branch." },
     { question = "What software was used for the 3D environment design?", answer = "The map was developed using the Radiant level editor (the official tool for the Black Ops 3 engine), involving environmental block outs, custom texturing, and architectural prefabs." },
     { question = "Were any community assets or forums involved?", answer = "Yes, the project integrated third-party assets and documentation from the UGX-Mods and Modme communities, including custom weapon ports, perks, and UI elements." },
-    { question = "What was the total tech stack for this project?", answer = "The stack included the Call of Duty: Black Ops 3 Mod Tools (T7 Engine), Radiant (Level Design), APE (Asset Property Editor) for asset management, and GCS/CCS for gameplay scripting." }
+    { question = "What was the tech stack for Project Tortuga?", answer = "Call of Duty: Black Ops 3 Mod Tools, T7 Engine, Radiant, APE, GCS (Game Code Script), CCS (Client Code Script)" }
 ]
-available_on_android = false
-available_on_windows = true
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
-price_usd = 0
 
-application_category = "GameApplication"
-
-# SEO
-operatingSystem = "Windows"
-release_notes = "Cancelled"
-programming_language = "GCS/CCS (Game Code Script/Client Code Script)"
-development_environment = "Call of Duty: Black Ops 3 Mod Tools (Radiant)"
-license = "Closed Source (Source Code Preserved)"
-project_title = "Project Tortuga"
 +++
 
 {% infobox(title="Project Tortuga") %}
@@ -60,7 +65,7 @@ project_title = "Project Tortuga"
 
 Development for *Project Tortuga* was a joint effort between Dynamotivation and another aspiring mapper from June 2017 onwards at age 15. This initial collaboration consisted of extensive brainstorming, resulting in an ambitious shared vision for the map. A core personal goal for Dynamotivation was to learn 3D environment design using the engines Radiant editor, and to grasp the GCS and CCS scripting languages for custom content.
 
-However, due to the teammate's inability to continue development, Dynamotivation transitioned to sole development. Recognizing the immense scope of the original concept for a single creator, a pragmatic decision was made made to discontinue mapping and shift towards foundational learning and partial implementation.
+However, due to the teammate's inability to continue development, Dynamotivation transitioned to solo development. Recognizing the immense scope of the original concept for one person the heavyhearted decision was made to discontinue the project.
 
 
 ## Original Vision
@@ -100,18 +105,14 @@ The story envisioned the Zombies crew successfully capturing the Japanese ship i
 Even before the decision to discontinue the project, several foundational elements were already implemented:
 
 *   Environmental block outs:
-    *   Initial block outs were created for the shore and the crew's boat, establishing spatial relationships.
+    *   Initial block outs were created for the shore and the crew's boat, serving as the maps starting areas.
 *   Architectural prefab:
     *   A *Fachwerk haus* prefab was developed as a template for consistent architecture style in town sections.
-
-And even more so after the decision was made:
-
 *   Third-party asset integration from the UGX and Modme forums:
     *   Custom weapons
     *   Mystery boxes
     *   Custom perks
-    *   Basic buildable system
-*   Custom scripts expanding on the buildable system
+*   Custom crafting and brewing system
 *   UI elements to reflect different systems
 
 
@@ -130,7 +131,7 @@ Due to *Project Tortuga* premature cancellation it presented more than just tech
 *   Team dissolution:
     *   The unexpected shift from a team project to a solo endeavor necessitated a re-evaluation and eventual cancellation of projects scope.
 *   Unfamiliar tooling:
-    *   Jumping from the Java Android App [*GerMemz*](/portfolio/software/germemz) straight into the, at the time, sparingly documented mod tools of a 3d game was too big of jump.
+    *   Jumping from the Java Android App [*GerMemz*](/portfolio/software/germemz) straight into the, at the time, sparingly documented mod tools of a 3d game was too big of a jump.
     *   Two similar programming languages in GCS and CCS.
     *   Much discussion taking place across multiple different forums, some invite only.
 *   Project dependencies:
@@ -145,10 +146,10 @@ Due to *Project Tortuga* premature cancellation it presented more than just tech
 
 ---
 
-*Project Tortuga* was not completed to its intended vision and was never publicly released. The work undertaken largely consisted of initial blocking, asset integration, and partial environmental detailing  and scripting.
-One early version of the developed elements is preserved.
+*Project Tortuga* was not completed to its intended vision and was never publicly released.
+However one early version of the developed elements is preserved and has been recorded for easy preservation.
 
-A walkthrough of an early block out with temporary textures had been recorded and is available on YouTube:
+The walkthrough of an early block out with temporary textures is available on YouTube:
 
 <div class="blogVideoList">
 {{ blog_video(title="Walkthrough of Cancelled Project Tortuga Custom Zombies Map | CoD: BO3 Mod Tools", description="Video walkthrough of an early block out of the starting area with temporary textures.", url="6-TWUN5PdHc") }}
@@ -165,7 +166,7 @@ Absent are the mystery box, wine cellar itself, military base and any of the fin
 The whole process and hardship provided me with important insights into game development, 3D design, scripting, and most importantly project management:
 
 *   Collaboration:
-    *   Experienced collaboration through working with a teammate.
+    *   Experienced the good and bad aspects of collaboration through working with a teammate.
     *   Exchange with other modders and developers in the scene asking for and providing help.
     *   Relying on dependencies such as the game and third-party assets instead of rolling everything ourselves.
     *   Distributing tasks to the best fit team member.
@@ -173,10 +174,11 @@ The whole process and hardship provided me with important insights into game dev
     *   I gained hands-on experience with a professional-grade 3D level editor (Radiant).
     *   Got to learn the fundamental concepts of environmental blocking, texturing, and asset placement within a game engine.
 *   Game Scripting Fundamentals:
-    *   Gained knowledge in game scripting (GCS/CCS) and a general understanding of how game logic differs from straight forward applications.
-*   Scope Assessment:
-    *   Learned a critical lesson in correctly (re)evaluating project scope.
+    *   Gained knowledge in game scripting (GCS/CCS) and a general understanding of how game modding differs from straight forward source code access.
 *   Project Management:
     *   Understood the gap between an expansive creative vision and the practical execution.
     *   Learned to account for consider unknown factors and uncertainties.
     *   Discovered principles of agile development through daily talks and weekly meetups to discuss the project.
+*   Scope Assessment:
+    *   Learned a critical lesson in correctly (re)evaluating project scope.
+    *  Prevented falling for the sunken cost fallicy by accepting the cancellation.

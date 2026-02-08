@@ -10,16 +10,16 @@ logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.av
 infobox_images = [
     { path = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "GerMemz Logo", radius = "" }
 ]
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
 screenshot_urls = [
     "https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
     "https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif",
     "https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif"
 ]
+available_on_android = true
+available_on_windows = false
+available_on_mac = false
+available_on_linux = false
+available_on_ios = false
 
 # JSON-LD SEO for Software
 operatingSystem = "Android"
@@ -27,7 +27,7 @@ release_notes = "Unreleased"
 programming_language = "Java"
 development_environment = "Android Studio"
 license = "Closed Source"
-availability = "LimitedAvailability"
+availability = "Discontinued"
 application_category = "EntertainmentApplication"
 price_usd = 0
 
