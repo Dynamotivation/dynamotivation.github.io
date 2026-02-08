@@ -1,0 +1,69 @@
+@view-transition {
+    navigation: auto;
+}
+
+:root {
+    --main-color: #ff4c4a;
+    --main-color-dark: #893750;
+    --accent-color: #4AFF83;
+    --accent-color-alt: #3DFFE5;
+    --background-color: #ffffff;
+    --footer-color: #2c2c2c;
+    --footer-text-color: #b1b1b1;
+    --text-color: #111111;
+    --link-color: #e22050;
+    --gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color-alt));
+    --gradient-pulse: linear-gradient(45deg, var(--accent-color), 40%, var(--accent-color-alt), 60%);
+    --link-visited-color: #a53355;
+}
+
+/* Dark theme variables - respect system preference and manual toggle */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #16181b;
+        --footer-color: #0a0c0e;
+        --footer-text-color: #b1b1b1;
+        --text-color: #ffffff;
+        --link-visited-color: #25a05f;
+        --link-color: #2fda7f;
+        --main-color: #963744;
+        --main-color-dark: #411b23;
+    }
+}
+
+* {
+    font-family: Rubik;
+}
+
+html,
+body,
+div,
+head {
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color, initial);
+}
+
+a {
+    word-wrap: break-word;
+    color: var(--link-color);
+}
+
+#scroll-bottom-indicator {
+    position: sticky;
+    bottom: -10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Use CSS variable for visited links so colours can be tuned per theme */
+a:visited {
+    color: var(--link-visited-color);
+}
