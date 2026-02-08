@@ -1,0 +1,16 @@
+#!/bin/bash
+# Pre-commit hook wrapper - finds Python and runs validator
+
+if command -v py &> /dev/null; then
+    PYTHON="py -3"
+elif command -v python3 &> /dev/null; then
+    PYTHON="python3"
+elif command -v python &> /dev/null; then
+    PYTHON="python"
+else
+    echo "Error: Python not found"
+    exit 1
+fi
+
+# Use relative path from git root
+exec $PYTHON .githooks/pre-commit-validator.py
