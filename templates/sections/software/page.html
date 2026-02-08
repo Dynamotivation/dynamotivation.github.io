@@ -5,8 +5,15 @@
 {% endblock %}
 
 {% block article_meta %}
+{%- if page.extra["project_title"] is defined %}
+{%- set _title = page.extra["project_title"] %}
+{%- elif page.title is defined %}
+{%- set _title = page.title %}
+{%- else %}
+{%- set _title = "Project" %}
+{%- endif %}
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ page.title }} | Dynamotivation">
+<meta property="og:title" content="{{ _title }} | Dynamotivation">
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
 <meta property="og:url" content="{{ page.permalink | safe }}">
@@ -18,12 +25,20 @@
 {% set twitter_domain = _site_url | replace(from='https://', to='') | replace(from='http://', to='') | replace(from='/', to='') %}
 <meta property="twitter:domain" content="{{ twitter_domain }}">
 <meta property="twitter:url" content="{{ page.permalink | safe }}">
-<meta name="twitter:title" content="{{ page.title }} | Dynamotivation">
+<meta name="twitter:title" content="{{ _title }} | Dynamotivation">
 <meta name="twitter:description" content="{{ page.description }}">
 <meta name="twitter:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
 {% endblock %}
 
 {% block jsonld %}
+{%- if page.extra["project_title"] is defined %}
+{%- set _title = page.extra["project_title"] %}
+{%- elif page.title is defined %}
+{%- set _title = page.title %}
+{%- else %}
+{%- set _title = "Project" %}
+{%- endif %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,8 +59,8 @@
     "@type": "{{ page.extra.creator_type | default(value='Person') }}",
     "name": "{{ page.extra.creator_name | default(value='Dynamotivation') }}",
     "url": "{{ page.extra.creator_url | default(value=get_url(path='', trailing_slash=true)) | safe }}"
-  }{% if page.title %},
-  "name": "{{ page.title }}"{% endif %}{% if page.extra.alternate_name %},
+  }{% if _title %},
+  "name": "{{ _title }}"{% endif %}{% if page.extra.alternate_name %},
   "alternateName": "{{ page.extra.alternate_name }}"{% endif %}{% if page.description %},
   "description": "{{ page.description }}"{% endif %}{% if page.extra.application_category %},
   "applicationCategory": "{{ page.extra.application_category }}"{% endif %}{% if page.extra.application_subcategory %},
@@ -61,7 +76,7 @@
     "url": "{{ page.extra.logo | safe }}",
     "width": {{ page.extra.logo_width | default(value=512) }},
     "height": {{ page.extra.logo_height | default(value=512) }},
-    "caption": "{{ page.title }} logo"
+    "caption": "{{ _title }} logo"
   }{% endif %}{% if page.extra.screenshot_urls and page.extra.screenshot_urls | length > 0 %},
   "screenshot": [{% for shot in page.extra.screenshot_urls %}
     "{{ shot | safe }}"{% if not loop.last %}, {% endif %}{% endfor %}

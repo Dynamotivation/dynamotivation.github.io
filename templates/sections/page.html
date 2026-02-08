@@ -55,10 +55,18 @@
 {% endblock additionalResources %}
 
 {% block content %}
+{%- if page.extra["project_title"] is defined %}
+{%- set _title = page.extra["project_title"] %}
+{%- elif page.title is defined %}
+{%- set _title = page.title %}
+{%- else %}
+{%- set _title = "Project" %}
+{%- endif %}
+
 <main id="pageContainer">
     <div id="fade-out-top"></div>
     <div id="titleContainer">
-        <h1 id="pageTitle" style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }}">{{ page.title }}</h1>
+        <h1 id="pageTitle" style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }}">{{ _title }}</h1>
         <noscript>
             <hr>
         </noscript>
@@ -77,6 +85,22 @@
     <div id="contentContainer">
         {{ page.content | safe }}
     </div>
+    {% if page.lower or page.higher %}
+    <nav id="pageNavigation" class="post-nav">
+        {% if page.lower %}
+        <a class="nav-link next" href="{{ page.lower.permalink }}" rel="next">
+            <span class="nav-label">‹ Next</span>
+            <span class="nav-title">{{ page.lower.title }}</span>
+        </a>
+        {% endif %}
+        {% if page.higher %}
+        <a class="nav-link previous" href="{{ page.higher.permalink }}" rel="prev">
+            <span class="nav-label">Previous ›</span>
+            <span class="nav-title">{{ page.higher.title }}</span>
+        </a>
+        {% endif %}
+    </nav>
+    {% endif %}
     <div id="fade-out-bottom"></div>
 </main>
 {% endblock content %}
