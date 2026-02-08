@@ -39,6 +39,29 @@
 {%- set _title = "Project" %}
 {%- endif %}
 
+{% set section_root = page.section | default(value='') | split(pat="/") %}
+
+{# NewsArticle from base (inherited) #}
+{% if section_root[0] == "news" %}
+    {% set image_url = page.extra.image | default(value=page.extra.logo) %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "@id": "{{ page.permalink | safe }}#news",
+        "headline": "{{ page.title }}",
+        "description": "{{ page.description }}",
+        "datePublished": "{{ page.date }}",
+        "author": {"@type": "Person", "name": "Dynamotivation"},
+        "publisher": {"@type": "Organization", "name": "Dynamotivation", "url": "{{ get_url(path='', trailing_slash=true) | safe }}", "logo": {"@type": "ImageObject", "url": "{{ get_url(path='images/fullLogo.png') }}"}},
+        {% if page.updated %}"dateModified": "{{ page.updated }}",{% endif %}
+        {% if image_url %}"image": "{{ image_url | safe }}",{% endif %}
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ page.permalink | safe }}"}
+    }
+    </script>
+{% endif %}
+
+{# SoftwareApplication (software-specific) #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -106,6 +129,7 @@
 }
 </script>
 
+{# WebPage #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -122,6 +146,7 @@
 }
 </script>
 
+{# BreadcrumbList (software-specific) #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -155,6 +180,7 @@
 }
 </script>
 
+{# FAQPage (from base) #}
 {% set faq_items = [] %}
 {% if page.extra.faq and page.extra.faq | length > 0 %}
   {% set faq_items = page.extra.faq %}

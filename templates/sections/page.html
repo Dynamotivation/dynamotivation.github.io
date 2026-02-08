@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% import "macros/qna.html" as qna_macro %}
+
 {% block additionalResources %}
 
 <title>{{ page.title }} | Dynamotivation</title>
@@ -27,26 +29,74 @@
 {% block article_meta %}{% endblock %}
 
 {% block jsonld %}
-{# Emit NewsArticle JSON-LD for pages in the `news` section (including subsections) #}
-{% set section_root = page.section | default(value='') | split(pat="/") %}
-{% if section_root[0] == "news" %}
-    {# Prefer frontmatter image fields if present #}
-    {% set image_url = page.extra.image | default(value=page.extra.logo) %}
-    <script type="application/ld+json">
+{%- if page.extra["project_title"] is defined %}
+{%- set _title = page.extra["project_title"] %}
+{%- elif page.title is defined %}
+{%- set _title = page.title %}
+{%- else %}
+{%- set _title = "Project" %}
+{%- endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ page.permalink | safe }}#webpage",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{ page.extra.site_name | default(value='Dynamotivation') }}",
+    "url": "{{ page.extra.site_url | default(value=get_url(path='', trailing_slash=true)) | safe }}"
+  }{% if page.permalink %},
+  "url": "{{ page.permalink | safe }}"{% endif %}{% if page.title %},
+  "name": "{{ page.title }} | Dynamotivation"{% endif %}{% if page.description %},
+  "description": "{{ page.description }}"{% endif %}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-        "@context": "https://schema.org",
-        "@type": "NewsArticle",
-        "@id": "{{ page.permalink | safe }}#news",
-        "headline": "{{ page.title }}",
-        "description": "{{ page.description }}",
-        "datePublished": "{{ page.date }}",
-        "author": {"@type": "Person", "name": "Dynamotivation"},
-        "publisher": {"@type": "Organization", "name": "Dynamotivation", "url": "{{ get_url(path='', trailing_slash=true) | safe }}", "logo": {"@type": "ImageObject", "url": "{{ get_url(path='images/fullLogo.png') }}"}},
-        {% if page.updated %}"dateModified": "{{ page.updated }}",{% endif %}
-        {% if image_url %}"image": "{{ image_url | safe }}",{% endif %}
-        "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ page.permalink | safe }}"}
-    }
-    </script>
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ get_url(path='', trailing_slash=true) | safe }}"
+    }{% if page.title and page.permalink %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title }}",
+      "item": "{{ page.permalink | safe }}"
+    }{% endif %}
+  ]
+}
+</script>
+
+{% set faq_items = [] %}
+{% if page.extra.faq and page.extra.faq | length > 0 %}
+  {% set faq_items = page.extra.faq %}
+{% elif page.extra.questions and page.extra.questions | length > 0 %}
+  {% set faq_items = page.extra.questions %}
+{% endif %}
+
+{% if faq_items | length > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for qa in faq_items %}
+    {
+      "@type": "Question",
+      "name": "{% if qa.q is defined %}{{ qa.q }}{% else %}{{ qa.question }}{% endif %}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{% if qa.a is defined %}{{ qa.a | safe }}{% else %}{{ qa.answer | safe }}{% endif %}" }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
 {% endif %}
 {% endblock %}
 
@@ -84,6 +134,13 @@
     </div>
     <div id="contentContainer">
         {{ page.content | safe }}
+        {% if page.extra.questions and page.extra.questions | length > 0 %}
+        <h2 id="faq">Frequently Asked Questions</h1>
+        <hr>
+        <section id="faq-section">
+            {{ qna_macro::qna(items=page.extra.questions) }}
+        </section>
+        {% endif %}
     </div>
     {% if page.lower or page.higher %}
     <nav id="pageNavigation" class="post-nav">
