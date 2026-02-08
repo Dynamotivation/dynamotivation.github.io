@@ -108,26 +108,8 @@ And even more so after the decision was made:
 
 
 <div class="blogVideoList">
-    <div>
-        <div class="blogVideoContainer" data-video-id="bo3-buildable" data-src="https://www.youtube.com/embed/6-dcCJUq5f4" data-title="Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools">
-            <noscript>
-                <p>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools<br>
-                <a href="https://www.youtube.com/watch?v=6-dcCJUq5f4" target="_blank">https://www.youtube.com/watch?v=6-dcCJUq5f4</a><br>
-                (JavaScript required for embedded video)</p>
-            </noscript>
-        </div>
-        <figcaption>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools</figcaption>
-    </div>
-    <div>
-        <div class="blogVideoContainer" data-video-id="bo3-buildable-2" data-src="https://www.youtube.com/embed/6-dcCJUq5f4" data-title="Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools">
-            <noscript>
-                <p>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools<br>
-                <a href="https://www.youtube.com/watch?v=6-dcCJUq5f4" target="_blank">https://www.youtube.com/watch?v=6-dcCJUq5f4</a><br>
-                (JavaScript required for embedded video)</p>
-            </noscript>
-        </div>
-        <figcaption>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools</figcaption>
-    </div>
+{{ blog_video(title="Modified Archaicvirus Custom Buildable Script Showcase | Project Tortuga | CoD: BO3 Mod Tools", description="Video showcasing the primitive custom buildable and power switch script.", url="DX2yZ10RhU0") }}
+{{ blog_video(title="Brewing in Archaicvirus Custom Buildable Script | Project Tortuga | CoD: BO3 Mod Tools", description="Video showcasing a custom perk brewing script.", url="6-dcCJUq5f4") }}
 </div>
 
 
@@ -141,7 +123,7 @@ Due to *Project Tortuga* premature cancellation it presented more than just tech
     *   The unexpected shift from a team project to a solo endeavor necessitated a re-evaluation and eventual cancellation of projects scope.
 *   Unfamiliar tooling:
     *   Jumping from the Java Android App [*GerMemz*](/portfolio/software/germemz) straight into the, at the time, sparingly documented mod tools of a 3d game was too big of jump.
-    *   Two different programming languages in GCS and CCS.
+    *   Two similar programming languages in GCS and CCS.
     *   Much discussion taking place across multiple different forums, some invite only.
 *   Project dependencies:
     *   Integrating numerous custom assets (weapons, perks, mystery boxes) from community contributors that themselves were still under active development and had bugs.
@@ -155,9 +137,17 @@ Due to *Project Tortuga* premature cancellation it presented more than just tech
 
 ---
 
-*Project Tortuga* was not completed to its intended vision and was never publicly released. The work undertaken largely consisted of initial blocking, asset integration, and partial environmental detailing  and scripting. At least one version of the source code for the developed elements is preserved.
+*Project Tortuga* was not completed to its intended vision and was never publicly released. The work undertaken largely consisted of initial blocking, asset integration, and partial environmental detailing  and scripting.
+One early version of the developed elements is preserved.
 
-A walkthrough of an early block out with temporary textures had been recorded and is available on YouTube: 
+A walkthrough of an early block out with temporary textures had been recorded and is available on YouTube:
+
+<div class="blogVideoList">
+{{ blog_video(title="Walkthrough of Cancelled Project Tortuga Custom Zombies Map | CoD: BO3 Mod Tools", description="Video walkthrough of an early block out of the starting area with temporary textures.", url="6-TWUN5PdHc") }}
+</div>
+
+Regrettably, this is not anywhere near the final version or the point where development was cancelled, but it does include the Fachwerk house, bar with corridor to wine cellar, stage with guillotine and the smiths corner.
+Absent are the mystery box, wine cellar itself, military base and any of the finished vista models for the backdrop.
 
 
 ## Lessons Learned
