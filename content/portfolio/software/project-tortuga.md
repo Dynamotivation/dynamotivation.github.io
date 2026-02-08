@@ -1,0 +1,184 @@
++++
+title = "Project Tortuga: CoD Black Ops 3 Custom Zombies Map"
+date = 2017-06-09
+description = "Post mortem exploration of Project Tortuga, a custom Call of Duty: Black Ops 3 Zombies map project covering mapping in Radiant and GCS/CCS scripting."
+
+[extra]
+logo = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif"
+infobox_images = [
+    { path = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Project Tortuga Call of Duty Black Ops 3 Custom Zombies Map Concept Logo" }
+]
+available_on_android = false
+available_on_windows = true
+available_on_mac = false
+available_on_linux = false
+available_on_ios = false
+price_usd = 0
+
+application_category = "GameApplication"
+
+# SEO
+operatingSystem = "Windows"
+release_notes = "Cancelled"
+programming_language = "GCS/CCS (Game Code Script/Client Code Script)"
+development_environment = "Call of Duty: Black Ops 3 Mod Tools (Radiant)"
+license = "Closed Source (Source Code Preserved)"
+project_title = "Project Tortuga"
++++
+
+{% infobox(title="Project Tortuga") %}
+{{ infobox_images() }}
+<dl>
+    <dt>Availability</dt>
+    <dd>Unreleased</dd>
+    <dt>Initial completion</dt>
+    <dd>June 10, 2017</dd>
+    <dt>Development Environment</dt>
+    <dd>Call of Duty: Black Ops 3 Mod Tools<br>(Radiant)</dd>
+    <dt>Written in</dt>
+    <dd>GCS (Game Code Script)<br>CCS (Client Code Script)</dd>
+    <dt>Operating system(s)</dt>
+    <dd>Windows</dd>
+    <dt>Source code</dt>
+    <dd>Preserved (Original)<br>Closed Source</dd>
+</dl>
+{% end %}
+
+***Project Tortuga*** was a collaborative custom Zombies map concept for Call of Duty: Black Ops 3, primarily developed by Dynamotivation at age 15. Originally conceived as a narrative experience built upon existing lore, the project and its cancellation served as an important milestone in the process of learning 3D game design, game scripting, and project management. While the full vision was not realized a lot of foundational work was finished.
+
+## Development
+
+---
+
+Development for *Project Tortuga* was a joined effort between Dynamotivation and another aspiring mapper from June 2017 onwards at age 15. This initial collaboration consisted of extensive brainstorming, resulting in an ambitious shared vision for the map. A core personal goal for Dynamotivation was to learn 3D environment design using the engines Radiant editor, and to grasp the GCS and CCS scripting languages for custom content.
+
+However, due to the teammate's inability to continue development, Dynamotivation transitioned to sole development. Recognizing the immense scope of the original concept for a single creator, a pragmatic decision was made made to discontinue mapping and shift towards foundational learning and partial implementation.
+
+
+## Original Vision
+
+---
+
+The overarching narrative for *Project Tortuga* was intended to branch of the original Zombies lore following "Zetsubo No Shima".\
+The story envisioned the Zombies crew successfully capturing the japanese ship in an alternate opening cutscene, avoiding destruction and stranding on a different island. This setting was supposed to draw architectural and environmental inspiration from Greek, Japanese, and potentially Gibraltarian aesthetics, becoming overrun with zombies upon the crew's arrival.
+
+# Conceptual Areas
+
+*   The shore
+*   Town areas:
+    * A plaza/market
+    * A stage
+    * A bar
+    * A winery
+    * A *Fachwerk* (half-timbered) coast guard houses
+    * Collapsed tunnels to implied additional town sections
+*   Military base
+*   A volcano
+
+# Conceptual Features
+
+*   Main and side easter egg quests
+*   Evolving environment:
+    *   A central thematic element involved a "mountain" in the map's center being revealed as a weaponized active volcano during the Easter Egg quest.
+*   Custom weapons:
+    *   The primary Easter Egg quest would involve collecting parts for different elemental staffs not seen in *Origins* or *Der Eisendrache*.
+*   Weapons from Call of Duty: WWII
+
+
+## Implemented Features
+
+---
+
+Even before the decision to discontinue the project, several foundational elements were already implemented:
+
+*   Environmental block outs:
+    *   Initial block outs were created for the shore and the crew's boat, establishing spatial relationships.
+*   Architectural prefab:
+    *   A *Fachwerk haus* prefab was developed as a template for consistent architecture style in town sections.
+
+And even more so after the decision was made:
+
+*   Third-party asset integration from the UGX and Modme forums:
+    *   Custom weapons
+    *   Mystery boxes
+    *   Custom perks
+    *   Basic buildable system
+*   Custom scripts expanding on the buildable system
+*   UI elements to reflect different systems
+
+
+<div class="blogVideoList">
+    <div>
+        <div class="blogVideoContainer" data-video-id="bo3-buildable" data-src="https://www.youtube.com/embed/6-dcCJUq5f4" data-title="Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools">
+            <noscript>
+                <p>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools<br>
+                <a href="https://www.youtube.com/watch?v=6-dcCJUq5f4" target="_blank">https://www.youtube.com/watch?v=6-dcCJUq5f4</a><br>
+                (JavaScript required for embedded video)</p>
+            </noscript>
+        </div>
+        <figcaption>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools</figcaption>
+    </div>
+    <div>
+        <div class="blogVideoContainer" data-video-id="bo3-buildable-2" data-src="https://www.youtube.com/embed/6-dcCJUq5f4" data-title="Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools">
+            <noscript>
+                <p>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools<br>
+                <a href="https://www.youtube.com/watch?v=6-dcCJUq5f4" target="_blank">https://www.youtube.com/watch?v=6-dcCJUq5f4</a><br>
+                (JavaScript required for embedded video)</p>
+            </noscript>
+        </div>
+        <figcaption>Brewing in Archaicvirus Custom Buildable script | Bo3 mod tools</figcaption>
+    </div>
+</div>
+
+
+## Challenges
+
+---
+
+Due to *Project Tortuga* premature cancellation it presented more than just technical challenges:
+
+*   Team dissolution:
+    *   The unexpected shift from a team project to a solo endeavor necessitated a re-evaluation and eventual cancellation of projects scope.
+*   Unfamiliar tooling:
+    *   Jumping from the Java Android App [*GerMemz*](/portfolio/software/germemz) straight into the, at the time, sparingly documented mod tools of a 3d game was too big of jump.
+    *   Two different programming languages in GCS and CCS.
+    *   Much discussion taking place across multiple different forums, some invite only.
+*   Project dependencies:
+    *   Integrating numerous custom assets (weapons, perks, mystery boxes) from community contributors that themselves were still under active development and had bugs.
+    *   Understanding their (in)compatibilities with each other.
+
+*   Game Scripting:
+    *   Partially learning GCS (Game Code Script) and CCS (Client Code Script) was required for implementing custom content.
+
+
+## Availability
+
+---
+
+*Project Tortuga* was not completed to its intended vision and was never publicly released. The work undertaken largely consisted of initial blocking, asset integration, and partial environmental detailing  and scripting. At least one version of the source code for the developed elements is preserved.
+
+A walkthrough of an early block out with temporary textures had been recorded and is available on YouTube: 
+
+
+## Lessons Learned
+
+---
+
+The whole process and hardship provided me with important insights into game development, 3D design, scripting, and most importantly project management:
+
+*   Collaboration:
+    *   Experienced collaboration through working with a teammate.
+    *   Exchange with other modders and developers in the scene asking for and providing help.
+    *   Relying on dependencies such as the game and third-party assets instead of rolling everything ourselves.
+    *   Distributing tasks to the best fit team member.
+*   3D Environment Development:
+    *   I gained hands-on experience with a professional-grade 3D level editor (Radiant).
+    *   Got to learn the fundamental concepts of environmental blocking, texturing, and asset placement within a game engine.
+*   Game Scripting Fundamentals:
+    *   Gained knowledge in game scripting (GCS/CCS) and a general understanding of how game logic differs from straight forward applications.
+*   Scope Assessment:
+    *   Learned a critical lesson in correctly (re)evaluating project scope.
+*   Project Management:
+    *   Understood the gap between an expansive creative vision and the practical execution.
+    *   Learned to account for consider unknown factors and uncertainties.
+    *   Discovered principles of agile development through daily talks and weekly meetups to discuss the project.
