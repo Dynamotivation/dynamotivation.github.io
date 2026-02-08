@@ -1,9 +1,11 @@
 +++
-title = "GerMemz"
+title = "GerMemz: German TV Commercial Meme Soundboard"
 date = 2017-02-13
 description = "A private German TV commercial soundboard that featured 45 iconic 1&1 and Carglass memes with Marcel D'Avis and Thorsten Bohms quotes."
 
 [extra]
+# Graphic enrichment
+project_title = "GerMemz"
 logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif"
 infobox_images = [
     { path = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "GerMemz Logo", radius = "" }
@@ -13,23 +15,45 @@ available_on_windows = false
 available_on_mac = false
 available_on_linux = false
 available_on_ios = false
-application_category = "EntertainmentApplication"
-
-price_usd = 0
-
 screenshot_urls = [
     "https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
     "https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif",
     "https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif"
 ]
 
-# SEO
+# JSON-LD SEO for Software
 operatingSystem = "Android"
 release_notes = "Unreleased"
 programming_language = "Java"
 development_environment = "Android Studio"
 license = "Closed Source"
 availability = "LimitedAvailability"
+application_category = "EntertainmentApplication"
+price_usd = 0
+
+# FAQ
+questions = [
+    { 
+        question = "What is GerMemz?", 
+        answer = "GerMemz was a private mobile soundboard application for Android that curated iconic soundbites from German TV commercials, specifically featuring 1&1 and Carglass memes." 
+    },
+    { 
+        question = "Which commercial figures are featured in the soundboard?", 
+        answer = "The app featured 45 sounds in total, including Marcel D'Avis from 1&1 commercials and Thorsten Bohms from Carglass advertisements." 
+    },
+    { 
+        question = "Is GerMemz available for download?", 
+        answer = "No, GerMemz was never publicly released on the Google Play Store due to intellectual property and copyright concerns regarding company logos, jingles, and voice recordings." 
+    },
+    { 
+        question = "What programming language was used to develop GerMemz?", 
+        answer = "GerMemz was developed using Java within the Android Studio environment, serving as an early project for learning object-oriented programming." 
+    },
+    {
+        question = "What was the tech stack for GerMemz?",
+        answer = "Java, Android Studio"
+    }
+]
 +++
 
 {% infobox(title="GerMemz") %}
@@ -50,7 +74,7 @@ availability = "LimitedAvailability"
 </dl>
 {% end %}
 
-***GerMemz*** (from "German Memes") was a mobile soundboard application and first the first serious Dynamotivation project developed in 2017 at age 14. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.
+***GerMemz*** (from "German Memes") was a mobile soundboard application and the first serious Dynamotivation project developed in 2017 at age 14. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.
 
 
 ## Development
@@ -61,7 +85,7 @@ Development for *GerMemz* commenced around early 2017 at age 14, with the first 
 
 It was written in Java utilizing Android Studio.
 
-The project was conceived due to an overlap of perceived void in the market and demand among friend groups: A lack of dedicated and easy-to-use soundboard for German TV commercial memes.
+The project was conceived due to a perceived void in the market and demand among friend groups: A lack of dedicated and easy-to-use soundboard for German TV commercial memes.
 These ever present commercials on TV had been moved from annoyance to infamy by edits on YouTube.
 
 Content was periodically added in waves, starting with 9, then 15, 21, and 30 sounds from 1&1 commercials, followed by a separate addition of 15 Carglass sounds.
@@ -73,7 +97,7 @@ Content was periodically added in waves, starting with 9, then 15, 21, and 30 so
 
 *GerMemz* functioned as a multi-page soundboard, categorizing its content across multiple pages, each containing 15 individual sound clips, for a total of 45 sounds.
 
-The sound clips were derived from widely recognized German television commercials. The first 30 sounds stem from "1&1" commercials, featuring the distinctive voice lines of Marcel D'Avis. The other 15 sounds originated from "Carglass" commercials, prominently featuring the voice and lines of Thorsten Bohms.
+The sound clips were derived from widely recognized German television commercials. The first 30 sounds stemmed from "1&1" commercials, featuring the distinctive voice lines of Marcel D'Avis. The other 15 sounds originated from "Carglass" commercials, prominently featuring the voice and lines of Thorsten Bohms.
 
 Highlights:
 *   45 Sounds
@@ -134,7 +158,7 @@ Highlights:
 Developing *GerMemz* presented several significant hurdles:
 
 * First-Time Development:
-    *   As this was my first exposure to high level object oriented languages such as Java, the learning curve was quite steep.
+    *   As this was my first exposure to high-level object-oriented languages such as Java, the learning curve was quite steep.
 * Language Barrier:
     *   A lack of English proficiency at the time hindered effective searching for and understanding of advanced or detailed online tutorials.
 

@@ -34,7 +34,7 @@ REQUIRED_ATTRIBUTES = [
     "development_environment",
     "license",
     "availability",
-    "project_name",
+    "project_title",
 ]
 
 ATTRIBUTES_IN_EXTRA = [
@@ -104,7 +104,8 @@ def validate_frontmatter(filepath, frontmatter):
         "development_environment",
         "license",
         "availability",
-        "project_name",
+        "project_title",
+        "questions",
     ]
     for attr in seo_attrs:
         if not re.search(rf'{re.escape(attr)}\s*=', frontmatter):
