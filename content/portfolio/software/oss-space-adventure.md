@@ -1,13 +1,26 @@
 +++
-title = "OSS Space Adventure"
+title = "OSS Space Adventure: Retro Arcade Shooter for Android"
 date = 2018-02-25
-description = "Retro arcade shooter: You vs. the asteroids! Can you protect your planet or survive the onslaught? Collect power-ups to upgrade your ship."
+description = "Retro arcade shooter for Android: You vs. the asteroids! Can you protect your planet or survive the onslaught? Collect power-ups to upgrade your ship."
 
 [extra]
+# Graphic enrichment
+project_title = "OSS Space Adventure"
 alternate_name = "O.S.S.: Space Adventure"
 logo = "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif", imageWidthPx = 512, imageHeightPx = 512, description = "OSS Space Adventure Logo", radius = "20%" }
+    {
+        path = "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif",
+        imageWidthPx = 512,
+        imageHeightPx = 512,
+        description = "OSS Space Adventure Logo",
+        radius = "20%"
+    }
+]
+screenshot_urls = [
+    "https://ucarecdn.com/3031c98e-aa6f-48bf-86b7-24a844c5f643/ossspaceadventuretitlescreen.avif",
+    "https://ucarecdn.com/075a0dda-92ce-46c3-8374-2524a5c4315e/ossspaceadventureendlessmode.avif",
+    "https://ucarecdn.com/9536dd98-62af-4392-98ca-77542c13ef32/ossspaceadventureprotectmode.avif"
 ]
 available_on_android = true
 available_on_windows = false
@@ -15,24 +28,46 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "GameApplication"
-
-price_usd = 0
-
-screenshot_urls = [
-    "https://ucarecdn.com/3031c98e-aa6f-48bf-86b7-24a844c5f643/ossspaceadventuretitlescreen.avif",
-    "https://ucarecdn.com/075a0dda-92ce-46c3-8374-2524a5c4315e/ossspaceadventureendlessmode.avif",
-    "https://ucarecdn.com/9536dd98-62af-4392-98ca-77542c13ef32/ossspaceadventureprotectmode.avif"
-]
-
-# SEO
+# JSON-LD SEO for Software
 operatingSystem = "Android"
 release_notes = "Delisted from Google Play"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
-license = "Closed Source (Source Code Preserved)"
-aggregate_rating = { rating_value = 4.643, rating_count = 14, best_rating = 5, worst_rating = 1, rating_explanation = "Based on Google Play Console data of 10th October 2025" }
-availability = "LimitedAvailability"
+license = "Closed Source"
+availability = "Discontinued"
+application_category = "GameApplication"
+price_usd = 0
+aggregate_rating = {
+    rating_value = 4.643,
+    rating_count = 14,
+    best_rating = 5,
+    worst_rating = 1,
+    rating_explanation = "Based on Google Play Console data of 10th October 2025."
+}
+
+# FAQ
+questions = [
+    { 
+        question = "What is OSS Space Adventure?", 
+        answer = "OSS Space Adventure is a retro arcade shooter for Android where players defend their planet against asteroids using a variety of power-ups and ship upgrades." 
+    },
+    { 
+        question = "Can I still play OSS Space Adventure?", 
+        answer = "The game is currently delisted from the Google Play Store, but it remains preserved as a private technical demonstration of mobile game development and adaptive scaling." 
+    },
+    { 
+        question = "What game modes are included in OSS Space Adventure?", 
+        answer = "The game features an Endless Survival mode, a Planet Defense mode with health management, and several hardcore variations designed for high-difficulty mobile sessions." 
+    },
+    { 
+        question = "Why was GameMaker chosen over Java for this project?", 
+        answer = "The project was conceived as a strategic shift away from Java-based Android development. The decision was made before starting to utilize GameMaker Studio 1.4 as a more specialized platform for game logic, adaptive resolutions, and pixel art integration." 
+    },
+    {
+        question = "What was the tech stack for OSS Space Adventure?",
+        answer = "GameMaker Studio 1.4, GameMaker Language (GML), Google Play Services API"
+    }
+]
 +++
 
 {% infobox(title="OSS Space Adventure") %}

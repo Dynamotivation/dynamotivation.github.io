@@ -35,6 +35,7 @@ REQUIRED_ATTRIBUTES = [
     "license",
     "availability",
     "project_title",
+    "aggregate_rating",
 ]
 
 ATTRIBUTES_IN_EXTRA = [
@@ -48,6 +49,7 @@ ATTRIBUTES_IN_EXTRA = [
     "application_category",
     "price_usd",
     "screenshot_urls",
+    "aggregate_rating",
 ]
 
 SOFTWARE_DIR = "content/portfolio/software"
