@@ -1,13 +1,20 @@
 +++
-title = "Stellenwerttafel Plus"
+title = "Stellenwerttafel Plus: Visual Number System Learning"
 date = 2019-02-07
 description = "Interactive place value chart for learning binary, decimal, hexadecimal and more interactively for Windows and Android, based on Ulrich Kortenkamp original!"
 
 [extra]
+# Graphic enrichment
+project_title = "Stellenwerttafel Plus"
 alternate_name = "Place Value Chart Plus"
 logo = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif"
 infobox_images = [
     { path = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Stellenwerttafel Plus Logo", radius = "20%" }
+]
+screenshot_urls = [
+    "https://ucarecdn.com/7ff7d6d6-e097-40d1-a531-fb6207b25651/stellenwerttafelplusbinaryscreenshot.avif",
+    "https://ucarecdn.com/394b018b-1655-4ebe-884e-23d263e6ef11/stellenwerttafelplusdecimalscreenshot.avif",
+    "https://ucarecdn.com/f00b51f6-ba74-4a81-a9df-f4aaa2f04e89/stellenwerttafelplusdecimalscreenshotoverflow.avif"
 ]
 available_on_android = true
 available_on_windows = true
@@ -15,24 +22,46 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "EducationalApplication"
-availability = "LimitedAvailability"
-
-price_usd = 0
-
-screenshot_urls = [
-    "https://ucarecdn.com/7ff7d6d6-e097-40d1-a531-fb6207b25651/stellenwerttafelplusbinaryscreenshot.avif",
-    "https://ucarecdn.com/394b018b-1655-4ebe-884e-23d263e6ef11/stellenwerttafelplusdecimalscreenshot.avif",
-    "https://ucarecdn.com/f00b51f6-ba74-4a81-a9df-f4aaa2f04e89/stellenwerttafelplusdecimalscreenshotoverflow.avif"
-]
-
-# SEO
+# JSON-LD SEO for Software
 operatingSystem = "Windows, Android"
 release_notes = "Unreleased"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
-license = "Closed Source (Source Code Preserved)"
-aggregate_rating = { rating_value = 5, rating_count = 1, best_rating = 5, worst_rating = 5, rating_explanation = "Based on the confirmed grade the teacher would have administered" }
+license = "Closed Source"
+availability = "Discontinued"
+application_category = "EducationalApplication"
+price_usd = 0
+aggregate_rating = {
+    rating_value = 5,
+    rating_count = 1,
+    best_rating = 5,
+    worst_rating = 5,
+    rating_explanation = "Based on the confirmed grade the teacher would have awarded."
+}
+
+# FAQ
+questions = [
+    { 
+        question = "What is Stellenwerttafel Plus?", 
+        answer = "Stellenwerttafel Plus (Place Value Chart Plus) is an interactive educational application designed to help students visualize and understand different number systems like binary, decimal, and hexadecimal through direct manipulation." 
+    },
+    { 
+        question = "Why was Stellenwerttafel Plus developed?", 
+        answer = "It was created as a school project to provide a cross-platform alternative to an iOS-only educational tool, allowing the school to use their existing Windows 7 PCs for digital mathematics instruction." 
+    },
+    { 
+        question = "Which number systems are supported in the app?", 
+        answer = "The application supports binary (base 2), octal (base 8), decimal (base 10), hexadecimal (base 16), and custom 'base n' systems." 
+    },
+    { 
+        question = "Is Stellenwerttafel Plus available for download?", 
+        answer = "No, the application was never publicly released out of respect for the original author's intellectual property and because the agreed-upon academic credit for the development was never fulfilled." 
+    },
+    { 
+        question = "What was the tech stack for Stellenwerttafel Plus?", 
+        answer = "GML (GameMaker Language), GameMaker Studio 1.4"
+    }
+]
 +++
 
 {% infobox(title="Stellenwerttafel Plus") %}
