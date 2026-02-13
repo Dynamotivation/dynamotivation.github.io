@@ -1,25 +1,28 @@
 +++
-title = "Joins the Battle Meme Generator"
+title = "Joins the Battle Meme Generator: Fighting Game Memes"
 date = 2018-11-03
 description = "Create authentic \"Joins the Battle\" fighting game splash screens and memes. Customize characters, text, colors and effects in multiple iconic styles!"
 
 [extra]
+# Graphic enrichment
+project_title = "Joins the Battle Meme Generator"
 alternate_name = "... Joins the Battle! Meme Generator"
-availability = "LimitedAvailability"
-price_usd = 0
 logo = "https://ucarecdn.com/20719464-83fb-4d9e-8940-29de5a3275ec/joinsthebattleeditorlogoremastered.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/20719464-83fb-4d9e-8940-29de5a3275ec/joinsthebattleeditorlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Joins the Battle Meme Generator* remastered logo", radius = "20%" },
-    { path = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Joins the Battle Meme Generator* original logo", radius = "20%" }
+    {
+        path = "https://ucarecdn.com/20719464-83fb-4d9e-8940-29de5a3275ec/joinsthebattleeditorlogoremastered.avif",
+        imageWidthPx = 512,
+        imageHeightPx = 512,
+        description = "*Joins the Battle Meme Generator* remastered logo", radius = "20%"
+    },
+    {
+        path = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif",
+        imageWidthPx = 512,
+        imageHeightPx = 512,
+        description = "*Joins the Battle Meme Generator* original logo",
+        radius = "20%"
+    }
 ]
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
-
-application_category = "DesignApplication"
-
 screenshot_urls = [
     "https://ucarecdn.com/324e7ae4-6169-4635-a49c-7c6563178caa/joinsthebattlemainmenu.avif",
     "https://ucarecdn.com/8de5babc-76fe-48b4-8ecc-37dacbccdf61/joinsthebattleeditormenu.avif",
@@ -29,13 +32,56 @@ screenshot_urls = [
     "https://ucarecdn.com/1047f267-98fa-4b83-a891-101a11a3cde5/joinsthebattle2018unlockstyle.avif",
     "https://ucarecdn.com/c2794126-6cd2-4eaa-ad20-237246836ffb/joinsthebattle2018thumbnailstyle.avif"
 ]
+available_on_android = true
+available_on_windows = false
+available_on_mac = false
+available_on_linux = false
+available_on_ios = false
 
-# SEO
+# JSON-LD SEO for Software
+operatingSystem = "Android"
 release_notes = "Delisted from Google Play"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
 license = "Closed Source"
-aggregate_rating = { rating_value = 4.3, rating_count = 2123, best_rating = 5, worst_rating = 1, rating_explanation = "Based on Google Play Console data of 10th October 2025; Historical data available at: https://web.archive.org/web/20190601032534/https://play.google.com/store/apps/details?id=de.unp3rf3ct.JoinsTheBattleGenerator" }
+availability = "Discontinued"
+application_category = "DesignApplication"
+price_usd = 0
+aggregate_rating = {
+    rating_value = 4.3,
+    rating_count = 2123,
+    best_rating = 5,
+    worst_rating = 1,
+    rating_explanation = "Based on Google Play Console data of 10th October 2025; Historical data available at: https://web.archive.org/web/20190601032534/https://play.google.com/store/apps/details?id=de.unp3rf3ct.JoinsTheBattleGenerator"
+}
+
+# FAQ
+questions = [
+    { 
+        question = "What is the Joins the Battle Meme Generator?", 
+        answer = "It is a specialized content creation tool for Android that allows users to create authentic-looking 'Joins the Battle' splash screen memes, similar to those seen in fighting game character reveals." 
+    },
+    { 
+        question = "How successful was the application?", 
+        answer = "The app was a significant success, reaching over 500,000 total installs and maintaining a 4.3+ star rating on Google Play before being delisted." 
+    },
+    { 
+        question = "What technical challenges were involved in using GameMaker for a utility app?", 
+        answer = "Since GameMaker Studio 1.4 lacks native UI components, I had to develop a custom Material Design framework from scratch, including a density-independent pixel (DIP) system and reactive UI elements." 
+    },
+    { 
+        question = "Why was the app delisted, and will it return?", 
+        answer = "The app was temporarily delisted due to educational and employment commitments, but maintenance has recently resumed with plans for a modernized relaunch." 
+    },
+    { 
+        question = "How does the generator differ from a simple image template?", 
+        answer = "Unlike static templates, this app uses a game engine to dynamically render components using shaders and math-based constraints, allowing for non-destructive editing and precise visual effects." 
+    },
+    {
+        question = "What was the tech stack for Joins the Battle Meme Generator?",
+        answer = "GML (GameMaker Language), GameMaker Studio 1.4"
+    }
+]
 +++
 
 {% infobox(title="Joins the Battle Meme Generator") %}
