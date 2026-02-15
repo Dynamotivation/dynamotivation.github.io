@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Default theme color for user agents that don't support prefers-color-scheme -->
+    <meta name="theme-color" content="#ff4c4a">
+    <meta name="theme-color" content="#ff4c4a" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#893750" media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    
+    <link rel="preload" as="font" href=https://dynamotivation.com/fonts/rubik/webfonts/rubik-v28-latin-regular.woff2 crossorigin>
+    <link rel="preload" as="font" href=https://dynamotivation.com/fonts/rubik/webfonts/rubik-v28-latin-700.woff2 crossorigin>
+    <link rel="dns-prefetch" href="//ucarecdn.com">
+    <link rel="preconnect" href="https://ucarecdn.com" crossorigin>
+    <link rel="stylesheet" href=https://dynamotivation.com/fonts/rubik/css/rubik.css>
+    <link rel="stylesheet" href=https://dynamotivation.com/css/base.css>
+    <link rel="stylesheet" href=https://dynamotivation.com/css/header.css>
+    <link rel="stylesheet" href=https://dynamotivation.com/css/footer.css>
+    <script src=https://dynamotivation.com/js/fixOverscroll.js defer></script>
+
+    <!-- Favicon PNGs for different sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href=https://dynamotivation.com/favicon/favicon-32x32.png />
+    <link rel="icon" type="image/png" sizes="32x32" href=https://dynamotivation.com/favicon/favicon-32x32.png media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href=https://dynamotivation.com/favicon/favicon-32x32-dark.png media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" type="image/png" sizes="48x48" href=https://dynamotivation.com/favicon/favicon-48x48.png />
+    <link rel="icon" type="image/png" sizes="48x48" href=https://dynamotivation.com/favicon/favicon-48x48.png media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="48x48" href=https://dynamotivation.com/favicon/favicon-48x48-dark.png media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" type="image/png" sizes="96x96" href=https://dynamotivation.com/favicon/favicon-96x96.png />
+
+    <link rel="icon" type="image/png" sizes="192x192" href=https://dynamotivation.com/favicon/favicon-192x192.png />
+
+    <link rel="icon" type="image/png" sizes="512x512" href=https://dynamotivation.com/favicon/favicon-512x512.png />
+
+    <!-- SVG for modern browsers (light/dark variants) -->
+    <link rel="icon" type="image/svg+xml" href=https://dynamotivation.com/favicon/favicon.svg />
+    <link rel="icon" type="image/svg+xml" href=https://dynamotivation.com/favicon/favicon.svg media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href=https://dynamotivation.com/favicon/favicon-dark.svg media="(prefers-color-scheme: dark)" />
+
+    <!-- Legacy ICO fallback -->
+    <link rel="shortcut icon" href=https://dynamotivation.com/favicon/favicon.ico />
+    <link rel="shortcut icon" href=https://dynamotivation.com/favicon/favicon.ico media="(prefers-color-scheme: light)" />
+    <link rel="shortcut icon" href=https://dynamotivation.com/favicon/favicon-dark.ico media="(prefers-color-scheme: dark)" />
+
+    <!-- iOS home screen -->
+    <link rel="apple-touch-icon" sizes="180x180" href=https://dynamotivation.com/favicon/apple-touch-icon.png />
+    <link rel="apple-touch-icon" sizes="180x180" href=https://dynamotivation.com/favicon/apple-touch-icon-dark.png media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-title" content="Dynamotivation" />
+
+    <!-- Progressive Web App -->
+    <link rel="manifest" href=https://dynamotivation.com/favicon/site.webmanifest />
+
+    
+
+<title>How to Use SVG Vector Graphics in any Version of GameMaker + Studio 1.4 &amp; 2 | Dynamotivation</title>
+<link rel="stylesheet" href=https://dynamotivation.com/css/sections/page.css>
+
+
+<script src=https://dynamotivation.com/js/blogPage.js defer></script>
+<script src=https://dynamotivation.com/js/gdprVideo.js defer></script>
+
+
+<meta name="title" content="How to Use SVG Vector Graphics in any Version of GameMaker + Studio 1.4 &amp; 2 | Dynamotivation">
+
+
+<meta name="description" content="This tutorial will teach you how to convert SVG files to SWF files for use in GameMaker, GameMaker Studio 2, and GameMaker: Studio 1.4">
+<meta name="author" content="Dynamotivation">
+
+
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://dynamotivation.com/blog/tutorials/how-to-use-svgs-in-gamemaker-studio-1-4/">
+
+<!-- OpenGraph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use SVG Vector Graphics in any Version of GameMaker + Studio 1.4 &amp; 2 | Dynamotivation">
+<meta property="og:description" content="This tutorial will teach you how to convert SVG files to SWF files for use in GameMaker, GameMaker Studio 2, and GameMaker: Studio 1.4">
+<meta property="og:image" content="https:&#x2F;&#x2F;dynamotivation.com&#x2F;images&#x2F;fullLogo.png">
+<meta property="og:url" content="https://dynamotivation.com/blog/tutorials/how-to-use-svgs-in-gamemaker-studio-1-4/">
+<meta property="og:site_name" content="Dynamotivation">
+
+<!-- Article meta (published/modified) -->
+
+<meta property="article:published_time" content="2025-03-12">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+     
+    "headline": "How to Use SVG Vector Graphics in any Version of GameMaker + Studio 1.4 &amp; 2",
+    "description": "This tutorial will teach you how to convert SVG files to SWF files for use in GameMaker, GameMaker Studio 2, and GameMaker: Studio 1.4",
+    "author": {
+        "@type": "Person",
+        "name": "Dynamotivation"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Dynamotivation",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://dynamotivation.com/images/fullLogo.png"
+        }
+    },
+    "datePublished": "2025-03-12",
+    
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://dynamotivation.com/blog/tutorials/how-to-use-svgs-in-gamemaker-studio-1-4/"
+    }
+    
+}
+</script>
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+    <div id="headerContent">
+    <a id="logoLink" href="https://dynamotivation.com/" title="Home">
+            <div>
+                <img id="logo" src=https://dynamotivation.com/images/innerLogo.svg alt="Dynamotivation Logo Foreground"
+                    draggable="false">
+                <img id="logoDuplicate" src=https://dynamotivation.com/images/innerLogoBackground.svg alt="Dynamotivation Logo Background" draggable="false" aria-hidden="true">
+            </div>
+        </a>
+
+        <nav id="sectionLinks">
+            
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/news/" >News</a>
+        <span class="sectionLink">News</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/blog/" >Blog</a>
+        <span class="sectionLink">Blog</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/portfolio/software/" >Software</a>
+        <span class="sectionLink">Software</span>
+    </div>
+
+        </nav>
+
+        <nav id="userLinks">
+            <a class="socialLink" href="https://github.com/Dynamotivation" title="Dynamotivation on GitHub">
+                <img src="https://dynamotivation.com/images/gitHub/icon.svg" alt="GitHub">
+            </a>
+        </nav>
+
+        <div class="hamburgerMenuContainer" >
+            <input class="hamburgerToggle" id="sidebarToggle" type="checkbox" tabindex="-1">
+
+            <svg class="hamburgerIcon" viewBox="0 0 100 100">
+                <path class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
+    </div>
+</header>
+
+<nav id="hamburgerMenu">
+    
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/news/" tabIndex="-1">News</a>
+        <span class="sectionLink">News</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/blog/" tabIndex="-1">Blog</a>
+        <span class="sectionLink">Blog</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/portfolio/software/" tabIndex="-1">Software</a>
+        <span class="sectionLink">Software</span>
+    </div>
+
+</nav>
+
+<div id="screenTint">
+    <label for="sidebarToggle" id="sidebarToggleSecondary" aria-hidden="true">Hitbox</label> 
+</div>
+
+
+    <section class="section">
+        <div class="container">
+            
+
+<main id="pageContainer">
+    <div id="fade-out-top"></div>
+    <div id="titleContainer">
+        <h1 id="pageTitle" style="view-transition-name: baaddfbcbcdbebadbbcffebfeaaeadcbddb">How to Use SVG Vector Graphics in any Version of GameMaker + Studio 1.4 &amp; 2</h1>
+        <noscript>
+            <hr>
+        </noscript>
+    </div>
+    <div id="stickyContainer" class="jsOnly">
+        <hr id="progressHr">
+    </div>
+    <div id="dateContainer">
+        
+        <p>Date: <span style="view-transition-name: dacbaceadaafafcfceeee">2025-03-12</span></p>
+        
+        
+    </div>
+    <div id="contentContainer">
+        <p>GameMaker has supported vector graphics for a long time, but few people know how to use them due to the ancient format we are stuck with.<br />
+So let's catch you up to speed on how to use vector art in all versions of GameMaker I have used!</p>
+<p>Let's think back a decade. The year is 2015 and Adobe Flash Games are still all the hype online.<br />
+Naturally, in such a proprietary environment, the decision was made to use a proprietary format for vector graphics, SWF files.<br />
+Faced with Flash on the front of browser games, the creators of GameMaker decided it best to incorporate the same file format for their handling of vector graphics, but there is a catch.<br />
+Normal SWF files could include action scripts, layers, buttons, and a whole bunch more features that don't work in GameMaker. They are basically just glorified SVGs. And what do you know?<br />
+Here we are in 2025 with SVGs as the clear mainstay for vector graphics with SWFs having fallen into obscurity.</p>
+<p>Thankfully the process has not changed over the years, so this should work for you wether you are using <strong>GameMaker Studio: 1.4</strong>, <strong>GameMaker Studio 2</strong> or the latest version of <strong>GameMaker</strong>.</p>
+<div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#step-1a-adobe-illustrator-or-adobe-animate">
+            <h2 tabindex="-1" id="step-1a-adobe-illustrator-or-adobe-animate">Step 1a: Adobe Illustrator or Adobe Animate</h2>
+        </a>
+        <button onclick="copyLink('step-1a-adobe-illustrator-or-adobe-animate')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="Step 1a: Adobe Illustrator or Adobe Animate">
+    <div itemprop="text" class="hidden-text">You can still use the official Adobe Tools (Illustrator and Animate) to create SWF files</div>
+    <div itemprop="text"><p>For the sake of completion, let's get the obvious approach out of the way:<br />
+As it stands, you can still use the official Adobe Tools (Illustrator and Animate) to create SWF files, however, if this will stay the case is up for debate:</p>
+<p><em>"Although you can’t edit SWF files directly, you can import them into Adobe Animate. It’s worth noting that if imported, you may miss critical data, such as sound. Alternatively, Flash players may enable simple edits if you want to trim an existing file, but these aren’t officially supported."</em><br />
+- Adobe 2025 (<a rel="external" href="https://www.adobe.com/creativecloud/file-types/video/container/swf.html">https://www.adobe.com/creativecloud/file-types/video/container/swf.html</a>)</p>
+<p>It will be the easiest way if you still hold one of the old licenses or have access to the software in <em>other ways</em>.</p>
+<p>However, I assume you reading this means you'd rather just use modern SVG tooling and convert your result.<br />
+So let me show you how to convert SVGs to the SWF format without all the paid Adobe tools.</p>
+</div>
+</div><div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#step-1b-preparations">
+            <h2 tabindex="-1" id="step-1b-preparations">Step 1b: Preparations</h2>
+        </a>
+        <button onclick="copyLink('step-1b-preparations')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="Step 1b: Preparations">
+    <div itemprop="text" class="hidden-text">Use Inkscape or another tool to create your SVG and prepare it for conversion</div>
+    <div itemprop="text"><p>First of all, use <strong>Inkscape</strong> or something else to create your SVG.
+Set the canvas size to the size you'd want the sprite to be in GameMaker. Make sure nothing is outside of the canvas.
+When saving the file, make sure to save a copy as a <strong>plain / normal SVG</strong>, <strong>not</strong> as an optimized or "Inkscape SVG" this ensures the other tools understand your file.</p>
+<p>&lt;img src="https://ucarecdn.com/99d9b5b8-ea3d-490e-bff4-dd3e0bf5a621/saveAsPlainSvg.webp"
+alt="Selecting the correct export format in Inkscape"</p>
+<pre><code>style=&quot;width: 50%; aspect-ratio: 363 / 395; &quot;
+class=&quot;blogImage&quot;/&gt;
+</code></pre>
+<p><em>Note how almost all file types end in .svg, yet the difference is in their metadata, encoding, and compression.</em></p>
+</div>
+</div><div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#step-2a-reaconverter-online">
+            <h2 tabindex="-1" id="step-2a-reaconverter-online">Step 2a: reaConverter Online</h2>
+        </a>
+        <button onclick="copyLink('step-2a-reaconverter-online')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="Step 2a: reaConverter Online">
+    <div itemprop="text" class="hidden-text">Use reaConverter online to convert your SVG to an SWF file</div>
+    <div itemprop="text"><p>Next, use reaConverter online to convert your SVG to an SWF file.</p>
+<p>&lt;img src="https://ucarecdn.com/c97b7d28-d37f-4378-880c-90a2596cb8d2/reaConverterWeb.webp"
+alt="Screenshot from the reaConverter online website."</p>
+<pre><code>style=&quot;width: 50%; aspect-ratio: 468 / 473; &quot;
+class=&quot;blogImage&quot;/&gt;
+</code></pre>
+<p>Normally I'd advise you NOT to use online converters for data protection reasons, but here it's by far the easiest and most straightforward way. So go ahead.
+I've tried out dozens of websites, but there's only one that actually works - when it works!</p>
+<p>As reaConverter offers more services for free online than in their free tier software, they may discontinue it any day.</p>
+<p>If it works for you, skip straight to <a href="#step-3-restoring-transparency-with-jpexs">step 3</a>.</p>
+</div>
+</div><div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#step-2b-reaconverter-for-windows">
+            <h2 tabindex="-1" id="step-2b-reaconverter-for-windows">Step 2b: reaConverter for Windows</h2>
+        </a>
+        <button onclick="copyLink('step-2b-reaconverter-for-windows')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="Step 2b: reaConverter for Windows">
+    <div itemprop="text" class="hidden-text">Use the paid or trial version of reaConverter for Windows to convert your SVG to an SWF file</div>
+    <div itemprop="text"><p>If your employer prohibits the use of online converters or it gets discontinued, you can always settle for their paid non-Adobe option (Currently reaConverter 7 for Windows).</p>
+<p>The software comes in editions, you'll need at least the Standard Edition of reaConverter 7 for this to work from my limited experiments. Older versions may also work.</p>
+<p><strong>A free trial is available</strong></p>
+<p>Once done, continue with <a href="#step-3-restoring-transparency-with-jpexs">step 3</a>.</p>
+</div>
+</div><div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#step-2c-svg2swf">
+            <h2 tabindex="-1" id="step-2c-svg2swf">Step 2c: SVG2SWF</h2>
+        </a>
+        <button onclick="copyLink('step-2c-svg2swf')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="Step 2c: SVG2SWF">
+    <div itemprop="text" class="hidden-text">Use the open-source SVG2SWF tool to convert your SVG to an SWF file</div>
+    <div itemprop="text"><p>This method relies on the old free and open-source software SVG2SWF.<br />
+<a rel="external" href="https://sourceforge.net/projects/svg2swf/files/svg2swf/0.5/">https://sourceforge.net/projects/svg2swf/files/svg2swf/0.5/</a></p>
+<p>Outside of being free indefinitely, it offers no benefit over the prior methods.<br />
+Sounds simple enough right? You'd be <strong>wrong</strong>.<br />
+This program is <em>very</em> old, but still works with a catch. It's made for 32bit Windows, specifically Windows XP 32bit.</p>
+<p>To save yourself the headache of trying out other Windows versions, set up a Windows XP 32bit VM. There are plenty of tutorials for setting up a VM. If you are on Windows, use VMware Workstation for simplicity.<br />
+<strong>Remember to not connect Windows XP VMs to the internet</strong></p>
+<p>When that's done, transfer the tool and SVG file onto it and run the following command with your paths:</p>
+<p><em>svg2swf.exe input.svg output.swf</em><br />
+input.svg = path to your file (has to exist)<br />
+output.swf = path to the output file (will be created)</p>
+</div>
+</div><div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#step-3-restoring-transparency-with-jpexs">
+            <h2 tabindex="-1" id="step-3-restoring-transparency-with-jpexs">Step 3: Restoring Transparency with JPEXS</h2>
+        </a>
+        <button onclick="copyLink('step-3-restoring-transparency-with-jpexs')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="Step 3: Restoring Transparency with JPEXS">
+    <div itemprop="text" class="hidden-text">Use JPEXS to restore native transparency to your SWF file</div>
+    <div itemprop="text"><p>You'll have to install JPEXS on your PC for this to work.
+<a rel="external" href="https://github.com/jindrapetrik/jpexs-decompiler/releases">https://github.com/jindrapetrik/jpexs-decompiler/releases</a></p>
+<p>Just import your SWF into JPEXS to delete the added background layer(s) and save/recompile the SWF file.</p>
+<p>&lt;img src="https://ucarecdn.com/b3ca8a4e-08be-447f-85e0-b9e399bf1309/jpexsRestoreTransparency.webp"
+alt="Screenshot from JPEXS."</p>
+<pre><code>style=&quot;width: 100%; aspect-ratio: 1000 / 700; &quot;
+class=&quot;blogImage&quot;/&gt;</code></pre>
+</div>
+</div><div itemscope itemscope itemtype="https://schema.org/HowToStep">
+    <div class="howto-step">
+        <a href="#step-4-importing-into-gamemaker">
+            <h2 tabindex="-1" id="step-4-importing-into-gamemaker">Step 4: Importing into GameMaker</h2>
+        </a>
+        <button onclick="copyLink('step-4-importing-into-gamemaker')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗</button>
+    </div>
+    <meta itemprop="name" content="Step 4: Importing into GameMaker">
+    <div itemprop="text" class="hidden-text">Import your SWF file into GameMaker and enable anti-aliasing</div>
+    <div itemprop="text"><p>Please note, you will need to use the <em>draw_set_swf_aa_level</em> and <em>draw_enable_swf_aa</em> functions in GameMaker to enable anti-aliasing of your SWFs, otherwise, they will look very jagged.</p>
+<hr />
+<p>draw_set_swf_aa_level(1);<br />
+draw_enable_swf_aa(true);</p>
+<hr />
+<p>For more information consult the official documentation:<br />
+<a rel="external" href="https://manual.gamemaker.io/monthly/en/Settings/Texture_Information/Non-Bitmap_Sprites.htm">https://manual.gamemaker.io/monthly/en/Settings/Texture_Information/Non-Bitmap_Sprites.htm</a></p>
+</div>
+</div>
+<p>And that's all I have to teach you about using SVGs in GameMaker.</p>
+<p>Feel free to reach out if you know of a better way or if this becomes outdated!</p>
+
+        
+    </div>
+    
+    <div id="fade-out-bottom"></div>
+</main>
+
+        </div>
+    </section>
+
+    <div id="scroll-bottom-indicator"></div>
+    <footer>
+    <div id="footerContainer">
+        <div id="footerTop">
+            <div id="logos">
+                <a class="socialLink" href="https://dynamotivation.com/" title="Home">
+                    <img id="logo" src="https://dynamotivation.com/images/innerLogoOutline.svg" alt="Dynamotivation Logo"
+                        draggable="false"/>
+                </a>
+                <a class="socialLink" href="https://github.com/Dynamotivation"
+                    title="Dynamotivation on GitHub">
+                    <img src="https://dynamotivation.com/images/gitHub/icon.svg" alt="GitHub" draggable="false"/>
+                </a>
+            </div>
+            <div id="linkColumns">
+                <div id="main">
+                    <p>Main</p>
+                    <a href="https://dynamotivation.com/news/">News</a>
+                    <a href="https://dynamotivation.com/blog/">Blog</a>
+                    <a href="https://dynamotivation.com/portfolio/software/">Software</a>
+                </div>
+
+                <div id="portfolio">
+                    <p>Portfolio</p>
+                    <a href="https://dynamotivation.com/portfolio/software/">Software</a>
+                    <a href="https://dynamotivation.com/portfolio/3d-assets/">3D Assets</a>
+                    
+                </div>
+
+                <div id="about">
+                    <p>About</p>
+                    
+                    <a href="https://dynamotivation.com/legal-notice/">Legal Notice</a>
+                    <a href="https://dynamotivation.com/privacy-notice/">Privacy Notice</a>
+                    <a href="https://dynamotivation.com/third-party-licenses/">Third Party Licenses</a>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <p>© 2024 - 2026 Dynamotivation</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
