@@ -4,10 +4,31 @@ date = 2018-04-01
 description = "A geometric pattern background generator with customizable shapes, gradients, and multicolor effects."
 
 [extra]
+# Graphic enrichment
+project_title = "Geo Background Generator"
+alternate_title = "GeoBackgroundGenerator"
 logo = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Geo Background Generator* remastered logo", radius = "20%" },
-    { path = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*Geo Background Generator* old logo", radius = "20%" }
+    {
+        path = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif",
+        imageWidthPx = 512,
+        imageHeightPx = 512,
+        description = "*Geo Background Generator* remastered logo",
+        radius = "20%"
+    },
+    {
+        path = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif",
+        imageWidthPx = 512,
+        imageHeightPx = 512,
+        description = "*Geo Background Generator* old logo",
+        radius = "20%"
+    }
+]
+screenshot_urls = [
+    "https://ucarecdn.com/5bb09828-843b-4877-958f-b01dd1e662ca/geobackgroundgeneratornewui.avif",
+    "https://ucarecdn.com/9bc23bd1-fed1-40a3-b889-77dd5203f44b/geobackgroundgeneratorcomplexexamplepattern.avif",
+    "https://ucarecdn.com/746df704-5b06-4b57-9558-2b092b119f58/geobackgroundgeneratorsimpleexamplepattern.avif",
+    "https://ucarecdn.com/489c6beb-7edb-4403-85a2-33bcbda91848/geobackgroundgeneratoroldui.avif"
 ]
 available_on_android = true
 available_on_windows = false
@@ -15,25 +36,42 @@ available_on_mac = false
 available_on_linux = false
 available_on_ios = false
 
-application_category = "DesignApplication"
-
-price_usd = 0
-
-screenshot_urls = [
-    "https://ucarecdn.com/5bb09828-843b-4877-958f-b01dd1e662ca/geobackgroundgeneratornewui.avif",
-    "https://ucarecdn.com/9bc23bd1-fed1-40a3-b889-77dd5203f44b/geobackgroundgeneratorcomplexexamplepattern.avif",
-    "https://ucarecdn.com/746df704-5b06-4b57-9558-2b092b119f58/geobackgroundgeneratorsimpleexamplepattern.avif",
-    "https://ucarecdn.com/489c6beb-7edb-4403-85a2-33bcbda91848/geobackgroundgeneratoroldui.avif"
-]
-
-# SEO
+# JSON-LD SEO for Software
 operatingSystem = "Android"
 release_notes = "Delisted from Google Play"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
-license = "Closed Source (Source Code Lost)"
-aggregate_rating = { rating_value = 4.167, rating_count = 6, best_rating = 5, worst_rating = 1, rating_explanation = "Based on Google Play Console data of 10th October 2025" }
-availability = "LimitedAvailability"
+license = "Closed Source"
+availability = "Discontinued"
+application_category = "DesignApplication"
+price_usd = 0
+aggregate_rating = {
+    rating_value = 4.167,
+    rating_count = 6,
+    best_rating = 5,
+    worst_rating = 1,
+    rating_explanation = "Based on Google Play Console data of 10th October 2025"
+}
+
+# FAQ
+questions = [
+    { 
+        question = "What was the main purpose of Geo Background Generator?", 
+        answer = "It was designed to allow users to create custom geometric pattern backgrounds for their devices, with various shapes and gradient options for personalization." 
+    },
+    { 
+        question = "What were the main technical challenges during development?", 
+        answer = "Optimizing mathematical operations for real-time graphics, scaling to different device resolutions without pixelation, and implementing interop with the Android operating system for saving generated images." 
+    },
+    { 
+        question = "Is Geo Background Generator still available for download?", 
+        answer = "No, it has been delisted from Google Play and is no longer available for download." 
+    },
+    {
+        question = "What is the tech stack for Geo Background Generator?",
+        answer = "GML (GameMaker Language), GameMaker Studio 1.4"
+    }
+]
 +++
 
 {% infobox(title="Geo Background Generator") %}
