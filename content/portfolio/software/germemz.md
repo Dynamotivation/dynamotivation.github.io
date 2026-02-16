@@ -8,7 +8,13 @@ description = "A private German TV commercial soundboard that featured 45 iconic
 project_title = "GerMemz"
 logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "GerMemz Logo", radius = "" }
+    {
+        path = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif",
+        imageWidthPx = 512,
+        imageHeightPx = 512,
+        description = "GerMemz Logo",
+        radius = ""
+    }
 ]
 screenshot_urls = [
     "https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
@@ -30,6 +36,7 @@ license = "Closed Source"
 availability = "Discontinued"
 application_category = "EntertainmentApplication"
 price_usd = 0
+#aggregate_rating = []
 
 # FAQ
 questions = [
@@ -50,7 +57,7 @@ questions = [
         answer = "GerMemz was developed using Java within the Android Studio environment, serving as an early project for learning object-oriented programming." 
     },
     {
-        question = "What was the tech stack for GerMemz?",
+        question = "What is the tech stack for GerMemz?",
         answer = "Java, Android Studio"
     }
 ]

@@ -58,7 +58,7 @@ questions = [
         answer = "No, the application was never publicly released out of respect for the original author's intellectual property and because the agreed-upon academic credit for the development was never fulfilled." 
     },
     { 
-        question = "What was the tech stack for Stellenwerttafel Plus?", 
+        question = "What is the tech stack for Stellenwerttafel Plus?", 
         answer = "GML (GameMaker Language), GameMaker Studio 1.4"
     }
 ]

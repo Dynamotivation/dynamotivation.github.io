@@ -56,7 +56,7 @@ aggregate_rating = {
 # FAQ
 questions = [
     { 
-        question = "What was the main purpose of Geo Background Generator?", 
+        question = "What is the main purpose of Geo Background Generator?", 
         answer = "It was designed to allow users to create custom geometric pattern backgrounds for their devices, with various shapes and gradient options for personalization." 
     },
     { 

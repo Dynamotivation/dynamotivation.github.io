@@ -44,7 +44,7 @@ aggregate_rating = {
 # FAQ
 questions = [
     { 
-        question = "What was the purpose of the BenPlaysGames Soundboard?", 
+        question = "What is the purpose of the BenPlaysGames Soundboard?", 
         answer = "It was a community-focused Android application created for the audience of the YouTuber BenPlaysGames, serving as a digital stream deck for his most iconic catchphrases." 
     },
     { 
@@ -52,7 +52,7 @@ questions = [
         answer = "Unlike previous projects built from the ground up, this one utilized an Apache-2.0 licensed template, marking a shift toward modifying and improving existing professional frameworks." 
     },
     { 
-        question = "What was the most significant technical feature added to the app?", 
+        question = "What is the most significant technical feature added to the app?", 
         answer = "The integration of the YouTube Data API to create a dynamic 'on the air' indicator that would activate whenever the creator was live-streaming." 
     },
     { 
@@ -64,7 +64,7 @@ questions = [
         answer = "It served as a pivot point away from the 'not invented here' syndrome, teaching the value of building upon proven codebases to focus on high-value custom features." 
     },
     {
-        question = "What was the tech stack for the BenPlaysGames Soundboard?",
+        question = "What is the tech stack for the BenPlaysGames Soundboard?",
         answer = "Java, Android Studio"
     }
 ]

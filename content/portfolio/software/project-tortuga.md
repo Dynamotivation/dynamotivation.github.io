@@ -26,6 +26,7 @@ license = "Closed Source"
 availability = "Discontinued"
 application_category = "GameApplication"
 price_usd = 0
+#aggregate_rating = []
 
 # FAQ
 questions = [
@@ -34,7 +35,7 @@ questions = [
     { question = "What scripting languages were used?", answer = "Two custom scripting languages: GCS (Game Code Script) for server-side logic and CCS (Client Code Script) for client-side effects, both specific to the Call of Duty engine branch." },
     { question = "What software was used for the 3D environment design?", answer = "The map was developed using the Radiant level editor (the official tool for the Black Ops 3 engine), involving environmental block outs, custom texturing, and architectural prefabs." },
     { question = "Were any community assets or forums involved?", answer = "Yes, the project integrated third-party assets and documentation from the UGX-Mods and Modme communities, including custom weapon ports, perks, and UI elements." },
-    { question = "What was the tech stack for Project Tortuga?", answer = "Call of Duty: Black Ops 3 Mod Tools, T7 Engine, Radiant, APE, GCS (Game Code Script), CCS (Client Code Script)" }
+    { question = "What is the tech stack for Project Tortuga?", answer = "Call of Duty: Black Ops 3 Mod Tools, T7 Engine, Radiant, APE, GCS (Game Code Script), CCS (Client Code Script)" }
 ]
 
 +++

@@ -78,7 +78,7 @@ questions = [
         answer = "Unlike static templates, this app uses a game engine to dynamically render components using shaders and math-based constraints, allowing for non-destructive editing and precise visual effects." 
     },
     {
-        question = "What was the tech stack for Joins the Battle Meme Generator?",
+        question = "What is the tech stack for Joins the Battle Meme Generator?",
         answer = "GML (GameMaker Language), GameMaker Studio 1.4"
     }
 ]

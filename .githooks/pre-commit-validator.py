@@ -79,7 +79,7 @@ def validate_frontmatter(filepath, frontmatter):
 
     # Check top-level attributes
     for attr in ["title", "date", "description"]:
-        if not re.search(rf'{re.escape(attr)}\s*=', frontmatter):
+        if not re.search(rf'(#\s*)?{re.escape(attr)}\s*=', frontmatter):
             errors.append(attr)
 
     # Check for [extra] section
@@ -92,7 +92,7 @@ def validate_frontmatter(filepath, frontmatter):
             extra_section = extra_match.group(1)
             for attr in ATTRIBUTES_IN_EXTRA:
                 if not re.search(
-                    rf'{re.escape(attr)}\s*=', extra_section
+                    rf'(#\s*)?{re.escape(attr)}\s*=', extra_section
                 ):
                     errors.append(attr)
         else:
@@ -110,7 +110,7 @@ def validate_frontmatter(filepath, frontmatter):
         "questions",
     ]
     for attr in seo_attrs:
-        if not re.search(rf'{re.escape(attr)}\s*=', frontmatter):
+        if not re.search(rf'(#\s*)?{re.escape(attr)}\s*=', frontmatter):
             errors.append(attr)
 
     return errors

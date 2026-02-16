@@ -64,7 +64,7 @@ questions = [
         answer = "The project was conceived as a strategic shift away from Java-based Android development. The decision was made before starting to utilize GameMaker Studio 1.4 as a more specialized platform for game logic, adaptive resolutions, and pixel art integration." 
     },
     {
-        question = "What was the tech stack for OSS Space Adventure?",
+        question = "What is the tech stack for OSS Space Adventure?",
         answer = "GameMaker Studio 1.4, GameMaker Language (GML), Google Play Services API"
     }
 ]
