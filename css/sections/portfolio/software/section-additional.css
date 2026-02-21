@@ -1,0 +1,113 @@
+:root {
+    --page-max-width: 50rem;
+    --software-section-max-width: 70rem;
+    --post-height: 50rem;
+    --post-min-width: 16rem;
+    --post-max-width: 26rem;
+    --post-aspect-ratio: 30/50;
+}
+
+@media (max-width: 42rem) {
+    :root {
+        --post-min-width: 20rem;
+        --post-max-width: 40rem;
+    }
+}
+
+.container {
+    overflow: clip;
+}
+
+#pageContainer {
+    max-width: var(--page-max-width);
+    margin: 10vh auto 5vh auto;
+}
+
+#postGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: var(--software-section-max-width);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.postContainer {
+    flex: 1 1 calc(var(--post-min-width) + 1rem);
+    max-width: var(--post-max-width);
+    margin: 0;
+    display: unset;
+    aspect-ratio: var(--post-aspect-ratio);
+}
+
+.postShadow {
+    aspect-ratio: var(--post-aspect-ratio);
+    filter: blur(.5rem);
+    opacity: 0.3;
+    position: relative;
+    transform: scale(1);
+
+    transition: background-size .4s ease, filter .4s ease, transform .4s ease, opacity .4s ease, --gradient-color-1 .5s, --gradient-color-2 .5s;
+}
+
+.postShadow:hover {
+    --gradient-color-1: color-mix(in srgb, var(--accent-color) 35%, var(--footer-color) 65%);
+    --gradient-color-2: color-mix(in srgb, var(--accent-color-alt) 35%, var(--footer-color) 65%);
+
+    transform: scale(1.02);
+}
+
+.postBorder {
+    --gradient-color-1: color-mix(in srgb, var(--footer-color) 80%, var(--background-color) 20%);
+    --gradient-color-2: color-mix(in srgb, var(--footer-color) 80%, var(--background-color) 20%);
+    pointer-events: none;
+    aspect-ratio: var(--post-aspect-ratio);
+    margin: -165% auto 0 auto; /* Visually overlap the content and shadow */
+}
+
+.logoContainer {
+    filter: drop-shadow(0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20%;
+}
+
+.postContent {
+    height: calc(100% - 4rem); /*Subtracting padding*/
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
+
+.postMetadata {
+    margin-top: 2rem;
+    padding: unset;
+    height: auto;
+    flex-grow: 1;
+}
+
+.postTitle {
+    contain: inline-size;
+    hyphens: auto;
+    font-size: 1.4em;
+}
+
+.postDate {
+    margin: auto 2% 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allow children to wrap to the next line instead of overlapping */
+    gap: .5rem;
+}
+
+.postDate > * {
+    flex: 0 1 auto;
+    word-break: keep-all;
+    flex-basis: auto;
+}

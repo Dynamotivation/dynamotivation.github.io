@@ -1,0 +1,669 @@
+.jsOnly {
+    display: none;
+    visibility: hidden;
+}
+
+#pageContainer {
+    max-width: min(65rem, 90vw);
+    margin: min(25vh, 15rem) auto 50vh auto;
+}
+
+@media (max-width: 30rem) {
+    #pageContainer {
+        margin: min(15vh, 15rem) auto 25vh auto; 
+    }
+}
+
+#pageContainer>#titleContainer {
+    display: block;
+    max-width: 45.5rem;
+    width: fit-content;
+    position: relative;
+    z-index: 3;
+}
+
+#pageContainer #pageTitle {
+    /* Avoids layout shifting upon unhiding the JsOnly elements, by precomputing their height in the margins */
+    margin: 0 0 .7rem 0;
+    font-size: 3rem;
+    width: auto;
+    display: inline-block;
+}
+
+@media (max-width: 30rem) {
+    #pageContainer #pageTitle {
+        font-size: 2.5rem;
+    }
+}
+
+#pageContainer>#titleContainer>noscript>hr,
+#pageContainer>#stickyContainer>hr
+{
+    width: auto;
+    /* Allowing it to be a bit wider allows us to define negative margins below without awkward cutoffs */
+    max-width: calc(100% + .5rem);
+    height: .7rem;
+    margin: 0 -3rem 0 -.25rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--link-visited-color);
+    position: relative;
+    transition: width .7s ease-out;
+}
+
+#pageContainer>#titleContainer>noscript>hr {
+    /* Max width is page width + negative margins defined above */
+    max-width: min(calc(100% + .5rem + 3.2rem), calc(90vw + 0.5rem));
+    width: calc(100% + 3.2rem);
+}
+
+#stickyContainer {
+    position: sticky;
+    z-index: 2;
+    padding-top: 4.1rem;
+    margin-top: -4.1rem;
+    /* Necessary to allow the observer to detect stickiness */
+    top: -1px;
+}
+
+.isSticky {
+    width: 100%;
+}
+
+.isSticky>#progressHr {
+    margin-right: -.2rem;
+}
+
+#pageContainer>#dateContainer {
+    margin: 2.6rem 0 6rem 0;
+}
+
+#fade-out-top {
+    position: sticky;
+    height: 2.8rem;
+    top: calc(3.9rem - 1px); /*Header height + margins - pixel because of rounding issue*/
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, var(--background-color) 70%, var(--background-color) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#fade-out-bottom {
+    position: sticky;
+    height: 2rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background-color) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#contentContainer p,
+#contentContainer span {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+#contentContainer h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 6rem 0 2rem 0;
+    display: block;
+    line-height: 3rem;
+}
+
+@media (max-width: 30rem) {
+    #contentContainer h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* h3 styling: scale down from h2 while keeping consistent spacing rhythm */
+#contentContainer h3 {
+    /* Increased for clearer hierarchy vs h2 */
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 4.5rem 0 1.5rem 0;
+    display: block;
+    line-height: 2.75rem;
+}
+
+@media (max-width: 30rem) {
+    #contentContainer h3 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+
+.blogImage {
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0 .2rem .4rem rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 30rem) {
+    .blogImage {
+        min-width: 100%;
+        max-width: unset;
+    }
+}
+
+/* Section headings */
+.howto-step {
+    display: flex;
+    align-items: center;
+}
+
+.howto-step a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure headings used inside howto-step keep their smaller margins—make the selector specific so it overrides the general #contentContainer h2 rule */
+#contentContainer .howto-step h2 {
+    margin: 0;
+    scroll-margin-top: 6rem;
+}
+
+.copy-anchor-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    margin: 6rem 0 auto 0;
+    font-size: 2.5rem;
+}
+
+.howto-step:hover .copy-anchor-button,
+.howto-step:focus-within .copy-anchor-button {
+    visibility: visible;
+}
+
+.hidden-text {
+    display: none;
+}
+
+h1 {
+    word-break: break-word;
+}
+
+ul {
+    padding-inline-start: 1.25rem;
+    padding-inline-end: 1.25rem;
+}
+
+@media (max-width: 30rem) {
+    ul {
+        padding-inline-start: .25rem;
+        padding-inline-end: .25rem;
+    }
+}
+
+li {
+    margin-bottom: 0.5rem;
+    list-style: none;
+    position: relative;
+    padding-left: 1.25rem; /* space for the custom marker */
+}
+
+li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    color: var(--link-visited-color);
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+ul ul {
+    margin-top: 0.5rem;
+}
+
+/* --- Image List Styling --- */
+.blogImageList {
+    display: flex;
+}
+
+.blogImageList > div {
+    padding: 0.625rem;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.blogImageList .blogImage {
+    min-width: unset;
+}
+
+/* --- Video List Styling --- */
+.blogVideoList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.blogVideoList > div {
+    flex: 1 1 auto;
+    min-width: 300px;
+    max-width: 700px;
+    padding: 0.625rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.blogVideoList iframe {
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive container for maintaining aspect ratio */
+.blogVideoContainer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.blogVideoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.blogVideoList figcaption {
+    margin: .5rem;
+    contain: inline-size;
+    hyphens: auto;
+}
+
+@media (max-width: 40rem) {
+    .blogVideoList {
+        flex-direction: column;
+    }
+    
+    .blogVideoList > div {
+        width: 100%;
+        max-width: 100%;
+        min-width: unset;
+    }
+    
+    #contentContainer .gdprVideoContent {
+        padding: 0.4rem;
+        gap: 0.45rem;
+    }
+    
+    #contentContainer .gdprVideoContent p {
+        font-size: 0.52rem;
+        line-height: 1.08;
+        transform: scaleX(0.92);
+    }
+
+    #contentContainer .gdprVideoConsent {
+        margin-top: 0.2rem;
+        padding: 0.4rem 0.75rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* --- To be removed, replaced by above --- */
+div > table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+div > table td {
+    vertical-align: top;
+}
+
+div > table td > img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+figure {
+    inline-size: fit-content;
+    margin-inline: auto;
+}
+
+figcaption {
+    margin: .5rem;
+    contain: inline-size;
+    hyphens: auto;
+}
+
+/* --- GDPR Video Consent Overlay --- */
+.gdprVideoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+#contentContainer .gdprVideoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.55rem;
+    text-align: center;
+    max-width: 96%;
+}
+
+#contentContainer .gdprVideoContent p {
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    transform: scaleX(0.95);
+    transform-origin: center;
+}
+
+#contentContainer .gdprVideoContent p a {
+    color: white;
+    text-decoration: underline;
+}
+
+#contentContainer .gdprVideoConsent {
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.gdprVideoConsent:hover {
+    background-color: var(--main-color-dark);
+    border-color: var(--main-color-dark);
+    transform: scale(1.05);
+}
+
+.gdprVideoConsent:active {
+    transform: scale(0.98);
+}
+
+/* --- Video Loading Spinner --- */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.blogVideoContainer.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -28px;
+    margin-left: -28px;
+    border: 5px solid rgba(0, 0, 0, 0.15);
+    border-top: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    animation: spin 0.8s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* --- NoScript Video Fallback --- */
+.blogVideoContainer noscript {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+}
+
+.blogVideoContainer noscript p {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.blogVideoContainer noscript a {
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* --- Post Navigation --- */
+#pageNavigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 4rem 0 2rem 0;
+    max-width: calc(100% + 0.5rem);
+}
+
+/* Single item: stretch to full width */
+#pageNavigation:has(.previous:only-child),
+#pageNavigation:has(.next:only-child) {
+    grid-template-columns: 1fr;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--link-color);
+    background-color: var(--background-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: inherit;
+}
+
+.nav-link:visited {
+    color: inherit;
+}
+
+.nav-link:hover {
+    border-color: var(--main-color);
+    background-color: rgba(255, 76, 74, 0.05);
+    transform: translateY(-2px);
+}
+
+@media (prefers-color-scheme: dark) {
+    .nav-link:hover {
+        background-color: rgba(150, 55, 68, 0.1);
+    }
+}
+
+.nav-link.previous {
+    text-align: right;
+}
+
+.nav-link.next {
+    text-align: left;
+}
+
+.nav-label {
+    font-size: 0.9rem;
+    color: var(--link-visited-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.nav-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+@media (max-width: 30rem) {
+    #pageNavigation {
+        gap: 1rem;
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    .nav-link {
+        padding: 1rem;
+    }
+
+    .nav-label {
+        font-size: 0.8rem;
+    }
+
+    .nav-title {
+        font-size: 1rem;
+    }
+}
+
+/* --- QnA shortcode (accordion) --- */
+@property --qna-border-color-1 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+}
+
+@property --qna-border-color-2 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+}
+
+#contentContainer .qna {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#contentContainer .qna-item {
+    position: relative;
+    border-radius: 0.75rem;
+    --qna-border-color-1: color-mix(in srgb, var(--footer-color) 25%, var(--background-color) 75%);
+    --qna-border-color-2: color-mix(in srgb, var(--footer-color) 25%, var(--background-color) 75%);
+    border: 0.125rem solid transparent;
+    background:
+        linear-gradient(var(--background-color), var(--background-color)) padding-box,
+        linear-gradient(45deg, var(--qna-border-color-1), var(--qna-border-color-2)) border-box;
+    overflow: clip;
+
+    transition: --qna-border-color-1 .3s, --qna-border-color-2 .3s;
+}
+
+#contentContainer .qna-item:hover {
+    --qna-border-color-1: color-mix(in srgb, var(--accent-color) 80%, var(--footer-color) 20%);
+    --qna-border-color-2: color-mix(in srgb, var(--accent-color-alt) 80%, var(--footer-color) 20%);
+}
+
+#contentContainer .qna-question {
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 1rem 1.2rem;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contentContainer .qna-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#contentContainer .qna-question::after {
+    content: "➤";
+    margin-left: auto;
+    color: var(--link-visited-color);
+    font-size: 0.95rem;
+    line-height: 1;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+#contentContainer .qna-toggle:checked + .qna-question::after {
+    transform: rotate(270deg);
+}
+
+#contentContainer .qna-question:focus-visible {
+    outline: 0.15rem solid var(--link-color);
+    outline-offset: 0.15rem;
+}
+
+#contentContainer .qna-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .3s ease;
+    overflow: clip;
+    padding-bottom: 0;
+}
+
+#contentContainer .qna-toggle:checked ~ .qna-answer {
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
+}
+
+#contentContainer .qna-toggle:not(:checked) ~ .qna-answer .qna-answer-inner {
+    border: 0;
+}
+
+#contentContainer .qna-answer-inner {
+    min-height: 0;
+    overflow: clip;
+    padding: 0 1.2rem;
+    border-top: 0.0625rem solid color-mix(in srgb, var(--footer-color) 18%, var(--background-color) 82%);
+}
+
+#contentContainer .qna-answer,
+#contentContainer .qna-answer * {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+}
+
+#contentContainer .qna-answer-label {
+    font-weight: 700;
+    margin-right: 0.5rem;
+    color: var(--link-visited-color);
+}

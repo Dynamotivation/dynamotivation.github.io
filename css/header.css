@@ -1,0 +1,306 @@
+::view-transition-old(header),
+::view-transition-new(header) {
+    animation: 0s;
+}
+
+header {
+    height: 2.5rem;
+    background-color: var(--main-color);
+    padding: .7rem 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    view-transition-name: header;
+}
+
+header #headerContent {
+    height: 100%;
+    max-width: 80rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 .7rem;
+}
+
+
+
+/* Logo */
+header #logoLink {
+    height: 100%;
+    aspect-ratio: 268.835/208.368;
+    display: inline-block;
+}
+
+header #logoLink div {
+    position: relative;
+    height: 100%;
+}
+
+header #logo,
+header #logoDuplicate {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 2;
+    scale: 1;
+    transition: scale .15s ease-out;
+}
+
+header #logoDuplicate {
+    pointer-events: none;
+    z-index: 1;
+}
+
+header #logo:hover+#logoDuplicate {
+    scale: 1.06;
+}
+
+
+
+/* Section Links */
+header>#headerContent>#sectionLinks {
+    margin: 0 auto 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (max-width: 30rem) {
+    header>#headerContent>#sectionLinks {
+        display: none;
+    }
+}
+
+header>#headerContent>#sectionLinks>div {
+    position: relative;
+}
+
+.sectionLink,
+.sectionLinkHitbox {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.sectionLink {
+    color: white;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    top: 0;
+    transition: all 250ms;
+}
+
+.sectionLinkHitbox {
+    position: absolute;
+    height: 100%;
+    color: transparent;
+}
+
+.sectionLinkHitbox::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    background: var(--gradient);
+    border-radius: .1rem;
+    height: .22rem;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.sectionLinkHitbox:hover::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.sectionLinkHitbox:hover+.sectionLink {
+    top: -.1rem;
+}
+
+
+
+/* Social Links */
+header #userLinks {
+    margin-left: 1rem;
+    height: 80%;
+}
+
+header .socialLink {
+    height: 100%;
+    display: inline-block;
+}
+
+header .socialLink>img {
+    height: 100%;
+    transition: all .2s ease-out;
+    transform: scale(1);
+}
+
+header .socialLink:hover>img {
+    transform: scale(1.05);
+}
+
+
+
+/* Hamburger Menu */
+.hamburgerMenuContainer {
+    margin-left: auto;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+@media (min-width: 30rem) {
+    .hamburgerMenuContainer {
+        display: none;
+    }
+}
+
+.hamburgerToggle {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    opacity: 0;
+}
+
+.hamburgerIcon {
+    margin: -4rem 0 0 0;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    display: block;
+    pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamburgerToggle:checked+.hamburgerIcon {
+    transform: rotate(45deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: white;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.hamburgerIcon .top {
+    stroke-dasharray: 40 160;
+}
+
+.hamburgerIcon .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+
+.hamburgerIcon .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.hamburgerToggle:checked+.hamburgerIcon .top {
+    stroke-dashoffset: -64px;
+}
+
+.hamburgerToggle:checked+.hamburgerIcon .middle {
+    transform: rotate(90deg);
+}
+
+.hamburgerToggle:checked+.hamburgerIcon .bottom {
+    stroke-dashoffset: -64px;
+}
+
+#hamburgerMenu {
+    position: fixed;
+    right: -70vw;
+    top: 3.9rem;
+    width: calc(70vw - 2rem);
+    height: calc(100vh - 3.9rem - 2rem);
+    background: var(--main-color);
+    z-index: 100;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    opacity: 0;
+}
+
+@media (max-width: 30rem) {
+    #hamburgerMenu {
+        opacity: 1;
+    }
+
+    header:has(#sidebarToggle:checked)+#hamburgerMenu {
+        right: 0;
+    }
+}
+
+#hamburgerMenu>div {
+    position: relative;
+}
+
+/* Having these two animations, makes it possible to hide the invisible screen tint when the sidebar is closed to make debugging easier */
+#screenTint {
+    height: 100%;
+    background: black;
+    position: fixed;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s cubic-bezier(0, 1, 0, 1);
+}
+
+@media (max-width: 30rem) {
+    header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint {
+        opacity: 0.6;
+        width: 100%;
+    }
+
+    header:has(#sidebarToggle:not(:checked))+ #hamburgerMenu + #screenTint {
+        opacity: 0;
+        width: 0;
+        /* This is literally just here so we can get the tint out of the way for easier element inspection */
+        transition: opacity 0.3s ease, width 1.5s cubic-bezier(0, 0, 0, 0);
+    }
+
+    /* Disable scroll when hamburger menu is expanded */
+    body:has(#sidebarToggle:checked) {
+        overflow: hidden;
+    }
+}
+
+#sidebarToggleSecondary {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 30rem) {
+    header:has(#sidebarToggle:checked)+#hamburgerMenu+#screenTint>#sidebarToggleSecondary {
+        display: block;
+    }
+}

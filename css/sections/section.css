@@ -1,0 +1,138 @@
+:root {
+    --post-height: 12rem;
+}
+
+.jsOnly {
+    display: none;
+}
+
+#pageContainer {
+    max-width: min(65rem, 90vw);
+    margin: 10vh auto 50vh auto;
+}
+
+#pageContainer>#titleContainer {
+    display: inline-block;
+    max-width: 70%;
+    position: relative;
+    z-index: 3;
+}
+
+#pageContainer h1 {
+    margin: 0 0 .7rem 0;
+    font-size: 5rem;
+}
+
+#pageContainer>#descriptionContainer {
+    margin-top: 2.4rem;
+}
+
+#fade-out-top {
+    position: sticky;
+    height: 2.8rem;
+    top: 3.9rem; /*Header height + margins*/
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, var(--background-color) 70%, var(--background-color) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#fade-out-bottom {
+    position: sticky;
+    height: 2rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background-color) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#descriptionContainer * {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+
+
+/* Post Styling */
+@property --gradient-color-1 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+}
+
+@property --gradient-color-2 {
+    syntax: '<color>';
+    initial-value: white;
+    inherits: false;
+}
+
+.postContainer {
+    margin: 0 1rem 2rem 1rem;
+    display: flex;
+    width: calc(100% - 2rem); /* Account for margins */
+}
+
+.postLink {
+    flex: 1;
+    display: flex;
+}
+
+.postShadow {
+    --gradient-color-1: var(--footer-color);
+    --gradient-color-2: var(--footer-color);
+    background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+    filter: blur(1rem);
+    opacity: 0.5;
+    width: 100%;
+
+    transition: --gradient-color-1 .5s, --gradient-color-2 .5s;
+}
+
+.postShadow:hover {
+    --gradient-color-1: var(--accent-color);
+    --gradient-color-2: var(--accent-color-alt);
+}
+
+.postBorder {
+    flex: 1;
+    --gradient-color-1: var(--footer-color);
+    --gradient-color-2: var(--footer-color);
+    pointer-events: none; /* Allow hover detection by shadow element */
+    position: relative;
+    background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+    padding: .2rem;
+    width: 95%;
+    margin: 0 auto 0 -100%;
+    border-radius: 1rem;
+
+    transition: --gradient-color-1 .3s, --gradient-color-2 .3s;
+}
+
+.postLink:hover+.postBorder {
+    --gradient-color-1: color-mix(in srgb, var(--accent-color) 80%, var(--footer-color) 20%);
+    --gradient-color-2: color-mix(in srgb, var(--accent-color-alt) 80%, var(--footer-color) 20%);
+}
+
+.postContent {
+    height: 100%;
+    border-radius: .8rem;
+    background-color: var(--background-color);
+}
+
+.postMetadata {
+    padding: 3rem 2rem;
+    height: calc(100% - 6rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.postTitle {
+    font-size: 2em;
+}
+
+.postDate {
+    margin: auto 0 0 auto;
+}

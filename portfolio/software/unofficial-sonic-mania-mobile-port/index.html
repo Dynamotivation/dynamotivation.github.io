@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Default theme color for user agents that don't support prefers-color-scheme -->
+    <meta name="theme-color" content="#ff4c4a">
+    <meta name="theme-color" content="#ff4c4a" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#893750" media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    
+    <link rel="preload" as="font" href=https://dynamotivation.com/fonts/rubik/webfonts/rubik-v28-latin-regular.woff2 crossorigin>
+    <link rel="preload" as="font" href=https://dynamotivation.com/fonts/rubik/webfonts/rubik-v28-latin-700.woff2 crossorigin>
+    <link rel="dns-prefetch" href="//ucarecdn.com">
+    <link rel="preconnect" href="https://ucarecdn.com" crossorigin>
+    <link rel="stylesheet" href=https://dynamotivation.com/fonts/rubik/css/rubik.css>
+    <link rel="stylesheet" href=https://dynamotivation.com/css/base.css>
+    <link rel="stylesheet" href=https://dynamotivation.com/css/header.css>
+    <link rel="stylesheet" href=https://dynamotivation.com/css/footer.css>
+    <script src=https://dynamotivation.com/js/fixOverscroll.js defer></script>
+
+    <!-- Favicon PNGs for different sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href=https://dynamotivation.com/favicon/favicon-32x32.png />
+    <link rel="icon" type="image/png" sizes="32x32" href=https://dynamotivation.com/favicon/favicon-32x32.png media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href=https://dynamotivation.com/favicon/favicon-32x32-dark.png media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" type="image/png" sizes="48x48" href=https://dynamotivation.com/favicon/favicon-48x48.png />
+    <link rel="icon" type="image/png" sizes="48x48" href=https://dynamotivation.com/favicon/favicon-48x48.png media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="48x48" href=https://dynamotivation.com/favicon/favicon-48x48-dark.png media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" type="image/png" sizes="96x96" href=https://dynamotivation.com/favicon/favicon-96x96.png />
+
+    <link rel="icon" type="image/png" sizes="192x192" href=https://dynamotivation.com/favicon/favicon-192x192.png />
+
+    <link rel="icon" type="image/png" sizes="512x512" href=https://dynamotivation.com/favicon/favicon-512x512.png />
+
+    <!-- SVG for modern browsers (light/dark variants) -->
+    <link rel="icon" type="image/svg+xml" href=https://dynamotivation.com/favicon/favicon.svg />
+    <link rel="icon" type="image/svg+xml" href=https://dynamotivation.com/favicon/favicon.svg media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href=https://dynamotivation.com/favicon/favicon-dark.svg media="(prefers-color-scheme: dark)" />
+
+    <!-- Legacy ICO fallback -->
+    <link rel="shortcut icon" href=https://dynamotivation.com/favicon/favicon.ico />
+    <link rel="shortcut icon" href=https://dynamotivation.com/favicon/favicon.ico media="(prefers-color-scheme: light)" />
+    <link rel="shortcut icon" href=https://dynamotivation.com/favicon/favicon-dark.ico media="(prefers-color-scheme: dark)" />
+
+    <!-- iOS home screen -->
+    <link rel="apple-touch-icon" sizes="180x180" href=https://dynamotivation.com/favicon/apple-touch-icon.png />
+    <link rel="apple-touch-icon" sizes="180x180" href=https://dynamotivation.com/favicon/apple-touch-icon-dark.png media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-title" content="Dynamotivation" />
+
+    <!-- Progressive Web App -->
+    <link rel="manifest" href=https://dynamotivation.com/favicon/site.webmanifest />
+
+    
+
+<title>Unofficial Sonic Mania Mobile Port for Android | Dynamotivation</title>
+<link rel="stylesheet" href=https://dynamotivation.com/css/sections/page.css>
+
+<link rel="stylesheet" href="https://dynamotivation.com/css/sections/portfolio/software/page-additional.css">
+
+
+<script src=https://dynamotivation.com/js/blogPage.js defer></script>
+<script src=https://dynamotivation.com/js/gdprVideo.js defer></script>
+
+
+<meta name="title" content="Unofficial Sonic Mania Mobile Port for Android | Dynamotivation">
+
+
+<meta name="description" content="An unreleased fan port of the video game Sonic Mania to Android using the GameMaker: Studio Engine and Sonic MAX Framework.">
+<meta name="author" content="Dynamotivation">
+
+
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Unofficial Sonic Mania Mobile Prototype | Dynamotivation">
+<meta property="og:description" content="An unreleased fan port of the video game Sonic Mania to Android using the GameMaker: Studio Engine and Sonic MAX Framework.">
+<meta property="og:image" content="https:&#x2F;&#x2F;ucarecdn.com&#x2F;d03cdf7e-4a3f-430d-8c09-d30ba87b4ecc&#x2F;sonicmaniamobilelogo.avif">
+<meta property="og:url" content="https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/">
+<meta property="og:site_name" content="Dynamotivation">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+
+
+<meta property="twitter:domain" content="dynamotivation.com">
+<meta property="twitter:url" content="https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/">
+<meta name="twitter:title" content="Unofficial Sonic Mania Mobile Prototype | Dynamotivation">
+<meta name="twitter:description" content="An unreleased fan port of the video game Sonic Mania to Android using the GameMaker: Studio Engine and Sonic MAX Framework.">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;ucarecdn.com&#x2F;d03cdf7e-4a3f-430d-8c09-d30ba87b4ecc&#x2F;sonicmaniamobilelogo.avif">
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/#software",
+  "inLanguage": "en",
+  "url": "https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dynamotivation",
+    "url": "https://dynamotivation.com/",
+    "logo": {
+      "@type": "ImageObject",
+  "url": "https://dynamotivation.com/images/fullLogo.png"
+    }
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dynamotivation",
+    "url": "https://dynamotivation.com/"
+  },
+  "name": "Unofficial Sonic Mania Mobile Prototype",
+  "alternateName": "Unofficial Sonic Mania Mobile Port",
+  "description": "An unreleased fan port of the video game Sonic Mania to Android using the GameMaker: Studio Engine and Sonic MAX Framework.",
+  "applicationCategory": "EntertainmentApplication",
+  "operatingSystem":
+  
+    "Android"
+  ,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://ucarecdn.com/d03cdf7e-4a3f-430d-8c09-d30ba87b4ecc/sonicmaniamobilelogo.avif",
+    "width": 512,
+    "height": 512,
+    "caption": "Unofficial Sonic Mania Mobile Prototype logo"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/Discontinued"
+  },
+  "release_notes": "Unreleased",
+    "dateCreated": "2019-05-01T00:00:00+00:00",
+  "mainEntity": { "@id": "https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/#webpage" }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/#webpage",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Dynamotivation",
+    "url": "https://dynamotivation.com/"
+  },
+  "url": "https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/",
+  "name": "Unofficial Sonic Mania Mobile Port for Android | Dynamotivation",
+  "description": "An unreleased fan port of the video game Sonic Mania to Android using the GameMaker: Studio Engine and Sonic MAX Framework."
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dynamotivation.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Portfolio",
+      "item": "https://dynamotivation.com/portfolio/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Software",
+      "item": "https://dynamotivation.com/portfolio/software/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Unofficial Sonic Mania Mobile Port for Android",
+      "item": "https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/"
+    }
+  ]
+}
+</script>
+
+
+
+
+  
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    
+    {
+      "@type": "Question",
+      "name": "Is the Unofficial Sonic Mania Mobile Port available for download?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, this was a short-term proof of concept and remains unreleased; additionally, the original source code has been lost." }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "What features were implemented in the Unofficial Sonic Mania Mobile Port?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The project focused on recreating challenging elements of Sonic Mania, including the title screen, certain menu and UI elements, the drop dash mechanic, blue sphere bonus stages, and a Mania-style Green Hill Zone Act 1." }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "How were the 3D effects on the title screen achieved?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The clouds used a custom shader for distortion correction and surface rendering, while the spinning island utilized GameMaker's primitive 3D engine with a camera and projection matrix." }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "How did the project handle the Blue Sphere bonus stages?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The projection logic was recreated by charting x and y screen locations against distance and approximating them with first and second-degree mathematical functions." }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "What was the tech stack for the Unofficial Sonic Mania Mobile Port?",
+      "acceptedAnswer": { "@type": "Answer", "text": "GML (GameMaker Language), GameMaker Studio 1.4, Sonic MAX Framework" }
+    }
+    
+  ]
+}
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+    <div id="headerContent">
+    <a id="logoLink" href="https://dynamotivation.com/" title="Home">
+            <div>
+                <img id="logo" src=https://dynamotivation.com/images/innerLogo.svg alt="Dynamotivation Logo Foreground"
+                    draggable="false">
+                <img id="logoDuplicate" src=https://dynamotivation.com/images/innerLogoBackground.svg alt="Dynamotivation Logo Background" draggable="false" aria-hidden="true">
+            </div>
+        </a>
+
+        <nav id="sectionLinks">
+            
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/news/" >News</a>
+        <span class="sectionLink">News</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/blog/" >Blog</a>
+        <span class="sectionLink">Blog</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/portfolio/software/" >Software</a>
+        <span class="sectionLink">Software</span>
+    </div>
+
+        </nav>
+
+        <nav id="userLinks">
+            <a class="socialLink" href="https://github.com/Dynamotivation" title="Dynamotivation on GitHub">
+                <img src="https://dynamotivation.com/images/gitHub/icon.svg" alt="GitHub">
+            </a>
+        </nav>
+
+        <div class="hamburgerMenuContainer" >
+            <input class="hamburgerToggle" id="sidebarToggle" type="checkbox" tabindex="-1">
+
+            <svg class="hamburgerIcon" viewBox="0 0 100 100">
+                <path class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
+    </div>
+</header>
+
+<nav id="hamburgerMenu">
+    
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/news/" tabIndex="-1">News</a>
+        <span class="sectionLink">News</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/blog/" tabIndex="-1">Blog</a>
+        <span class="sectionLink">Blog</span>
+    </div>
+    <div>
+        <a class="sectionLinkHitbox" href="https://dynamotivation.com/portfolio/software/" tabIndex="-1">Software</a>
+        <span class="sectionLink">Software</span>
+    </div>
+
+</nav>
+
+<div id="screenTint">
+    <label for="sidebarToggle" id="sidebarToggleSecondary" aria-hidden="true">Hitbox</label> 
+</div>
+
+
+    <section class="section">
+        <div class="container">
+            
+
+<main id="pageContainer">
+    <div id="fade-out-top"></div>
+    <div id="titleContainer">
+        <h1 id="pageTitle" style="view-transition-name: afddfeffbfedff">Unofficial Sonic Mania Mobile Prototype</h1>
+        <noscript>
+            <hr>
+        </noscript>
+    </div>
+    <div id="stickyContainer" class="jsOnly">
+        <hr id="progressHr">
+    </div>
+    <div id="dateContainer">
+        
+        <p>Date: <span style="view-transition-name: dedaeabddcbcdfc">2019-05-01</span></p>
+        
+        
+    </div>
+    <div id="contentContainer">
+        <aside class="infobox">
+    
+        <h3 class="infobox-title">Unofficial Sonic Mania Mobile Prototype</h3>
+    
+    <div class="infobox-content">
+        
+  
+
+
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+  
+  <img src="https:&#x2F;&#x2F;ucarecdn.com&#x2F;d03cdf7e-4a3f-430d-8c09-d30ba87b4ecc&#x2F;sonicmaniamobilelogo.avif" fetchpriority="high"
+      alt="Unofficial Sonic Mania Mobile Prototype Logo"
+      
+      style="view-transition-name: abeafeaaecbabaeebdbbbe; width: 100%; aspect-ratio: 512 / 512; border-radius: 20%; "
+      class="blogImage"/>
+  
+
+
+<dl>
+    <dt>Availability</dt>
+    <dd>Unreleased</dd>
+    <dt>Initial completion</dt>
+    <dd>May 30, 2019</dd>
+    <dt>Development environment</dt>
+    <dd>GameMaker Studio 1.4</dd>
+    <dt>Written in</dt>
+    <dd>GML (GameMaker Language)</dd>
+    <dt>Operating system(s)</dt>
+    <dd>Android</dd>
+    <dt>Source code</dt>
+    <dd>Lost</dd>
+</dl>
+    </div>
+</aside>
+<p>The <em><strong>Unofficial Sonic Mania Mobile Port</strong></em> was an unreleased fan port of the video game Sonic Mania for Android devices. It was briefly developed using the GameMaker: Studio engine and the Sonic MAX Framework in 2019 at age 17. The intent was to bring the experience of Sonic Mania to mobile platforms.</p>
+<h2 id="development">Development</h2>
+<hr />
+<p>Development for this game porting project took place across a few short days in May 2019. The original Sonic Mania was released in 2017 to critical acclaim as a return to form for the franchise. Its engine was an evolved version of the engine powering the Sonic 1, 2 and CD ports to mobile before it. Hence it was confusing to not get any sort of mobile port of Sonic Mania at the time. There were a few other projects online to be stumbled upon when searching Sonic Mania Android / IOS. Motivated by this a proof of concept was created of Sonic Mania running in another Engine, namely the familiar GameMaker: Studio engine utilizing the Sonic MAX framework for its included physics and game objects.</p>
+<h2 id="features">Features</h2>
+<hr />
+<p>Armed with an idea and an engine a handful of "difficult" considered scenarios from Sonic Mania were recreated. This was largely influenced by what online communities cited as the features blocking a port:</p>
+<ul>
+<li>The title screen</li>
+<li>Some menu and UI elements</li>
+<li>The drop dash</li>
+<li>Blue sphere bonus stages</li>
+<li>Mania-style Green Hill Zone Act 1</li>
+</ul>
+<p>Two early builds of the title screen portion remain and can be seen in action here, one on real hardware (Samsung Galaxy S4 Mini) and one running through the LDPlayer 9 emulator for better video capture (the stutter is caused by the recording software).</p>
+<div class="blogVideoList">
+<div>
+    <div class="blogVideoContainer" data-video-id="JnqwKowlnvw" data-src="https://www.youtube-nocookie.com/embed/JnqwKowlnvw" data-title="Unofficial Cancelled Sonic Mania 2019 Mobile Port | Title Screen Showcase">
+        <noscript>
+            <p>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port.<br>
+            <a href="https://www.youtube.com/watch?v=JnqwKowlnvw" target="_blank">https://www.youtube.com/watch?v=JnqwKowlnvw</a><br>
+            (JavaScript required for embedded video)</p>
+        </noscript>
+    </div>
+    <figcaption>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port.</figcaption>
+</div>
+
+<div>
+    <div class="blogVideoContainer" data-video-id="63cwSdtklNw" data-src="https://www.youtube-nocookie.com/embed/63cwSdtklNw" data-title="Unofficial Cancelled Sonic Mania Mobile 2019 Port Real | Real Hardware Showcase">
+        <noscript>
+            <p>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port running on real hardware (Samsung Galaxy S4 Mini).<br>
+            <a href="https://www.youtube.com/watch?v=63cwSdtklNw" target="_blank">https://www.youtube.com/watch?v=63cwSdtklNw</a><br>
+            (JavaScript required for embedded video)</p>
+        </noscript>
+    </div>
+    <figcaption>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port running on real hardware (Samsung Galaxy S4 Mini).</figcaption>
+</div>
+
+</div>
+<h2 id="challenges">Challenges</h2>
+<hr />
+<p>This time there weren't any noteworthy hurdles in development as the engine and its programming language had become very familiar. The biggest hurdle faced had to do with projection.</p>
+<p>The project featured 3 counts of difficult projections, 2 caught in the above videos.<br />
+First of all there were the clouds in the title screen. While it may appear to be an easy argument to be made for draw_sprite_pos(...), there was much more to it. Most obvious of all is that the function does not correct its rendering for distortion of the triangles making of the sky plane. This had to be fixed with a custom shader. Additionally the scrolling nature of the cloud necessitated temporary off screen rendering to texture (called surface in GameMaker) and then back to the screen with transformations applied.<br />
+Secondly there was the island on the lower half of the title screen spinning around. This time instead of computing the offset in sprite drawing coordinates in screen space, GameMakers primitive 3d engine was used in combination with a camera and projection matrix. To line the projection up with the real game, a series of screenshots was used to line them up just perfectly. As for the trees and such on the island (not present in the videos sadly), these were simple billboard sprites positioned on the island always rotating themselves to face the camera perfectly.
+The third difficult projection was the blue spheres bonus stages. Mathematically the projection does not make <em>any</em> sense based on a realistic sphere. This is where we have to remember the origin of this effect, Sonic 3. This means the projection logic cannot have been computationally heavy. And indeed, charting the x and y locations on screen against Sonics actual distance from them reveals a point cluster for each axis that can be approximated closely with functions of the first and second degree (line and parabolic function).</p>
+<p>With all these effects solved with the tools at hand the only missing thing was adding ripped textures and sound effects to the build to capture the demos.</p>
+<h2 id="availability">Availability</h2>
+<hr />
+<p>Not before long the project was cancelled after these few "difficult" elements were proved to be possible and ran well on the at the time already old Samsung Galaxy S4 Mini.<br />
+It's source code remains lost as it was stored on a now defunct source control solution.</p>
+<p>Nowadays this project appears fully superseded by the official Netflix Sonic Mania Mobile Port and the fan decompilation and port to various platforms. Strangely the Netflix port appears to run way worse in the scenes present in both versions.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<hr />
+<p>This project featured a few nice opportunities for me to learn as I had never before worked with any sort of difficult projection logic at noteworthy performance levels. Previous exposure in the <a href="/portfolio/software/joins-the-battle-meme-generator/">Everyone Joins the Battle Meme Generator</a> were limited to screen space transformations without any FPS requirements. Surfaces were also only drawn once and cached.<br />
+This time proper world space coordinates and real time performance were required, leading to the usage of the 3D systems.<br />
+Unbeknownst to me at this time this would be a huge help for my next project.</p>
+
+        
+        <h2 id="faq">Frequently Asked Questions</h1>
+        <hr>
+        <section id="faq-section">
+            
+  
+  
+  
+    
+  
+  <div class="qna">
+  
+    
+    <div class="qna-item">
+      <input class="qna-toggle" type="checkbox" id="qna-unofficial-sonic-mania-mobile-port-1-is-the-unofficial-sonic-mania-mobile-port-available-for-download">
+      <label class="qna-question" for="qna-unofficial-sonic-mania-mobile-port-1-is-the-unofficial-sonic-mania-mobile-port-available-for-download">Q: Is the Unofficial Sonic Mania Mobile Port available for download?</label>
+      <div class="qna-answer">
+        <div class="qna-answer-inner"><span class="qna-answer-label">A:</span> No, this was a short-term proof of concept and remains unreleased; additionally, the original source code has been lost.</div>
+      </div>
+    </div>
+  
+    
+    <div class="qna-item">
+      <input class="qna-toggle" type="checkbox" id="qna-unofficial-sonic-mania-mobile-port-2-what-features-were-implemented-in-the-unofficial-sonic-mania-mobile-port">
+      <label class="qna-question" for="qna-unofficial-sonic-mania-mobile-port-2-what-features-were-implemented-in-the-unofficial-sonic-mania-mobile-port">Q: What features were implemented in the Unofficial Sonic Mania Mobile Port?</label>
+      <div class="qna-answer">
+        <div class="qna-answer-inner"><span class="qna-answer-label">A:</span> The project focused on recreating challenging elements of Sonic Mania, including the title screen, certain menu and UI elements, the drop dash mechanic, blue sphere bonus stages, and a Mania-style Green Hill Zone Act 1.</div>
+      </div>
+    </div>
+  
+    
+    <div class="qna-item">
+      <input class="qna-toggle" type="checkbox" id="qna-unofficial-sonic-mania-mobile-port-3-how-were-the-3d-effects-on-the-title-screen-achieved">
+      <label class="qna-question" for="qna-unofficial-sonic-mania-mobile-port-3-how-were-the-3d-effects-on-the-title-screen-achieved">Q: How were the 3D effects on the title screen achieved?</label>
+      <div class="qna-answer">
+        <div class="qna-answer-inner"><span class="qna-answer-label">A:</span> The clouds used a custom shader for distortion correction and surface rendering, while the spinning island utilized GameMaker's primitive 3D engine with a camera and projection matrix.</div>
+      </div>
+    </div>
+  
+    
+    <div class="qna-item">
+      <input class="qna-toggle" type="checkbox" id="qna-unofficial-sonic-mania-mobile-port-4-how-did-the-project-handle-the-blue-sphere-bonus-stages">
+      <label class="qna-question" for="qna-unofficial-sonic-mania-mobile-port-4-how-did-the-project-handle-the-blue-sphere-bonus-stages">Q: How did the project handle the Blue Sphere bonus stages?</label>
+      <div class="qna-answer">
+        <div class="qna-answer-inner"><span class="qna-answer-label">A:</span> The projection logic was recreated by charting x and y screen locations against distance and approximating them with first and second-degree mathematical functions.</div>
+      </div>
+    </div>
+  
+    
+    <div class="qna-item">
+      <input class="qna-toggle" type="checkbox" id="qna-unofficial-sonic-mania-mobile-port-5-what-was-the-tech-stack-for-the-unofficial-sonic-mania-mobile-port">
+      <label class="qna-question" for="qna-unofficial-sonic-mania-mobile-port-5-what-was-the-tech-stack-for-the-unofficial-sonic-mania-mobile-port">Q: What was the tech stack for the Unofficial Sonic Mania Mobile Port?</label>
+      <div class="qna-answer">
+        <div class="qna-answer-inner"><span class="qna-answer-label">A:</span> GML (GameMaker Language), GameMaker Studio 1.4, Sonic MAX Framework</div>
+      </div>
+    </div>
+  
+  </div>
+
+        </section>
+        
+    </div>
+    
+    <nav id="pageNavigation" class="post-nav">
+        
+        
+        <a class="nav-link previous" href="https:&#x2F;&#x2F;dynamotivation.com&#x2F;portfolio&#x2F;software&#x2F;stellenwerttafel-plus&#x2F;" rel="prev">
+            <span class="nav-label">Previous ›</span>
+            <span class="nav-title">Stellenwerttafel Plus</span>
+        </a>
+        
+    </nav>
+    
+    <div id="fade-out-bottom"></div>
+</main>
+
+        </div>
+    </section>
+
+    <div id="scroll-bottom-indicator"></div>
+    <footer>
+    <div id="footerContainer">
+        <div id="footerTop">
+            <div id="logos">
+                <a class="socialLink" href="https://dynamotivation.com/" title="Home">
+                    <img id="logo" src="https://dynamotivation.com/images/innerLogoOutline.svg" alt="Dynamotivation Logo"
+                        draggable="false"/>
+                </a>
+                <a class="socialLink" href="https://github.com/Dynamotivation"
+                    title="Dynamotivation on GitHub">
+                    <img src="https://dynamotivation.com/images/gitHub/icon.svg" alt="GitHub" draggable="false"/>
+                </a>
+            </div>
+            <div id="linkColumns">
+                <div id="main">
+                    <p>Main</p>
+                    <a href="https://dynamotivation.com/news/">News</a>
+                    <a href="https://dynamotivation.com/blog/">Blog</a>
+                    <a href="https://dynamotivation.com/portfolio/software/">Software</a>
+                </div>
+
+                <div id="portfolio">
+                    <p>Portfolio</p>
+                    <a href="https://dynamotivation.com/portfolio/software/">Software</a>
+                    <a href="https://dynamotivation.com/portfolio/3d-assets/">3D Assets</a>
+                    
+                </div>
+
+                <div id="about">
+                    <p>About</p>
+                    
+                    <a href="https://dynamotivation.com/legal-notice/">Legal Notice</a>
+                    <a href="https://dynamotivation.com/privacy-notice/">Privacy Notice</a>
+                    <a href="https://dynamotivation.com/third-party-licenses/">Third Party Licenses</a>
+                </div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <p>© 2024 - 2026 Dynamotivation</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
