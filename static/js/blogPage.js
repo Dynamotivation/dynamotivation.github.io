@@ -1,16 +1,19 @@
-// Unhide elements immediately without layout shifting
-document.getElementById('pageTitle').style.marginBottom = "0";
-document.getElementById('progressHr').style.width = "0";
-document.querySelectorAll('.jsOnly').forEach(function (element) {
-    element.classList.remove('jsOnly');
-});
-
+// Defer style updates until DOMContentLoaded to avoid layout thrashing during page transitions
 document.addEventListener('DOMContentLoaded', function () {
-    const jsOnlyElements = document.querySelectorAll('.jsOnly');
+    // Cache DOM elements
+    const pageTitle = document.getElementById('pageTitle');
     const progressHr = document.getElementById('progressHr');
     const stickyContainer = document.getElementById('stickyContainer');
     const pageContainer = document.getElementById('pageContainer');
-    const contentContainer = document.getElementById("contentContainer");
+
+    // Unhide elements and remove jsOnly class
+    pageTitle.style.marginBottom = "0";
+    progressHr.style.width = "0";
+    document.querySelectorAll('.jsOnly').forEach(function (element) {
+        element.classList.remove('jsOnly');
+    });
+
+    // Cache computed styles once and CSS variables
     const computedStyles = getComputedStyle(document.documentElement);
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -19,55 +22,114 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const mainColor = (rawMainColor || computedStyles.getPropertyValue('--main-color') || computedStyles.getPropertyValue('--link-color')).trim();
     const mainColorDark = (rawMainColorDark || computedStyles.getPropertyValue('--main-color-dark') || computedStyles.getPropertyValue('--link-visited-color')).trim();
-    let initialized = false;
 
-    // Fake resize event to set initial width
-    window.addEventListener('load', _ => {
-        window.dispatchEvent(new Event('resize'));
-    });
+    let scrollRAFId = null;
+    let resizeRAFId = null;
+    let observer = null;
 
-    // Transition separator to progress bar
-    const observer = new IntersectionObserver(
+    // Simple efficient scroll progress calculation - just track overall document scroll
+    function updateProgressBar() {
+        scrollRAFId = null;
+        
+        // Use simple document scroll tracking - no element queries needed
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+        
+        if (documentHeight <= 0) return;
+        
+        const progress = Math.min((scrollTop / documentHeight) * 100, 100);
+
+        // Update gradient on every frame for smooth continuous motion (matching original behavior)
+        progressHr.style.background = `linear-gradient(to right, ${mainColor}, ${mainColor} ${progress}%, ${mainColorDark} ${progress}%, ${mainColorDark})`;
+    }
+
+    function scheduleProgressBarUpdate() {
+        if (!scrollRAFId) {
+            scrollRAFId = requestAnimationFrame(updateProgressBar);
+        }
+    }
+
+    // Resize separator to initially be slightly wider than the title
+    function setHRWidth() {
+        if (!stickyContainer.classList.contains('isSticky')) {
+            const titleWidth = pageTitle.offsetWidth;
+            progressHr.style.width = `${titleWidth + convertRemToPixels(3.2)}px`;
+        }
+        else {
+            progressHr.style.width = `${pageContainer.offsetWidth + convertRemToPixels(0.4)}px`;
+        }
+    }
+
+    // Set up observer immediately to track sticky state changes
+    observer = new IntersectionObserver(
         ([e]) => {
             e.target.classList.toggle('isSticky', e.intersectionRatio < 1)
-
             setHRWidth();
         },
         { threshold: [1] }
     );
+    observer.observe(stickyContainer);
 
-    window.addEventListener('resize', _ => {
-        setHRWidth();
-
-        if (!initialized) {
-            initialized = true;
-            observer.observe(stickyContainer)
+    // Cleanup function to prevent memory leaks and stale listeners
+    function cleanup() {
+        // Cancel pending animation frames
+        if (scrollRAFId) {
+            cancelAnimationFrame(scrollRAFId);
+            scrollRAFId = null;
         }
-    });
+        if (resizeRAFId) {
+            cancelAnimationFrame(resizeRAFId);
+            resizeRAFId = null;
+        }
+        
+        // Disconnect observer
+        if (observer) {
+            observer.disconnect();
+            observer = null;
+        }
+        
+        // Remove all event listeners
+        window.removeEventListener('scroll', scheduleProgressBarUpdate);
+        window.removeEventListener('resize', onResize);
+        window.removeEventListener('load', onLoad);
+        window.removeEventListener('pagehide', cleanup);
+        window.removeEventListener('pageshow', onPageShow);
+    }
 
-    // Dynamic Scrollbar
-    window.addEventListener('scroll', function () {
-        let rect = contentContainer.getBoundingClientRect();
-        let windowHeight = window.innerHeight;
+    function onResize() {
+        // Debounce resize using requestAnimationFrame
+        if (resizeRAFId) {
+            cancelAnimationFrame(resizeRAFId);
+        }
+        resizeRAFId = requestAnimationFrame(() => {
+            setHRWidth();
+        });
+    }
 
-        let start = rect.top + window.scrollY - convertRemToPixels(10);
-        let end = rect.bottom + window.scrollY - 0.7*windowHeight;
-        let progress = Math.min(Math.max((window.scrollY - start) / (end - start) * 100, 0), 100);
+    function onLoad() {
+        setHRWidth();
+        updateProgressBar();
+    }
 
-        progressHr.style.background = `linear-gradient(to right, ${mainColor}, ${mainColor} ${progress}%, ${mainColorDark} ${progress}%, ${mainColorDark})`;
-    });
+    function onPageShow(event) {
+        // If page was restored from bfcache, re-trigger initialization
+        if (event.persisted) {
+            // Re-initialize progress bar after bfcache restore
+            setHRWidth();
+            updateProgressBar();
+        }
+    }
+
+    // Attach event listeners with named functions so they can be removed
+    window.addEventListener('scroll', scheduleProgressBarUpdate, { passive: true });
+    window.addEventListener('resize', onResize);
+    window.addEventListener('load', onLoad);
+    window.addEventListener('pageshow', onPageShow);
+
+    
+    // Clean up when page is about to unload (back/forward navigation, reload, etc)
+    window.addEventListener('pagehide', cleanup);
 });
-
-// Resize separator to initially be slightly wider than the title
-function setHRWidth() {
-    if (!stickyContainer.classList.contains('isSticky')) {
-        const titleWidth = document.getElementById('pageTitle').offsetWidth;
-        progressHr.style.width = `${titleWidth + convertRemToPixels(3.2)}px`;
-    }
-    else {
-        progressHr.style.width = `${pageContainer.offsetWidth + convertRemToPixels(0.4)}px`;
-    }
-}
 
 function convertRemToPixels(rem) {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
