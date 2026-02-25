@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block additionalResources %}
+
+<title>{{ term.name | replace(from="-", to=" ") | capitalize }} | Dynamotivation</title>
+<meta name="description" content="All content tagged with {{ term.name | replace(from="-", to=" ") }} on Dynamotivation">
+<meta name="author" content="Dynamotivation">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="{{ term.name | replace(from="-", to=" ") | capitalize }} | Dynamotivation">
+<meta property="og:description" content="All content tagged with {{ term.name | replace(from="-", to=" ") }} on Dynamotivation">
+<meta property="og:image" content="{{ get_url(path='images/fullLogo.png') }}">
+<meta property="og:url" content="{{ current_url | safe }}">
+<meta property="og:site_name" content="Dynamotivation">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+{% set _site_url = get_url(path='', trailing_slash=true) | safe %}
+{% set twitter_domain = _site_url | replace(from='https://', to='') | replace(from='http://', to='') | replace(from='/', to='') %}
+<meta property="twitter:domain" content="{{ twitter_domain }}">
+<meta property="twitter:url" content="{{ current_url | safe }}">
+<meta name="twitter:title" content="{{ term.name | replace(from="-", to=" ") | capitalize }} | Dynamotivation">
+<meta name="twitter:description" content="All content tagged with {{ term.name | replace(from="-", to=" ") }} on Dynamotivation">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ current_url | safe }}">
+
+<link rel="stylesheet" href="{{ get_url(path='css/sections/section.css') }}">
+
+<script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "{{ term.name | replace(from="-", to=" ") | capitalize }}",
+      "description": "All content tagged with {{ term.name | replace(from="-", to=" ") }} on Dynamotivation",
+      "url": "{{ current_url | safe }}",
+      "publisher": {
+          "@type": "Organization",
+          "name": "Dynamotivation",
+          "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "{{ get_url(path='images/fullLogo.png') }}"
+          }
+      }
+  }
+</script>
+
+{% endblock additionalResources %}
+
+{% block content %}
+
+{%- if pages is defined %}
+{%- elif paginator is defined %}
+{%- set pages = paginator.pages %}
+{%- else %}
+{%- set pages = term.pages %}
+{%- endif %}
+
+<main id="pageContainer">
+    <div id="fade-out-top"></div>
+    <div id="titleContainer">
+        <h1 id="pageTitle">{{ term.name | replace(from="-", to=" ") | capitalize }}</h1>
+    </div>
+
+    <div id="descriptionContainer">
+        <p>
+            Viewing all content tagged with <strong>{{ term.name | replace(from="-", to=" ") }}</strong>.
+        </p>
+    </div>
+
+    {% if pages|length == 0 %}
+    <p>
+        <i>There is nothing to see here yet.</i>
+    </p>
+    {% else %}
+    {% for page in pages %}
+    <div class="postContainer">
+        <a href="{{ page.permalink }}" class="postLink">
+            <div class="postShadow"></div>
+        </a>
+
+        <div class="postBorder">
+            <div class="postContent">
+                <div class="postMetadata">
+                    <strong class="postTitle">{{ page.title }}</strong>
+                    <span class="postDate">{{ page.date }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <div id="fade-out-bottom"></div>
+</main>
+
+{% endblock content %}

@@ -16,5 +16,10 @@ generate_robots_txt = true
 generate_feeds = true
 feed_filenames = ["rss.xml", "atom.xml"]
 
+taxonomies = [
+    {name = "software-categories", feed = false, render = true},
+    {name = "programming-languages", feed = false, render = true}
+]
+
 [extra]
-# Put all your custom variables here
+# Put all your custom variables hereF

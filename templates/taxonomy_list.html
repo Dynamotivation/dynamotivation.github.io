@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block additionalResources %}
+
+<title>{{ taxonomy.name | replace(from="-", to=" ") | capitalize }} | Dynamotivation</title>
+<meta name="description" content="Browse all {{ taxonomy.name | replace(from="-", to=" ") }} on Dynamotivation">
+<meta name="author" content="Dynamotivation">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="{{ taxonomy.name | replace(from="-", to=" ") | capitalize }} | Dynamotivation">
+<meta property="og:description" content="Browse all {{ taxonomy.name | replace(from="-", to=" ") }} on Dynamotivation">
+<meta property="og:image" content="{{ get_url(path='images/fullLogo.png') }}">
+<meta property="og:url" content="{{ current_url | safe }}">
+<meta property="og:site_name" content="Dynamotivation">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Dynamotivation">
+{% set _site_url = get_url(path='', trailing_slash=true) | safe %}
+{% set twitter_domain = _site_url | replace(from='https://', to='') | replace(from='http://', to='') | replace(from='/', to='') %}
+<meta property="twitter:domain" content="{{ twitter_domain }}">
+<meta property="twitter:url" content="{{ current_url | safe }}">
+<meta name="twitter:title" content="{{ taxonomy.name | replace(from="-", to=" ") | capitalize }} | Dynamotivation">
+<meta name="twitter:description" content="Browse all {{ taxonomy.name | replace(from="-", to=" ") }} on Dynamotivation">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ current_url | safe }}">
+
+<link rel="stylesheet" href="{{ get_url(path='css/sections/section.css') }}">
+
+<script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "{{ taxonomy.name | replace(from="-", to=" ") | capitalize }}",
+      "description": "Browse all {{ taxonomy.name | replace(from="-", to=" ") }} on Dynamotivation",
+      "url": "{{ current_url | safe }}",
+      "publisher": {
+          "@type": "Organization",
+          "name": "Dynamotivation",
+          "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "{{ get_url(path='images/fullLogo.png') }}"
+          }
+      }
+  }
+</script>
+
+{% endblock additionalResources %}
+
+{% block content %}
+
+<main id="pageContainer">
+    <div id="fade-out-top"></div>
+    <div id="titleContainer">
+        {% block taxonomy_title %}
+        <h1 id="pageTitle">{{ taxonomy.name | replace(from="-", to=" ") | capitalize }}</h1>
+        {% endblock taxonomy_title %}
+    </div>
+
+    <div id="descriptionContainer">
+        {% block taxonomy_description %}
+        <p>
+            Browse all {{ terms | length }} {{ taxonomy.name | replace(from="-", to=" ") }}.
+        </p>
+        {% endblock taxonomy_description %}
+    </div>
+
+    {% block taxonomy_content %}
+    {% if terms|length == 0 %}
+    <p>
+        <i>There is nothing to see here yet.</i>
+    </p>
+    {% else %}
+    {% for term in terms %}
+    <div class="postContainer">
+        <a href="{{ term.permalink }}" class="postLink">
+            <div class="postShadow"></div>
+        </a>
+
+        <div class="postBorder">
+            <div class="postContent">
+                <div class="postMetadata">
+                    <strong class="postTitle">{{ term.name }}</strong>
+                    <span class="postDate">{{ term.page_count }} post{% if term.page_count != 1 %}s{% endif %}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endblock taxonomy_content %}
+
+    <div id="fade-out-bottom"></div>
+</main>
+
+{% endblock content %}

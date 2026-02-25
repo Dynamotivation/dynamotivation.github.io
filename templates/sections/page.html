@@ -20,7 +20,7 @@
 <meta name="description" content="{{ page.description }}">
 <meta name="author" content="Dynamotivation">
 
-{% if page.taxonomies %}
+{% if page.taxonomies and page.taxonomies.tags %}
 <meta name="keywords" content="{{ page.taxonomies.tags | join(sep=", ") }}">
 {% endif %}
 
