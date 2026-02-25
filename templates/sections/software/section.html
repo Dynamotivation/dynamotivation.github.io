@@ -66,9 +66,16 @@
                 <div class="postMetadata">
                     <strong class="postTitle" style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }}">{{ _title }}</strong>
                     <div class="postDate">
-                        <span>Initial Completion</span>
-                        <span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date }}</span>
+                        <span>First completed</span>
+                        <span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date | date(format="%B %-d, %Y") }}</span>
                     </div>
+                    {% if page.taxonomies and page.taxonomies["software-categories"] %}
+                    <div class="categoryPills">
+                        {% for category in page.taxonomies["software-categories"] %}
+                        <span class="categoryPill">{{ category }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

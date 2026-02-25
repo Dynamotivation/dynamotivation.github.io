@@ -4,7 +4,7 @@
     --post-height: 50rem;
     --post-min-width: 16rem;
     --post-max-width: 26rem;
-    --post-aspect-ratio: 30/50;
+    --post-aspect-ratio: 30/65;
 }
 
 @media (max-width: 42rem) {
@@ -62,7 +62,7 @@
     --gradient-color-2: color-mix(in srgb, var(--footer-color) 80%, var(--background-color) 20%);
     pointer-events: none;
     aspect-ratio: var(--post-aspect-ratio);
-    margin: -165% auto 0 auto; /* Visually overlap the content and shadow */
+    margin: -215% auto 0 auto; /* Visually overlap the content and shadow */
 }
 
 .logoContainer {
@@ -95,10 +95,11 @@
     contain: inline-size;
     hyphens: auto;
     font-size: 1.4em;
+    height: 5rem;
 }
 
 .postDate {
-    margin: auto 2% 0 2%;
+    margin: 2rem 2% 0 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,4 +111,24 @@
     flex: 0 1 auto;
     word-break: keep-all;
     flex-basis: auto;
+}
+
+.categoryPills {
+    margin: auto 2% 0 2%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 0.5rem;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.categoryPill {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background-color: color-mix(in srgb, gray 20%, var(--background-color) 80%);
+    border: 1px solid color-mix(in srgb, gray 30%, var(--background-color) 70%);
+    border-radius: 1.5rem;
+    font-size: 0.85em;
+    color: color-mix(in srgb, var(--text-color) 70%, var(--background-color) 30%);
+    white-space: nowrap;
 }
