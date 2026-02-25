@@ -3,6 +3,10 @@ title = "Geo Background Generator"
 date = 2018-04-01
 description = "A geometric pattern background generator with customizable shapes, gradients, and multicolor effects."
 
+[taxonomies]
+software-categories = ["App"]
+programming-languages = ["GML", "Java"]
+
 [extra]
 # Graphic enrichment
 project_title = "Geo Background Generator"

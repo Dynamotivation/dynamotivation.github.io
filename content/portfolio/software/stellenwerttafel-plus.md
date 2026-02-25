@@ -3,6 +3,10 @@ title = "Stellenwerttafel Plus: Visual Number System Learning"
 date = 2019-02-07
 description = "Interactive place value chart for learning binary, decimal, hexadecimal and more interactively for Windows and Android, based on Ulrich Kortenkamp original!"
 
+[taxonomies]
+software-categories = ["App", "Commission", "Unreleased"]
+programming-languages = ["GML"]
+
 [extra]
 # Graphic enrichment
 project_title = "Stellenwerttafel Plus"

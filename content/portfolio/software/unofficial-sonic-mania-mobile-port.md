@@ -3,6 +3,10 @@ title = "Unofficial Sonic Mania Mobile Port for Android"
 date = 2019-05-01
 description = "An unreleased fan port of the video game Sonic Mania to Android using the GameMaker: Studio Engine and Sonic MAX Framework."
 
+[taxonomies]
+software-categories = ["Game", "Port", "Unreleased"]
+programming-languages = ["GML"]
+
 [extra]
 # Graphic enrichment
 project_title = "Unofficial Sonic Mania Mobile Prototype"
@@ -111,7 +115,7 @@ Two early builds of the title screen portion remain and can be seen in action he
 }}
 {{
     blog_video(
-        title="Unofficial Cancelled Sonic Mania Mobile 2019 Port Real | Real Hardware Showcase"
+        title="Unofficial Cancelled Sonic Mania 2019 Mobile Port Real | Real Hardware Showcase"
         description="Video showcasing the title screen of the cancelled Sonic Mania Mobile Port running on real hardware (Samsung Galaxy S4 Mini).",
         url="63cwSdtklNw"
     )

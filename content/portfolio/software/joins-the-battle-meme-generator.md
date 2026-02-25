@@ -3,6 +3,10 @@ title = "Joins the Battle Meme Generator: Fighting Game Memes"
 date = 2018-11-03
 description = "Create authentic \"Joins the Battle\" fighting game splash screens and memes. Customize characters, text, colors and effects in multiple iconic styles!"
 
+[taxonomies]
+software-categories = ["App"]
+programming-languages = ["GML", "Java"]
+
 [extra]
 # Graphic enrichment
 project_title = "Joins the Battle Meme Generator"

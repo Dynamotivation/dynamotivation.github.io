@@ -2,7 +2,11 @@
 title = "Project Tortuga: CoD Black Ops 3 Custom Zombies Map"
 date = 2017-06-09
 description = "Post mortem exploration of Project Tortuga, a custom Call of Duty: Black Ops 3 Zombies map project covering mapping in Radiant and GCS/CCS scripting."
- 
+
+[taxonomies]
+software-categories = ["Game", "Mod", "Unreleased"]
+programming-languages = ["GCS", "CCS"]
+
 [extra]
 # Graphic enrichment
 project_title = "Project Tortuga"

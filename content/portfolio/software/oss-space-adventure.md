@@ -3,6 +3,10 @@ title = "OSS Space Adventure: Retro Arcade Shooter for Android"
 date = 2018-02-25
 description = "Retro arcade shooter for Android: You vs. the asteroids! Can you protect your planet or survive the onslaught? Collect power-ups to upgrade your ship."
 
+[taxonomies]
+software-categories = ["App"]
+programming-languages = ["GML", "Java"]
+
 [extra]
 # Graphic enrichment
 project_title = "OSS Space Adventure"

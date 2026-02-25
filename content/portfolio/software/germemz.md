@@ -3,6 +3,10 @@ title = "GerMemz: German TV Commercial Meme Soundboard"
 date = 2017-02-13
 description = "A private German TV commercial soundboard that featured 45 iconic 1&1 and Carglass memes with Marcel D'Avis and Thorsten Bohms quotes."
 
+[taxonomies]
+software-categories = ["App", "Unreleased"]
+programming-languages = ["Java"]
+
 [extra]
 # Graphic enrichment
 project_title = "GerMemz"

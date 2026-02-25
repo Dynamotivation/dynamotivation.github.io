@@ -3,6 +3,10 @@ title = "BenPlaysGames Soundboard: YouTuber Soundboard"
 date = 2018-10-10
 description = "An Android soundboard for YouTuber and Twitch streamer BenPlaysGames."
 
+[taxonomies]
+software-categories = ["App", "Commission"]
+programming-languages = ["Java"]
+
 [extra]
 # Graphic enrichment
 project_title = "BenPlaysGames Soundboard"
