@@ -1,0 +1,67 @@
+.postContainer {
+    margin: 0 1rem 2rem 1rem;
+    display: flex;
+    width: calc(100% - 2rem); /* Account for margins */
+}
+
+.postLink {
+    flex: 1;
+    display: flex;
+}
+
+.postShadow {
+    --gradient-color-1: var(--footer-color);
+    --gradient-color-2: var(--footer-color);
+    background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+    filter: blur(1rem);
+    opacity: 0.5;
+    width: 100%;
+
+    transition: --gradient-color-1 .5s, --gradient-color-2 .5s;
+}
+
+.postShadow:hover {
+    --gradient-color-1: var(--accent-color);
+    --gradient-color-2: var(--accent-color-alt);
+}
+
+.postBorder {
+    flex: 1;
+    --gradient-color-1: var(--footer-color);
+    --gradient-color-2: var(--footer-color);
+    pointer-events: none; /* Allow hover detection by shadow element */
+    position: relative;
+    background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+    padding: .2rem;
+    width: 95%;
+    margin: 0 auto 0 -100%;
+    border-radius: 1rem;
+
+    transition: --gradient-color-1 .3s, --gradient-color-2 .3s;
+}
+
+.postLink:hover+.postBorder {
+    --gradient-color-1: color-mix(in srgb, var(--accent-color) 80%, var(--footer-color) 20%);
+    --gradient-color-2: color-mix(in srgb, var(--accent-color-alt) 80%, var(--footer-color) 20%);
+}
+
+.postContent {
+    height: 100%;
+    border-radius: .8rem;
+    background-color: var(--background-color);
+}
+
+.postMetadata {
+    padding: 3rem 2rem;
+    height: calc(100% - 6rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.postTitle {
+    font-size: 2em;
+}
+
+.postDate {
+    margin: auto 0 0 auto;
+}

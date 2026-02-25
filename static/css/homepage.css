@@ -10,7 +10,7 @@
 
 #splashScreen {
     width: 100%;
-    height: min(100vh, 45vw);
+    height: min(84vh, 45vw);
     display: flex;
     background: linear-gradient(180deg, var(--main-color) 0%, var(--main-color-dark) 100%);
 }
@@ -48,7 +48,7 @@
     height: auto;
     background: linear-gradient(180deg, #373737 0%, var(--footer-color) 70%);
     display: flex;
-    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(15deg) rotateY(-20deg) rotateZ(10deg) translateX(5vw) translateY(-12vw) translateZ(0px) skewX(0deg) skewY(0deg);
+    transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1) rotateX(15deg) rotateY(-20deg) rotateZ(10deg) translateX(5vw) translateY(-14vw) translateZ(0px) skewX(0deg) skewY(0deg);
     padding: 2vw;
 }
 
@@ -171,6 +171,37 @@
 
 #pageContainer {
     max-width: min(85rem, 95vw);
+}
+
+#pageContainer > #titleContainer {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+:root {
+    --peak-glow: 0 0 1.5rem grey, 0 0 4rem grey;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --peak-glow: 0 0 1.5rem rgba(255, 255, 255, 0.7), 0 0 4rem rgba(255, 255, 255, 0.2);
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        text-shadow: 0 0 1rem rgba(255, 255, 255, 0), 0 0 3rem rgba(255, 255, 255, 0);
+    }
+    50% {
+        text-shadow: var(--peak-glow);
+    }
+}
+
+#pageTitle {
+    font-size: 3.2rem;
+    animation: glow-pulse 4s ease-in-out forwards;
 }
 
 #postGrid {

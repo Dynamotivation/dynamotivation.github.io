@@ -1,3 +1,5 @@
+@import "../../posts.css";
+
 :root {
     --page-max-width: 50rem;
     --software-section-max-width: 70rem;
@@ -29,11 +31,6 @@
     margin: 0;
     display: unset;
     aspect-ratio: var(--post-aspect-ratio);
-}
-
-.postLink {
-    flex: 1;
-    display: flex;
 }
 
 .postShadow {

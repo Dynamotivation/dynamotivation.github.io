@@ -135,7 +135,7 @@
     <div id="contentContainer">
         {{ page.content | safe }}
         {% if page.extra.questions and page.extra.questions | length > 0 %}
-        <h2 id="faq">Frequently Asked Questions</h1>
+        <h2 id="faq">Frequently Asked Questions</h2>
         <hr>
         <section id="faq-section">
             {{ qna_macro::qna(items=page.extra.questions) }}
