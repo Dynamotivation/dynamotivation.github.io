@@ -4,7 +4,7 @@ date = 2018-02-25
 description = "Retro arcade shooter for Android: You vs. the asteroids! Can you protect your planet or survive the onslaught? Collect power-ups to upgrade your ship."
 
 [taxonomies]
-software-categories = ["App"]
+software-categories = ["Game"]
 programming-languages = ["GML", "Java"]
 
 [extra]
