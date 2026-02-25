@@ -1,9 +1,12 @@
 {% extends "sections/section_seo.html" %}
 {% import "macros/hash_letters.html" as hash_letters %}
+{% import "macros/software_card.html" as software_card %}
 
 {% block additionalResources %}
 
 {{ super()}}
+<link rel="stylesheet" href={{ get_url(path="css/sections/section.css" ) }}>
+<link rel="stylesheet" href={{ get_url(path="css/sections/portfolio/software/shared.css" ) }}>
 <link rel="stylesheet" href={{ get_url(path="css/homepage.css" ) }}>
 
 {% endblock additionalResources%}
@@ -79,6 +82,25 @@
       </div>
     </div>
   </div>
+</div>
+<div id="pageContainer" style="margin-top: 5vh;">
+    <div id="titleContainer">
+        <h2 id="pageTitle">Featured Projects</h2>
+    </div>
+
+    <div id="postGrid">
+        {% if section.extra.featured_software %}
+            {% for path in section.extra.featured_software %}
+                {% set page = get_page(path=path) %}
+                {{ software_card::software_card(page=page) }}
+            {% endfor %}
+        {% else %}
+            {% set software_section = get_section(path="portfolio/software/_index.md") %}
+            {% for page in software_section.pages | slice(end=3) %}
+                {{ software_card::software_card(page=page) }}
+            {% endfor %}
+        {% endif %}
+    </div>
 </div>
 
 {% endblock content %}

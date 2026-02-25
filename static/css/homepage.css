@@ -153,8 +153,8 @@
     background: linear-gradient(30deg, #b9021b 0%, #ee0214 100%);
 }
 
-#splashScreen>#coverWrapper>#coverContainer>*>.wrapper>#mysteryProjectIcon {
-    background: linear-gradient(30deg, #f29202 0%, #fbde21 100%);
+#splashScreen>#coverWrapper>#coverContainer>*>.wrapper>#unofficialSonicManiaMobilePortIcon {
+    background: #f8cb00;
 }
 
 #splashScreen>#coverWrapper>#coverContainer>*>.wrapper>#ordinarySpaceShooterIcon {
@@ -167,4 +167,12 @@
 
 #splashScreen>#coverWrapper>#coverContainer>*>.wrapper>#benPlaysGamesSoundboardIcon {
     background: #1c1e76;
+}
+
+#pageContainer {
+    max-width: min(85rem, 95vw);
+}
+
+#postGrid {
+    max-width: 85rem;
 }

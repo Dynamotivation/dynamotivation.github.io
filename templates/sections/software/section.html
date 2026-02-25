@@ -1,5 +1,6 @@
 {% extends "sections/section_seo.html" %}
 {% import "macros/hash_letters.html" as hash_letters %}
+{% import "macros/software_card.html" as software_card %}
 
 {% block additionalResources %}
 
@@ -46,40 +47,7 @@
 {% if pages|length != 0 %}
 <div id="postGrid">
     {% for page in pages %}
-    <div class="postContainer">
-        {%- if page.extra["project_title"] is defined %}
-        {%- set _title = page.extra["project_title"] %}
-        {%- elif page.title is defined %}
-        {%- set _title = page.title %}
-        {%- else %}
-        {%- set _title = "Project" %}
-        {%- endif %}
-        <a href="{{ page.permalink }}" class="postLink">
-            <div class="postShadow"></div>
-        </a>
-
-        <div class="postBorder">
-            <div class="postContent">
-                <div class="logoContainer" style="view-transition-name: {{ hash_letters::hash_letters(input=page.extra["logo"]) }};">
-                    <img class="logo" src="{{ page.extra["logo"] }}" alt="{{ page.title }} Logo">
-                </div>
-                <div class="postMetadata">
-                    <strong class="postTitle" style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }}">{{ _title }}</strong>
-                    <div class="postDate">
-                        <span>First completed</span>
-                        <span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date | date(format="%B %-d, %Y") }}</span>
-                    </div>
-                    {% if page.taxonomies and page.taxonomies["software-categories"] %}
-                    <div class="categoryPills">
-                        {% for category in page.taxonomies["software-categories"] %}
-                        <span class="categoryPill">{{ category }}</span>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </div>
+    {{ software_card::software_card(page=page) }}
     {% endfor %}
 </div>
 {% endif %}
