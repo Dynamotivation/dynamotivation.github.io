@@ -1,0 +1,46 @@
+{% extends "sections/section_seo.html" %}
+{% import "macros/hash_letters.html" as hash_letters %}
+{% import "macros/timeline_project.html" as timeline_project %}
+
+{% block additionalResources %}
+
+{{ super() }}
+<link rel="stylesheet" href={{ get_url(path="css/project-timeline.css" ) }}>
+
+{% endblock additionalResources %}
+
+{% block content %}
+
+<main id="pageContainer">
+    <div id="fade-out-top"></div>
+    <div id="titleContainer">
+        <h1 id="pageTitle">{{ section.title }}</h1>
+    </div>
+
+    <div id="descriptionContainer">
+        <p>
+            {{ section.description | safe }}
+        </p>
+    </div>
+
+    {# Load actual projects from portfolio software section #}
+    {%- set software_section = get_section(path="portfolio/software/_index.md") %}
+    {%- set all_projects = software_section.pages | sort(attribute="date") %}
+
+    {% if all_projects | length == 0 %}
+    <p>
+        <i>There is nothing to see here yet.</i>
+    </p>
+    {% else %}
+    <div id="timeline-container">
+        {# Display projects in reverse order (newest to oldest, top to bottom) #}
+        {% for project in all_projects | reverse %}
+        {{ timeline_project::timeline_project(page=project, position=loop.index % 2) }}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div id="fade-out-bottom"></div>
+</main>
+
+{% endblock content %}

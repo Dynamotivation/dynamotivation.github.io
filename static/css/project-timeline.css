@@ -1,0 +1,333 @@
+/* Project Timeline Styling */
+
+#timeline-container {
+    position: relative;
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 0; /* Base stacking context for the whole timeline */
+}
+
+/* Central timeline line */
+#timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--main-color), var(--main-color-dark));
+    transform: translateX(-2px);
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    display: flex;
+    position: relative;
+}
+
+/* Right side timeline items */
+.timeline-item.timeline-right {
+    justify-content: flex-end;
+    padding-right: 50%;
+    padding-left: 0;
+}
+
+/* Left side timeline items */
+.timeline-item.timeline-left {
+    justify-content: flex-start;
+    padding-left: 50%;
+    padding-right: 0;
+}
+
+/* Timeline marker/dot */
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    top: 1.5rem;
+    width: 20px;
+    height: 20px;
+    background: var(--background-color);
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+    width: 28px;
+    height: 28px;
+    box-shadow: 0 0 0 8px rgba(255, 76, 74, 0.1);
+    transform: translateX(-50%) scale(1.2);
+}
+
+/* Timeline content wrapper */
+.timeline-content {
+    width: 100%;
+    padding: 0 1.5rem;
+    position: relative;
+    /* No z-index here to allow logos to fall behind previous items globally */
+}
+
+/* Timeline link */
+.timeline-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Timeline card */
+.timeline-card {
+    background: var(--background-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid transparent;
+    position: relative;
+    z-index: 1; /* Explicitly above the floating logos */
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.timeline-link:hover .timeline-card {
+    border-color: var(--main-color);
+    box-shadow: 0 8px 12px rgba(255, 76, 74, 0.2);
+    transform: translateY(-4px);
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-link:hover .timeline-card {
+        box-shadow: 0 8px 12px rgba(255, 76, 74, 0.4);
+    }
+}
+
+/* Image container */
+.timeline-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--main-color), var(--main-color-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.timeline-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.timeline-link:hover .timeline-image {
+    transform: scale(1.05);
+}
+
+.timeline-image-placeholder {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Card body content */
+.timeline-card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+}
+
+.timeline-date {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.timeline-description {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Categories/Tags */
+.timeline-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.timeline-tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: var(--main-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #timeline-container {
+        padding: 2rem 0 2rem 0;
+    }
+
+    /* On small screens, all items go to the right */
+    #timeline-container::before {
+        left: 30px;
+    }
+
+    .timeline-item.timeline-right,
+    .timeline-item.timeline-left {
+        justify-content: flex-start;
+        padding-left: calc(30px + 30px);
+        padding-right: 0;
+    }
+
+    .timeline-marker {
+        left: 30px;
+    }
+
+    .timeline-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #timeline-container {
+        padding: 2rem 0 2rem 0;
+    }
+
+    #timeline-container::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        margin-bottom: 2rem;
+    }
+
+    .timeline-item.timeline-right,
+    .timeline-item.timeline-left {
+        padding-left: calc(20px + 25px);
+        padding-right: 0;
+    }
+
+    .timeline-marker {
+        left: 20px;
+        width: 16px;
+        height: 16px;
+        border-width: 3px;
+    }
+
+    .timeline-marker:hover {
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-image-container {
+        height: 150px;
+    }
+
+    .timeline-card-body {
+        padding: 1rem;
+    }
+
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+
+    .timeline-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* View transition names for smooth navigation */
+@supports (view-transition-name: auto) {
+    .timeline-marker {
+        view-transition-name: var(--transition-timeline-marker, auto);
+    }
+
+    .timeline-image {
+        view-transition-name: var(--transition-timeline-image, auto);
+    }
+}
+
+/* Floating Logos behind cards */
+.floating-logos {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    pointer-events: none;
+    z-index: -1; /* Behind the card and content */
+    overflow: visible;
+}
+
+.floating-logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-color);
+    background-image: url('../images/innerLogo.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; /* Blobby shape */
+    opacity: 0.3; /* Less transparent */
+    
+    /* Position them strictly outside the central area (approx 0-100% of the parent) */
+    /* We use a combination of factors to push them to the edges */
+    --side: calc(var(--i) % 4); /* 0: top, 1: right, 2: bottom, 3: left */
+    
+    /* Top side */
+    --top-val: calc(-20px + (var(--seed) * var(--i)) % 10 * 1px);
+    --left-val: calc(var(--i) * 20%);
+    
+    top: var(--top-val);
+    left: var(--left-val);
+    
+    animation: float-around 20s infinite ease-in-out;
+    animation-delay: calc(var(--i) * -4s);
+}
+
+/* Distribute logos to different sides using nth-child */
+.floating-logo:nth-child(4n+1) { top: -45px; left: calc(var(--i) * 20% + 10%); } /* Top */
+.floating-logo:nth-child(4n+2) { top: calc(var(--i) * 20% + 10%); left: 100%; margin-left: -15px; } /* Right */
+.floating-logo:nth-child(4n+3) { top: 100%; margin-top: -15px; left: calc(var(--i) * 20% + 10%); } /* Bottom */
+.floating-logo:nth-child(4n+4) { top: calc(var(--i) * 20% + 10%); left: -45px; } /* Left */
+
+@keyframes float-around {
+    0%, 100% {
+        transform: translate(0, 0) rotate(-8deg) scale(1);
+    }
+    33% {
+        transform: translate(15px, -15px) rotate(5deg) scale(1.05);
+    }
+    66% {
+        transform: translate(-10px, 10px) rotate(-3deg) scale(0.98);
+    }
+}

@@ -1,0 +1,68 @@
+{% import "macros/hash_letters.html" as hash_letters %}
+
+{% macro timeline_project(page, position) %}
+<div class="timeline-item {% if position == 1 %}timeline-right{% else %}timeline-left{% endif %}">
+    <div class="timeline-marker"></div>
+    
+    <div class="timeline-content">
+        <div class="floating-logos">
+            {%- set seed = page.title | length %}
+            {%- for i in range(end=5) %}
+            <div class="floating-logo" style="--i: {{ i }}; --seed: {{ seed }};"></div>
+            {%- endfor %}
+        </div>
+        {%- if page.link is defined %}
+            {%- set project_link = page.link %}
+        {%- elif page.permalink is defined %}
+            {%- set project_link = page.permalink %}
+        {%- else %}
+            {%- set project_link = "#" %}
+        {%- endif %}
+        <a href="{{ project_link }}" class="timeline-link">
+            <div class="timeline-card">
+                <div class="timeline-image-container" 
+                     {%- if page.extra["logo"] is defined %} 
+                     style="view-transition-name: {{ hash_letters::hash_letters(input=page.extra["logo"]) }};"
+                     {%- endif %}>
+                    {%- if page.extra["logo"] is defined %}
+                    <img class="timeline-image" src="{{ page.extra["logo"] }}" alt="{{ page.title }} Logo" loading="lazy">
+                    {%- else %}
+                    <div class="timeline-image-placeholder">No Image</div>
+                    {%- endif %}
+                </div>
+                
+                <div class="timeline-card-body">
+                    {%- set title = page.extra["project_title"] | default(value=page.title) %}
+                    <h3 class="timeline-title" 
+                        {%- if page.title is defined %}
+                        style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }};"
+                        {%- endif %}>
+                        {{ title }}
+                    </h3>
+                    
+                    <div class="timeline-date" 
+                         {%- if page.date is defined %}
+                         style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }};"
+                         {%- endif %}>
+                        {{ page.date | date(format="%B %-d, %Y") }}
+                    </div>
+                    
+                    {% if page.description %}
+                    <p class="timeline-description">
+                        {{ page.description }}
+                    </p>
+                    {% endif %}
+                    
+                    {% if page.taxonomies and page.taxonomies["software-categories"] %}
+                    <div class="timeline-categories">
+                        {% for category in page.taxonomies["software-categories"] %}
+                        <span class="timeline-tag">{{ category }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+{% endmacro %}
