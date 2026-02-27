@@ -5,12 +5,6 @@
     <div class="timeline-marker"></div>
     
     <div class="timeline-content">
-        <div class="floating-logos">
-            {%- set seed = page.title | length %}
-            {%- for i in range(end=5) %}
-            <div class="floating-logo" style="--i: {{ i }}; --seed: {{ seed }};"></div>
-            {%- endfor %}
-        </div>
         {%- if page.link is defined %}
             {%- set project_link = page.link %}
         {%- elif page.permalink is defined %}
@@ -18,20 +12,45 @@
         {%- else %}
             {%- set project_link = "#" %}
         {%- endif %}
-        <a href="{{ project_link }}" class="timeline-link">
-            <div class="timeline-card">
-                <div class="timeline-image-container" 
-                     {%- if page.extra["logo"] is defined %} 
-                     style="view-transition-name: {{ hash_letters::hash_letters(input=page.extra["logo"]) }};"
-                     {%- endif %}>
-                    {%- if page.extra["logo"] is defined %}
-                    <img class="timeline-image" src="{{ page.extra["logo"] }}" alt="{{ page.title }} Logo" loading="lazy">
-                    {%- else %}
-                    <div class="timeline-image-placeholder">No Image</div>
-                    {%- endif %}
+        
+        <div class="timeline-row">
+            {# Image card #}
+            <a href="{{ project_link }}" class="timeline-link timeline-image-link">
+                <div class="timeline-image-card">
+                    <div class="timeline-image-container" 
+                         {%- if page.extra["logo"] is defined %} 
+                         style="view-transition-name: {{ hash_letters::hash_letters(input=page.extra["logo"]) }};"
+                         {%- endif %}>
+                        {%- if page.extra["logo"] is defined %}
+                        <img class="timeline-image" src="{{ page.extra["logo"] }}" alt="{{ page.title }} Logo" loading="lazy">
+                        {%- else %}
+                        <div class="timeline-image-placeholder">No Image</div>
+                        {%- endif %}
+                    </div>
                 </div>
-                
-                <div class="timeline-card-body">
+            </a>
+            
+            {# Info card #}
+            <a href="{{ project_link }}" class="timeline-link timeline-info-link">
+                <div class="floating-logos">
+                    {%- set seed = page.title | length %}
+                    {%- set categories_count = 0 %}
+                    {%- set languages_count = 0 %}
+                    {%- if page.taxonomies and page.taxonomies["software-categories"] %}
+                        {%- set categories_count = page.taxonomies["software-categories"] | length %}
+                    {%- endif %}
+                    {%- if page.taxonomies and page.taxonomies["programming-languages"] %}
+                        {%- set languages_count = page.taxonomies["programming-languages"] | length %}
+                    {%- endif %}
+                    {%- set logo_count = (categories_count + languages_count) %}
+                    {%- if logo_count > 12 %}
+                        {%- set logo_count = 12 %}
+                    {%- endif %}
+                    {%- for i in range(end=logo_count) %}
+                    <div class="floating-logo" style="--i: {{ i }}; --seed: {{ seed }};"><img src="https://dynamotivation.com/images/innerLogo.svg" alt="" class="floating-logo-image"></div>
+                    {%- endfor %}
+                </div>
+                <div class="timeline-info-card">
                     {%- set title = page.extra["project_title"] | default(value=page.title) %}
                     <h3 class="timeline-title" 
                         {%- if page.title is defined %}
@@ -53,16 +72,10 @@
                     </p>
                     {% endif %}
                     
-                    {% if page.taxonomies and page.taxonomies["software-categories"] %}
-                    <div class="timeline-categories">
-                        {% for category in page.taxonomies["software-categories"] %}
-                        <span class="timeline-tag">{{ category }}</span>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
+                    <span class="timeline-read-more">Read More →</span>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
     </div>
 </div>
 {% endmacro %}
