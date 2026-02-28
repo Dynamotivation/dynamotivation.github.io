@@ -133,18 +133,18 @@ header #userLinks {
     height: 80%;
 }
 
-header .socialLink {
+header .siteLinks {
     height: 100%;
     display: inline-block;
 }
 
-header .socialLink>img {
+header .siteLinks>img {
     height: 100%;
     transition: all .2s ease-out;
     transform: scale(1);
 }
 
-header .socialLink:hover>img {
+header .siteLinks:hover>img {
     transform: scale(1.05);
 }
 

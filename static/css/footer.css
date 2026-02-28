@@ -45,23 +45,23 @@ footer>#footerContainer>#footerTop {
     }
 }
 
-#footerContainer>#footerTop>#logos>.socialLink {
+#footerContainer>#footerTop>#logos>.siteLinks {
     width: 70%;
     height: auto;
 }
 
-#footerContainer>#footerTop>#logos>.socialLink:first-of-type {
+#footerContainer>#footerTop>#logos>.siteLinks:first-of-type {
     width: 100%;
 }
 
-#footerContainer>#footerTop>#logos>.socialLink>img {
+#footerContainer>#footerTop>#logos>.siteLinks>img {
     width: 100%;
     transform: scale(1);
     opacity: 0.5;
     transition: all 0.3s ease-out;
 }
 
-#footerContainer>#footerTop>#logos>.socialLink>img:hover {
+#footerContainer>#footerTop>#logos>.siteLinks>img:hover {
     width: 100%;
     transform: scale(1.06);
     opacity: 1;
