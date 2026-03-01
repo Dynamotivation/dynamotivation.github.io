@@ -13,9 +13,12 @@
         </nav>
 
         <nav id="userLinks">
-            <a class="siteLinks" href="https://github.com/Dynamotivation" title="Dynamotivation on GitHub">
-                <img src="{{ get_url(path='images/gitHub/icon.svg') }}" alt="GitHub">
+            {% set social_links = load_data(path="data/social_links.json") %}
+            {% for link in social_links %}
+            <a class="siteLinks" href="{{ link.url }}" title="{{ link.title }}">
+                <img src="{{ get_url(path=link.image) }}" alt="{{ link.alt }}">
             </a>
+            {% endfor %}
         </nav>
 
         <div class="hamburgerMenuContainer" >

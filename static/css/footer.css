@@ -48,6 +48,7 @@ footer>#footerContainer>#footerTop {
 #footerContainer>#footerTop>#logos>.siteLinks {
     width: 70%;
     height: auto;
+    aspect-ratio: 1;
 }
 
 #footerContainer>#footerTop>#logos>.siteLinks:first-of-type {

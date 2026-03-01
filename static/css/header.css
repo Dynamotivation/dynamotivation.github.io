@@ -131,10 +131,14 @@ header>#headerContent>#sectionLinks>div {
 header #userLinks {
     margin-left: 1rem;
     height: 80%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 header .siteLinks {
     height: 100%;
+    aspect-ratio: 1;
     display: inline-block;
 }
 

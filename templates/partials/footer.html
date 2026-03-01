@@ -6,10 +6,12 @@
                     <img id="logo" src="{{ get_url(path='images/innerLogoOutline.svg') }}" alt="Dynamotivation Logo"
                         draggable="false"/>
                 </a>
-                <a class="siteLinks" href="https://github.com/Dynamotivation"
-                    title="Dynamotivation on GitHub">
-                    <img src="{{ get_url(path='images/gitHub/icon.svg') }}" alt="GitHub" draggable="false"/>
+                {% set social_links = load_data(path="data/social_links.json") %}
+                {% for link in social_links %}
+                <a class="siteLinks" href="{{ link.url }}" title="{{ link.title }}">
+                    <img src="{{ get_url(path=link.image) }}" alt="{{ link.alt }}" draggable="false"/>
                 </a>
+                {% endfor %}
             </div>
             <div id="linkColumns">
                 <div id="main">
