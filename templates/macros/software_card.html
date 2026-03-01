@@ -1,5 +1,9 @@
 {% macro software_card(page) %}
-<div class="postContainer">
+<div class="postContainer" 
+    style="view-transition-name: card-{{ page.slug | default(value=page.title | slugify) }};"
+    data-search="{{ page.title }} {{ page.extra["project_title"] | default(value="") }} {{ page.extra["title_seo"] | default(value="") }} {{ page.extra["title_alt"] | default(value="") }}"
+    data-tags="{% if page.taxonomies["software-categories"] %}{{ page.taxonomies["software-categories"] | join(sep=",") }}{% endif %}"
+    data-date="{{ page.date }}">
     {%- if page.extra["project_title"] is defined %}
     {%- set _title = page.extra["project_title"] %}
     {%- elif page.title is defined %}
@@ -25,7 +29,7 @@
                 {% if page.taxonomies and page.taxonomies["software-categories"] %}
                 <div class="categoryPills">
                     {% for category in page.taxonomies["software-categories"] %}
-                    <span class="categoryPill">{{ category }}</span>
+                    <span class="pill categoryPill">{{ category }}</span>
                     {% endfor %}
                 </div>
                 {% endif %}

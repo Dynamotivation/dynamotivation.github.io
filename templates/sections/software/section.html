@@ -7,6 +7,7 @@
 {{ super() }}
 <link rel="stylesheet" href={{ get_url(path="css/sections/section.css" ) }}>
 <link rel="stylesheet" href={{ get_url(path="css/sections/portfolio/software/section-additional.css" ) }}>
+<script defer src={{ get_url(path="js/softwareSection.js" ) }}></script>
 
 {% endblock additionalResources %}
 
@@ -34,6 +35,91 @@
             {{ section.description | safe }}
         </p>
     </div>
+
+    {% if pages|length != 0 %}
+    <div id="filters">
+        <div id="filterContainer">
+            <input 
+                type="text" 
+                id="titleFilter" 
+                placeholder="Filter by title..." 
+                class="filterInput"
+            />
+            <div id="dateFilterRange">
+                <input type="date" id="dateFrom" class="filterInput" aria-label="From date">
+                <span>to</span>
+                <input type="date" id="dateTo" class="filterInput" aria-label="To date">
+            </div>
+        </div>
+
+        {%- set all_tags = [] %}
+        {%- for page in pages %}
+            {%- if page.taxonomies["software-categories"] %}
+                {%- for tag in page.taxonomies["software-categories"] %}
+                    {%- set_global all_tags = all_tags | concat(with=tag) %}
+                {%- endfor %}
+            {%- endif %}
+        {%- endfor %}
+        {%- set unique_tags = all_tags | unique | sort %}
+        
+        {% if unique_tags | length > 0 %}
+        <div id="tagFilters">
+            {% for tag in unique_tags %}
+            <label class="tagFilterLabel">
+                <input type="checkbox" value="{{ tag }}" class="tagCheckbox">
+                <span class="pill tagFilterPill">{{ tag }}</span>
+            </label>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <noscript>
+        <div id="noJsFilters">
+            <p><strong>Filter by category:</strong></p>
+            <div id="noJsTagFilters">
+                <input type="radio" name="tag-filter" id="tag-all" class="noJsRadio tag-all-radio" checked>
+                <label for="tag-all" class="pill tagFilterPill">All</label>
+                
+                {% for tag in unique_tags %}
+                <input type="radio" name="tag-filter" id="tag-{{ tag | slugify }}" class="noJsRadio tag-{{ tag | slugify }}-radio">
+                <label for="tag-{{ tag | slugify }}" class="pill tagFilterPill">{{ tag }}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <style>
+            #filters { display: none !important; }
+            #noJsFilters { 
+                margin: 1.5rem 0; 
+                padding: 1rem 1.5rem; 
+                background: var(--background-color); 
+                border-radius: 1.5rem; 
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            }
+            #noJsTagFilters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+            .noJsRadio { display: none; }
+            
+            /* Logic for filtering */
+            {% for tag in unique_tags %}
+            body:has(.tag-{{ tag | slugify }}-radio:checked) #postGrid .postContainer:not([data-tags*="{{ tag }}"]) {
+                display: none;
+            }
+            {% endfor %}
+
+            /* Style selected pill */
+            .noJsRadio:checked + .pill {
+                background-color: var(--main-color);
+                color: white;
+            }
+            @media (prefers-color-scheme: dark) {
+                #noJsFilters { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); }
+                .noJsRadio:checked + .pill {
+                    background-color: var(--link-color);
+                    color: var(--background-color);
+                }
+            }
+        </style>
+    </noscript>
+    {% endif %}
 
     {% if pages|length == 0 %}
     <p>
