@@ -85,7 +85,7 @@
             <div class="postContent">
                 <div class="postMetadata">
                     <strong class="postTitle">{{ page.title }}</strong>
-                    <span class="postDate">{{ page.date }}</span>
+                    <span class="postDate">{{ page.date | date(format="%B %-d, %Y") }}</span>
                 </div>
             </div>
         </div>

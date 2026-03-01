@@ -126,7 +126,7 @@
     </div>
     <div id="dateContainer">
         {% if page.date %}
-        <p>Date: <span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date }}</span></p>
+        <p><span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date | date(format="%B %-d, %Y") }}</span></p>
         {% endif %}
         {% if page.updated %}
         <p>Updated: {{ page.updated }}</p>
