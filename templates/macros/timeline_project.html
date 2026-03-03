@@ -34,21 +34,38 @@
             <a href="{{ project_link }}" class="timeline-link timeline-info-link">
                 <div class="floating-logos">
                     {%- set seed = page.title | length %}
-                    {%- set categories_count = 0 %}
-                    {%- set languages_count = 0 %}
+                    {%- set tag_mapping = load_data(path="data/tag_icon_mapping.json") %}
+                    {%- set icon_count = 0 %}
                     {%- if page.taxonomies and page.taxonomies["software-categories"] %}
-                        {%- set categories_count = page.taxonomies["software-categories"] | length %}
+                        {%- for tag in page.taxonomies["software-categories"] %}
+                            {%- if icon_count < 12 %}
+                            {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] %}
+                            {%- set icon_name = tag_mapping["software-categories"][tag] %}
+                            {%- set rand_x = get_random(start=2, end=90) %}
+                            {%- set rand_y = get_random(start=2, end=90) %}
+                            {%- set rand_delay = get_random(start=0, end=20000) %}
+                            {%- set rand_duration = get_random(start=15, end=30) %}
+                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: {{ rand_delay }}ms; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                            {%- set icon_count = icon_count + 1 %}
+                            {%- endif %}
+                            {%- endif %}
+                        {%- endfor %}
                     {%- endif %}
                     {%- if page.taxonomies and page.taxonomies["programming-languages"] %}
-                        {%- set languages_count = page.taxonomies["programming-languages"] | length %}
+                        {%- for tag in page.taxonomies["programming-languages"] %}
+                            {%- if icon_count < 12 %}
+                            {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] %}
+                            {%- set icon_name = tag_mapping["programming-languages"][tag] %}
+                            {%- set rand_x = get_random(start=2, end=90) %}
+                            {%- set rand_y = get_random(start=2, end=90) %}
+                            {%- set rand_delay = get_random(start=0, end=20000) %}
+                            {%- set rand_duration = get_random(start=15, end=30) %}
+                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: {{ rand_delay }}ms; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                            {%- set icon_count = icon_count + 1 %}
+                            {%- endif %}
+                            {%- endif %}
+                        {%- endfor %}
                     {%- endif %}
-                    {%- set logo_count = (categories_count + languages_count) %}
-                    {%- if logo_count > 12 %}
-                        {%- set logo_count = 12 %}
-                    {%- endif %}
-                    {%- for i in range(end=logo_count) %}
-                    <div class="floating-logo" style="--i: {{ i }}; --seed: {{ seed }};"><img src="https://dynamotivation.com/images/innerLogo.svg" alt="" class="floating-logo-image"></div>
-                    {%- endfor %}
                 </div>
                 <div class="timeline-info-card">
                     {%- set title = page.extra["project_title"] | default(value=page.title) %}

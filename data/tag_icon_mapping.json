@@ -1,0 +1,12 @@
+{
+  "software-categories": {
+    "Game": "/images/categories/controller.svg",
+    "App": "/images/categories/utility.svg",
+    "Android": "/images/categories/android.svg",
+    "Windows": "/images/categories/windows.svg"
+  },
+  "programming-languages": {
+    "GML": "/images/categories/gameMaker.svg",
+    "Java": "/images/categories/java.svg"
+  }
+}

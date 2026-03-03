@@ -87,12 +87,19 @@
   "alternateName": "{{ page.extra.alternate_name }}"{% endif %}{% if page.description %},
   "description": "{{ page.description }}"{% endif %}{% if page.extra.application_category %},
   "applicationCategory": "{{ page.extra.application_category }}"{% endif %}{% if page.extra.application_subcategory %},
-  "applicationSubCategory": "{{ page.extra.application_subcategory }}"{% endif %}{% if page.extra.operating_system or page.extra.available_on_android or page.extra.available_on_ios or page.extra.available_on_windows or page.extra.available_on_mac or page.extra.available_on_linux %},
+  "applicationSubCategory": "{{ page.extra.application_subcategory }}"{% endif %}
+{% set swc = page.taxonomies["software-categories"] | default(value=[]) %}
+{% set has_android = "Android" in swc %}
+{% set has_ios = "iOS" in swc %}
+{% set has_windows = "Windows" in swc %}
+{% set has_mac = "macOS" in swc %}
+{% set has_linux = "Linux" in swc %}
+{% if page.extra.operating_system or has_android or has_ios or has_windows or has_mac or has_linux %},
   "operatingSystem":
   {% if page.extra.operating_system %}
     "{{ page.extra.operating_system }}"
   {% else %}
-    "{% set first = true %}{% if page.extra.available_on_android %}{% if not first %}, {% endif %}{% set first = false %}Android{% endif %}{% if page.extra.available_on_ios %}{% if not first %}, {% endif %}{% set first = false %}iOS{% endif %}{% if page.extra.available_on_windows %}{% if not first %}, {% endif %}{% set first = false %}Windows{% endif %}{% if page.extra.available_on_mac %}{% if not first %}, {% endif %}{% set first = false %}macOS{% endif %}{% if page.extra.available_on_linux %}{% if not first %}, {% endif %}{% set first = false %}Linux{% endif %}"
+    "{% set first = true %}{% if has_android %}{% if not first %}, {% endif %}{% set first = false %}Android{% endif %}{% if has_ios %}{% if not first %}, {% endif %}{% set first = false %}iOS{% endif %}{% if has_windows %}{% if not first %}, {% endif %}{% set first = false %}Windows{% endif %}{% if has_mac %}{% if not first %}, {% endif %}{% set first = false %}macOS{% endif %}{% if has_linux %}{% if not first %}, {% endif %}{% set first = false %}Linux{% endif %}"
   {% endif %}{% endif %}{% if page.extra.logo %},
   "image": {
     "@type": "ImageObject",

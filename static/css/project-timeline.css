@@ -1,9 +1,41 @@
 /* Project Timeline Styling */
 
 #timeline-container {
+    --timeline-padding: 2rem;
+    --timeline-max-width: 900px;
+    --timeline-line-width: 4px;
+    --timeline-line-offset: 2px;
+    --timeline-item-spacing: 15rem;
+    --timeline-marker-size: 20px;
+    --timeline-marker-border: 4px;
+    --timeline-marker-hover-size: 28px;
+    --timeline-marker-hover-shadow: 8px;
+    --timeline-marker-scale: 1.2;
+    --timeline-content-padding: 1.5rem;
+    --timeline-content-gap: 2rem;
+    --timeline-image-size: 300px;
+    --floating-logo-offset: 30px;
+    --floating-logo-offset-extended: 60px;
+    --floating-logo-size: 70px;
+    --floating-logo-radius: 16px;
+    --floating-logo-image-scale: 80%;
+    --floating-logo-offset-multiplier: 0.3;
+    --float-animation-offset-x: 15px;
+    --float-animation-offset-y: 15px;
+    --float-animation-rotate-1: -8deg;
+    --float-animation-rotate-2: 5deg;
+    --float-animation-rotate-3: -3deg;
+    --float-animation-scale-2: 1.05;
+    --float-animation-scale-3: 0.98;
+    --float-animation-offset-x-alt: 10px;
+    --float-animation-offset-y-alt: 10px;
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-dark: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --drop-shadow: 0.08rem 0.08rem 0.15rem rgba(0, 0, 0, 0.15);
+
     position: relative;
-    padding: 2rem 0;
-    max-width: 900px;
+    padding: var(--timeline-padding) 0;
+    max-width: var(--timeline-max-width);
     margin: 0 auto;
     z-index: 0; /* Base stacking context for the whole timeline */
 }
@@ -15,13 +47,13 @@
     left: 50%;
     top: 0;
     bottom: 0;
-    width: 4px;
+    width: var(--timeline-line-width);
     background: linear-gradient(180deg, var(--main-color), var(--main-color-dark));
-    transform: translateX(-2px);
+    transform: translateX(calc(var(--timeline-line-offset) * -1));
 }
 
 .timeline-item {
-    margin-bottom: 15rem;
+    margin-bottom: var(--timeline-item-spacing);
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -32,10 +64,10 @@
 .timeline-marker {
     position: absolute;
     left: 50%;
-    width: 20px;
-    height: 20px;
+    width: var(--timeline-marker-size);
+    height: var(--timeline-marker-size);
     background: var(--background-color);
-    border: 4px solid var(--main-color);
+    border: var(--timeline-marker-border) solid var(--main-color);
     border-radius: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -44,10 +76,10 @@
 }
 
 .timeline-item:hover .timeline-marker {
-    width: 28px;
-    height: 28px;
-    box-shadow: 0 0 0 8px rgba(255, 76, 74, 0.1);
-    transform: translateX(-50%) scale(1.2);
+    width: var(--timeline-marker-hover-size);
+    height: var(--timeline-marker-hover-size);
+    box-shadow: 0 0 0 var(--timeline-marker-hover-shadow) rgba(255, 76, 74, 0.1);
+    transform: translateX(-50%) scale(var(--timeline-marker-scale));
 }
 
 /* Timeline content wrapper */
@@ -56,8 +88,8 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 1.5rem;
-    gap: 2rem;
+    padding: 4rem var(--timeline-content-padding);
+    gap: var(--timeline-content-gap);
 }
 
 /* Right side: Info left, Image right */
@@ -86,8 +118,8 @@
 /* Image link wrapper */
 .timeline-image-link {
     flex: 0 0 auto;
-    width: 300px;
-    height: 300px;
+    width: var(--timeline-image-size);
+    height: var(--timeline-image-size);
     text-decoration: none;
     color: inherit;
     position: relative;
@@ -104,95 +136,106 @@
     z-index: 1;
 }
 
-/* Floating Logos behind cards */
+/* Floating Logos in front of cards */
 .floating-logos {
     position: absolute;
-    top: -30px;
-    left: -30px;
-    right: -30px;
-    bottom: -30px;
+    top: calc(var(--floating-logo-offset) * -1);
+    left: calc(var(--floating-logo-offset) * -1);
+    right: calc(var(--floating-logo-offset) * -1);
+    bottom: calc(var(--floating-logo-offset) * -1);
     pointer-events: none;
-    z-index: -1; /* Behind the card and content */
+    z-index: 2; /* In front of the card and content */
     overflow: visible;
 }
 
 /* Right-side: info on left, image on right - logos extend right and away from image */
 .timeline-right .floating-logos {
-    top: -30px;
+    top: calc(var(--floating-logo-offset) * -1);
     left: 0;
-    right: -60px;
-    bottom: -30px;
+    right: calc(var(--floating-logo-offset-extended) * -1);
+    bottom: calc(var(--floating-logo-offset) * -1);
 }
 
 /* Left-side: image on left, info on right - logos extend left and away from image */
 .timeline-left .floating-logos {
-    top: -30px;
-    left: -60px;
+    top: calc(var(--floating-logo-offset) * -1);
+    left: calc(var(--floating-logo-offset-extended) * -1);
     right: 0;
-    bottom: -30px;
+    bottom: calc(var(--floating-logo-offset) * -1);
 }
 
 .floating-logo {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: var(--floating-logo-size);
+    height: var(--floating-logo-size);
     background-color: var(--background-color);
-    border-radius: 12px;
+    border-radius: var(--floating-logo-radius);
     opacity: 1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-light);
     display: flex;
     align-items: center;
     justify-content: center;
     
-    /* Position them around the card with breathing room */
+    /* Position them around the card with breathing room, using random offsets */
     --side: calc(var(--i) % 4); /* 0: top, 1: right, 2: bottom, 3: left */
     
-    /* Top side */
-    --top-val: calc(-20px + (var(--seed) * var(--i)) % 10 * 1px);
-    --left-val: calc(var(--i) * 20%);
-    
-    top: var(--top-val);
-    left: var(--left-val);
-    
-    animation: float-around 20s infinite ease-in-out;
-    animation-delay: calc(var(--i) * -4s);
+    transform: translate(0, 0) rotate(var(--float-animation-rotate-1)) scale(1);
+    animation: float-around var(--rand-animation-duration, 20s) infinite ease-in-out;
+    animation-delay: var(--rand-animation-delay, 0ms);
+}
+
+/* Distribute logos to different sides using nth-child */
+/* Top side */
+.floating-logo:nth-child(4n+1) { 
+    top: calc(-1 * var(--floating-logo-size) / 2);
+    left: var(--rand-offset-x);
+}
+/* Right side */
+.floating-logo:nth-child(4n+2) { 
+    top: var(--rand-offset-y);
+    right: calc(-1 * var(--floating-logo-size) / 2);
+    left: auto; 
+}
+/* Bottom side */
+.floating-logo:nth-child(4n+3) { 
+    bottom: calc(-1 * var(--floating-logo-size) / 2);
+    left: var(--rand-offset-x);
+}
+/* Left side */
+.floating-logo:nth-child(4n+4) { 
+    top: var(--rand-offset-y);
+    left: calc(-1 * var(--floating-logo-size) / 2);
 }
 
 @media (prefers-color-scheme: dark) {
     .floating-logo {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: var(--shadow-dark);
     }
 }
 
-/* Distribute logos to different sides using nth-child */
-.floating-logo:nth-child(4n+1) { top: -30px; left: calc(var(--i) * 25% + 5%); } /* Top */
-.floating-logo:nth-child(4n+2) { top: calc(var(--i) * 25% + 10%); right: -30px; left: auto; } /* Right */
-.floating-logo:nth-child(4n+3) { bottom: -30px; left: calc(var(--i) * 25% + 5%); } /* Bottom */
-.floating-logo:nth-child(4n+4) { top: calc(var(--i) * 25% + 10%); left: -30px; } /* Left */
-
 .floating-logo-image {
-    width: 80%;
-    height: 80%;
+    width: var(--floating-logo-image-scale);
+    height: var(--floating-logo-image-scale);
     object-fit: contain;
-    filter: drop-shadow(0.15rem 0.15rem 0.25rem rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(var(--drop-shadow));
 }
 
 @keyframes float-around {
     0%, 100% {
-        transform: translate(0, 0) rotate(-8deg) scale(1);
+        transform: translate(0, 0) rotate(var(--float-animation-rotate-1)) scale(1);
     }
     33% {
-        transform: translate(15px, -15px) rotate(5deg) scale(1.05);
+        transform: translate(var(--float-animation-offset-x), calc(var(--float-animation-offset-y) * -1)) rotate(var(--float-animation-rotate-2)) scale(var(--float-animation-scale-2));
     }
     66% {
-        transform: translate(-10px, 10px) rotate(-3deg) scale(0.98);
+        transform: translate(calc(var(--float-animation-offset-x-alt) * -1), var(--float-animation-offset-y-alt)) rotate(var(--float-animation-rotate-3)) scale(var(--float-animation-scale-3));
     }
 }
 
 /* Timeline image card */
 .timeline-image-card {
     background: var(--background-color);
-    border-radius: 12px;
+    border-radius: 20%;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
