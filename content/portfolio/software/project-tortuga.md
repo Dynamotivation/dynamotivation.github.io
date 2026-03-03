@@ -1,11 +1,11 @@
 +++
 title = "Project Tortuga: CoD Black Ops 3 Custom Zombies Map"
 date = 2017-06-09
-description = "Post mortem exploration of Project Tortuga, a custom Call of Duty: Black Ops 3 Zombies map project covering mapping in Radiant and GCS/CCS scripting."
+description = "Post mortem exploration of Project Tortuga, a custom Call of Duty: Black Ops 3 Zombies map project covering mapping in Radiant and GSC/CSC scripting."
 
 [taxonomies]
 software-categories = ["Game", "Mod", "Unreleased", "Windows"]
-programming-languages = ["GCS", "CCS"]
+programming-languages = ["GSC", "CSC"]
 
 [extra]
 # Graphic enrichment
@@ -20,7 +20,7 @@ screenshot_urls = []
 # JSON-LD SEO for Software
 operatingSystem = "Windows"
 release_notes = "Cancelled"
-programming_language = "GCS/CCS (Game Code Script/Client Code Script)"
+programming_language = "GSC/CSC (Game Script Code/Client-Side Code)"
 development_environment = "Call of Duty: Black Ops 3 Mod Tools (Radiant)"
 license = "Closed Source"
 availability = "Discontinued"
@@ -32,10 +32,10 @@ price_usd = 0
 questions = [
     { question = "Why was Project Tortuga cancelled?", answer = "The project's scope was too ambitious for a solo developer after the original teammate left the project. This led to a pragmatic decision to discontinue mapping and shift towards foundational learning." },
     { question = "Can I play Project Tortuga?", answer = "No, Project Tortuga was never publicly released. An early version with temporary textures was recorded and is available on YouTube, but this is far from the final vision." },
-    { question = "What scripting languages were used?", answer = "Two custom scripting languages: GCS (Game Code Script) for server-side logic and CCS (Client Code Script) for client-side effects, both specific to the Call of Duty engine branch." },
+    { question = "What scripting languages were used?", answer = "Two custom scripting languages: GSC (Game Script Code) for server-side logic and CSC (Client-Side Code) for client-side effects, both specific to the Call of Duty engine branch." },
     { question = "What software was used for the 3D environment design?", answer = "The map was developed using the Radiant level editor (the official tool for the Black Ops 3 engine), involving environmental block outs, custom texturing, and architectural prefabs." },
     { question = "Were any community assets or forums involved?", answer = "Yes, the project integrated third-party assets and documentation from the UGX-Mods and Modme communities, including custom weapon ports, perks, and UI elements." },
-    { question = "What is the tech stack for Project Tortuga?", answer = "Call of Duty: Black Ops 3 Mod Tools, T7 Engine, Radiant, APE, GCS (Game Code Script), CCS (Client Code Script)" }
+    { question = "What is the tech stack for Project Tortuga?", answer = "Call of Duty: Black Ops 3 Mod Tools, T7 Engine, Radiant, APE, GSC (Game Script Code), CSC (Client-Side Code)" }
 ]
 
 +++
@@ -50,7 +50,7 @@ questions = [
     <dt>Development Environment</dt>
     <dd>Call of Duty: Black Ops 3 Mod Tools<br>(Radiant)</dd>
     <dt>Written in</dt>
-    <dd>GCS (Game Code Script)<br>CCS (Client Code Script)</dd>
+    <dd>GSC (Game Script Code)<br>CSC (Client-Side Code)</dd>
     <dt>Operating system(s)</dt>
     <dd>Windows</dd>
     <dt>Source code</dt>
@@ -64,7 +64,7 @@ questions = [
 
 ---
 
-Development for *Project Tortuga* was a joint effort between Dynamotivation and another aspiring mapper from June 2017 onwards at age 15. This initial collaboration consisted of extensive brainstorming, resulting in an ambitious shared vision for the map. A core personal goal for Dynamotivation was to learn 3D environment design using the engines Radiant editor, and to grasp the GCS and CCS scripting languages for custom content.
+Development for *Project Tortuga* was a joint effort between Dynamotivation and another aspiring mapper from June 2017 onwards at age 15. This initial collaboration consisted of extensive brainstorming, resulting in an ambitious shared vision for the map. A core personal goal for Dynamotivation was to learn 3D environment design using the engines Radiant editor, and to grasp the GSC and CSC scripting languages for custom content.
 
 However, due to the teammate's inability to continue development, Dynamotivation transitioned to solo development. Recognizing the immense scope of the original concept for one person the heavyhearted decision was made to discontinue the project.
 
