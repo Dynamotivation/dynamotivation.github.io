@@ -4,7 +4,7 @@ date = 2018-04-01
 description = "A geometric pattern background generator with customizable shapes, gradients, and multicolor effects."
 
 [taxonomies]
-software-categories = ["App"]
+software-categories = ["App", "Android"]
 programming-languages = ["GML", "Java"]
 
 [extra]
@@ -34,11 +34,7 @@ screenshot_urls = [
     "https://ucarecdn.com/746df704-5b06-4b57-9558-2b092b119f58/geobackgroundgeneratorsimpleexamplepattern.avif",
     "https://ucarecdn.com/489c6beb-7edb-4403-85a2-33bcbda91848/geobackgroundgeneratoroldui.avif"
 ]
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
+
 
 # JSON-LD SEO for Software
 operatingSystem = "Android"

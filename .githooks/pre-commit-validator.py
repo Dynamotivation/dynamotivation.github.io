@@ -20,11 +20,6 @@ REQUIRED_ATTRIBUTES = [
     "description",
     "logo",
     "infobox_images",
-    "available_on_android",
-    "available_on_windows",
-    "available_on_mac",
-    "available_on_linux",
-    "available_on_ios",
     "application_category",
     "price_usd",
     "screenshot_urls",
@@ -41,11 +36,6 @@ REQUIRED_ATTRIBUTES = [
 ATTRIBUTES_IN_EXTRA = [
     "logo",
     "infobox_images",
-    "available_on_android",
-    "available_on_windows",
-    "available_on_mac",
-    "available_on_linux",
-    "available_on_ios",
     "application_category",
     "price_usd",
     "screenshot_urls",
@@ -81,6 +71,21 @@ def validate_frontmatter(filepath, frontmatter):
     for attr in ["title", "date", "description"]:
         if not re.search(rf'(#\s*)?{re.escape(attr)}\s*=', frontmatter):
             errors.append(attr)
+
+    # Check for [taxonomies] section with required tags
+    if "[taxonomies]" not in frontmatter:
+        errors.append("[taxonomies]")
+    else:
+        # Match [taxonomies] and capture until next TOML section header or end
+        taxonomies_match = re.search(r"\[taxonomies\](.*?)(?=\n\s*\[|\Z)", frontmatter, re.DOTALL)
+        if taxonomies_match:
+            taxonomies_section = taxonomies_match.group(1)
+            # Check for software-categories
+            if not re.search(r'(#\s*)?software-categories\s*=', taxonomies_section):
+                errors.append("software-categories")
+            # Check for programming-languages
+            if not re.search(r'(#\s*)?programming-languages\s*=', taxonomies_section):
+                errors.append("programming-languages")
 
     # Check for [extra] section
     if "[extra]" not in frontmatter:

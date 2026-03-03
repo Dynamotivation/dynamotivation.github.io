@@ -4,7 +4,7 @@ date = 2019-02-07
 description = "Interactive place value chart for learning binary, decimal, hexadecimal and more interactively for Windows and Android, based on Ulrich Kortenkamp original!"
 
 [taxonomies]
-software-categories = ["App", "Commission", "Unreleased"]
+software-categories = ["App", "Commission", "Unreleased", "Android", "Windows"]
 programming-languages = ["GML"]
 
 [extra]
@@ -20,11 +20,7 @@ screenshot_urls = [
     "https://ucarecdn.com/394b018b-1655-4ebe-884e-23d263e6ef11/stellenwerttafelplusdecimalscreenshot.avif",
     "https://ucarecdn.com/f00b51f6-ba74-4a81-a9df-f4aaa2f04e89/stellenwerttafelplusdecimalscreenshotoverflow.avif"
 ]
-available_on_android = true
-available_on_windows = true
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
+
 
 # JSON-LD SEO for Software
 operatingSystem = "Windows, Android"

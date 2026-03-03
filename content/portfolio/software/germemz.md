@@ -4,7 +4,7 @@ date = 2017-02-13
 description = "A private German TV commercial soundboard that featured 45 iconic 1&1 and Carglass memes with Marcel D'Avis and Thorsten Bohms quotes."
 
 [taxonomies]
-software-categories = ["App", "Unreleased"]
+software-categories = ["App", "Unreleased", "Android"]
 programming-languages = ["Java"]
 
 [extra]
@@ -25,11 +25,7 @@ screenshot_urls = [
     "https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif",
     "https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif"
 ]
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
+
 
 # JSON-LD SEO for Software
 operatingSystem = "Android"

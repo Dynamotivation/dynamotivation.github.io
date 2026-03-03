@@ -4,7 +4,7 @@ date = 2017-06-09
 description = "Post mortem exploration of Project Tortuga, a custom Call of Duty: Black Ops 3 Zombies map project covering mapping in Radiant and GCS/CCS scripting."
 
 [taxonomies]
-software-categories = ["Game", "Mod", "Unreleased"]
+software-categories = ["Game", "Mod", "Unreleased", "Windows"]
 programming-languages = ["GCS", "CCS"]
 
 [extra]
@@ -15,11 +15,7 @@ infobox_images = [
     { path = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Project Tortuga Call of Duty Black Ops 3 Custom Zombies Map Concept Logo" }
 ]
 screenshot_urls = []
-available_on_android = false
-available_on_windows = true
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
+ 
 
 # JSON-LD SEO for Software
 operatingSystem = "Windows"

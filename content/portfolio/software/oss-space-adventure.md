@@ -4,7 +4,7 @@ date = 2018-02-25
 description = "Retro arcade shooter for Android: You vs. the asteroids! Can you protect your planet or survive the onslaught? Collect power-ups to upgrade your ship."
 
 [taxonomies]
-software-categories = ["Game"]
+software-categories = ["Game", "Android"]
 programming-languages = ["GML", "Java"]
 
 [extra]
@@ -26,11 +26,7 @@ screenshot_urls = [
     "https://ucarecdn.com/075a0dda-92ce-46c3-8374-2524a5c4315e/ossspaceadventureendlessmode.avif",
     "https://ucarecdn.com/9536dd98-62af-4392-98ca-77542c13ef32/ossspaceadventureprotectmode.avif"
 ]
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
+
 
 # JSON-LD SEO for Software
 operatingSystem = "Android"

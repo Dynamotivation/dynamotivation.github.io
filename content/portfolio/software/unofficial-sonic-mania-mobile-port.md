@@ -4,7 +4,7 @@ date = 2019-05-01
 description = "An unreleased fan port of the video game Sonic Mania to Android using the GameMaker: Studio Engine and Sonic MAX Framework."
 
 [taxonomies]
-software-categories = ["Game", "Port", "Unreleased"]
+software-categories = ["Game", "Port", "Unreleased", "Android"]
 programming-languages = ["GML"]
 
 [extra]
@@ -22,12 +22,7 @@ infobox_images = [
     }
 ]
 screenshot_urls = []
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
-
+ 
 # JSON-LD SEO for Software
 operatingSystem = "Android"
 release_notes = "Unreleased"
@@ -41,26 +36,10 @@ price_usd = 0
 
 # FAQ
 questions = [
-  { 
-    question = "Is the Unofficial Sonic Mania Mobile Port available for download?", 
-    answer = "No, this was a short-term proof of concept and remains unreleased; additionally, the original source code has been lost." 
-  },
-  { 
-    question = "What features were implemented in the Unofficial Sonic Mania Mobile Port?",
-    answer = "The project focused on recreating challenging elements of Sonic Mania, including the title screen, certain menu and UI elements, the drop dash mechanic, blue sphere bonus stages, and a Mania-style Green Hill Zone Act 1."
-  },
-  { 
-    question = "How were the 3D effects on the title screen achieved?", 
-    answer = "The clouds used a custom shader for distortion correction and surface rendering, while the spinning island utilized GameMaker's primitive 3D engine with a camera and projection matrix." 
-  },
-  { 
-    question = "How did the project handle the Blue Sphere bonus stages?", 
-    answer = "The projection logic was recreated by charting x and y screen locations against distance and approximating them with first and second-degree mathematical functions." 
-  },
-  {
-    question = "What was the tech stack for the Unofficial Sonic Mania Mobile Port?",
-    answer = "GML (GameMaker Language), GameMaker Studio 1.4, Sonic MAX Framework"
-  }
+  { question = "Is the Unofficial Sonic Mania Mobile Port available for download?", answer = "No, this was a short-term proof of concept and remains unreleased; additionally, the original source code has been lost." },
+  { question = "How were the 3D effects on the title screen achieved?", answer = "The clouds used a custom shader for distortion correction and surface rendering, while the spinning island utilized GameMaker's primitive 3D engine with a camera and projection matrix." },
+  { question = "How did the project handle the Blue Sphere bonus stages?", answer = "The projection logic was recreated by charting x and y screen locations against distance and approximating them with first and second-degree mathematical functions." },
+  { question = "What was the tech stack for the Unofficial Sonic Mania Mobile Port?", answer = "GML (GameMaker Language), GameMaker Studio 1.4, Sonic MAX Framework" }
 ]
 +++
 

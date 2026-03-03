@@ -4,7 +4,7 @@ date = 2018-10-10
 description = "An Android soundboard for YouTuber and Twitch streamer BenPlaysGames."
 
 [taxonomies]
-software-categories = ["App", "Commission"]
+software-categories = ["App", "Commission", "Android"]
 programming-languages = ["Java"]
 
 [extra]
@@ -22,11 +22,7 @@ screenshot_urls = [
     "https://ucarecdn.com/e68a4eaa-d8e4-40c2-84ff-d59aabd4b236/benplaysgamessoundboardfavs.avif",
     "https://ucarecdn.com/20c4aca4-ac43-4432-ab90-e96ced20efea/benplaysgamessoundboardlandscapetablet.avif"
 ]
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
+
 
 # JSON-LD SEO for Software
 operatingSystem = "Android"

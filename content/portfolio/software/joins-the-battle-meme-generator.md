@@ -4,7 +4,7 @@ date = 2018-11-03
 description = "Create authentic \"Joins the Battle\" fighting game splash screens and memes. Customize characters, text, colors and effects in multiple iconic styles!"
 
 [taxonomies]
-software-categories = ["App"]
+software-categories = ["App", "Android"]
 programming-languages = ["GML", "Java"]
 
 [extra]
@@ -36,11 +36,7 @@ screenshot_urls = [
     "https://ucarecdn.com/1047f267-98fa-4b83-a891-101a11a3cde5/joinsthebattle2018unlockstyle.avif",
     "https://ucarecdn.com/c2794126-6cd2-4eaa-ad20-237246836ffb/joinsthebattle2018thumbnailstyle.avif"
 ]
-available_on_android = true
-available_on_windows = false
-available_on_mac = false
-available_on_linux = false
-available_on_ios = false
+
 
 # JSON-LD SEO for Software
 operatingSystem = "Android"
