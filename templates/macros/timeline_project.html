@@ -4,8 +4,9 @@
 <div class="timeline-item {% if position == 1 %}timeline-right{% else %}timeline-left{% endif %}">
     <div class="timeline-marker"></div>
     
-    <div class="timeline-content">
-        {%- if page.link is defined %}
+    <div class="timeline-content-border">
+        <div class="timeline-content">
+            {%- if page.link is defined %}
             {%- set project_link = page.link %}
         {%- elif page.permalink is defined %}
             {%- set project_link = page.permalink %}
@@ -94,5 +95,6 @@
             </a>
         </div>
     </div>
+</div>
 </div>
 {% endmacro %}
