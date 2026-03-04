@@ -3,7 +3,8 @@
     "Game": "/images/categories/controller.svg",
     "App": "/images/categories/utility.svg",
     "Android": "/images/categories/android.svg",
-    "Windows": "/images/categories/windows.svg"
+    "Windows": "/images/categories/windows.svg",
+    "Commission": "/images/categories/commission.svg"
   },
   "programming-languages": {
     "GML": "/images/categories/gameMaker.svg",

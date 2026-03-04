@@ -40,13 +40,17 @@
                     {%- if page.taxonomies and page.taxonomies["software-categories"] %}
                         {%- for tag in page.taxonomies["software-categories"] %}
                             {%- if icon_count < 12 %}
-                            {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] %}
-                            {%- set icon_name = tag_mapping["software-categories"][tag] %}
                             {%- set rand_x = get_random(start=2, end=90) %}
                             {%- set rand_y = get_random(start=2, end=90) %}
-                            {%- set rand_delay = get_random(start=0, end=20000) %}
+                            {%- set rand_delay = get_random(start=0, end=20) %}
                             {%- set rand_duration = get_random(start=15, end=30) %}
-                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: {{ rand_delay }}ms; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                            {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] %}
+                            {%- set icon_name = tag_mapping["software-categories"][tag] %}
+                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                            {%- elif tag | length <= 3 %}
+                            <div class="floating-logo floating-logo-text" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;">{{ tag }}</div>
+                            {%- endif %}
+                            {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] or tag | length <= 3 %}
                             {%- set icon_count = icon_count + 1 %}
                             {%- endif %}
                             {%- endif %}
@@ -55,13 +59,17 @@
                     {%- if page.taxonomies and page.taxonomies["programming-languages"] %}
                         {%- for tag in page.taxonomies["programming-languages"] %}
                             {%- if icon_count < 12 %}
-                            {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] %}
-                            {%- set icon_name = tag_mapping["programming-languages"][tag] %}
                             {%- set rand_x = get_random(start=2, end=90) %}
                             {%- set rand_y = get_random(start=2, end=90) %}
-                            {%- set rand_delay = get_random(start=0, end=20000) %}
+                            {%- set rand_delay = get_random(start=0, end=20) %}
                             {%- set rand_duration = get_random(start=15, end=30) %}
-                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: {{ rand_delay }}ms; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                            {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] %}
+                            {%- set icon_name = tag_mapping["programming-languages"][tag] %}
+                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                            {%- elif tag | length <= 3 %}
+                            <div class="floating-logo floating-logo-text" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;">{{ tag }}</div>
+                            {%- endif %}
+                            {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] or tag | length <= 3 %}
                             {%- set icon_count = icon_count + 1 %}
                             {%- endif %}
                             {%- endif %}
