@@ -35,4 +35,33 @@ To test your changes make sure to run the ".\zola build" command. Never run ".\z
 To make sure your changes are actually reflected, read the "public" directory which contains the build output.
 
 # Moving and renaming markdown files
-Moving and renaming markdown files affects the url of the page, which can lead to broken links. If you need to move or rename a markdown file, make sure to also create a file in the "static/" directory with the same name as the old url, which contains a meta refresh tag that redirects to the new url. This way, any existing links to the old url will still work and redirect to the new page.
+Moving and renaming markdown files affects the url of the page, which can lead to broken links.
+1. Search the project for links to the old url and update them to point to the new url.
+2. Make sure to also create a file in the "static/" directory with the same directory structure and name as the old url, which contains a redirect page. This way, any existing links to the old url will still work and redirect to the new page.
+3. Rename the associated markdown, html and css files.
+4. Verify the new link and the old link lead to the correct page.
+
+## Redirect format for moved URLs
+When creating a redirect for a moved URL, use this format to match existing redirects on the site:
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/new-url/" />
+    <meta name="robots" content="noindex" />
+    <script>
+      window.location.replace('/new-url/');
+    </script>
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/new-url/">/new-url/</a></p>
+  </body>
+</html>
+```
+
+**Key elements:**
+- **`window.location.replace()`**: Redirects the browser and replaces the old URL in browser history
+- **`meta http-equiv="refresh"`**: Fallback for browsers with JavaScript disabled
+- **`meta name="robots" content="noindex"`**: Prevents search engines from indexing the old URL, protecting SEO during the migration. This ensures search authority builds on the new URL only.
