@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title/><link>https://dynamotivation.com</link><description/><generator>Zola</generator><language>en</language><atom:link href="https://dynamotivation.com/rss.xml" rel="self" type="application/rss+xml"/><lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate><item><title>Mr. Unp3rf3ct Joins Dynamotivation</title><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/news/general/mr-unp3rf3ct-joins-dynamotivation/</link><guid>https://dynamotivation.com/news/general/mr-unp3rf3ct-joins-dynamotivation/</guid><description xml:base="https://dynamotivation.com/news/general/mr-unp3rf3ct-joins-dynamotivation/">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;8edbe6b7-c42f-4004-8b45-806e0fb93d5a&amp;#x2F;DynamotivationXMrUnp3rf3ct.svg"
+alt="Mr. Unp3rf3ct joins Dynamotivation"
+fetchpriority="high"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;p>Today it's a pleasure to announce the applications of Mr. Unp3rf3ct are joining the Dynamotivation portfolio!&lt;/p>
+&lt;p>This merger has been a long time coming, as some of you may have noticed from the app mosaic on the homepage. Initially, there was no intention of bringing back the original applications. The scope was limited to offering more compatible alternatives.&lt;br />
+However, behind the scenes a number of things were worked out to make this possible, meaning that the original app listings will be able to receive updates once again.&lt;/p>
+&lt;p>During this transition, the source code and, eventually, the restored store listings will migrate under the Dynamotivation umbrella of apps.&lt;/p>
+&lt;p>This means that there will be no need to rebuild assets or recreate core functionality. Instead, all developmental efforts will focus on improving the user experience and expanding features to make the apps compatible with more devices than ever before!&lt;/p>
+&lt;h2 id="apps-joining-the-dynamotivation-portfolio">Apps Joining the Dynamotivation Portfolio&lt;/h2>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;h3 id="these-apps-will-receive-new-releases">These Apps Will Receive New Releases&lt;/h3>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList { flex-direction: column; }
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;53467976-971a-4278-beb9-4947a99103a6&amp;#x2F;JoinsTheBattleMemeGeneratorLogo.avif"
+alt="Joins the Battle Meme Generator&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A highly specialized image editor for the all_time classic fighting game character splash screens known from various game trailers. Primarily useful for creating memes, hoaxes, and concept mockups. Its functionality is unmatched in any dedicated editor for similar purposes."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>Joins the Battle Meme Generator&lt;/strong>&lt;br>&lt;br>A highly specialized image editor for the all-time classic fighting game character splash screens known from various game trailers. Primarily useful for creating memes, hoaxes, and concept mockups. Its functionality is unmatched in any dedicated editor for similar purposes.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;af30c773-bf10-495b-b181-115f6fe5a3e0&amp;#x2F;GeoBackgroundGenerator.avif"
+alt="Geo Background Generator&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A specialized generator for aesthetic geometric background images composed of different shapes and satisfying gradients. Easy on the eye and rather boring by today&amp;#x27;s standards. Simplicity deserving of an upgrade."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>Geo Background Generator&lt;/strong>&lt;br>&lt;br>A specialized generator for aesthetic geometric background images composed of different shapes and satisfying gradients. Easy on the eye and rather boring by today's standards. Simplicity deserving of an upgrade.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;hr />
+&lt;p>Their original features will not be compromised by their eventual return. Thus it will take some time working my way through outdated codebases, recreating and porting features to newer frameworks.&lt;/p>
+&lt;p>That said, sadly not all apps can be brought back.&lt;/p>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;h3 id="these-apps-will-not-receive-new-releases">These Apps Will Not Receive New Releases&lt;/h3>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList { flex-direction: column; }
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;702e2ffa-47d7-4f7f-9844-1197454c5cfc&amp;#x2F;OSSSpaceAdventure.avif"
+alt="O.S.S.: Space Adventure&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A straight forward arcade_style space shooter with zen music for calming and battery conserving gameplay. To this day its not known what O.S.S. stood for? &amp;#x27;Open Source Software&amp;#x27;? Well, we&amp;#x27;ll see!"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>O.S.S.: Space Adventure&lt;/strong>&lt;br>&lt;br>A straight forward arcade-style space shooter with zen music for calming and battery conserving gameplay. To this day its not known what O.S.S. stood for? 'Open Source Software'? Well, we'll see!&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;5bc20435-afe3-4f75-88eb-52a653bdcb0b&amp;#x2F;BenPlaysGamesSoundboard.avif"
+alt="BenPlaysGames Soundboard&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A soundboard of the British variety content creator BenPlaysGames. After surrendering their spot in culture to clips, shorts and supercuts, soundboards have become quite outdated."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>BenPlaysGames Soundboard&lt;/strong>&lt;br>&lt;br>A soundboard of the British variety content creator BenPlaysGames. After surrendering their spot in culture to clips, shorts and supercuts, soundboards have become quite outdated.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;hr />
+&lt;p>While it is sad to see them discontinued, all old versions we manage to get our hands onto will be preserved on The Internet Archive.&lt;/p>
+&lt;h2 id="timeline">Timeline&lt;/h2>
+&lt;p>I currently cannot give a proper timeline for the transition, let alone rereleases and updates to take place. Time is needed to review and prepare before any actual work on the code can take place.&lt;/p>
+&lt;p>If you don't want to miss further annoucements, stay tuned by subscribing to the &lt;a href="/news/general/rss-and-atom-feeds-now-available/">RSS or Atom feeds&lt;/a> or by joining the Discord server.&lt;/p>
+&lt;p>Thanks to all previous users for your support. See you around for more Dynamotivation projects!&lt;/p></description></item><item><title>RSS and Atom Feeds Are Now Available</title><pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/</link><guid>https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/</guid><description xml:base="https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/">&lt;p>RSS and Atom feeds will be rolled out for all categories and aggregate categories of content.&lt;br />
+You can now easily get notified by your favorite reader apps about new posts!&lt;/p>
+&lt;p>For the time being, please add "/atom.xml" or "/rss.xml" to the URL of the desired category to subscribe.&lt;br />
+Example: &lt;a rel="external" href="https://dynamotivation.com/news/rss.xml">https://dynamotivation.com/news/rss.xml&lt;/a> and &lt;a rel="external" href="https://dynamotivation.com/news/atom.xml">https://dynamotivation.com/news/atom.xml&lt;/a>&lt;/p>
+&lt;p>Feed buttons for easier integration will be added to the category pages shortly.&lt;/p></description></item><item><title>How to Use SVG Vector Graphics in any Version of GameMaker + Studio 1.4 &amp; 2</title><pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/blog/tutorials/how-to-use-svgs-in-gamemaker-studio-1-4/</link><guid>https://dynamotivation.com/blog/tutorials/how-to-use-svgs-in-gamemaker-studio-1-4/</guid><description xml:base="https://dynamotivation.com/blog/tutorials/how-to-use-svgs-in-gamemaker-studio-1-4/">&lt;p>GameMaker has supported vector graphics for a long time, but few people know how to use them due to the ancient format we are stuck with.&lt;br />
+So let's catch you up to speed on how to use vector art in all versions of GameMaker I have used!&lt;/p>
+&lt;p>Let's think back a decade. The year is 2015 and Adobe Flash Games are still all the hype online.&lt;br />
+Naturally, in such a proprietary environment, the decision was made to use a proprietary format for vector graphics, SWF files.&lt;br />
+Faced with Flash on the front of browser games, the creators of GameMaker decided it best to incorporate the same file format for their handling of vector graphics, but there is a catch.&lt;br />
+Normal SWF files could include action scripts, layers, buttons, and a whole bunch more features that don't work in GameMaker. They are basically just glorified SVGs. And what do you know?&lt;br />
+Here we are in 2025 with SVGs as the clear mainstay for vector graphics with SWFs having fallen into obscurity.&lt;/p>
+&lt;p>Thankfully the process has not changed over the years, so this should work for you wether you are using &lt;strong>GameMaker Studio: 1.4&lt;/strong>, &lt;strong>GameMaker Studio 2&lt;/strong> or the latest version of &lt;strong>GameMaker&lt;/strong>.&lt;/p>
+&lt;div itemscope itemscope itemtype="https://schema.org/HowToStep">
+&lt;div class="howto-step">
+&lt;a href="#step-1a-adobe-illustrator-or-adobe-animate">
+&lt;h2 tabindex="-1" id="step-1a-adobe-illustrator-or-adobe-animate">Step 1a: Adobe Illustrator or Adobe Animate&lt;/h2>
+&lt;/a>
+&lt;button onclick="copyLink('step-1a-adobe-illustrator-or-adobe-animate')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗&lt;/button>
+&lt;/div>
+&lt;meta itemprop="name" content="Step 1a: Adobe Illustrator or Adobe Animate">
+&lt;div itemprop="text" class="hidden-text">You can still use the official Adobe Tools (Illustrator and Animate) to create SWF files&lt;/div>
+&lt;div itemprop="text">&lt;p>For the sake of completion, let's get the obvious approach out of the way:&lt;br />
+As it stands, you can still use the official Adobe Tools (Illustrator and Animate) to create SWF files, however, if this will stay the case is up for debate:&lt;/p>
+&lt;p>&lt;em>"Although you can’t edit SWF files directly, you can import them into Adobe Animate. It’s worth noting that if imported, you may miss critical data, such as sound. Alternatively, Flash players may enable simple edits if you want to trim an existing file, but these aren’t officially supported."&lt;/em>&lt;br />
+- Adobe 2025 (&lt;a rel="external" href="https://www.adobe.com/creativecloud/file-types/video/container/swf.html">https://www.adobe.com/creativecloud/file-types/video/container/swf.html&lt;/a>)&lt;/p>
+&lt;p>It will be the easiest way if you still hold one of the old licenses or have access to the software in &lt;em>other ways&lt;/em>.&lt;/p>
+&lt;p>However, I assume you reading this means you'd rather just use modern SVG tooling and convert your result.&lt;br />
+So let me show you how to convert SVGs to the SWF format without all the paid Adobe tools.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;div itemscope itemscope itemtype="https://schema.org/HowToStep">
+&lt;div class="howto-step">
+&lt;a href="#step-1b-preparations">
+&lt;h2 tabindex="-1" id="step-1b-preparations">Step 1b: Preparations&lt;/h2>
+&lt;/a>
+&lt;button onclick="copyLink('step-1b-preparations')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗&lt;/button>
+&lt;/div>
+&lt;meta itemprop="name" content="Step 1b: Preparations">
+&lt;div itemprop="text" class="hidden-text">Use Inkscape or another tool to create your SVG and prepare it for conversion&lt;/div>
+&lt;div itemprop="text">&lt;p>First of all, use &lt;strong>Inkscape&lt;/strong> or something else to create your SVG.
+Set the canvas size to the size you'd want the sprite to be in GameMaker. Make sure nothing is outside of the canvas.
+When saving the file, make sure to save a copy as a &lt;strong>plain / normal SVG&lt;/strong>, &lt;strong>not&lt;/strong> as an optimized or "Inkscape SVG" this ensures the other tools understand your file.&lt;/p>
+&lt;p>&amp;lt;img src="https://ucarecdn.com/99d9b5b8-ea3d-490e-bff4-dd3e0bf5a621/saveAsPlainSvg.webp"
+alt="Selecting the correct export format in Inkscape"&lt;/p>
+&lt;pre>&lt;code>style=&amp;quot;width: 50%; aspect-ratio: 363 / 395; &amp;quot;
+class=&amp;quot;blogImage&amp;quot;/&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&lt;em>Note how almost all file types end in .svg, yet the difference is in their metadata, encoding, and compression.&lt;/em>&lt;/p>
+&lt;/div>
+&lt;/div>&lt;div itemscope itemscope itemtype="https://schema.org/HowToStep">
+&lt;div class="howto-step">
+&lt;a href="#step-2a-reaconverter-online">
+&lt;h2 tabindex="-1" id="step-2a-reaconverter-online">Step 2a: reaConverter Online&lt;/h2>
+&lt;/a>
+&lt;button onclick="copyLink('step-2a-reaconverter-online')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗&lt;/button>
+&lt;/div>
+&lt;meta itemprop="name" content="Step 2a: reaConverter Online">
+&lt;div itemprop="text" class="hidden-text">Use reaConverter online to convert your SVG to an SWF file&lt;/div>
+&lt;div itemprop="text">&lt;p>Next, use reaConverter online to convert your SVG to an SWF file.&lt;/p>
+&lt;p>&amp;lt;img src="https://ucarecdn.com/c97b7d28-d37f-4378-880c-90a2596cb8d2/reaConverterWeb.webp"
+alt="Screenshot from the reaConverter online website."&lt;/p>
+&lt;pre>&lt;code>style=&amp;quot;width: 50%; aspect-ratio: 468 / 473; &amp;quot;
+class=&amp;quot;blogImage&amp;quot;/&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>Normally I'd advise you NOT to use online converters for data protection reasons, but here it's by far the easiest and most straightforward way. So go ahead.
+I've tried out dozens of websites, but there's only one that actually works - when it works!&lt;/p>
+&lt;p>As reaConverter offers more services for free online than in their free tier software, they may discontinue it any day.&lt;/p>
+&lt;p>If it works for you, skip straight to &lt;a href="#step-3-restoring-transparency-with-jpexs">step 3&lt;/a>.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;div itemscope itemscope itemtype="https://schema.org/HowToStep">
+&lt;div class="howto-step">
+&lt;a href="#step-2b-reaconverter-for-windows">
+&lt;h2 tabindex="-1" id="step-2b-reaconverter-for-windows">Step 2b: reaConverter for Windows&lt;/h2>
+&lt;/a>
+&lt;button onclick="copyLink('step-2b-reaconverter-for-windows')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗&lt;/button>
+&lt;/div>
+&lt;meta itemprop="name" content="Step 2b: reaConverter for Windows">
+&lt;div itemprop="text" class="hidden-text">Use the paid or trial version of reaConverter for Windows to convert your SVG to an SWF file&lt;/div>
+&lt;div itemprop="text">&lt;p>If your employer prohibits the use of online converters or it gets discontinued, you can always settle for their paid non-Adobe option (Currently reaConverter 7 for Windows).&lt;/p>
+&lt;p>The software comes in editions, you'll need at least the Standard Edition of reaConverter 7 for this to work from my limited experiments. Older versions may also work.&lt;/p>
+&lt;p>&lt;strong>A free trial is available&lt;/strong>&lt;/p>
+&lt;p>Once done, continue with &lt;a href="#step-3-restoring-transparency-with-jpexs">step 3&lt;/a>.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;div itemscope itemscope itemtype="https://schema.org/HowToStep">
+&lt;div class="howto-step">
+&lt;a href="#step-2c-svg2swf">
+&lt;h2 tabindex="-1" id="step-2c-svg2swf">Step 2c: SVG2SWF&lt;/h2>
+&lt;/a>
+&lt;button onclick="copyLink('step-2c-svg2swf')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗&lt;/button>
+&lt;/div>
+&lt;meta itemprop="name" content="Step 2c: SVG2SWF">
+&lt;div itemprop="text" class="hidden-text">Use the open-source SVG2SWF tool to convert your SVG to an SWF file&lt;/div>
+&lt;div itemprop="text">&lt;p>This method relies on the old free and open-source software SVG2SWF.&lt;br />
+&lt;a rel="external" href="https://sourceforge.net/projects/svg2swf/files/svg2swf/0.5/">https://sourceforge.net/projects/svg2swf/files/svg2swf/0.5/&lt;/a>&lt;/p>
+&lt;p>Outside of being free indefinitely, it offers no benefit over the prior methods.&lt;br />
+Sounds simple enough right? You'd be &lt;strong>wrong&lt;/strong>.&lt;br />
+This program is &lt;em>very&lt;/em> old, but still works with a catch. It's made for 32bit Windows, specifically Windows XP 32bit.&lt;/p>
+&lt;p>To save yourself the headache of trying out other Windows versions, set up a Windows XP 32bit VM. There are plenty of tutorials for setting up a VM. If you are on Windows, use VMware Workstation for simplicity.&lt;br />
+&lt;strong>Remember to not connect Windows XP VMs to the internet&lt;/strong>&lt;/p>
+&lt;p>When that's done, transfer the tool and SVG file onto it and run the following command with your paths:&lt;/p>
+&lt;p>&lt;em>svg2swf.exe input.svg output.swf&lt;/em>&lt;br />
+input.svg = path to your file (has to exist)&lt;br />
+output.swf = path to the output file (will be created)&lt;/p>
+&lt;/div>
+&lt;/div>&lt;div itemscope itemscope itemtype="https://schema.org/HowToStep">
+&lt;div class="howto-step">
+&lt;a href="#step-3-restoring-transparency-with-jpexs">
+&lt;h2 tabindex="-1" id="step-3-restoring-transparency-with-jpexs">Step 3: Restoring Transparency with JPEXS&lt;/h2>
+&lt;/a>
+&lt;button onclick="copyLink('step-3-restoring-transparency-with-jpexs')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗&lt;/button>
+&lt;/div>
+&lt;meta itemprop="name" content="Step 3: Restoring Transparency with JPEXS">
+&lt;div itemprop="text" class="hidden-text">Use JPEXS to restore native transparency to your SWF file&lt;/div>
+&lt;div itemprop="text">&lt;p>You'll have to install JPEXS on your PC for this to work.
+&lt;a rel="external" href="https://github.com/jindrapetrik/jpexs-decompiler/releases">https://github.com/jindrapetrik/jpexs-decompiler/releases&lt;/a>&lt;/p>
+&lt;p>Just import your SWF into JPEXS to delete the added background layer(s) and save/recompile the SWF file.&lt;/p>
+&lt;p>&amp;lt;img src="https://ucarecdn.com/b3ca8a4e-08be-447f-85e0-b9e399bf1309/jpexsRestoreTransparency.webp"
+alt="Screenshot from JPEXS."&lt;/p>
+&lt;pre>&lt;code>style=&amp;quot;width: 100%; aspect-ratio: 1000 / 700; &amp;quot;
+class=&amp;quot;blogImage&amp;quot;/&amp;gt;&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;/div>&lt;div itemscope itemscope itemtype="https://schema.org/HowToStep">
+&lt;div class="howto-step">
+&lt;a href="#step-4-importing-into-gamemaker">
+&lt;h2 tabindex="-1" id="step-4-importing-into-gamemaker">Step 4: Importing into GameMaker&lt;/h2>
+&lt;/a>
+&lt;button onclick="copyLink('step-4-importing-into-gamemaker')" class="copy-anchor-button jsOnly" title="Copy link to this step">🔗&lt;/button>
+&lt;/div>
+&lt;meta itemprop="name" content="Step 4: Importing into GameMaker">
+&lt;div itemprop="text" class="hidden-text">Import your SWF file into GameMaker and enable anti-aliasing&lt;/div>
+&lt;div itemprop="text">&lt;p>Please note, you will need to use the &lt;em>draw_set_swf_aa_level&lt;/em> and &lt;em>draw_enable_swf_aa&lt;/em> functions in GameMaker to enable anti-aliasing of your SWFs, otherwise, they will look very jagged.&lt;/p>
+&lt;hr />
+&lt;p>draw_set_swf_aa_level(1);&lt;br />
+draw_enable_swf_aa(true);&lt;/p>
+&lt;hr />
+&lt;p>For more information consult the official documentation:&lt;br />
+&lt;a rel="external" href="https://manual.gamemaker.io/monthly/en/Settings/Texture_Information/Non-Bitmap_Sprites.htm">https://manual.gamemaker.io/monthly/en/Settings/Texture_Information/Non-Bitmap_Sprites.htm&lt;/a>&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;p>And that's all I have to teach you about using SVGs in GameMaker.&lt;/p>
+&lt;p>Feel free to reach out if you know of a better way or if this becomes outdated!&lt;/p></description></item><item><title>Unofficial Sonic Mania Mobile Port for Android</title><pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/</link><guid>https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/</guid><description xml:base="https://dynamotivation.com/portfolio/software/unofficial-sonic-mania-mobile-port/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">Unofficial Sonic Mania Mobile Prototype&lt;/h3>
+&lt;div class="infobox-content">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;d03cdf7e-4a3f-430d-8c09-d30ba87b4ecc&amp;#x2F;sonicmaniamobilelogo.avif" fetchpriority="high"
+alt="Unofficial Sonic Mania Mobile Prototype Logo"
+style="view-transition-name: abeafeaaecbabaeebdbbbe; width: 100%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Unreleased&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>May 30, 2019&lt;/dd>
+&lt;dt>Development environment&lt;/dt>
+&lt;dd>GameMaker Studio 1.4&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>GML (GameMaker Language)&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Android&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Lost&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>The &lt;em>&lt;strong>Unofficial Sonic Mania Mobile Port&lt;/strong>&lt;/em> was an unreleased fan port of the video game Sonic Mania for Android devices. It was briefly developed using the GameMaker: Studio engine and the Sonic MAX Framework in 2019 at age 17. The intent was to bring the experience of Sonic Mania to mobile platforms.&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>Development for this game porting project took place across a few short days in May 2019. The original Sonic Mania was released in 2017 to critical acclaim as a return to form for the franchise. Its engine was an evolved version of the engine powering the Sonic 1, 2 and CD ports to mobile before it. Hence it was confusing to not get any sort of mobile port of Sonic Mania at the time. There were a few other projects online to be stumbled upon when searching Sonic Mania Android / IOS. Motivated by this a proof of concept was created of Sonic Mania running in another Engine, namely the familiar GameMaker: Studio engine utilizing the Sonic MAX framework for its included physics and game objects.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;hr />
+&lt;p>Armed with an idea and an engine a handful of "difficult" considered scenarios from Sonic Mania were recreated. This was largely influenced by what online communities cited as the features blocking a port:&lt;/p>
+&lt;ul>
+&lt;li>The title screen&lt;/li>
+&lt;li>Some menu and UI elements&lt;/li>
+&lt;li>The drop dash&lt;/li>
+&lt;li>Blue sphere bonus stages&lt;/li>
+&lt;li>Mania-style Green Hill Zone Act 1&lt;/li>
+&lt;/ul>
+&lt;p>Two early builds of the title screen portion remain and can be seen in action here, one on real hardware (Samsung Galaxy S4 Mini) and one running through the LDPlayer 9 emulator for better video capture (the stutter is caused by the recording software).&lt;/p>
+&lt;div class="blogVideoList">
+&lt;div>
+&lt;div class="blogVideoContainer" data-video-id="JnqwKowlnvw" data-src="https://www.youtube-nocookie.com/embed/JnqwKowlnvw" data-title="Unofficial Cancelled Sonic Mania 2019 Mobile Port | Title Screen Showcase">
+&lt;noscript>
+&lt;p>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port.&lt;br>
+&lt;a href="https://www.youtube.com/watch?v=JnqwKowlnvw" target="_blank">https://www.youtube.com/watch?v=JnqwKowlnvw&lt;/a>&lt;br>
+(JavaScript required for embedded video)&lt;/p>
+&lt;/noscript>
+&lt;/div>
+&lt;figcaption>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port.&lt;/figcaption>
+&lt;/div>
+&lt;div>
+&lt;div class="blogVideoContainer" data-video-id="63cwSdtklNw" data-src="https://www.youtube-nocookie.com/embed/63cwSdtklNw" data-title="Unofficial Cancelled Sonic Mania 2019 Mobile Port Real | Real Hardware Showcase">
+&lt;noscript>
+&lt;p>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port running on real hardware (Samsung Galaxy S4 Mini).&lt;br>
+&lt;a href="https://www.youtube.com/watch?v=63cwSdtklNw" target="_blank">https://www.youtube.com/watch?v=63cwSdtklNw&lt;/a>&lt;br>
+(JavaScript required for embedded video)&lt;/p>
+&lt;/noscript>
+&lt;/div>
+&lt;figcaption>Video showcasing the title screen of the cancelled Sonic Mania Mobile Port running on real hardware (Samsung Galaxy S4 Mini).&lt;/figcaption>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>This time there weren't any noteworthy hurdles in development as the engine and its programming language had become very familiar. The biggest hurdle faced had to do with projection.&lt;/p>
+&lt;p>The project featured 3 counts of difficult projections, 2 caught in the above videos.&lt;br />
+First of all there were the clouds in the title screen. While it may appear to be an easy argument to be made for draw_sprite_pos(...), there was much more to it. Most obvious of all is that the function does not correct its rendering for distortion of the triangles making of the sky plane. This had to be fixed with a custom shader. Additionally the scrolling nature of the cloud necessitated temporary off screen rendering to texture (called surface in GameMaker) and then back to the screen with transformations applied.&lt;br />
+Secondly there was the island on the lower half of the title screen spinning around. This time instead of computing the offset in sprite drawing coordinates in screen space, GameMakers primitive 3d engine was used in combination with a camera and projection matrix. To line the projection up with the real game, a series of screenshots was used to line them up just perfectly. As for the trees and such on the island (not present in the videos sadly), these were simple billboard sprites positioned on the island always rotating themselves to face the camera perfectly.
+The third difficult projection was the blue spheres bonus stages. Mathematically the projection does not make &lt;em>any&lt;/em> sense based on a realistic sphere. This is where we have to remember the origin of this effect, Sonic 3. This means the projection logic cannot have been computationally heavy. And indeed, charting the x and y locations on screen against Sonics actual distance from them reveals a point cluster for each axis that can be approximated closely with functions of the first and second degree (line and parabolic function).&lt;/p>
+&lt;p>With all these effects solved with the tools at hand the only missing thing was adding ripped textures and sound effects to the build to capture the demos.&lt;/p>
+&lt;h2 id="availability">Availability&lt;/h2>
+&lt;hr />
+&lt;p>Not before long the project was cancelled after these few "difficult" elements were proved to be possible and ran well on the at the time already old Samsung Galaxy S4 Mini.&lt;br />
+It's source code remains lost as it was stored on a now defunct source control solution.&lt;/p>
+&lt;p>Nowadays this project appears fully superseded by the official Netflix Sonic Mania Mobile Port and the fan decompilation and port to various platforms. Strangely the Netflix port appears to run way worse in the scenes present in both versions.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>This project featured a few nice opportunities for me to learn as I had never before worked with any sort of difficult projection logic at noteworthy performance levels. Previous exposure in the &lt;a href="/portfolio/software/joins-the-battle-meme-generator/">Everyone Joins the Battle Meme Generator&lt;/a> were limited to screen space transformations without any FPS requirements. Surfaces were also only drawn once and cached.&lt;br />
+This time proper world space coordinates and real time performance were required, leading to the usage of the 3D systems.&lt;br />
+Unbeknownst to me at this time this would be a huge help for my next project.&lt;/p></description></item><item><title>Stellenwerttafel Plus: Visual Number System Learning</title><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/stellenwerttafel-plus/</link><guid>https://dynamotivation.com/portfolio/software/stellenwerttafel-plus/</guid><description xml:base="https://dynamotivation.com/portfolio/software/stellenwerttafel-plus/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">Stellenwerttafel Plus&lt;/h3>
+&lt;div class="infobox-content">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9&amp;#x2F;stellenwerttafelPlusLogo.avif" fetchpriority="high"
+alt="Stellenwerttafel Plus Logo"
+style="view-transition-name: febcbaaccdaeabfffbeabceaafedda; width: 100%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Unreleased&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>January 2019&lt;/dd>
+&lt;dt>Development environment&lt;/dt>
+&lt;dd>GameMaker Studio 1.4&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>GML (GameMaker Language)&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Windows&lt;br>Android&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Preserved&lt;br>Closed Source&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>&lt;em>&lt;strong>Stellenwerttafel Plus&lt;/strong>&lt;/em> (meaning &lt;em>Place Value Chart Plus&lt;/em>) was an educational application developed by Dynamotivation in early 2019 at age 16. It represented a multi-platform port and enhancement of &lt;a rel="external" href="https://kortenkamps.net">Ulrich Kortenkamp&lt;/a>'s &lt;a rel="external" href="https://apps.apple.com/us/app/place-value-chart/id568750442">"Stellenwerttafel" IOS app&lt;/a>, designed to facilitate a playful understanding of various number systems for students in a visualized place value chart. The project was conceived as an internal school project with its creation provided significant insights into client-driven development and cross-platform adaptation.&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>Development for &lt;em>Stellenwerttafel Plus&lt;/em> took place over a few days in late January and early February 2019. The project originated as a "contract work" assignment for school, undertaken at age 16 in exchange for promised extra credit.&lt;/p>
+&lt;p>At the time the school faced a challenge: A lack of iPads for IT classes, reliance on old Windows 7 PCs, and prohibition of private phone use met with demand from parents and the curriculum to adequately teach in a digital manner.&lt;br />
+This necessitated a solution to bring the elected original "Stellenwerttafel" educational tool to cheaper platforms.&lt;/p>
+&lt;p>For its Windows and Android, GameMaker Studio 1.4 was chosen as the platform after being proven to be viable through &lt;a href="/portfolio/software/oss-space-adventure/">&lt;em>O.S.S.: Space Adventure&lt;/em>&lt;/a> and the &lt;a href="/portfolio/software/joins-the-battle-meme-generator/">&lt;em>Joins the Battle Meme Generator&lt;/em>&lt;/a> respectively. This effort addressed the school's immediate needs by extending the live of their old devices. The original "Stellenwerttafel" app, by Ulrich Kortenkamp, was not ported directly, but rather its interactive approach to teaching number systems through visual manipulation remade in the new engine.&lt;/p>
+&lt;p>Although development was brought to completion after school within a week and the final result was accepted, the app went ultimately unused due to other teachers disproving the enablement of old devices as a strategy going forwards.&lt;br />
+Any and all payment in form of credit was refused despite a 1-hour presentation detailing the application's capabilities, mathematical implementations and coding style being explored in detail as proof of work.&lt;/p>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>The development of &lt;em>Stellenwerttafel Plus&lt;/em> presented several distinct challenges:&lt;/p>
+&lt;ul>
+&lt;li>Platform adaptation:
+&lt;ul>
+&lt;li>Retain all required functionality while adapting the user experience to both Windows and Android environments.&lt;/li>
+&lt;li>Consistent behavior of math, especially floating points, were needed across all platforms.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New functionality to support for "base n" number systems.&lt;/li>
+&lt;li>External stakeholder&lt;/li>
+&lt;li>Time constraints:
+&lt;ul>
+&lt;li>Completion of development was achieved within a highly compressed timeframe to address the requesting teachers deadline for a proof of concept to keeping costs low.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Dealing with nonpayment:
+&lt;ul>
+&lt;li>Even though all requirements were met faster than expected, the school did not uphold their end of the bargain and did not provide any extra credit.&lt;/li>
+&lt;li>In response neither the app, nor its source code was not turned over.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>Stellenwerttafel Plus&lt;/em> faithfully replicated the learning methodology of the original "Stellenwerttafel" app.&lt;br />
+A particular focus was placed on a playful user experience for younger students, with "balls" representing different numbers which slid apart in a smooth and satisfying way when split into a lower denomination.&lt;/p>
+&lt;p>Key features included:&lt;/p>
+&lt;ul>
+&lt;li>Interactive number learning:
+&lt;ul>
+&lt;li>Students could intuitively manipulate numerical representations by dragging a "ball" that would visually fuse and split, thereby fostering an understanding of place value.&lt;/li>
+&lt;li>Marking overflows to showcase where several digits could be optimized away into a bigger digit.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Comprehensive support for various number systems:
+&lt;ul>
+&lt;li>Decimal (base 10)&lt;/li>
+&lt;li>Binary (base 2)&lt;/li>
+&lt;li>Hexadecimal (base 16)&lt;/li>
+&lt;li>Octal (base 8)&lt;/li>
+&lt;li>Custom "base n" systems&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Generating the German word for any given number&lt;/li>
+&lt;li>Cross-platform availability:
+&lt;ul>
+&lt;li>Windows&lt;/li>
+&lt;li>Android&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList {
+flex-direction: column;
+}
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;7ff7d6d6-e097-40d1-a531-fb6207b25651&amp;#x2F;stellenwerttafelplusbinaryscreenshot.avif"
+alt="Stellenwerttafel Plus binary mode screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Stellenwerttafel Plus&lt;/em> binary mode screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;394b018b-1655-4ebe-884e-23d263e6ef11&amp;#x2F;stellenwerttafelplusdecimalscreenshot.avif"
+alt="Stellenwerttafel Plus decimal mode screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Stellenwerttafel Plus&lt;/em> decimal mode screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;f00b51f6-ba74-4a81-a9df-f4aaa2f04e89&amp;#x2F;stellenwerttafelplusdecimalscreenshotoverflow.avif"
+alt="Stellenwerttafel Plus decimal mode with overflow screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Stellenwerttafel Plus&lt;/em> decimal mode with overflow screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="availability">Availability&lt;/h2>
+&lt;hr />
+&lt;p>For the aforementioned reasons &lt;em>Stellenwerttafel Plus&lt;/em> was never formally released to the public or provided to the school.&lt;br />
+Ultimately, the extra credit was not required, and the school successfully secured funding for iPads, minimizing impact on both sides.&lt;/p>
+&lt;p>Out of respect for the original author, Ulrich Kortenkamp, and due to the absence of explicit permission for distribution, &lt;em>Stellenwerttafel Plus&lt;/em> was never made publicly available. The original source code is preserved, though there are no current plans for its release or further development.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>The development of &lt;em>Stellenwerttafel Plus&lt;/em> provided insights into educational software development, client-based projects, and intellectual property management:&lt;/p>
+&lt;ul>
+&lt;li>Client-driven development:
+&lt;ul>
+&lt;li>Practical experience was gained in understanding, adapting to, and fulfilling specific client requirements.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cross-platform adaptation:
+&lt;ul>
+&lt;li>Solidified skills in porting existing application interfaces and logic to multiple distinct operating systems (Windows and Android) from a single codebase.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Project documentation:
+&lt;ul>
+&lt;li>Gained experience in formally presenting project outcomes and technical capabilities.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Joins the Battle Meme Generator: Fighting Game Memes</title><pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/joins-the-battle-meme-generator/</link><guid>https://dynamotivation.com/portfolio/software/joins-the-battle-meme-generator/</guid><description xml:base="https://dynamotivation.com/portfolio/software/joins-the-battle-meme-generator/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">Joins the Battle Meme Generator&lt;/h3>
+&lt;div class="infobox-content">
+&lt;div class="infobox-switcher">
+&lt;input type="radio" name="switch-httpsdynamotivationcomportfoliosoftwarejoinsthebattlememegenerator" id="httpsdynamotivationcomportfoliosoftwarejoinsthebattlememegenerator-img-0" class="infobox-switcher-radio" checked hidden />
+&lt;div class="infobox-big-item">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;20719464-83fb-4d9e-8940-29de5a3275ec&amp;#x2F;joinsthebattleeditorlogoremastered.avif" fetchpriority="high" alt="Joins the Battle Meme Generator remastered logo" class="blogImage infobox-big-img" style="view-transition-name: bdebffafddcbababfecfcbcaffd; aspect-ratio: 512 / 512; border-radius: 20%;"/>
+&lt;/div>
+&lt;label for="httpsdynamotivationcomportfoliosoftwarejoinsthebattlememegenerator-img-0" class="infobox-thumb-label">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;20719464-83fb-4d9e-8940-29de5a3275ec&amp;#x2F;joinsthebattleeditorlogoremastered.avif" loading="lazy" alt="Joins the Battle Meme Generator remastered logo" class="blogImage infobox-thumb" style="border-radius: 20%;"/>
+&lt;/label>
+&lt;input type="radio" name="switch-httpsdynamotivationcomportfoliosoftwarejoinsthebattlememegenerator" id="httpsdynamotivationcomportfoliosoftwarejoinsthebattlememegenerator-img-1" class="infobox-switcher-radio" hidden />
+&lt;div class="infobox-big-item">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;53467976-971a-4278-beb9-4947a99103a6&amp;#x2F;JoinsTheBattleMemeGeneratorLogo.avif" alt="Joins the Battle Meme Generator original logo" class="blogImage infobox-big-img" style="view-transition-name: ebfeebccfcdeeffcedefccaeaddf; aspect-ratio: 512 / 512; border-radius: 20%;"/>
+&lt;/div>
+&lt;label for="httpsdynamotivationcomportfoliosoftwarejoinsthebattlememegenerator-img-1" class="infobox-thumb-label">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;53467976-971a-4278-beb9-4947a99103a6&amp;#x2F;JoinsTheBattleMemeGeneratorLogo.avif" loading="lazy" alt="Joins the Battle Meme Generator original logo" class="blogImage infobox-thumb" style="border-radius: 20%;"/>
+&lt;/label>
+&lt;/div>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Delisted&lt;br>Formerly on Google Play&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>November 3, 2018&lt;/dd>
+&lt;dt>Development environment&lt;/dt>
+&lt;dd>GameMaker Studio 1.4&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>GML (GameMaker Language)&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Android&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Preserved&lt;br>Closed Source&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>&lt;em>&lt;strong>Joins the Battle Meme Generator&lt;/strong>&lt;/em> (originally &lt;em>... Joins the Battle Meme Generator&lt;/em>) was a successful Android application developed by Dynamotivation at age 16 and initially published by Mr. Unp3rf3ct. The application allowed users to create custom "X Joins the Battle" style splash screen memes, replicating the visual makeup seen in fighting game character reveal trailers. This project marked a significant pivot towards developing specialized content creation tools, mimicking preestablished art styles without without incorporating copyrighted assets.&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>Development for &lt;em>Joins the Battle Meme Generator&lt;/em> first started in October 2018 and continued up till April 2019, using GameMaker Studio 1.4. The project was inspired by a perceived gap in the market: Despite the rising popularity of the "X Joins the Battle" meme template, especially coinciding with the announcement of a major all-star fighting game, no dedicated feature-rich generator existed.&lt;/p>
+&lt;p>This application represented a combination of the previous concept "style it yourself", from &lt;a href="/portfolio/software/geo-background-generator">&lt;em>Geo Background Generator&lt;/em>&lt;/a>, and riding the popularity of external content, as &lt;a href="/portfolio/software/germemz">&lt;em>GerMemz&lt;/em>&lt;/a> did years prior. Importantly it also carved the way back from game development to traditional software utilities.&lt;/p>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>Developing &lt;em>Joins the Battle Meme Generator&lt;/em> presented a set of challenges, extending from core UI implementation to post-launch updates and architectural design:&lt;/p>
+&lt;ul>
+&lt;li>Custom UI implementation:
+&lt;ul>
+&lt;li>GameMaker Studio 1.4 lacked native UI components, necessitating a partial reimplementation of Material Design elements. This included shadows, fonts, regular and floating action buttons (FABs), and a custom density-independent pixel (DIP) system.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Post-Launch management:
+&lt;ul>
+&lt;li>As the first successful application a new aspect to development was added, communicating with users, planning and developing updates and fixes, and providing support.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Application of object-oriented programming:
+&lt;ul>
+&lt;li>Early prototypes resembled spaghetti code more than anything proper.&lt;br />
+Inheritance structures were an afterthought at first, but were eventually implemented to enable sharing and reuse of components, bringing back the learnings from other Java-based projects. This significantly deepened the understanding and practical application of Object-Oriented Programming (OOP) concepts in a tangible way.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Reuse of components:
+&lt;ul>
+&lt;li>These OOP advancements allowed for the efficient creation of different submenus and editors for the different game styles featured in this editor.&lt;br />
+In this process the resolution and aspect ratio handling, and UI were spun out into the private Libraries. The &lt;em>DynaScale Framework&lt;/em> was used and evolved in all future GameMaker projects and &lt;em>GMS Material Design Lite&lt;/em> was used in &lt;a href="/portfolio/software/stellenwerttafel-plus">&lt;em>Stellenwerttafel Plus&lt;/em>&lt;/a> and backported to &lt;a href="/portfolio/software/geo-background-generator">&lt;em>Geo Background Generator&lt;/em>&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;hr />
+&lt;p>Being a specialized utility allowed users extensive customization to replicate the iconic fighting game splash screen aesthetic. Key features included:&lt;/p>
+&lt;ul>
+&lt;li>Included visually similar components and presets
+&lt;ul>
+&lt;li>The included components were already made from scratch in the style and colors of the source material.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Composition editor
+&lt;ul>
+&lt;li>Users could precisely position, rotate and scale these and their own assets including character portraits, background splash effects and stylized text overlays.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Color control
+&lt;ul>
+&lt;li>Backgrounds were fully colorable by the user. A few color pallets extracted from trailers were shipped as presets. Accents and gradients were calculated on the fly.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Reactive components
+&lt;ul>
+&lt;li>The biggest feature was that this app was more than a mere template for an image editor and instead utilizing a game engine. Everything was rendered dynamically leveraging shaders and surfaces offered by the engine. This is very much akin to "non destructive editing" workflows and effect stacks found in modern paid photo editing software, but for free, premade, and smarter!&lt;br />
+Thanks to being in a game engine, a lot of features could be powered by pure math and constraints, such as the sadly never published video export feature. All animation featured was calculated based on composition and how reference trailers would behave, be it the timing, slide in or trajectory of lense flare effects.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Stylized Text Manipulation
+&lt;ul>
+&lt;li>The "Joins the Battle" text was editable and of course also dynamically rendered on the fly in terms of styling and appearance.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList {
+flex-direction: column;
+}
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;324e7ae4-6169-4635-a49c-7c6563178caa&amp;#x2F;joinsthebattlemainmenu.avif"
+alt="Joins the Battle Meme Generator main menu screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Joins the Battle Meme Generator&lt;/em> main menu screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;8de5babc-76fe-48b4-8ecc-37dacbccdf61&amp;#x2F;joinsthebattleeditormenu.avif"
+alt="Joins the Battle Meme Generator main editor menu screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Joins the Battle Meme Generator&lt;/em> main editor menu screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;79a7577d-cf7f-4efa-a593-21121d70a5de&amp;#x2F;joinsthebattlebackgroundmenu.avif"
+alt="Joins the Battle Meme Generator background editor menu screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Joins the Battle Meme Generator&lt;/em> background editor menu screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;p>The target audience for the generator was broad, encompassing fighting game fans across all age brackets and various game franchises, as well as content creators and social media users seeking to create mockups of their concepts and memes.&lt;/p>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList {
+flex-direction: column;
+}
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;f1a1eab7-238f-429e-bba7-c6ba5e073eef&amp;#x2F;joinsthebattle2018style.avif"
+alt="Joins the Battle Meme Generator 2018 trailer style example screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Joins the Battle Meme Generator&lt;/em> 2018 trailer style example screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;3586305e-2e3c-43df-8345-04a1646145a3&amp;#x2F;joinsthebattle2014style.avif"
+alt="Joins the Battle Meme Generator 2014 trailer style example screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Joins the Battle Meme Generator&lt;/em> 2014 trailer style example screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;1047f267-98fa-4b83-a891-101a11a3cde5&amp;#x2F;joinsthebattle2018unlockstyle.avif"
+alt="Joins the Battle Meme Generator ingame unlock style example screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Joins the Battle Meme Generator&lt;/em> ingame unlock style example screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;c2794126-6cd2-4eaa-ad20-237246836ffb&amp;#x2F;joinsthebattle2018thumbnailstyle.avif"
+alt="Joins the Battle Meme Generator video thumbnail style example screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>Joins the Battle Meme Generator&lt;/em> video thumbnail style example screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="reception-and-availability">Reception and Availability&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>Joins the Battle Meme Generator&lt;/em> received stellar feedback, achieving an average rating of approximately 4.5 stars across 350,000 installs on Google Play alone, over half a million in total. This success led to a high volume of reviews, user emails, and even attracted multiple sponsorship and acquisition offers, demonstrating its significant impact and popularity within its niche.&lt;/p>
+&lt;p>The application has been unavailable for several years due to educational and employment obligations, and a disconnect with the initial publisher. However, maintenance has resumed behind the scenes, with plans for the application to return soon, integrating lessons learned in the years since.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>Joins the Battle Meme Generator&lt;/em> provided critical insights into mobile application development, user experience, and the realities of public software distribution.&lt;/p>
+&lt;ul>
+&lt;li>UI considerations
+&lt;ul>
+&lt;li>Learned to watch out for the strength and weaknesses in terms of UI of any given engine or framework. The need to create &lt;em>GMS Material Design Lite&lt;/em> took away time and resources from developing the app, but taught valuable lessons in exchange about scaling and user experience.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>User-centric design
+&lt;ul>
+&lt;li>Successfully developed a tool that was easy to pick up and use across a wide target audience, providing powerful customization options for a popular meme format.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Product lifecycle management
+&lt;ul>
+&lt;li>Gained invaluable experience in managing a public release, including handling user feedback, planning updates, and the ongoing responsibilities of maintaining a live application.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Practical object-oriented programming
+&lt;ul>
+&lt;li>Deepened understanding of OOP by retroactively implementing inheritance and reusable components, demonstrating the practical application of architectural design for scalability.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Market niche identification
+&lt;ul>
+&lt;li>Proved the ability to identify an underrepresented, yet marketable market niche and develop a highly successful product to fill it, unlike the copyright setbacks encountered with &lt;a href="/portfolio/software/germemz">&lt;em>GerMemz&lt;/em>&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>BenPlaysGames Soundboard: YouTuber Soundboard</title><pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/ben-plays-games-soundboard/</link><guid>https://dynamotivation.com/portfolio/software/ben-plays-games-soundboard/</guid><description xml:base="https://dynamotivation.com/portfolio/software/ben-plays-games-soundboard/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">BenPlaysGames Soundboard&lt;/h3>
+&lt;div class="infobox-content">
+&lt;div class="infobox-switcher">
+&lt;input type="radio" name="switch-httpsdynamotivationcomportfoliosoftwarebenplaysgamessoundboard" id="httpsdynamotivationcomportfoliosoftwarebenplaysgamessoundboard-img-0" class="infobox-switcher-radio" checked hidden />
+&lt;div class="infobox-big-item">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;6d67fb50-8a57-4fb5-bc12-8ab6b20857b4&amp;#x2F;benplaysgamessoundboardlogoremastered.avif" fetchpriority="high" alt="BenPlaysGames Soundboard new logo" class="blogImage infobox-big-img" style="view-transition-name: efbffdefdddaebdaffdddfffed; aspect-ratio: 512 / 512; border-radius: 20%;"/>
+&lt;/div>
+&lt;label for="httpsdynamotivationcomportfoliosoftwarebenplaysgamessoundboard-img-0" class="infobox-thumb-label">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;6d67fb50-8a57-4fb5-bc12-8ab6b20857b4&amp;#x2F;benplaysgamessoundboardlogoremastered.avif" loading="lazy" alt="BenPlaysGames Soundboard new logo" class="blogImage infobox-thumb" style="border-radius: 20%;"/>
+&lt;/label>
+&lt;input type="radio" name="switch-httpsdynamotivationcomportfoliosoftwarebenplaysgamessoundboard" id="httpsdynamotivationcomportfoliosoftwarebenplaysgamessoundboard-img-1" class="infobox-switcher-radio" hidden />
+&lt;div class="infobox-big-item">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;5bc20435-afe3-4f75-88eb-52a653bdcb0b&amp;#x2F;BenPlaysGamesSoundboard.avif" alt="BenPlaysGames Soundboard original logo" class="blogImage infobox-big-img" style="view-transition-name: dabbdcecddfddbcdcbffeacc; aspect-ratio: 512 / 512; border-radius: 20%;"/>
+&lt;/div>
+&lt;label for="httpsdynamotivationcomportfoliosoftwarebenplaysgamessoundboard-img-1" class="infobox-thumb-label">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;5bc20435-afe3-4f75-88eb-52a653bdcb0b&amp;#x2F;BenPlaysGamesSoundboard.avif" loading="lazy" alt="BenPlaysGames Soundboard original logo" class="blogImage infobox-thumb" style="border-radius: 20%;"/>
+&lt;/label>
+&lt;/div>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Delisted&lt;br>Formerly on Google Play&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>October 10, 2018&lt;/dd>
+&lt;dt>Development environment&lt;/dt>
+&lt;dd>Android Studio&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>Java&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Android&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Lost&lt;br>Closed Source&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>&lt;em>&lt;strong>BenPlaysGames Soundboard&lt;/strong>&lt;/em> was the second soundboard application for Android developed by Dynamotivation and published by Mr. Unp3rf3ct in late 2018. This time it featured sound clips of the UK based YouTuber &lt;a rel="external" href="https://www.youtube.com/@BensPlaysGames">BenPlaysGames&lt;/a> which Dynamotivation befriended before age 16. Hence this time the stage was set for a release without copyright troubles.&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>The development of the first version of the &lt;em>BenPlaysGames Soundboard&lt;/em> happened in around a day in October 2018. Rather than reuse the limited codebase of the previous soundboard &lt;a href="/portfolio/software/germemz/">&lt;em>GerMemz&lt;/em>&lt;/a>, the decision was made to base the entire project around an Apache-2.0 licensed template application developed &lt;a rel="external" href="https://github.com/csabatini/android-Soundboard">first&lt;/a> by &lt;a rel="external" href="https://github.com/csabatini">Caleb Sabatini&lt;/a> and having &lt;a rel="external" href="https://github.com/firekesti/Jay-Soundboard">its UI built&lt;/a> by &lt;a rel="external" href="https://github.com/firekesti">Kate "firekesti" Kelly&lt;/a>.&lt;/p>
+&lt;p>The app was developed entirely free of charge and published with approval, but without direct involvement of the Ben.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;hr />
+&lt;p>Drawing more parallels with &lt;a href="/portfolio/software/germemz/">&lt;em>GerMemz&lt;/em>&lt;/a>, the template also relied exclusively on Java in an Android Studio project. Therefore, given the previous experience, it was not hard to modify. While the first version only included library updates, minor sorting state bug fixes, new sounds and a differently themes UI; the second version expanded upon the template by incorporating a livestream indicator utilizing the youtube API. What ordinarily used to be a simple channel link, turned into an "on the air" indicator during live streams.&lt;/p>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList {
+flex-direction: column;
+}
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;0ab91ca7-92ce-4992-8473-ef9bcf1e10f8&amp;#x2F;benplaysgamessoundboardnormal.avif"
+alt="BenPlaysGames Soundboard screenshot."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>BenPlaysGames Soundboard&lt;/em> screenshot.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;3be5b8cd-8601-4c9e-949a-6b80a209e89d&amp;#x2F;benplaysgamessoundboardlive.avif"
+alt="BenPlaysGames Soundboard screenshot with live stream indicator."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>BenPlaysGames Soundboard&lt;/em> screenshot with live stream indicator.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;e68a4eaa-d8e4-40c2-84ff-d59aabd4b236&amp;#x2F;benplaysgamessoundboardfavs.avif"
+alt="BenPlaysGames Soundboard favorites view screenshot."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>BenPlaysGames Soundboard&lt;/em> favorites view screenshot.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;div class="blogImageList">
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;20c4aca4-ac43-4432-ab90-e96ced20efea&amp;#x2F;benplaysgamessoundboardlandscapetablet.avif"
+alt="BenPlaysGames Soundboard screenshot in landscape mode on a table."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 3072 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>&lt;em>BenPlaysGames Soundboard&lt;/em> screenshot in landscape mode on a table.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>There were only 2 real challenges this time around, both of which boiled down to waiting on Googles confirmation:&lt;/p>
+&lt;ul>
+&lt;li>Getting granted access to the YouTube Data API&lt;/li>
+&lt;li>Finding out what mild foul language to censor store listing content&lt;/li>
+&lt;/ul>
+&lt;h2 id="availability">Availability&lt;/h2>
+&lt;hr />
+&lt;p>The &lt;em>BenPlaysGames Soundboard&lt;/em> was a well received, low effort gag application for a small circle of friends and audience members. It was mainly used in lieu of a proper stream deck. Availability was limited to Android as this is what most participants used at the time.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>Since this was a quick and short lived project there really was not much to be learned. It mainly marked a turning point away from the "solo developed from the ground up"-mindset which would eventually culminate in &lt;a href="/portfolio/software/stellenwerttafel-plus/">&lt;em>Stellenwerttafel Plus&lt;/em>&lt;/a>.&lt;/p></description></item><item><title>Geo Background Generator</title><pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/geo-background-generator/</link><guid>https://dynamotivation.com/portfolio/software/geo-background-generator/</guid><description xml:base="https://dynamotivation.com/portfolio/software/geo-background-generator/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">Geo Background Generator&lt;/h3>
+&lt;div class="infobox-content">
+&lt;div class="infobox-switcher">
+&lt;input type="radio" name="switch-httpsdynamotivationcomportfoliosoftwaregeobackgroundgenerator" id="httpsdynamotivationcomportfoliosoftwaregeobackgroundgenerator-img-0" class="infobox-switcher-radio" checked hidden />
+&lt;div class="infobox-big-item">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;68a9490a-afbf-4b4a-8dd3-97c39be94a44&amp;#x2F;geobackgroundgeneratorlogoremastered.avif" fetchpriority="high" alt="Geo Background Generator remastered logo" class="blogImage infobox-big-img" style="view-transition-name: ebdeaaafbadecafffbaffec; aspect-ratio: 512 / 512; border-radius: 20%;"/>
+&lt;/div>
+&lt;label for="httpsdynamotivationcomportfoliosoftwaregeobackgroundgenerator-img-0" class="infobox-thumb-label">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;68a9490a-afbf-4b4a-8dd3-97c39be94a44&amp;#x2F;geobackgroundgeneratorlogoremastered.avif" loading="lazy" alt="Geo Background Generator remastered logo" class="blogImage infobox-thumb" style="border-radius: 20%;"/>
+&lt;/label>
+&lt;input type="radio" name="switch-httpsdynamotivationcomportfoliosoftwaregeobackgroundgenerator" id="httpsdynamotivationcomportfoliosoftwaregeobackgroundgenerator-img-1" class="infobox-switcher-radio" hidden />
+&lt;div class="infobox-big-item">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;af30c773-bf10-495b-b181-115f6fe5a3e0&amp;#x2F;GeoBackgroundGenerator.avif" alt="Geo Background Generator old logo" class="blogImage infobox-big-img" style="view-transition-name: dfbabeeaadaadcfbbfedbcbde; aspect-ratio: 512 / 512; border-radius: 20%;"/>
+&lt;/div>
+&lt;label for="httpsdynamotivationcomportfoliosoftwaregeobackgroundgenerator-img-1" class="infobox-thumb-label">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;af30c773-bf10-495b-b181-115f6fe5a3e0&amp;#x2F;GeoBackgroundGenerator.avif" loading="lazy" alt="Geo Background Generator old logo" class="blogImage infobox-thumb" style="border-radius: 20%;"/>
+&lt;/label>
+&lt;/div>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Delisted&lt;br>Formerly on Google Play&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>April 1, 2018&lt;/dd>
+&lt;dt>Development environment&lt;/dt>
+&lt;dd>GameMaker Studio 1.4&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>GML (GameMaker Language)&lt;br>Java&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Android&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Lost&lt;br>Closed Source&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>&lt;em>&lt;strong>Geo Background Generator&lt;/strong>&lt;/em> was the first GameMaker Studio 1.4 powered utility developed by Dynamotivation and published by Mr. Unp3rf3ct in 2018 at age 16. It was used to generate aesthetically pleasing geometry pattern based backgrounds from user input colors and parameters.&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>The development of &lt;em>Geo Background Generator&lt;/em> came along quickly in a couple of days in 2018 after a few days spent working out the real time graphic capabilities of GameMaker Studio 1.4. The achieved effects proved to be pretty and a nice contrast with the at the time popular material design of Android. The core system was extracted from a game prototype being worked on and integrated with its own pixel art UI, reminiscent of said prototype.&lt;br />
+Later on the small UI library &lt;em>GMS Material Design Lite&lt;/em>, developed too by Dynamotivation for the &lt;a href="/portfolio/software/joins-the-battle-meme-generator/">&lt;em>Joins the Battle Meme Generator&lt;/em>&lt;/a>, was integrated to better show off the intended use as a contrast to the sterile system UI.&lt;/p>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>During the development of &lt;em>Geo Background Generator&lt;/em> a few minor challenges arose:&lt;/p>
+&lt;ul>
+&lt;li>Optimizing math operations using caching&lt;/li>
+&lt;li>Scaling to the devices resolution without introducing pixelation&lt;/li>
+&lt;li>Interop with the operating system
+&lt;ul>
+&lt;li>Interop capabilities written in Java were needed to talk to the underlying Android OS for saving the generated backgrounds.&lt;br />
+This is necessitated by the sandboxing GameMaker Studio 1.4 imposes on applications for security.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;hr />
+&lt;p>In the latest version the features included:&lt;/p>
+&lt;ul>
+&lt;li>Selecting shapes
+&lt;ul>
+&lt;li>Users could choose between parallelograms, squares and triangles.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Selecting shape size&lt;/li>
+&lt;li>Selecting background gradient
+&lt;ul>
+&lt;li>Unicolor, horizontal and vertical gradients, and quadricolor effects for colorful shape blending.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Brightness control of the color blend&lt;/li>
+&lt;li>Prompting permission and saving to the devices storage&lt;/li>
+&lt;/ul>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList {
+flex-direction: column;
+}
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;5bb09828-843b-4877-958f-b01dd1e662ca&amp;#x2F;geobackgroundgeneratornewui.avif"
+alt="Geo Background Generator screenshot of the new user interface."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 432 / 768; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>Geo Background Generator screenshot of the new user interface.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;9bc23bd1-fed1-40a3-b889-77dd5203f44b&amp;#x2F;geobackgroundgeneratorcomplexexamplepattern.avif"
+alt="Geo Background Generator screenshot of a simple horizontal gradient background with big squares."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 432 / 768; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>Geo Background Generator screenshot of a simple horizontal gradient background with big squares.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;746df704-5b06-4b57-9558-2b092b119f58&amp;#x2F;geobackgroundgeneratorsimpleexamplepattern.avif"
+alt="Geo Background Generator screenshot of a more complex quadricolor background with small triangles."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 432 / 768; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>Geo Background Generator screenshot of a more complex quadricolor background with small triangles.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;489c6beb-7edb-4403-85a2-33bcbda91848&amp;#x2F;geobackgroundgeneratoroldui.avif"
+alt="Geo Background Generator screenshot of the old user interface."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 432 / 768; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>Geo Background Generator screenshot of the old user interface.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="availability">Availability&lt;/h2>
+&lt;hr />
+&lt;p>The application used to be officially available on Google Play, but has been unavailable for several years due to educational and employment obligations on top of lost interest by the initial publisher. The source code has also been lost in the meantime, but with the skill set achieved in the meantime would be easy to remake.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>The development of &lt;em>Geo Background Generator&lt;/em> proved GameMaker Studio to be a viable platform not only for games, but also for regular software and utilities. Other than that the main learning was how to work around the sandbox and interact with the operating system.&lt;/p></description></item><item><title>OSS Space Adventure: Retro Arcade Shooter for Android</title><pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/oss-space-adventure/</link><guid>https://dynamotivation.com/portfolio/software/oss-space-adventure/</guid><description xml:base="https://dynamotivation.com/portfolio/software/oss-space-adventure/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">OSS Space Adventure&lt;/h3>
+&lt;div class="infobox-content">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;702e2ffa-47d7-4f7f-9844-1197454c5cfc&amp;#x2F;OSSSpaceAdventure.avif" fetchpriority="high"
+alt="OSS Space Adventure Logo"
+style="view-transition-name: cbdbcceedcbfadacfdcdfedcbfb; width: 100%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Delisted&lt;br>Formerly on Google Play&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>February 25, 2018&lt;/dd>
+&lt;dt>Development environment&lt;/dt>
+&lt;dd>GameMaker Studio 1.4&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>GML (GameMaker Language)&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Android&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Preserved&lt;br>Closed Source&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>&lt;em>&lt;strong>OSS Space Adventure&lt;/strong>&lt;/em> (originally &lt;em>O.S.S.: Space Adventure&lt;/em>) was an arcady space shooter mobile game developed by Dynamotivation and published by Mr. Unp3rf3ct. Conceived as a personal technical demonstration, the project marked a pivotal point in the choice of programming languages, shifting focus from Java-based Android applications to cross platform game development using GameMaker Studio 1.4 and its GameMaker Language (GML). The acronym "O.S.S." stood for "Ordinary Space Shooter".&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>Development for &lt;em>OSS Space Adventure&lt;/em> began around February 2018 at age 15. The primary motivation was a desired shift in the tech stack. Following experience with Java for Android applications, the goal was to transition to a GameMaker as a more lenient and portable platform for game development, specifically GameMaker Studio 1.4 utilizing GameMaker Language (GML).&lt;/p>
+&lt;p>Hence the project's core purpose was to serve as a proof-of-concept. The focus was on learning the GameMaker Studio tool stack and creating applications with adaptive resolutions, and to eventually develop multiplatform software.&lt;/p>
+&lt;p>Game design and content took a back seat.&lt;/p>
+&lt;h2 id="gameplay">Gameplay&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>OSS Space Adventure&lt;/em> presented an arcady gameplay experience where the player controlled a spaceship navigating through a field of incoming asteroids in a variety of modes. The game featured a pixel art aesthetic with clear on-screen bars for health and cooldowns.&lt;br />
+Destroying asteroids led to gear upgrades. Over time, bigger asteroids appeared. Power-ups could be dropped from destroyed asteroids.&lt;/p>
+&lt;h1 id="core-loop">Core Loop&lt;/h1>
+&lt;p>Asteroids are always heading towards the players side of the screen and could either be dodged in an endless survival mode or destroyed using laser fire. Health and rate of fire were limited to force the player to mix up their strategy.&lt;/p>
+&lt;h2 id="modes">Modes&lt;/h2>
+&lt;h3 id="endless-mode">Endless Mode&lt;/h3>
+&lt;p>In this mode the core loop was executed infinitely, counting the players time and score.&lt;/p>
+&lt;h3 id="defend-mode">Defend Mode&lt;/h3>
+&lt;p>A later addition, this mode introduced a planetary defense objective. Asteroids not destroyed in time would count as a penalty, lowering the unrestorable health of the planet beneath. Spawn rates and speed was adjusted to make this style of gameplay viable.&lt;/p>
+&lt;h3 id="hardcore-variations">Hardcore Variations&lt;/h3>
+&lt;p>Both modes featured hardcore versions intended for quicker sessions.&lt;/p>
+&lt;h2 id="other-features">Other Features&lt;/h2>
+&lt;p>The game included an achievement system leveraging Google Play's services.&lt;/p>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList {
+flex-direction: column;
+}
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;3031c98e-aa6f-48bf-86b7-24a844c5f643&amp;#x2F;ossspaceadventuretitlescreen.avif"
+alt="OSS Space Adventure Main Menu Screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>OSS Space Adventure Main Menu Screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;075a0dda-92ce-46c3-8374-2524a5c4315e&amp;#x2F;ossspaceadventureendlessmode.avif"
+alt="OSS Space Adventure Endless Mode Screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>OSS Space Adventure Endless Mode Screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;9536dd98-62af-4392-98ca-77542c13ef32&amp;#x2F;ossspaceadventureprotectmode.avif"
+alt="OSS Space Adventure Protect Mode Screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>OSS Space Adventure Protect Mode Screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>The transition to GameMaker during development of &lt;em>OSS Space Adventure&lt;/em> involved several challenges&lt;/p>
+&lt;ul>
+&lt;li>New Coding Paradigm
+&lt;ul>
+&lt;li>A Complete transitioning from Java's, for a teenager, rather abstract object-oriented principles to GML's more direct, untyped, yet still object oriented principles.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pixel Art
+&lt;ul>
+&lt;li>First time creating pixel art and palettes in a memory efficient manner.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Audio Sourcing
+&lt;ul>
+&lt;li>Sourcing and integrating correctly licensed background music from platforms like freesound.org. Generating sound effects using waveform generators.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Gameplay Evolution
+&lt;ul>
+&lt;li>Initial gameplay was perceived as dull. This led to the addition of new modes and visual effects.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="availability">Availability&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>OSS Space Adventure&lt;/em> was publicly available on the Google Play Store for free starting February 25, 2018. Feedback from testers indicated a bug-free yet at first dull experience. However the pixel art, while functional, was low-resolution and lacked shading. The chosen background music, conversely, was generally well-received.&lt;/p>
+&lt;p>The game is no longer available on the Google Play Store, although the original source code is preserved.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>Developing &lt;em>OSS Space Adventure&lt;/em> provided valuable insights that profoundly influenced my approach to software and game development&lt;/p>
+&lt;ul>
+&lt;li>Tech Stack Pivot
+&lt;ul>
+&lt;li>Applying previously learned principles to an entirely new programming language and game engine.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Game Development Fundamentals
+&lt;ul>
+&lt;li>Gained practical experience in core game development concepts, including gameplay loop design, asset integration, and iterative feature development.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Adaptive Scaling
+&lt;ul>
+&lt;li>Practical application of adaptive resolution techniques for mobile devices.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Attribution
+&lt;ul>
+&lt;li>Hands-on experience with managing third-party integrations with proper attribution and license adherence. This is a strong contrast to the ill fated outcome of &lt;a href="/portfolio/software/germemz/">&lt;em>GerMemz&lt;/em>&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Integration with Third Party APIs and SSO
+&lt;ul>
+&lt;li>Achievements were handled by integrating with the Google Play APIs for signing in and tracking progress.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Project Tortuga: CoD Black Ops 3 Custom Zombies Map</title><pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/project-tortuga/</link><guid>https://dynamotivation.com/portfolio/software/project-tortuga/</guid><description xml:base="https://dynamotivation.com/portfolio/software/project-tortuga/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">Project Tortuga&lt;/h3>
+&lt;div class="infobox-content">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;177ad7a9-ddfe-4e45-9a65-cb5a55705a1e&amp;#x2F;projecttortugalogo.avif" fetchpriority="high"
+alt="Project Tortuga Call of Duty Black Ops 3 Custom Zombies Map Concept Logo"
+style="view-transition-name: ccdabefaaacddeeaaaefcddafab; width: 100%; aspect-ratio: 512 / 512; "
+class="blogImage"/>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Unreleased&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>June 10, 2017&lt;/dd>
+&lt;dt>Development Environment&lt;/dt>
+&lt;dd>Call of Duty: Black Ops 3 Mod Tools&lt;br>(Radiant)&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>GSC (Game Script Code)&lt;br>CSC (Client-Side Code)&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Windows&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Preserved (Original)&lt;br>Closed Source&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>&lt;em>&lt;strong>Project Tortuga&lt;/strong>&lt;/em> was a collaborative custom Zombies map concept for Call of Duty: Black Ops 3, primarily developed by Dynamotivation at age 15. Originally conceived as a narrative experience built upon existing lore, the project and its cancellation served as an important milestone in the process of learning 3D game design, game scripting, and project management. While the full vision was not realized a lot of foundational work was finished.&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>Development for &lt;em>Project Tortuga&lt;/em> was a joint effort between Dynamotivation and another aspiring mapper from June 2017 onwards at age 15. This initial collaboration consisted of extensive brainstorming, resulting in an ambitious shared vision for the map. A core personal goal for Dynamotivation was to learn 3D environment design using the engines Radiant editor, and to grasp the GSC and CSC scripting languages for custom content.&lt;/p>
+&lt;p>However, due to the teammate's inability to continue development, Dynamotivation transitioned to solo development. Recognizing the immense scope of the original concept for one person the heavyhearted decision was made to discontinue the project.&lt;/p>
+&lt;h2 id="original-vision">Original Vision&lt;/h2>
+&lt;hr />
+&lt;p>The overarching narrative for &lt;em>Project Tortuga&lt;/em> was intended to branch off the original Zombies lore following "Zetsubo No Shima".&lt;br />
+The story envisioned the Zombies crew successfully capturing the Japanese ship in an alternate opening cutscene, avoiding destruction and stranding on a different island. This setting was supposed to draw architectural and environmental inspiration from Greek, Japanese, and potentially Gibraltarian aesthetics, becoming overrun with zombies upon the crew's arrival.&lt;/p>
+&lt;h3 id="conceptual-areas">Conceptual Areas&lt;/h3>
+&lt;ul>
+&lt;li>The shore&lt;/li>
+&lt;li>Town areas:
+&lt;ul>
+&lt;li>A plaza/market&lt;/li>
+&lt;li>A stage&lt;/li>
+&lt;li>A bar&lt;/li>
+&lt;li>A winery&lt;/li>
+&lt;li>A &lt;em>Fachwerk&lt;/em> (half-timbered) coast guard houses&lt;/li>
+&lt;li>Collapsed tunnels to implied additional town sections&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Military base&lt;/li>
+&lt;li>A volcano&lt;/li>
+&lt;/ul>
+&lt;h3 id="conceptual-features">Conceptual Features&lt;/h3>
+&lt;ul>
+&lt;li>Main and side easter egg quests&lt;/li>
+&lt;li>Evolving environment:
+&lt;ul>
+&lt;li>A central thematic element involved a "mountain" in the map's center being revealed as a weaponized active volcano during the Easter Egg quest.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Custom weapons:
+&lt;ul>
+&lt;li>The primary Easter Egg quest would involve collecting parts for different elemental staffs not seen in &lt;em>Origins&lt;/em> or &lt;em>Der Eisendrache&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Weapons from Call of Duty: WWII&lt;/li>
+&lt;/ul>
+&lt;h2 id="implemented-features">Implemented Features&lt;/h2>
+&lt;hr />
+&lt;p>Even before the decision to discontinue the project, several foundational elements were already implemented:&lt;/p>
+&lt;ul>
+&lt;li>Environmental block outs:
+&lt;ul>
+&lt;li>Initial block outs were created for the shore and the crew's boat, serving as the maps starting areas.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Architectural prefab:
+&lt;ul>
+&lt;li>A &lt;em>Fachwerk haus&lt;/em> prefab was developed as a template for consistent architecture style in town sections.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Third-party asset integration from the UGX and Modme forums:
+&lt;ul>
+&lt;li>Custom weapons&lt;/li>
+&lt;li>Mystery boxes&lt;/li>
+&lt;li>Custom perks&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Custom crafting and brewing system&lt;/li>
+&lt;li>UI elements to reflect different systems&lt;/li>
+&lt;/ul>
+&lt;div class="blogVideoList">
+&lt;div>
+&lt;div class="blogVideoContainer" data-video-id="DX2yZ10RhU0" data-src="https://www.youtube-nocookie.com/embed/DX2yZ10RhU0" data-title="Modified Archaicvirus Custom Buildable Script Showcase | Project Tortuga | CoD: BO3 Mod Tools">
+&lt;noscript>
+&lt;p>Video showcasing the primitive custom buildable and power switch script.&lt;br>
+&lt;a href="https://www.youtube.com/watch?v=DX2yZ10RhU0" target="_blank">https://www.youtube.com/watch?v=DX2yZ10RhU0&lt;/a>&lt;br>
+(JavaScript required for embedded video)&lt;/p>
+&lt;/noscript>
+&lt;/div>
+&lt;figcaption>Video showcasing the primitive custom buildable and power switch script.&lt;/figcaption>
+&lt;/div>
+&lt;div>
+&lt;div class="blogVideoContainer" data-video-id="6-dcCJUq5f4" data-src="https://www.youtube-nocookie.com/embed/6-dcCJUq5f4" data-title="Brewing in Archaicvirus Custom Buildable Script | Project Tortuga | CoD: BO3 Mod Tools">
+&lt;noscript>
+&lt;p>Video showcasing a custom perk brewing script.&lt;br>
+&lt;a href="https://www.youtube.com/watch?v=6-dcCJUq5f4" target="_blank">https://www.youtube.com/watch?v=6-dcCJUq5f4&lt;/a>&lt;br>
+(JavaScript required for embedded video)&lt;/p>
+&lt;/noscript>
+&lt;/div>
+&lt;figcaption>Video showcasing a custom perk brewing script.&lt;/figcaption>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>Due to &lt;em>Project Tortuga&lt;/em> premature cancellation it presented more than just technical challenges:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Team dissolution:&lt;/p>
+&lt;ul>
+&lt;li>The unexpected shift from a team project to a solo endeavor necessitated a re-evaluation and eventual cancellation of projects scope.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Unfamiliar tooling:&lt;/p>
+&lt;ul>
+&lt;li>Jumping from the Java Android App &lt;a href="/portfolio/software/germemz">&lt;em>GerMemz&lt;/em>&lt;/a> straight into the, at the time, sparingly documented mod tools of a 3d game was too big of a jump.&lt;/li>
+&lt;li>Two similar programming languages in GCS and CCS.&lt;/li>
+&lt;li>Much discussion taking place across multiple different forums, some invite only.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Project dependencies:&lt;/p>
+&lt;ul>
+&lt;li>Integrating numerous custom assets (weapons, perks, mystery boxes) from community contributors that themselves were still under active development and had bugs.&lt;/li>
+&lt;li>Understanding their (in)compatibilities with each other.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Game Scripting:&lt;/p>
+&lt;ul>
+&lt;li>Partially learning GCS (Game Code Script) and CCS (Client Code Script) was required for implementing custom content.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="availability">Availability&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>Project Tortuga&lt;/em> was not completed to its intended vision and was never publicly released.
+However one early version of the developed elements is preserved and has been recorded for easy preservation.&lt;/p>
+&lt;p>The walkthrough of an early block out with temporary textures is available on YouTube:&lt;/p>
+&lt;div class="blogVideoList">
+&lt;div>
+&lt;div class="blogVideoContainer" data-video-id="6-TWUN5PdHc" data-src="https://www.youtube-nocookie.com/embed/6-TWUN5PdHc" data-title="Walkthrough of Cancelled Project Tortuga Custom Zombies Map | CoD: BO3 Mod Tools">
+&lt;noscript>
+&lt;p>Video walkthrough of an early block out of the starting area with temporary textures.&lt;br>
+&lt;a href="https://www.youtube.com/watch?v=6-TWUN5PdHc" target="_blank">https://www.youtube.com/watch?v=6-TWUN5PdHc&lt;/a>&lt;br>
+(JavaScript required for embedded video)&lt;/p>
+&lt;/noscript>
+&lt;/div>
+&lt;figcaption>Video walkthrough of an early block out of the starting area with temporary textures.&lt;/figcaption>
+&lt;/div>
+&lt;/div>
+&lt;p>Regrettably, this is not anywhere near the final version or the point where development was cancelled, but it does include the Fachwerk house, bar with corridor to wine cellar, stage with guillotine and the smiths corner.
+Absent are the mystery box, wine cellar itself, military base and any of the finished vista models for the backdrop.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>The whole process and hardship provided me with important insights into game development, 3D design, scripting, and most importantly project management:&lt;/p>
+&lt;ul>
+&lt;li>Collaboration:
+&lt;ul>
+&lt;li>Experienced the good and bad aspects of collaboration through working with a teammate.&lt;/li>
+&lt;li>Exchange with other modders and developers in the scene asking for and providing help.&lt;/li>
+&lt;li>Relying on dependencies such as the game and third-party assets instead of rolling everything ourselves.&lt;/li>
+&lt;li>Distributing tasks to the best fit team member.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>3D Environment Development:
+&lt;ul>
+&lt;li>I gained hands-on experience with a professional-grade 3D level editor (Radiant).&lt;/li>
+&lt;li>Got to learn the fundamental concepts of environmental blocking, texturing, and asset placement within a game engine.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Game Scripting Fundamentals:
+&lt;ul>
+&lt;li>Gained knowledge in game scripting (GCS/CCS) and a general understanding of how game modding differs from straight forward source code access.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Project Management:
+&lt;ul>
+&lt;li>Understood the gap between an expansive creative vision and the practical execution.&lt;/li>
+&lt;li>Learned to account for consider unknown factors and uncertainties.&lt;/li>
+&lt;li>Discovered principles of agile development through daily talks and weekly meetups to discuss the project.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Scope Assessment:
+&lt;ul>
+&lt;li>Learned a critical lesson in correctly (re)evaluating project scope.&lt;/li>
+&lt;li>Prevented falling for the sunken cost fallicy by accepting the cancellation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>GerMemz: German TV Commercial Meme Soundboard</title><pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate><author>Unknown</author><link>https://dynamotivation.com/portfolio/software/germemz/</link><guid>https://dynamotivation.com/portfolio/software/germemz/</guid><description xml:base="https://dynamotivation.com/portfolio/software/germemz/">&lt;aside class="infobox">
+&lt;h3 class="infobox-title">GerMemz&lt;/h3>
+&lt;div class="infobox-content">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;3d805b9c-6965-40fe-b9c6-e7595b33f403&amp;#x2F;GerMemzLogo.avif" fetchpriority="high"
+alt="GerMemz Logo"
+style="view-transition-name: edbdbcbaaffecfadcccaedaacde; width: 100%; aspect-ratio: 512 / 512; "
+class="blogImage"/>
+&lt;dl>
+&lt;dt>Availability&lt;/dt>
+&lt;dd>Unreleased&lt;/dd>
+&lt;dt>Initial completion&lt;/dt>
+&lt;dd>February 13, 2017&lt;/dd>
+&lt;dt>Development environment&lt;/dt>
+&lt;dd>Android Studio&lt;/dd>
+&lt;dt>Written in&lt;/dt>
+&lt;dd>Java&lt;/dd>
+&lt;dt>Operating system(s)&lt;/dt>
+&lt;dd>Android&lt;/dd>
+&lt;dt>Source code&lt;/dt>
+&lt;dd>Lost&lt;/dd>
+&lt;/dl>
+&lt;/div>
+&lt;/aside>
+&lt;p>&lt;em>&lt;strong>GerMemz&lt;/strong>&lt;/em> (from "German Memes") was a mobile soundboard application and the first serious Dynamotivation project developed in 2017 at age 14. It was designed for playback of popular German television commercial soundbites, quotes and jingles. The application was created for Android phones and stood out as an early entrant into the niche of curated German TV commercial soundboards, which at that time had no competitors.&lt;/p>
+&lt;h2 id="development">Development&lt;/h2>
+&lt;hr />
+&lt;p>Development for &lt;em>GerMemz&lt;/em> commenced around early 2017 at age 14, with the first proof of concept build created on February 13, 2017.&lt;/p>
+&lt;p>It was written in Java utilizing Android Studio.&lt;/p>
+&lt;p>The project was conceived due to a perceived void in the market and demand among friend groups: A lack of dedicated and easy-to-use soundboard for German TV commercial memes.
+These ever present commercials on TV had been moved from annoyance to infamy by edits on YouTube.&lt;/p>
+&lt;p>Content was periodically added in waves, starting with 9, then 15, 21, and 30 sounds from 1&amp;amp;1 commercials, followed by a separate addition of 15 Carglass sounds.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>GerMemz&lt;/em> functioned as a multi-page soundboard, categorizing its content across multiple pages, each containing 15 individual sound clips, for a total of 45 sounds.&lt;/p>
+&lt;p>The sound clips were derived from widely recognized German television commercials. The first 30 sounds stemmed from "1&amp;amp;1" commercials, featuring the distinctive voice lines of Marcel D'Avis. The other 15 sounds originated from "Carglass" commercials, prominently featuring the voice and lines of Thorsten Bohms.&lt;/p>
+&lt;p>Highlights:&lt;/p>
+&lt;ul>
+&lt;li>45 Sounds&lt;/li>
+&lt;li>Stop button&lt;/li>
+&lt;li>Introductory Tutorial
+&lt;ul>
+&lt;li>Upon its initial launch, an interactive tutorial, highlighting clickable areas and their functions, was provided to the user, as was common in the Android 4 and 5 era.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Themed Pages
+&lt;ul>
+&lt;li>The visual design of the application pages was a tweaked, bolder Material Design. The theming was customized to reflect the branding of the respective company per page (Carglass and 1&amp;amp;1).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList {
+flex-direction: column;
+}
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;6350bda9-6730-41e8-95ba-c323dabdc6bc&amp;#x2F;GerMemzScreenshot0.avif"
+alt="GerMemz Main Menu Screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>GerMemz Main Menu Screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;668abddb-631f-4c0f-ba30-17d9a127e9f6&amp;#x2F;GerMemzScreenshot1.avif"
+alt="GerMemz Page 1 Screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>GerMemz Page 1 Screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;36c55db4-dd30-46c6-8fd7-2a7456f69acf&amp;#x2F;GerMemzScreenshot2.avif"
+alt="GerMemz Page 2 Screenshot"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 100%; aspect-ratio: 1080 / 1920; border-radius: 1rem; "
+class="blogImage"/>
+&lt;figcaption>GerMemz Page 2 Screenshot&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="challenges">Challenges&lt;/h2>
+&lt;hr />
+&lt;p>Developing &lt;em>GerMemz&lt;/em> presented several significant hurdles:&lt;/p>
+&lt;ul>
+&lt;li>First-Time Development:
+&lt;ul>
+&lt;li>As this was my first exposure to high-level object-oriented languages such as Java, the learning curve was quite steep.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Language Barrier:
+&lt;ul>
+&lt;li>A lack of English proficiency at the time hindered effective searching for and understanding of advanced or detailed online tutorials.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="availability">Availability&lt;/h2>
+&lt;hr />
+&lt;p>&lt;em>GerMemz&lt;/em> was initially well-received by the small circle of friends.&lt;/p>
+&lt;p>The application was however never publicly released on platforms such as the Google Play Store due to significant intellectual property concerns. These included the unauthorized use of:&lt;/p>
+&lt;ul>
+&lt;li>Company logos (Carglass, 1&amp;amp;1)&lt;/li>
+&lt;li>Commercial jingles&lt;/li>
+&lt;li>The voices and recognizable lines of actors Thorsten Bohms and Marcel D'Avis&lt;/li>
+&lt;/ul>
+&lt;p>The original APKs and decompiled source code for GerMemz are still preserved and remain unreleased.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;hr />
+&lt;p>Regardless, developing &lt;em>GerMemz&lt;/em> provided lots of insights, significantly shaping my understanding of software development and influencing my subsequent career path:&lt;/p>
+&lt;ul>
+&lt;li>Niche Specialization:
+&lt;ul>
+&lt;li>The project taught me how to recognise market niches and is responsible for the continued efforts towards creating highly specialized edit- and generation utilities.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Mobile App Advantages:
+&lt;ul>
+&lt;li>Demonstrated the inherent ease of distributing and spreading mobile applications due to the widespread availability of smartphones.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Intellectual Property and Monetization:
+&lt;ul>
+&lt;li>A critical lesson learned was the infeasibility of monetizing content directly tied to specific persons or established copyrights and trademarks.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>- All News</title><link rel="self" type="application/atom+xml" href="https://dynamotivation.com/news/atom.xml"/><link rel="alternate" type="text/html" href="https://dynamotivation.com/news/"/><generator uri="https://www.getzola.org/">Zola</generator><updated>2025-09-15T00:00:00+00:00</updated><id>https://dynamotivation.com/news/atom.xml</id><entry xml:lang="en"><title>Mr. Unp3rf3ct Joins Dynamotivation</title><published>2025-09-15T00:00:00+00:00</published><updated>2025-09-15T00:00:00+00:00</updated><author><name>
+Unknown</name></author><link rel="alternate" type="text/html" href="https://dynamotivation.com/news/general/mr-unp3rf3ct-joins-dynamotivation/"/><id>https://dynamotivation.com/news/general/mr-unp3rf3ct-joins-dynamotivation/</id><content type="html" xml:base="https://dynamotivation.com/news/general/mr-unp3rf3ct-joins-dynamotivation/">
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;8edbe6b7-c42f-4004-8b45-806e0fb93d5a&amp;#x2F;DynamotivationXMrUnp3rf3ct.svg"
+alt="Mr. Unp3rf3ct joins Dynamotivation"
+fetchpriority="high"
+style="width: 100%; aspect-ratio: 1920 / 1080; border-radius: 1rem; "
+class="blogImage"/>
+&lt;p>Today it's a pleasure to announce the applications of Mr. Unp3rf3ct are joining the Dynamotivation portfolio!&lt;/p>
+&lt;p>This merger has been a long time coming, as some of you may have noticed from the app mosaic on the homepage. Initially, there was no intention of bringing back the original applications. The scope was limited to offering more compatible alternatives.&lt;br />
+However, behind the scenes a number of things were worked out to make this possible, meaning that the original app listings will be able to receive updates once again.&lt;/p>
+&lt;p>During this transition, the source code and, eventually, the restored store listings will migrate under the Dynamotivation umbrella of apps.&lt;/p>
+&lt;p>This means that there will be no need to rebuild assets or recreate core functionality. Instead, all developmental efforts will focus on improving the user experience and expanding features to make the apps compatible with more devices than ever before!&lt;/p>
+&lt;h2 id="apps-joining-the-dynamotivation-portfolio">Apps Joining the Dynamotivation Portfolio&lt;/h2>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;h3 id="these-apps-will-receive-new-releases">These Apps Will Receive New Releases&lt;/h3>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList { flex-direction: column; }
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;53467976-971a-4278-beb9-4947a99103a6&amp;#x2F;JoinsTheBattleMemeGeneratorLogo.avif"
+alt="Joins the Battle Meme Generator&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A highly specialized image editor for the all_time classic fighting game character splash screens known from various game trailers. Primarily useful for creating memes, hoaxes, and concept mockups. Its functionality is unmatched in any dedicated editor for similar purposes."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>Joins the Battle Meme Generator&lt;/strong>&lt;br>&lt;br>A highly specialized image editor for the all-time classic fighting game character splash screens known from various game trailers. Primarily useful for creating memes, hoaxes, and concept mockups. Its functionality is unmatched in any dedicated editor for similar purposes.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;af30c773-bf10-495b-b181-115f6fe5a3e0&amp;#x2F;GeoBackgroundGenerator.avif"
+alt="Geo Background Generator&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A specialized generator for aesthetic geometric background images composed of different shapes and satisfying gradients. Easy on the eye and rather boring by today&amp;#x27;s standards. Simplicity deserving of an upgrade."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>Geo Background Generator&lt;/strong>&lt;br>&lt;br>A specialized generator for aesthetic geometric background images composed of different shapes and satisfying gradients. Easy on the eye and rather boring by today's standards. Simplicity deserving of an upgrade.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;hr />
+&lt;p>Their original features will not be compromised by their eventual return. Thus it will take some time working my way through outdated codebases, recreating and porting features to newer frameworks.&lt;/p>
+&lt;p>That said, sadly not all apps can be brought back.&lt;/p>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;h3 id="these-apps-will-not-receive-new-releases">These Apps Will Not Receive New Releases&lt;/h3>
+&lt;div class="blogImageList">
+&lt;style>
+@media (max-width: 40rem) {
+.blogImageList { flex-direction: column; }
+}
+&lt;/style>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;702e2ffa-47d7-4f7f-9844-1197454c5cfc&amp;#x2F;OSSSpaceAdventure.avif"
+alt="O.S.S.: Space Adventure&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A straight forward arcade_style space shooter with zen music for calming and battery conserving gameplay. To this day its not known what O.S.S. stood for? &amp;#x27;Open Source Software&amp;#x27;? Well, we&amp;#x27;ll see!"
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>O.S.S.: Space Adventure&lt;/strong>&lt;br>&lt;br>A straight forward arcade-style space shooter with zen music for calming and battery conserving gameplay. To this day its not known what O.S.S. stood for? 'Open Source Software'? Well, we'll see!&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;div>
+&lt;figure>
+&lt;img src="https:&amp;#x2F;&amp;#x2F;ucarecdn.com&amp;#x2F;5bc20435-afe3-4f75-88eb-52a653bdcb0b&amp;#x2F;BenPlaysGamesSoundboard.avif"
+alt="BenPlaysGames Soundboard&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;A soundboard of the British variety content creator BenPlaysGames. After surrendering their spot in culture to clips, shorts and supercuts, soundboards have become quite outdated."
+itemprop="screenshot"
+decoding="async"
+fetchpriority="low"
+loading="lazy"
+style="width: 90%; aspect-ratio: 512 / 512; border-radius: 20%; "
+class="blogImage"/>
+&lt;figcaption>&lt;strong>BenPlaysGames Soundboard&lt;/strong>&lt;br>&lt;br>A soundboard of the British variety content creator BenPlaysGames. After surrendering their spot in culture to clips, shorts and supercuts, soundboards have become quite outdated.&lt;/figcaption>
+&lt;/figure>
+&lt;/div>
+&lt;/div>
+&lt;hr />
+&lt;p>While it is sad to see them discontinued, all old versions we manage to get our hands onto will be preserved on The Internet Archive.&lt;/p>
+&lt;h2 id="timeline">Timeline&lt;/h2>
+&lt;p>I currently cannot give a proper timeline for the transition, let alone rereleases and updates to take place. Time is needed to review and prepare before any actual work on the code can take place.&lt;/p>
+&lt;p>If you don't want to miss further annoucements, stay tuned by subscribing to the &lt;a href="/news/general/rss-and-atom-feeds-now-available/">RSS or Atom feeds&lt;/a> or by joining the Discord server.&lt;/p>
+&lt;p>Thanks to all previous users for your support. See you around for more Dynamotivation projects!&lt;/p></content></entry><entry xml:lang="en"><title>RSS and Atom Feeds Are Now Available</title><published>2025-08-16T00:00:00+00:00</published><updated>2025-08-16T00:00:00+00:00</updated><author><name>
+Unknown</name></author><link rel="alternate" type="text/html" href="https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/"/><id>https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/</id><content type="html" xml:base="https://dynamotivation.com/news/general/rss-and-atom-feeds-now-available/">&lt;p>RSS and Atom feeds will be rolled out for all categories and aggregate categories of content.&lt;br />
+You can now easily get notified by your favorite reader apps about new posts!&lt;/p>
+&lt;p>For the time being, please add "/atom.xml" or "/rss.xml" to the URL of the desired category to subscribe.&lt;br />
+Example: &lt;a rel="external" href="https://dynamotivation.com/news/rss.xml">https://dynamotivation.com/news/rss.xml&lt;/a> and &lt;a rel="external" href="https://dynamotivation.com/news/atom.xml">https://dynamotivation.com/news/atom.xml&lt;/a>&lt;/p>
+&lt;p>Feed buttons for easier integration will be added to the category pages shortly.&lt;/p></content></entry></feed>
