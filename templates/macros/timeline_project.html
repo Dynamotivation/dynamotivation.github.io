@@ -6,90 +6,121 @@
     
     <div class="timeline-content-border">
         <div class="timeline-content">
-            {%- if page.link is defined %}
+        {%- if page.link is defined %}
             {%- set project_link = page.link %}
         {%- elif page.permalink is defined %}
             {%- set project_link = page.permalink %}
         {%- else %}
-            {%- set project_link = "#" %}
+            {%- set project_link = "" %}
         {%- endif %}
         
-        <div class="timeline-row">
+        {%- set is_clickable = project_link != "" and (page.is_event is not defined or page.is_event == false) %}
+        {%- set has_logo = (page.extra is defined and page.extra["logo"] is defined and page.extra["logo"]) or (page.logo is defined and page.logo) %}
+        
+        <div class="timeline-row{% if not has_logo %} no-image{% endif %}">
             {# Image card #}
-            <a href="{{ project_link }}" class="timeline-link timeline-image-link">
+            {%- if has_logo %}
+            {% if is_clickable %}<a href="{{ project_link }}" class="timeline-link timeline-image-link">{% else %}<div class="timeline-link timeline-image-link">{% endif %}
                 <div class="timeline-image-card">
                     <div class="timeline-image-container" 
-                         {%- if page.extra["logo"] is defined %} 
+                         {%- if page.extra is defined and page.extra["logo"] is defined and page.extra["logo"] %} 
                          style="view-transition-name: {{ hash_letters::hash_letters(input=page.extra["logo"]) }};"
+                         {%- elif page.logo is defined and page.logo %} 
+                         style="view-transition-name: {{ hash_letters::hash_letters(input=page.logo) }};"
                          {%- endif %}>
-                        {%- if page.extra["logo"] is defined %}
+                        {%- if page.extra is defined and page.extra["logo"] is defined and page.extra["logo"] %}
                         <img class="timeline-image" src="{{ page.extra["logo"] }}" alt="{{ page.title }} Logo" loading="lazy">
-                        {%- else %}
-                        <div class="timeline-image-placeholder">No Image</div>
+                        {%- elif page.logo is defined and page.logo %}
+                        <img class="timeline-image" src="{{ page.logo }}" alt="{{ page.title }} Logo" loading="lazy">
                         {%- endif %}
                     </div>
                 </div>
-            </a>
+            {% if is_clickable %}</a>{% else %}</div>{% endif %}
+            {%- endif %}
             
             {# Info card #}
-            <a href="{{ project_link }}" class="timeline-link timeline-info-link">
+            {% if is_clickable %}<a href="{{ project_link }}" class="timeline-link timeline-info-link">{% else %}<div class="timeline-link timeline-info-link">{% endif %}
                 <div class="floating-logos">
                     {%- set seed = page.title | length %}
                     {%- set tag_mapping = load_data(path="data/tag_icon_mapping.json") %}
                     {%- set icon_count = 0 %}
-                    {%- if page.taxonomies and page.taxonomies["software-categories"] %}
-                        {%- for tag in page.taxonomies["software-categories"] %}
-                            {%- if icon_count < 12 %}
-                            {%- set rand_x = get_random(start=2, end=90) %}
-                            {%- set rand_y = get_random(start=2, end=90) %}
-                            {%- set rand_delay = get_random(start=0, end=20) %}
-                            {%- set rand_duration = get_random(start=15, end=30) %}
-                            {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] %}
-                            {%- set icon_name = tag_mapping["software-categories"][tag] %}
-                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
-                            {%- elif tag | length <= 3 %}
-                            <div class="floating-logo floating-logo-text" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;">{{ tag }}</div>
-                            {%- endif %}
-                            {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] or tag | length <= 3 %}
-                            {%- set icon_count = icon_count + 1 %}
-                            {%- endif %}
-                            {%- endif %}
-                        {%- endfor %}
+                    
+                    {# Handle software-categories taxonomy (for markdown pages) or tags array (for JSON events) #}
+                    {%- set categories = [] %}
+                    {%- if page.taxonomies is defined and page.taxonomies["software-categories"] is defined %}
+                        {%- set categories = page.taxonomies["software-categories"] %}
+                    {%- elif page.software_categories is defined %}
+                        {%- set categories = page.software_categories %}
                     {%- endif %}
-                    {%- if page.taxonomies and page.taxonomies["programming-languages"] %}
-                        {%- for tag in page.taxonomies["programming-languages"] %}
-                            {%- if icon_count < 12 %}
-                            {%- set rand_x = get_random(start=2, end=90) %}
-                            {%- set rand_y = get_random(start=2, end=90) %}
-                            {%- set rand_delay = get_random(start=0, end=20) %}
-                            {%- set rand_duration = get_random(start=15, end=30) %}
-                            {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] %}
-                            {%- set icon_name = tag_mapping["programming-languages"][tag] %}
-                            <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
-                            {%- elif tag | length <= 3 %}
-                            <div class="floating-logo floating-logo-text" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;">{{ tag }}</div>
-                            {%- endif %}
-                            {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] or tag | length <= 3 %}
-                            {%- set icon_count = icon_count + 1 %}
-                            {%- endif %}
-                            {%- endif %}
-                        {%- endfor %}
+                    
+                    {%- for tag in categories %}
+                        {%- if icon_count < 12 %}
+                        {%- set rand_x = get_random(start=2, end=90) %}
+                        {%- set rand_y = get_random(start=2, end=90) %}
+                        {%- set rand_delay = get_random(start=0, end=20) %}
+                        {%- set rand_duration = get_random(start=15, end=30) %}
+                        {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] %}
+                        {%- set icon_name = tag_mapping["software-categories"][tag] %}
+                        <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                        {%- elif tag | length <= 3 %}
+                        <div class="floating-logo floating-logo-text" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;">{{ tag }}</div>
+                        {%- endif %}
+                        {%- if "software-categories" in tag_mapping and tag in tag_mapping["software-categories"] or tag | length <= 3 %}
+                        {%- set icon_count = icon_count + 1 %}
+                        {%- endif %}
+                        {%- endif %}
+                    {%- endfor %}
+
+                    {# Handle programming-languages taxonomy (for markdown pages) or tags array (for JSON events) #}
+                    {%- set languages = [] %}
+                    {%- if page.taxonomies is defined and page.taxonomies["programming-languages"] is defined %}
+                        {%- set languages = page.taxonomies["programming-languages"] %}
+                    {%- elif page.programming_languages is defined %}
+                        {%- set languages = page.programming_languages %}
                     {%- endif %}
+                    
+                    {%- for tag in languages %}
+                        {%- if icon_count < 12 %}
+                        {%- set rand_x = get_random(start=2, end=90) %}
+                        {%- set rand_y = get_random(start=2, end=90) %}
+                        {%- set rand_delay = get_random(start=0, end=20) %}
+                        {%- set rand_duration = get_random(start=15, end=30) %}
+                        {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] %}
+                        {%- set icon_name = tag_mapping["programming-languages"][tag] %}
+                        <div class="floating-logo" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;"><img src="{{ icon_name }}" alt="{{ tag }}" class="floating-logo-image"></div>
+                        {%- elif tag | length <= 3 %}
+                        <div class="floating-logo floating-logo-text" style="--i: {{ icon_count }}; --seed: {{ seed }}; --rand-offset-x: {{ rand_x }}%; --rand-offset-y: {{ rand_y }}%; --rand-animation-delay: -{{ rand_delay }}s; --rand-animation-duration: {{ rand_duration }}s;">{{ tag }}</div>
+                        {%- endif %}
+                        {%- if "programming-languages" in tag_mapping and tag in tag_mapping["programming-languages"] or tag | length <= 3 %}
+                        {%- set icon_count = icon_count + 1 %}
+                        {%- endif %}
+                        {%- endif %}
+                    {%- endfor %}
                 </div>
                 <div class="timeline-info-card">
-                    {%- set title = page.extra["project_title"] | default(value=page.title) %}
+                    {%- if page.extra is defined and page.extra["project_title"] is defined %}
+                        {%- set title = page.extra["project_title"] %}
+                    {%- else %}
+                        {%- set title = page.title %}
+                    {%- endif %}
                     <h3 class="timeline-title" 
-                        {%- if page.title is defined %}
+                        {%- if page.title is defined and page.title %} 
                         style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }};"
                         {%- endif %}>
                         {{ title }}
                     </h3>
                     
                     <div class="timeline-date" 
-                         {%- if page.date is defined %}
+                         {%- if page.date is defined and page.date %} 
                          style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }};"
                          {%- endif %}>
-                        {{ page.date | date(format="%B %-d, %Y") }}
+                        {%- if page.extra is defined %}
+                            {# This is a page object #}
+                            {{ page.date | date(format="%B %-d, %Y") }}
+                        {%- else %}
+                            {# This is a JSON event object #}
+                            {{ page.date | date(format="%B %-d, %Y") }}
+                        {%- endif %}
                     </div>
                     
                     {% if page.description %}
@@ -98,9 +129,9 @@
                     </p>
                     {% endif %}
                     
-                    <span class="timeline-read-more">Read More →</span>
+                    {% if is_clickable %}<span class="timeline-read-more">Read More →</span>{% endif %}
                 </div>
-            </a>
+            {% if is_clickable %}</a>{% else %}</div>{% endif %}
         </div>
     </div>
 </div>

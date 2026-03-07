@@ -617,3 +617,5 @@
         font-size: 0.85rem;
     }
 }
+.timeline-row.no-image .timeline-image-link { display: none; }
+.timeline-row.no-image .timeline-info-link { flex: 1 1 100%; }
