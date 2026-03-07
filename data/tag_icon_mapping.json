@@ -4,10 +4,18 @@
     "App": "/images/categories/utility.svg",
     "Android": "/images/categories/android.svg",
     "Windows": "/images/categories/windows.svg",
-    "Commission": "/images/categories/commission.svg"
+    "Commission": "/images/categories/commission.svg",
+    "AWS": "/images/categories/aws.svg",
+    "Docker": "/images/categories/docker.svg",
+    "OpenAI": "/images/categories/openAi.svg",
+    "Anthropic": "/images/categories/anthropicAi.svg",
+    "GoogleBard": "/images/categories/googleBard.svg",
+    "GithubCopilot": "/images/categories/githubCopilot.svg",
+    "Llama": "/images/categories/meta.svg"
   },
   "programming-languages": {
     "GML": "/images/categories/gameMaker.svg",
-    "Java": "/images/categories/java.svg"
+    "Java": "/images/categories/java.svg",
+    "C#": "/images/categories/cSharp.svg"
   }
 }

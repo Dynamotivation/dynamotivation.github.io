@@ -1,1 +1,63 @@
-[]
+[
+        {
+        "title": "Thesis",
+        "date": "2024-09-30",
+        "description": "Having exhausted the hype surrounding Cloud and AI topics, a thesis was agreed upon covering state of the art software development practices for a conservative client. The goal was to lead a software rewrite into a layered domain driven architecture by example to later facilitate enduser device, container and serverless cloud reuse of the software layers.",
+        "logo": "/images/categories/thesis.svg",
+        "is_event": true,
+        "software_categories": [
+            "AWS",
+            "Docker"
+        ],
+        "programming_languages": [
+            "C#"
+        ]
+    },
+    {
+        "title": "Third Paper",
+        "date": "2024-05-31",
+        "description": "A paper covering the augmentation of workflows through large language model based AI tools was commissioned by a private party through the university. During the 6 months or research the past, current and projected future of AI based tooling and agentic AI was evaluated and integrated into human centered business workflows.",
+        "logo": "/images/categories/paper3.svg",
+        "is_event": true,
+        "software_categories": [
+            "OpenAI",
+            "Anthropic",
+            "GoogleBard",
+            "GithubCopilot",
+            "Llama"
+        ],
+        "programming_languages": [
+            "UML"
+        ]
+    },
+    {
+        "title": "Second Paper",
+        "date": "2024-02-28",
+        "description": "Due to the first paper's success, a continuation was commissioned. This time the focus was on introducing a AWS multi account strategy for better security, testability and financial tracking. To achieve this the whole infrastructure was described and implemented as code in YML to later be migrated to CDK by clients staff and AI configured per the parallel running third paper.",
+        "logo": "/images/categories/paper2.svg",
+        "is_event": true,
+        "software_categories": [
+            "AWS",
+            "Docker"
+        ],
+        "programming_languages": [
+            "C#",
+            "CDK",
+            "YML"
+        ]
+    },
+    {
+        "title": "First Paper",
+        "date": "2023-09-30",
+        "description": "A paper covering the concept through to the implementation of a secure cloud strategy for a conservative private company. Work was proved by successful lift and shift of a large docker application to AWS utilizing ECS, Fargate, RDS, S3 and more after 6 months of research, work and pentesting.",
+        "logo": "/images/categories/paper1.svg",
+        "is_event": true,
+        "software_categories": [
+            "AWS",
+            "Docker"
+        ],
+        "programming_languages": [
+            "C#"
+        ]
+    }
+]
