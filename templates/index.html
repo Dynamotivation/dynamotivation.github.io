@@ -104,6 +104,13 @@
             {% endfor %}
         {% endif %}
     </div>
+
+    <div id="moreProjects">
+        <a href="{{ get_url(path="project-timeline", trailing_slash=true) }}">
+            <span>... and much more! Find out about past projects on the project timeline.</span>
+            <div class="arrow">➜</div>
+        </a>
+    </div>
 </div>
 
 {% endblock content %}

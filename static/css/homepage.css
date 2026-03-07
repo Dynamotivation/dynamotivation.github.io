@@ -180,8 +180,14 @@
     margin-bottom: 3rem;
 }
 
+#titleContainer > h3 {
+    font-size: 2.2rem;
+    margin-top: -1rem;
+    font-weight: 500;
+}
+
 :root {
-    --peak-glow: 0 0 1.5rem grey, 0 0 4rem grey;
+    --peak-glow: 0 0 1.5rem rgba(137, 55, 80, 0.8), 0 0 4rem rgba(137, 55, 80, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -206,4 +212,53 @@
 
 #postGrid {
     max-width: 85rem;
+    padding-bottom: 0;
+}
+
+#moreProjects {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+#moreProjects a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    background-color: var(--main-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.2s ease;
+    max-width: 85rem;
+    margin: 0 auto;
+}
+
+#moreProjects a:hover .arrow {
+    transform: translateX(4px);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#moreProjects .arrow {
+    background: rgba(255, 255, 255, 0.2);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    transition: transform 0.2s ease, background 0.2s ease;
+    flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    #moreProjects a {
+        background-color: var(--main-color-dark);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 }
