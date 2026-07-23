@@ -23,7 +23,7 @@
             <div class="postMetadata">
                 <strong class="postTitle" style="view-transition-name: {{ hash_letters::hash_letters(input=page.title) }}">{{ _title }}</strong>
                 <div class="postDate">
-                    <span>First completed</span>
+                    <span>{{ page.extra["date_label"] | default(value="First completed") }}</span>
                     <span style="view-transition-name: {{ hash_letters::hash_letters(input=page.date) }}">{{ page.date | date(format="%B %-d, %Y") }}</span>
                 </div>
                 {% if page.taxonomies and page.taxonomies["software-categories"] %}
