@@ -1,4 +1,8 @@
-on: push
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 name: Build and deploy GH Pages
 jobs:
   build:
