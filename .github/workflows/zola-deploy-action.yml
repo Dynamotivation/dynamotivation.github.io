@@ -21,9 +21,9 @@ jobs:
             git ls-files | grep '__PLACEHOLDER__'
             exit 1
           fi
-          if git grep -lI '__PLACEHOLDER__' -- ':!.github' ':!.gitignore' ':!docs' > /dev/null 2>&1; then
+          if git grep -lI '__PLACEHOLDER__' -- ':!.github' ':!.githooks' ':!.gitignore' ':!docs' > /dev/null 2>&1; then
             echo "::error::Source files still reference placeholder artwork."
-            git grep -lI '__PLACEHOLDER__' -- ':!.github' ':!.gitignore' ':!docs'
+            git grep -lI '__PLACEHOLDER__' -- ':!.github' ':!.githooks' ':!.gitignore' ':!docs'
             exit 1
           fi
           echo "No placeholder artwork found."
