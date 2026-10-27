@@ -3,7 +3,7 @@ on:
     branches:
       - main
   workflow_dispatch:
-name: Build and deploy GH Pages
+name: Build and deploy to Cloudflare Pages
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,9 +27,9 @@ jobs:
       - name: minify assets
         run: minify -r -o public/ public/
 
-      - name: deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          force_orphan: true
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 794762b6bf020a438953ca7ccdbb8e8f
+          command: pages deploy public --project-name=dynamotivation-com --branch=main
