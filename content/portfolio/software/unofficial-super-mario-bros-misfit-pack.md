@@ -5,6 +5,11 @@ description = "An upcoming unofficial Mario fangame bringing five underrepresent
 
 [taxonomies]
 software-categories = ["Game", "Port"]
+programming-languages = ["GML"]
+
+[extra.hub]
+exposed = true
+targets = { windows = ["x64"], macos = [], linux = [] }
 
 [extra]
 project_title = "Unofficial Super Mario Bros. Misfit Pack"
@@ -25,6 +30,15 @@ release_notes = "First revealed during Kaze Emanuar's F3 2026 (Free Fangame Fest
 availability = "Announced"
 application_category = "GameApplication"
 same_as = ["https://www.youtube.com/@DynamotivationSoftware/videos"]
+price_usd = 0
+operatingSystem = "Windows"
+programming_language = "GML (GameMaker Language)"
+development_environment = "GameMaker Studio 1.4"
+license = "Proprietary"
+# No rating yet; an empty value keeps AggregateRating out of the JSON-LD
+aggregate_rating = ""
+# No FAQ yet
+questions = []
 +++
 
 The **Unofficial Super Mario Bros. Misfit Pack** is an upcoming unofficial fan work and Mario fangame. It brings five of Mario's most underrepresented platforming adventures into one collection. The project was first revealed during **[Kaze Emanuar](https://www.youtube.com/@kazen64)'s F3 2026 (Free Fangame Festival)** event.

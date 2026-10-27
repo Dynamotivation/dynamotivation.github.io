@@ -7,6 +7,10 @@ description = "Interactive place value chart for learning binary, decimal, hexad
 software-categories = ["App", "Commission", "Unreleased", "Android", "Windows"]
 programming-languages = ["GML"]
 
+[extra.hub]
+exposed = true
+targets = { windows = ["x64"], macos = [], linux = [] }
+
 [extra]
 # Graphic enrichment
 project_title = "Stellenwerttafel Plus"

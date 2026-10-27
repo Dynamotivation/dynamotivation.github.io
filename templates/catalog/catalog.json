@@ -7,17 +7,26 @@
 {%- if page.extra.hub is defined and page.extra.hub.exposed %}
 {%- if count > 0 %},{% endif %}
 {%- set_global count = count + 1 %}
+{%- set logo = page.extra.logo | default(value="") %}
+{%- if logo is starting_with("/") %}{% set logo = get_url(path=logo | trim_start_matches(pat="/")) %}{% endif %}
+{%- set entries = [] %}
+{%- if releases[page.slug] is defined %}{% set entries = releases[page.slug].releases | default(value=[]) %}{% endif %}
     {
       "name": {{ page.extra.project_title | default(value=page.title) | json_encode() | safe }},
       "description": {{ page.description | default(value="") | json_encode() | safe }},
       "url": {{ page.permalink | json_encode() | safe }},
       "icon": {
-        "url": {{ page.extra.logo | default(value="") | replace(from=".avif", to=".webp") | json_encode() | safe }},
+        "url": {{ logo | replace(from=".avif", to=".webp") | json_encode() | safe }},
         "width": {{ page.extra.logo_width | default(value=512) }},
         "height": {{ page.extra.logo_height | default(value=512) }}
       },
       "screenshots": [{% for shot in page.extra.screenshot_urls | default(value=[]) %}{{ shot | replace(from=".avif", to=".webp") | json_encode() | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
-      "releases": [{% set entries = releases[page.slug].releases | default(value=[]) %}{% for r in entries %}
+      "platforms": {
+        "windows": [{% for t in page.extra.hub.targets.windows | default(value=[]) %}{{ t | json_encode() | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
+        "macos": [{% for t in page.extra.hub.targets.macos | default(value=[]) %}{{ t | json_encode() | safe }}{% if not loop.last %}, {% endif %}{% endfor %}],
+        "linux": [{% for t in page.extra.hub.targets.linux | default(value=[]) %}{{ t | json_encode() | safe }}{% if not loop.last %}, {% endif %}{% endfor %}]
+      },
+      "releases": [{% for r in entries %}
         {
           "version": {{ r.version | json_encode() | safe }},
           "date": {{ r.date | default(value="") | json_encode() | safe }},

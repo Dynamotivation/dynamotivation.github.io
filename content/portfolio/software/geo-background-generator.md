@@ -9,7 +9,7 @@ programming-languages = ["GML", "Java"]
 
 [extra.hub]
 exposed = true
-targets = []
+targets = { windows = ["x64"], macos = [], linux = [] }
 
 [extra]
 # Graphic enrichment

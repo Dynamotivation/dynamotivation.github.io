@@ -30,6 +30,38 @@
 <meta name="twitter:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
 {% endblock %}
 
+{% block releases %}
+{%- set _rel = load_data(path="data/releases.json") %}
+{%- set _list = [] %}
+{%- if _rel[page.slug] is defined %}{% set _list = _rel[page.slug].releases | default(value=[]) %}{% endif %}
+{%- if _list | length > 0 %}
+{%- set _latest = _list | first %}
+<section id="releases" class="software-releases">
+    <h2 id="releases-heading">Release notes</h2>
+    <hr>
+    <p class="release-current">Version {{ _latest.version }}{% if _latest.date %} &middot; <time datetime="{{ _latest.date }}">{{ _latest.date | date(format="%B %-d, %Y") }}</time>{% endif %}</p>
+    {% if _latest.highlights | length > 0 %}
+    <ul>
+        {% for h in _latest.highlights %}<li>{{ h }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if _list | length > 1 %}
+    <h3>Past versions</h3>
+    {% for r in _list | slice(start=1) %}
+    <details class="release-past">
+        <summary>Version {{ r.version }}{% if r.date %} &middot; <time datetime="{{ r.date }}">{{ r.date | date(format="%B %-d, %Y") }}</time>{% endif %}</summary>
+        {% if r.highlights | length > 0 %}
+        <ul>
+            {% for h in r.highlights %}<li>{{ h }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+    </details>
+    {% endfor %}
+    {% endif %}
+</section>
+{% endif %}
+{% endblock releases %}
+
 {% block jsonld %}
 {%- if page.extra["project_title"] is defined %}
 {%- set _title = page.extra["project_title"] %}
@@ -129,8 +161,8 @@
     "priceCurrency": "USD"{% if page.extra.availability %},
     "availability": "https://schema.org/{{ page.extra.availability | safe }}"{% endif %}
   }{% endif %}{% if page.extra.release_notes %},
-  "release_notes": "{{ page.extra.release_notes }}"{% endif %}{% if page.extra.software_version %},
-    "softwareVersion": "{{ page.extra.software_version }}"{% endif %}{% if page.date %},
+  "release_notes": "{{ page.extra.release_notes }}"{% endif %}{% set _sv_rel = load_data(path="data/releases.json") %}{% set _sv_list = [] %}{% if _sv_rel[page.slug] is defined %}{% set _sv_list = _sv_rel[page.slug].releases | default(value=[]) %}{% endif %}{% set _sv = page.extra.software_version | default(value="") %}{% if _sv_list | length > 0 %}{% set _sv_latest = _sv_list | first %}{% set _sv = _sv_latest.version %}{% endif %}{% if _sv %},
+    "softwareVersion": "{{ _sv }}"{% endif %}{% if page.date %},
     "dateCreated": "{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z", timezone="UTC") }}"{% endif %}{% if page.permalink %},
   "mainEntity": { "@id": "{{ page.permalink | safe }}#webpage" }{% endif %}
 }
