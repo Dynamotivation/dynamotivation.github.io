@@ -8,7 +8,7 @@ software-categories = ["Game", "Port"]
 programming-languages = ["GML"]
 
 [extra.hub]
-exposed = true
+exposed = false
 targets = { windows = ["x64"], macos = [], linux = [] }
 
 [extra]

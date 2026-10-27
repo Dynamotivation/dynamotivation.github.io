@@ -8,7 +8,7 @@ software-categories = ["App", "Android"]
 programming-languages = ["GML", "Java"]
 
 [extra.hub]
-exposed = true
+exposed = false
 targets = { windows = ["x64"], macos = [], linux = [] }
 
 [extra]
