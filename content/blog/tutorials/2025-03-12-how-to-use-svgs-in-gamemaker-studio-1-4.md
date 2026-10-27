@@ -36,7 +36,7 @@ Set the canvas size to the size you'd want the sprite to be in GameMaker. Make s
 When saving the file, make sure to save a copy as a **plain / normal SVG**, **not** as an optimized or "Inkscape SVG" this ensures the other tools understand your file.
 
 {{ image(
-    path="https://ucarecdn.com/99d9b5b8-ea3d-490e-bff4-dd3e0bf5a621/saveAsPlainSvg.webp",
+    path="https://assets.dynamotivation.com/files/blog/how-to-use-svgs-in-gamemaker-studio-1-4/save-as-plain-svg.webp",
     width="50%",
     imageWidthPx=363,
     imageHeightPx=395,
@@ -52,7 +52,7 @@ When saving the file, make sure to save a copy as a **plain / normal SVG**, **no
 Next, use reaConverter online to convert your SVG to an SWF file.
 
 {{ image(
-    path="https://ucarecdn.com/c97b7d28-d37f-4378-880c-90a2596cb8d2/reaConverterWeb.webp",
+    path="https://assets.dynamotivation.com/files/blog/how-to-use-svgs-in-gamemaker-studio-1-4/reaconverter-web.webp",
     width="50%",
     imageWidthPx=468,
     imageHeightPx=473,
@@ -108,7 +108,7 @@ You'll have to install JPEXS on your PC for this to work.
 Just import your SWF into JPEXS to delete the added background layer(s) and save/recompile the SWF file.
 
 {{ image(
-    path="https://ucarecdn.com/b3ca8a4e-08be-447f-85e0-b9e399bf1309/jpexsRestoreTransparency.webp",
+    path="https://assets.dynamotivation.com/files/blog/how-to-use-svgs-in-gamemaker-studio-1-4/jpexs-restore-transparency.webp",
     width="100%",
     imageWidthPx=1000,
     imageHeightPx=700,

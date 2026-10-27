@@ -11,10 +11,10 @@ programming-languages = ["GML", "Java"]
 # Graphic enrichment
 project_title = "OSS Space Adventure"
 alternate_name = "O.S.S.: Space Adventure"
-logo = "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif"
+logo = "https://assets.dynamotivation.com/files/projects/oss-space-adventure/logo.avif"
 infobox_images = [
     {
-        path = "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif",
+        path = "https://assets.dynamotivation.com/files/projects/oss-space-adventure/logo.avif",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "OSS Space Adventure Logo",
@@ -22,9 +22,9 @@ infobox_images = [
     }
 ]
 screenshot_urls = [
-    "https://ucarecdn.com/3031c98e-aa6f-48bf-86b7-24a844c5f643/ossspaceadventuretitlescreen.avif",
-    "https://ucarecdn.com/075a0dda-92ce-46c3-8374-2524a5c4315e/ossspaceadventureendlessmode.avif",
-    "https://ucarecdn.com/9536dd98-62af-4392-98ca-77542c13ef32/ossspaceadventureprotectmode.avif"
+    "https://assets.dynamotivation.com/files/projects/oss-space-adventure/screenshot-title-screen.avif",
+    "https://assets.dynamotivation.com/files/projects/oss-space-adventure/screenshot-endless-mode.avif",
+    "https://assets.dynamotivation.com/files/projects/oss-space-adventure/screenshot-protect-mode.avif"
 ]
 
 

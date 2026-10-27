@@ -3,19 +3,19 @@ draft = false
 title = "Mr. Unp3rf3ct Joins Dynamotivation"
 description = "Mr. Unp3rf3ct's legacy applications are joining the Dynamotivation family."
 [extra]
-image = "https://ucarecdn.com/cddd39cd-e800-4e83-837e-59a1f3054dad/DynamotivationXMrUnp3rf3ctLinkPreview.avif"
+image = "https://assets.dynamotivation.com/files/news/mr-unp3rf3ct-joins-dynamotivation/link-preview.avif"
 screenshot_urls = [
-    "https://ucarecdn.com/8edbe6b7-c42f-4004-8b45-806e0fb93d5a/DynamotivationXMrUnp3rf3ct.svg",
-    "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif",
-    "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif"
+    "https://assets.dynamotivation.com/files/news/mr-unp3rf3ct-joins-dynamotivation/dynamotivation-x-mr-unp3rf3ct.svg",
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/logo-original.avif",
+    "https://assets.dynamotivation.com/files/projects/geo-background-generator/logo-original.avif"
     ,
-    "https://ucarecdn.com/702e2ffa-47d7-4f7f-9844-1197454c5cfc/OSSSpaceAdventure.avif",
-    "https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif"
+    "https://assets.dynamotivation.com/files/projects/oss-space-adventure/logo.avif",
+    "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/logo-original.avif"
 ]
 +++
 
 {{ image(
-    path="https://ucarecdn.com/8edbe6b7-c42f-4004-8b45-806e0fb93d5a/DynamotivationXMrUnp3rf3ct.svg",
+    path="https://assets.dynamotivation.com/files/news/mr-unp3rf3ct-joins-dynamotivation/dynamotivation-x-mr-unp3rf3ct.svg",
     width="100%",
     description="Mr. Unp3rf3ct joins Dynamotivation",
     radius="1rem",

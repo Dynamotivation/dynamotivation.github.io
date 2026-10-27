@@ -11,14 +11,14 @@ programming-languages = ["GML"]
 # Graphic enrichment
 project_title = "Stellenwerttafel Plus"
 alternate_name = "Place Value Chart Plus"
-logo = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif"
+logo = "https://assets.dynamotivation.com/files/projects/stellenwerttafel-plus/logo.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/ec6e0f7a-c00e-4e3c-bdc6-82b8715368f9/stellenwerttafelPlusLogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Stellenwerttafel Plus Logo", radius = "20%" }
+    { path = "https://assets.dynamotivation.com/files/projects/stellenwerttafel-plus/logo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Stellenwerttafel Plus Logo", radius = "20%" }
 ]
 screenshot_urls = [
-    "https://ucarecdn.com/7ff7d6d6-e097-40d1-a531-fb6207b25651/stellenwerttafelplusbinaryscreenshot.avif",
-    "https://ucarecdn.com/394b018b-1655-4ebe-884e-23d263e6ef11/stellenwerttafelplusdecimalscreenshot.avif",
-    "https://ucarecdn.com/f00b51f6-ba74-4a81-a9df-f4aaa2f04e89/stellenwerttafelplusdecimalscreenshotoverflow.avif"
+    "https://assets.dynamotivation.com/files/projects/stellenwerttafel-plus/screenshot-binary.avif",
+    "https://assets.dynamotivation.com/files/projects/stellenwerttafel-plus/screenshot-decimal-standard.avif",
+    "https://assets.dynamotivation.com/files/projects/stellenwerttafel-plus/screenshot-decimal-overflow.avif"
 ]
 
 

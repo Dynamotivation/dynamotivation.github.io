@@ -11,16 +11,16 @@ programming-languages = ["Java"]
 # Graphic enrichment
 project_title = "BenPlaysGames Soundboard"
 alternate_title = "Ben Plays Games Soundboard"
-logo = "https://ucarecdn.com/6d67fb50-8a57-4fb5-bc12-8ab6b20857b4/benplaysgamessoundboardlogoremastered.avif"
+logo = "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/logo.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/6d67fb50-8a57-4fb5-bc12-8ab6b20857b4/benplaysgamessoundboardlogoremastered.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*BenPlaysGames Soundboard* new logo", radius = "20%" },
-    { path = "https://ucarecdn.com/5bc20435-afe3-4f75-88eb-52a653bdcb0b/BenPlaysGamesSoundboard.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*BenPlaysGames Soundboard* original logo", radius = "20%" }
+    { path = "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/logo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*BenPlaysGames Soundboard* new logo", radius = "20%" },
+    { path = "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/logo-original.avif", imageWidthPx = 512, imageHeightPx = 512, description = "*BenPlaysGames Soundboard* original logo", radius = "20%" }
 ]
 screenshot_urls = [
-    "https://ucarecdn.com/0ab91ca7-92ce-4992-8473-ef9bcf1e10f8/benplaysgamessoundboardnormal.avif",
-    "https://ucarecdn.com/3be5b8cd-8601-4c9e-949a-6b80a209e89d/benplaysgamessoundboardlive.avif",
-    "https://ucarecdn.com/e68a4eaa-d8e4-40c2-84ff-d59aabd4b236/benplaysgamessoundboardfavs.avif",
-    "https://ucarecdn.com/20c4aca4-ac43-4432-ab90-e96ced20efea/benplaysgamessoundboardlandscapetablet.avif"
+    "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/screenshot-normal.avif",
+    "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/screenshot-live.avif",
+    "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/screenshot-favs.avif",
+    "https://assets.dynamotivation.com/files/projects/ben-plays-games-soundboard/screenshot-landscape-tablet.avif"
 ]
 
 

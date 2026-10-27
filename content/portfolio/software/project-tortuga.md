@@ -10,9 +10,9 @@ programming-languages = ["GSC", "CSC"]
 [extra]
 # Graphic enrichment
 project_title = "Project Tortuga"
-logo = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif"
+logo = "https://assets.dynamotivation.com/files/projects/project-tortuga/logo.avif"
 infobox_images = [
-    { path = "https://ucarecdn.com/177ad7a9-ddfe-4e45-9a65-cb5a55705a1e/projecttortugalogo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Project Tortuga Call of Duty Black Ops 3 Custom Zombies Map Concept Logo" }
+    { path = "https://assets.dynamotivation.com/files/projects/project-tortuga/logo.avif", imageWidthPx = 512, imageHeightPx = 512, description = "Project Tortuga Call of Duty Black Ops 3 Custom Zombies Map Concept Logo" }
 ]
 screenshot_urls = []
  

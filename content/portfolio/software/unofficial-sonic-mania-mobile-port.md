@@ -11,10 +11,10 @@ programming-languages = ["GML"]
 # Graphic enrichment
 project_title = "Unofficial Sonic Mania Mobile Prototype"
 alternate_name = "Unofficial Sonic Mania Mobile Port"
-logo = "https://ucarecdn.com/d03cdf7e-4a3f-430d-8c09-d30ba87b4ecc/sonicmaniamobilelogo.avif"
+logo = "https://assets.dynamotivation.com/files/projects/unofficial-sonic-mania-mobile/logo.avif"
 infobox_images = [
     {
-        path = "https://ucarecdn.com/d03cdf7e-4a3f-430d-8c09-d30ba87b4ecc/sonicmaniamobilelogo.avif",
+        path = "https://assets.dynamotivation.com/files/projects/unofficial-sonic-mania-mobile/logo.avif",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "Unofficial Sonic Mania Mobile Prototype Logo",

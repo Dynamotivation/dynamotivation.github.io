@@ -11,16 +11,16 @@ programming-languages = ["GML", "Java"]
 # Graphic enrichment
 project_title = "Joins the Battle Meme Generator"
 alternate_name = "... Joins the Battle! Meme Generator"
-logo = "https://ucarecdn.com/20719464-83fb-4d9e-8940-29de5a3275ec/joinsthebattleeditorlogoremastered.avif"
+logo = "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/logo-remastered.avif"
 infobox_images = [
     {
-        path = "https://ucarecdn.com/20719464-83fb-4d9e-8940-29de5a3275ec/joinsthebattleeditorlogoremastered.avif",
+        path = "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/logo-remastered.avif",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "*Joins the Battle Meme Generator* remastered logo", radius = "20%"
     },
     {
-        path = "https://ucarecdn.com/53467976-971a-4278-beb9-4947a99103a6/JoinsTheBattleMemeGeneratorLogo.avif",
+        path = "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/logo-original.avif",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "*Joins the Battle Meme Generator* original logo",
@@ -28,13 +28,13 @@ infobox_images = [
     }
 ]
 screenshot_urls = [
-    "https://ucarecdn.com/324e7ae4-6169-4635-a49c-7c6563178caa/joinsthebattlemainmenu.avif",
-    "https://ucarecdn.com/8de5babc-76fe-48b4-8ecc-37dacbccdf61/joinsthebattleeditormenu.avif",
-    "https://ucarecdn.com/79a7577d-cf7f-4efa-a593-21121d70a5de/joinsthebattlebackgroundmenu.avif",
-    "https://ucarecdn.com/f1a1eab7-238f-429e-bba7-c6ba5e073eef/joinsthebattle2018style.avif",
-    "https://ucarecdn.com/3586305e-2e3c-43df-8345-04a1646145a3/joinsthebattle2014style.avif",
-    "https://ucarecdn.com/1047f267-98fa-4b83-a891-101a11a3cde5/joinsthebattle2018unlockstyle.avif",
-    "https://ucarecdn.com/c2794126-6cd2-4eaa-ad20-237246836ffb/joinsthebattle2018thumbnailstyle.avif"
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/screenshot-main-menu.avif",
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/screenshot-editor-menu.avif",
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/screenshot-background-menu.avif",
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/screenshot-2018-style.avif",
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/screenshot-2014-style.avif",
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/screenshot-2018-unlock-style.avif",
+    "https://assets.dynamotivation.com/files/projects/joins-the-battle-meme-generator/screenshot-2018-thumbnail-style.avif"
 ]
 
 

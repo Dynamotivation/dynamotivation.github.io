@@ -10,10 +10,10 @@ programming-languages = ["Java"]
 [extra]
 # Graphic enrichment
 project_title = "GerMemz"
-logo = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif"
+logo = "https://assets.dynamotivation.com/files/projects/germemz/logo.avif"
 infobox_images = [
     {
-        path = "https://ucarecdn.com/3d805b9c-6965-40fe-b9c6-e7595b33f403/GerMemzLogo.avif",
+        path = "https://assets.dynamotivation.com/files/projects/germemz/logo.avif",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "GerMemz Logo",
@@ -21,9 +21,9 @@ infobox_images = [
     }
 ]
 screenshot_urls = [
-    "https://ucarecdn.com/6350bda9-6730-41e8-95ba-c323dabdc6bc/GerMemzScreenshot0.avif",
-    "https://ucarecdn.com/668abddb-631f-4c0f-ba30-17d9a127e9f6/GerMemzScreenshot1.avif",
-    "https://ucarecdn.com/36c55db4-dd30-46c6-8fd7-2a7456f69acf/GerMemzScreenshot2.avif"
+    "https://assets.dynamotivation.com/files/projects/germemz/screenshot-0.avif",
+    "https://assets.dynamotivation.com/files/projects/germemz/screenshot-1.avif",
+    "https://assets.dynamotivation.com/files/projects/germemz/screenshot-2.avif"
 ]
 
 

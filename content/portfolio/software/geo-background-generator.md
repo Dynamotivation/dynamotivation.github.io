@@ -11,17 +11,17 @@ programming-languages = ["GML", "Java"]
 # Graphic enrichment
 project_title = "Geo Background Generator"
 alternate_title = "GeoBackgroundGenerator"
-logo = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif"
+logo = "https://assets.dynamotivation.com/files/projects/geo-background-generator/logo.avif"
 infobox_images = [
     {
-        path = "https://ucarecdn.com/68a9490a-afbf-4b4a-8dd3-97c39be94a44/geobackgroundgeneratorlogoremastered.avif",
+        path = "https://assets.dynamotivation.com/files/projects/geo-background-generator/logo.avif",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "*Geo Background Generator* remastered logo",
         radius = "20%"
     },
     {
-        path = "https://ucarecdn.com/af30c773-bf10-495b-b181-115f6fe5a3e0/GeoBackgroundGenerator.avif",
+        path = "https://assets.dynamotivation.com/files/projects/geo-background-generator/logo-original.avif",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "*Geo Background Generator* old logo",
@@ -29,10 +29,10 @@ infobox_images = [
     }
 ]
 screenshot_urls = [
-    "https://ucarecdn.com/5bb09828-843b-4877-958f-b01dd1e662ca/geobackgroundgeneratornewui.avif",
-    "https://ucarecdn.com/9bc23bd1-fed1-40a3-b889-77dd5203f44b/geobackgroundgeneratorcomplexexamplepattern.avif",
-    "https://ucarecdn.com/746df704-5b06-4b57-9558-2b092b119f58/geobackgroundgeneratorsimpleexamplepattern.avif",
-    "https://ucarecdn.com/489c6beb-7edb-4403-85a2-33bcbda91848/geobackgroundgeneratoroldui.avif"
+    "https://assets.dynamotivation.com/files/projects/geo-background-generator/screenshot-new-ui.avif",
+    "https://assets.dynamotivation.com/files/projects/geo-background-generator/screenshot-complex-example-pattern.avif",
+    "https://assets.dynamotivation.com/files/projects/geo-background-generator/screenshot-simple-pattern.avif",
+    "https://assets.dynamotivation.com/files/projects/geo-background-generator/screenshot-old-ui-legacy.avif"
 ]
 
 
