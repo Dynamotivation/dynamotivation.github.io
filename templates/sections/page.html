@@ -141,6 +141,7 @@
             {{ qna_macro::qna(items=page.extra.questions) }}
         </section>
         {% endif %}
+        {% block releases %}{% endblock releases %}
     </div>
     {% if page.lower or page.higher %}
     <nav id="pageNavigation" class="post-nav">

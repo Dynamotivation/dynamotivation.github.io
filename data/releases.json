@@ -1,0 +1,64 @@
+{
+  "all-out-attack-generator": {
+    "releases": [
+      {
+        "version": "1.2.2",
+        "date": "2022-04-19",
+        "highlights": [
+          "Critical bug that prevents exporting of video on Windows fixed",
+          "Performance improvement on pose screen by simplifying unnecessary alpha blending",
+          "Opacity selector on secondary shadow now working",
+          "Simplified Android releases into one bigger package to address confusion by less tech savvy Android users",
+          "Changed Windows naming scheme to make it more transparent for non tech savvy Windows users"
+        ]
+      },
+      {
+        "version": "1.2.1",
+        "date": "2022-04-17",
+        "highlights": [
+          "Improved UI hitboxes for touchscreen devices",
+          "Added .png strip exporting to Android"
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "date": "2022-04-16",
+        "highlights": [
+          "Enabled video and gif exporting on the Windows version!",
+          "Fixed weird scaling issues when exporting at something other than 1080p",
+          "Added option to change preview resolution on Android",
+          "Fixed bugs resulting in no feedback being given no matter if importing succeeded or failed",
+          "Fixed a bunch of image locations not working on Android",
+          "Arranger now works within correct aspect ratio",
+          "Fixed various other bugs which I have already forgotten about"
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "date": "2021-09-13",
+        "highlights": [
+          "Fixed portraits not loading",
+          "Fixed some animation timings",
+          "Added exporting to .png sequence",
+          "A lot of behind the scenes work"
+        ]
+      },
+      {
+        "version": "1.0.0",
+        "date": "2021-09-05",
+        "highlights": [
+          "The first version of the All-Out Attack Generator"
+        ]
+      }
+    ]
+  },
+  "geo-background-generator": {
+    "releases": []
+  },
+  "unofficial-super-mario-bros-misfit-pack": {
+    "releases": []
+  },
+  "stellenwerttafel-plus": {
+    "releases": []
+  }
+}

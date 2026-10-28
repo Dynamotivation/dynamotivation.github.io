@@ -7,6 +7,10 @@ description = "A geometric pattern background generator with customizable shapes
 software-categories = ["App", "Android"]
 programming-languages = ["GML", "Java"]
 
+[extra.hub]
+exposed = false
+targets = { windows = ["x64"], macos = [], linux = [] }
+
 [extra]
 # Graphic enrichment
 project_title = "Geo Background Generator"
