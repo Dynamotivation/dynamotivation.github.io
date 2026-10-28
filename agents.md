@@ -65,3 +65,11 @@ When creating a redirect for a moved URL, use this format to match existing redi
 - **`window.location.replace()`**: Redirects the browser and replaces the old URL in browser history
 - **`meta http-equiv="refresh"`**: Fallback for browsers with JavaScript disabled
 - **`meta name="robots" content="noindex"`**: Prevents search engines from indexing the old URL, protecting SEO during the migration. This ensures search authority builds on the new URL only.
+
+## Legal notices on software pages
+Pages for fan works or works that imitate a third-party style end with the `legal_notice` shortcode. It renders the text from `data-text` attributes via CSS, so brand names in the notice are not indexed. Keep every notice in the same four parts:
+1. Lead (shown bold): "This is an unofficial, fan-made {tool|work|port} inspired by X."
+2. Rights holders: "X and related names, characters and artwork are copyright or trademarks of Y." Add one factual sentence only if true (for example, original games required, users supply their own images, components made from scratch).
+3. "All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by Y or YoYo Games."
+4. Engine credit when built with GameMaker: "Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games."
+Paragraphs cannot contain double quotes (use single quotes). Pages using it: AOA, Sonic Mania, Joins the Battle, Misfit Pack.

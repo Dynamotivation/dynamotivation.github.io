@@ -49,6 +49,15 @@
     margin-top: 0;
 }
 
+/* Notice text lives in data-text and is drawn by CSS, so crawlers do not index it. */
+#contentContainer .project-legal-notice-unindexed p::before {
+    content: attr(data-text);
+}
+
+#contentContainer .project-legal-notice-unindexed p:first-of-type {
+    font-weight: 700;
+}
+
 @media (max-width: 30rem) {
     #contentContainer .project-legal-notice {
         --project-legal-padding: 1rem;
