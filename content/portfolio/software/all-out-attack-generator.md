@@ -118,7 +118,7 @@ The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlno
 
 The animation opens with a mirror breaking into shards, and those shards had to be real 3D elements. The 3D was working by mid-August 2019, after a start around June or July. Development then took a long hiatus. Writing custom UI components with arbitrary sizes, lengths and translations while targeting HTML5 for the first time proved difficult. Version 1.0.0 shipped on September 5, 2021.
 
-The menus use a toned down style of P5.
+The menus use a toned down style of *P5*.
 
 
 ## Challenges
