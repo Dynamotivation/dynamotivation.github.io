@@ -43,7 +43,7 @@
         "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
         "logo": {
             "@type": "ImageObject",
-            "url": "{{ get_url(path='images/fullLogo.png') }}"
+            "url": "https://assets.dynamotivation.com/files/site/fullLogo.png"
         }
     },
     {# Use an ISO 8601 date-time with timezone. If only a date is provided, append a time and UTC offset. #}
@@ -158,7 +158,7 @@
 <meta property="og:title" content="{{ page.title }} | Dynamotivation">
 <meta property="og:description" content="{{ page.description }}">
 {# Prefer top-level page.image, then extra.image, then extra.logo, then site logo #}
-<meta property="og:image" content="{{ page.image | default(value=(page.extra.image | default(value=(page.extra.logo | default(value=get_url(path='images/fullLogo.png')))))) | safe }}">
+<meta property="og:image" content="{{ page.image | default(value=(page.extra.image | default(value=(page.extra.logo | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png'))))) | safe }}">
 <meta property="og:url" content="{{ page.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
@@ -180,5 +180,5 @@
 <meta name="twitter:title" content="{{ page.title }} | Dynamotivation">
 <meta name="twitter:description" content="{{ page.description }}">
 {# Ensure Twitter uses the same image as OpenGraph #}
-<meta name="twitter:image" content="{{ page.image | default(value=(page.extra.image | default(value=(page.extra.logo | default(value=get_url(path='images/fullLogo.png')))))) | safe }}">
+<meta name="twitter:image" content="{{ page.image | default(value=(page.extra.image | default(value=(page.extra.logo | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png'))))) | safe }}">
 {% endblock %}

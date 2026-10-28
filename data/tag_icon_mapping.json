@@ -1,21 +1,21 @@
 {
   "software-categories": {
-    "Game": "/images/categories/controller.svg",
-    "App": "/images/categories/utility.svg",
-    "Android": "/images/categories/android.svg",
-    "Windows": "/images/categories/windows.svg",
-    "Commission": "/images/categories/commission.svg",
-    "AWS": "/images/categories/aws.svg",
-    "Docker": "/images/categories/docker.svg",
-    "OpenAI": "/images/categories/openAi.svg",
-    "Anthropic": "/images/categories/anthropicAi.svg",
-    "GoogleBard": "/images/categories/googleBard.svg",
-    "GithubCopilot": "/images/categories/githubCopilot.svg",
-    "Llama": "/images/categories/meta.svg"
+    "Game": "https://assets.dynamotivation.com/files/site/categories/controller.svg",
+    "App": "https://assets.dynamotivation.com/files/site/categories/utility.svg",
+    "Android": "https://assets.dynamotivation.com/files/site/categories/android.svg",
+    "Windows": "https://assets.dynamotivation.com/files/site/categories/windows.svg",
+    "Commission": "https://assets.dynamotivation.com/files/site/categories/commission.svg",
+    "AWS": "https://assets.dynamotivation.com/files/site/categories/aws.svg",
+    "Docker": "https://assets.dynamotivation.com/files/site/categories/docker.svg",
+    "OpenAI": "https://assets.dynamotivation.com/files/site/categories/openAi.svg",
+    "Anthropic": "https://assets.dynamotivation.com/files/site/categories/anthropicAi.svg",
+    "GoogleBard": "https://assets.dynamotivation.com/files/site/categories/googleBard.svg",
+    "GithubCopilot": "https://assets.dynamotivation.com/files/site/categories/githubCopilot.svg",
+    "Llama": "https://assets.dynamotivation.com/files/site/categories/meta.svg"
   },
   "programming-languages": {
-    "GML": "/images/categories/gameMaker.svg",
-    "Java": "/images/categories/java.svg",
-    "C#": "/images/categories/cSharp.svg"
+    "GML": "https://assets.dynamotivation.com/files/site/categories/gameMaker.svg",
+    "Java": "https://assets.dynamotivation.com/files/site/categories/java.svg",
+    "C#": "https://assets.dynamotivation.com/files/site/categories/cSharp.svg"
   }
 }

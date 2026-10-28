@@ -2,9 +2,9 @@
     <div id="headerContent">
     <a id="logoLink" href="{{ get_url(path='', trailing_slash=true) }}" title="Home">
             <div>
-                <img id="logo" src={{ get_url(path="images/innerLogo.svg" ) }} alt="Dynamotivation Logo Foreground"
+                <img id="logo" src=https://assets.dynamotivation.com/files/site/innerLogo.svg alt="Dynamotivation Logo Foreground"
                     draggable="false">
-                <img id="logoDuplicate" src={{ get_url(path="images/innerLogoBackground.svg" ) }} alt="Dynamotivation Logo Background" draggable="false" aria-hidden="true">
+                <img id="logoDuplicate" src=https://assets.dynamotivation.com/files/site/innerLogoBackground.svg alt="Dynamotivation Logo Background" draggable="false" aria-hidden="true">
             </div>
         </a>
 
@@ -16,7 +16,7 @@
             {% set social_links = load_data(path="data/social_links.json") %}
             {% for link in social_links %}
             <a class="siteLinks" href="{{ link.url }}" title="{{ link.title }}">
-                <img src="{{ get_url(path=link.image) }}" alt="{{ link.alt }}">
+                <img src="{{ link.image }}" alt="{{ link.alt }}">
             </a>
             {% endfor %}
         </nav>

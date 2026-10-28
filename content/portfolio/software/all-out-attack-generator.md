@@ -14,12 +14,12 @@ targets = { windows = ["x86"], macos = [], linux = [] }
 [extra]
 project_title = "All-Out Attack Generator"
 date_label = "First released"
-logo = "/images/allOutAttackGenerator/icon.webp"
+logo = "https://assets.dynamotivation.com/files/projects/all-out-attack-generator/logo.webp"
 logo_width = 512
 logo_height = 512
 infobox_images = [
     {
-        path = "/images/allOutAttackGenerator/icon.webp",
+        path = "https://assets.dynamotivation.com/files/projects/all-out-attack-generator/logo.webp",
         imageWidthPx = 512,
         imageHeightPx = 512,
         description = "All-Out Attack Generator logo",

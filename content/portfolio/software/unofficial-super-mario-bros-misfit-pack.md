@@ -15,10 +15,10 @@ targets = { windows = ["x64"], macos = [], linux = [] }
 project_title = "Unofficial Super Mario Bros. Misfit Pack"
 alternate_name = "Misfit Pack"
 date_label = "First revealed"
-logo = "/images/superMarioBrosMisfitPack/icon.svg"
+logo = "https://assets.dynamotivation.com/files/projects/unofficial-super-mario-bros-misfit-pack/logo.svg"
 infobox_images = [
     {
-        path = "/images/superMarioBrosMisfitPack/icon.svg",
+        path = "https://assets.dynamotivation.com/files/projects/unofficial-super-mario-bros-misfit-pack/logo.svg",
         imageWidthPx = 300,
         imageHeightPx = 300,
         description = "Unofficial Super Mario Bros. Misfit Pack project icon",

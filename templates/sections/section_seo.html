@@ -20,7 +20,7 @@
 {% if section.description %}
 <meta property="og:description" content="{{ section.description }}">
 {% endif %}
-<meta property="og:image" content="{{ section.extra.image | default(value=get_url(path='images/fullLogo.png')) }}">
+<meta property="og:image" content="{{ section.extra.image | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png') }}">
 <meta property="og:url" content="{{ section.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
@@ -56,7 +56,7 @@
           "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
           "logo": {
               "@type": "ImageObject",
-              "url": "{{ get_url(path='images/fullLogo.png') }}"
+              "url": "https://assets.dynamotivation.com/files/site/fullLogo.png"
           }
       },
       {% if section.date is defined %}
