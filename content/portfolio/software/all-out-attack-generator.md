@@ -177,7 +177,7 @@ Thanks to [The Daphinator](https://www.youtube.com/@TheDaphinator) for featuring
 
 {{ legal_notice(paragraphs=[
     "This is an unofficial, fan-made tool inspired by the All-Out Attack animation and menu style of Persona 5.",
-    "Persona, Persona 5 and related names, characters and artwork are copyright or trademarks of ATLUS and SEGA. Users supply their own character images.",
+    "Persona, Persona 5 and related names, characters and artwork are copyright or trademarks of ATLUS and SEGA. All assets were made from scratch and recreated by eye, by hand. Users supply their own character images.",
     "All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by ATLUS, SEGA, or YoYo Games.",
     "Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games."
 ]) }}
