@@ -1,7 +1,7 @@
 +++
 title = "All-Out Attack Generator"
 date = 2021-09-05
-description = "Create Persona 5 style All-Out Attack animations from your own images. Free for Windows and Android, with a browser version."
+description = "Free All-Out Attack animation maker for Windows, Android and the web. Add your own characters and artwork, then export PNG, GIF or video."
 
 [taxonomies]
 software-categories = ["App", "Android", "Windows"]
@@ -46,7 +46,7 @@ aggregate_rating = ""
 questions = [
     {
         question = "What is the All-Out Attack Generator?",
-        answer = "A free tool that recreates the All-Out Attack finisher from Persona 5 with your own images. You add your characters and a kill splash artwork, and it renders the animated sequence."
+        answer = "A free animation maker that recreates the flashy All-Out Attack team finisher of turn-based RPGs with your own images. You add your characters and a kill splash artwork, and it renders the animated sequence."
     },
     {
         question = "Does it cost anything?",
@@ -94,7 +94,7 @@ questions = [
 {% end %}
 
 
-***All-Out Attack Generator*** is a free tool by Dynamotivation that recreates the All-Out Attack finisher from *Persona 5*. Users add their own characters and kill splash artwork, and the tool renders the stylised animation they know from the game. It was first released in September 2021 for Windows and Android, and a browser version is available as well.
+***All-Out Attack Generator*** is a free animation maker by Dynamotivation that recreates the flashy All-Out Attack team finisher of turn-based RPGs. Users add their own characters and kill splash artwork, and the tool renders the stylised animation they know from the game. It was first released in September 2021 for Windows and Android, and a browser version is available as well.
 
 
 ## Development
@@ -105,7 +105,7 @@ The project started after [Mix and Jam](https://github.com/mixandjam/Persona-All
 
 The animation opens with a mirror breaking into shards, and those shards had to be real 3D elements. The 3D was working by mid-August 2019, after a start around June or July. Development then took a long hiatus. Writing custom UI components with arbitrary sizes, lengths and translations while targeting HTML5 for the first time proved difficult. Version 1.0.0 shipped on September 5, 2021.
 
-The whole menu follows *Persona 5*'s design language, toned down a little.
+The whole menu follows the bold, high-contrast style of the effect it recreates, toned down a little.
 
 
 ## Challenges
