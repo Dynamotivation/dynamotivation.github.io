@@ -133,3 +133,10 @@ Nowadays this project appears fully superseded by the official Netflix *Sonic Ma
 This project featured a few nice opportunities for me to learn as I had never before worked with any sort of difficult projection logic at noteworthy performance levels. Previous exposure in the [*Everyone Joins the Battle Meme Generator*](/portfolio/software/joins-the-battle-meme-generator/) were limited to screen space transformations without any FPS requirements. Surfaces were also only drawn once and cached.\
 This time proper world space coordinates and real time performance were required, leading to the usage of the 3D systems.\
 Unbeknownst to me at this time this would be a huge help for my next project.
+
+{{ legal_notice(paragraphs=[
+    "This is an unofficial, unreleased fan-made port inspired by Sonic Mania.",
+    "Sonic the Hedgehog, Sonic Mania and related names, characters and artwork are copyright or trademarks of SEGA.",
+    "All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by SEGA or YoYo Games.",
+    "Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games."
+]) }}

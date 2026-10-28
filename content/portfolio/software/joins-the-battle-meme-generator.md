@@ -276,3 +276,10 @@ The application has been unavailable for several years due to educational and em
     *   Deepened understanding of OOP by retroactively implementing inheritance and reusable components, demonstrating the practical application of architectural design for scalability.
 *   Market niche identification
     *   Proved the ability to identify an underrepresented, yet marketable market niche and develop a highly successful product to fill it, unlike the copyright setbacks encountered with [*GerMemz*](/portfolio/software/germemz).
+
+{{ legal_notice(paragraphs=[
+    "This is an unofficial, fan-made tool inspired by the 'X Joins the Battle' character reveal style of fighting games, notably Super Smash Bros.",
+    "Super Smash Bros. and related names, characters and artwork are copyright or trademarks of Nintendo. The included components were made from scratch.",
+    "All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by Nintendo or YoYo Games.",
+    "Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games."
+]) }}

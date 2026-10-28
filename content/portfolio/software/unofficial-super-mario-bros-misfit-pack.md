@@ -97,8 +97,8 @@ The project is in development, with a planned PC launch in 2027. Development upd
 </ul>
 
 {{ legal_notice(paragraphs=[
-    "This is an unofficial work inspired by Super Mario Bros., Super Mario Bros. 2 (The Lost Levels), Vs. Super Mario Bros., All Night Nippon Super Mario Bros., and Super Mario Bros. Special.",
-    "The Super Mario franchise and the original games are copyright Nintendo. Super Mario Bros. Special is additionally copyright Hudson Soft. Selected elements of All Night Nippon are copyright Nippon Broadcasting System.",
-    "A copy of each original game is required. All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by Nintendo, Hudson Soft, Nippon Broadcasting System, or YoYo Games.",
+    "This is an unofficial, fan-made work inspired by Super Mario Bros., Super Mario Bros. 2 (The Lost Levels), Vs. Super Mario Bros., All Night Nippon Super Mario Bros., and Super Mario Bros. Special.",
+    "The Super Mario franchise and the original games are copyright Nintendo. Super Mario Bros. Special is additionally copyright Hudson Soft. Selected elements of All Night Nippon are copyright Nippon Broadcasting System. A copy of each original game is required.",
+    "All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by Nintendo, Hudson Soft, Nippon Broadcasting System, or YoYo Games.",
     "Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games."
 ]) }}
