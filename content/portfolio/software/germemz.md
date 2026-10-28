@@ -181,7 +181,7 @@ The application was however never publicly released on platforms such as the Goo
 *   Commercial jingles
 *   The voices and recognizable lines of actors Thorsten Bohms and Marcel D'Avis
 
-The original APKs and decompiled source code for GerMemz are still preserved and remain unreleased.
+The original APKs and decompiled source code for *GerMemz* are still preserved and remain unreleased.
 
 
 ## Lessons Learned

@@ -41,7 +41,7 @@ aggregate_rating = ""
 questions = []
 +++
 
-The **Unofficial Super Mario Bros. Misfit Pack** is an upcoming unofficial fan work and Mario fangame. It brings five of Mario's most underrepresented platforming adventures into one collection. The project was first revealed during **[Kaze Emanuar](https://www.youtube.com/@kazen64)'s F3 2026 (Free Fangame Festival)** event.
+The ***Unofficial Super Mario Bros. Misfit Pack*** is an upcoming unofficial fan work and Mario fangame. It brings five of Mario's most underrepresented platforming adventures into one collection. The project was first revealed during [Kaze Emanuar](https://www.youtube.com/@kazen64)'s F3 2026 (Free Fangame Festival) event.
 
 ## Announcement Trailer
 
@@ -89,7 +89,7 @@ Later releases spread small fixes and presentation changes across different vers
 
 ## Follow development
 
-The project is in development, with a planned PC launch in **2027**. Development updates will be public and will cover gameplay clips, visual changes, and feature discussions.
+The project is in development, with a planned PC launch in 2027. Development updates will be public and will cover gameplay clips, visual changes, and feature discussions.
 
 <ul class="project-cta-list">
 <li><a class="project-cta-button project-cta-button-primary" href="https://www.youtube.com/@DynamotivationSoftware/videos">Subscribe on YouTube</a><span>Video development logs, gameplay trailers, and visual updates.</span></li>

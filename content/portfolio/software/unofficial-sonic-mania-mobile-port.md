@@ -61,21 +61,21 @@ questions = [
 </dl>
 {% end %}
 
-The ***Unofficial Sonic Mania Mobile Port*** was an unreleased fan port of the video game Sonic Mania for Android devices. It was briefly developed using the GameMaker: Studio engine and the Sonic MAX Framework in 2019 at age 17. The intent was to bring the experience of Sonic Mania to mobile platforms.
+The ***Unofficial Sonic Mania Mobile Port*** was an unreleased fan port of the video game *Sonic Mania* for Android devices. It was briefly developed using the GameMaker: Studio engine and the Sonic MAX Framework in 2019 at age 17. The intent was to bring the experience of *Sonic Mania* to mobile platforms.
 
 
 ## Development
 
 ---
 
-Development for this game porting project took place across a few short days in May 2019. The original Sonic Mania was released in 2017 to critical acclaim as a return to form for the franchise. Its engine was an evolved version of the engine powering the Sonic 1, 2 and CD ports to mobile before it. Hence it was confusing to not get any sort of mobile port of Sonic Mania at the time. There were a few other projects online to be stumbled upon when searching Sonic Mania Android / IOS. Motivated by this a proof of concept was created of Sonic Mania running in another Engine, namely the familiar GameMaker: Studio engine utilizing the Sonic MAX framework for its included physics and game objects.
+Development for this game porting project took place across a few short days in May 2019. The original *Sonic Mania* was released in 2017 to critical acclaim as a return to form for the franchise. Its engine was an evolved version of the engine powering the Sonic 1, 2 and CD ports to mobile before it. Hence it was confusing to not get any sort of mobile port of *Sonic Mania* at the time. There were a few other projects online to be stumbled upon when searching *Sonic Mania* Android / IOS. Motivated by this a proof of concept was created of *Sonic Mania* running in another Engine, namely the familiar GameMaker: Studio engine utilizing the Sonic MAX framework for its included physics and game objects.
 
 
 ## Features
 
 ---
 
-Armed with an idea and an engine a handful of "difficult" considered scenarios from Sonic Mania were recreated. This was largely influenced by what online communities cited as the features blocking a port:
+Armed with an idea and an engine a handful of "difficult" considered scenarios from *Sonic Mania* were recreated. This was largely influenced by what online communities cited as the features blocking a port:
 - The title screen
 - Some menu and UI elements
 - The drop dash
@@ -123,13 +123,13 @@ With all these effects solved with the tools at hand the only missing thing was 
 Not before long the project was cancelled after these few "difficult" elements were proved to be possible and ran well on the at the time already old Samsung Galaxy S4 Mini.\
 It's source code remains lost as it was stored on a now defunct source control solution.
 
-Nowadays this project appears fully superseded by the official Netflix Sonic Mania Mobile Port and the fan decompilation and port to various platforms. Strangely the Netflix port appears to run way worse in the scenes present in both versions.
+Nowadays this project appears fully superseded by the official Netflix *Sonic Mania* Mobile Port and the fan decompilation and port to various platforms. Strangely the Netflix port appears to run way worse in the scenes present in both versions.
 
 
 ## Lessons Learned
 
 ---
 
-This project featured a few nice opportunities for me to learn as I had never before worked with any sort of difficult projection logic at noteworthy performance levels. Previous exposure in the [Everyone Joins the Battle Meme Generator](/portfolio/software/joins-the-battle-meme-generator/) were limited to screen space transformations without any FPS requirements. Surfaces were also only drawn once and cached.\
+This project featured a few nice opportunities for me to learn as I had never before worked with any sort of difficult projection logic at noteworthy performance levels. Previous exposure in the [*Everyone Joins the Battle Meme Generator*](/portfolio/software/joins-the-battle-meme-generator/) were limited to screen space transformations without any FPS requirements. Surfaces were also only drawn once and cached.\
 This time proper world space coordinates and real time performance were required, leading to the usage of the 3D systems.\
 Unbeknownst to me at this time this would be a huge help for my next project.
