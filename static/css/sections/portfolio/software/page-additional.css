@@ -17,6 +17,35 @@
     overflow: hidden;
 }
 
+/* Videos stacked under the infobox in the right column; body text keeps flowing around both floats. */
+.blogVideoList.blogVideoList-sidebar {
+    float: right;
+    clear: right;
+    box-sizing: border-box;
+    width: 20rem;
+    margin: 0 0 1rem 2rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+}
+
+.blogVideoList.blogVideoList-sidebar > div {
+    flex: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 40rem) {
+    .blogVideoList.blogVideoList-sidebar {
+        float: none;
+        width: 100%;
+        margin: 1.5rem auto;
+    }
+}
+
 /* Prominent copyright and source-file notice for projects built around third-party works. */
 #contentContainer .project-legal-notice {
     --project-legal-border-color: var(--main-color);
