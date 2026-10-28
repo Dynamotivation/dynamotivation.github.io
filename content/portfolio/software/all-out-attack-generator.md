@@ -1,7 +1,7 @@
 +++
 title = "All-Out Attack Generator"
 date = 2021-09-05
-description = "Free animation maker for Persona-esque All-Out Attack finishers. Add your own characters and artwork, then export PNG, GIF or video on Windows, Android and the web."
+description = "Make Persona-esque All-Out Attack finishers for free. Add your own characters and artwork, then export PNG sequences on any platform, or GIF and video on Windows."
 
 [taxonomies]
 software-categories = ["App", "Android", "Windows"]
@@ -46,27 +46,27 @@ aggregate_rating = ""
 questions = [
     {
         question = "What is the All-Out Attack Generator?",
-        answer = "A free animation maker for Persona-esque All-Out Attack finishers. You add your own characters and a kill splash artwork, and it renders the animated sequence."
+        answer = "A free animation maker for Persona-esque All-Out Attack finishers. You add your own characters and kill splash artwork, and it renders the animated sequence for you."
     },
     {
         question = "Does it cost anything?",
-        answer = "No. The All-Out Attack Generator is freeware. Its source code is closed."
+        answer = "No, it is freeware. The source code is closed."
     },
     {
         question = "Is the All-Out Attack Generator available for download?",
-        answer = "Yes. Windows (32-bit portable executable) and Android (APK) builds are published on GitHub Releases, and a browser version is available online."
+        answer = "Yes. You can get the Windows (32-bit portable executable) and Android (APK) builds from GitHub Releases, or use the browser version online."
     },
     {
         question = "How many characters can I use?",
-        answer = "Up to four images for the teammates and four for the enemies, plus the artwork for the final kill splash."
+        answer = "You can use up to four images for the teammates and four for the enemies, plus the artwork for the final kill splash."
     },
     {
         question = "What can I export?",
-        answer = "PNG sequences on every platform, a PNG strip on Android, and GIF or video on Windows. Video and GIF export on Windows needs optional FFmpeg and OpenH264 downloads."
+        answer = "PNG sequences on every platform, a PNG strip on Android, and GIF or video on Windows. GIF and video export on Windows needs the optional FFmpeg and OpenH264 downloads."
     },
     {
         question = "Is it available in other languages?",
-        answer = "Yes. Community translations exist for German, Spanish and French."
+        answer = "Yes, thanks to community translations in German, Spanish and French."
     },
     {
         question = "What is the tech stack for All-Out Attack Generator?",
@@ -94,16 +94,16 @@ questions = [
 {% end %}
 
 
-***All-Out Attack Generator*** is a free animation maker by Dynamotivation that creates All-Out Attack animations in a Persona-esque style. Users add their own characters and kill splash artwork, and the tool renders the stylised animation they know from the game. It was first released in September 2021 for Windows and Android, and a browser version is available as well.
+***All-Out Attack Generator*** is a free animation maker by Dynamotivation for creating All-Out Attack animations in a Persona-esque style. Users bring their own characters and kill splash artwork, and it renders the animation they know from the game. It was first released in September 2021 for Windows and Android, and you can also use it in a browser.
 
 
 ## Development
 
 ---
 
-The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlnoJX8) recreated the All-Out Attack effect in Unity. The distinctive look of the effect made it a good opportunity to explore 3D in GameMaker beyond simple plane projections.
+The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlnoJX8) recreated the All-Out Attack effect in Unity. The effect has such a distinctive look that it made a good excuse to try real 3D in GameMaker, beyond simple plane projections.
 
-The animation opens with a mirror breaking into shards, and those shards had to be real 3D elements. The 3D was working by mid-August 2019, after a start around June or July. Development then took a long hiatus. Writing custom UI components with arbitrary sizes, lengths and translations while targeting HTML5 for the first time proved difficult. Version 1.0.0 shipped on September 5, 2021.
+The animation opens with a mirror breaking into shards, so those shards had to be real 3D elements. Work started around June or July, and the 3D was working by mid-August 2019. Then the project went quiet for a long while. Writing custom UI components with arbitrary sizes, lengths and translations, while targeting HTML5 for the first time, turned out to be difficult. Version 1.0.0 finally shipped on September 5, 2021.
 
 The menus use a toned down style of *P5*.
 
@@ -127,53 +127,53 @@ The menus use a toned down style of *P5*.
 
 During the development of *All-Out Attack Generator* a few challenges arose:
 
-*   Fly-in math for a fully customisable splash screen
-    *   Rules were needed so the fly-ins work wherever the artwork is placed, the layering holds up, and performance stays smooth. Texture assets scale adaptively per device.
+*   Fly-in math for a fully customizable splash screen
+    *   The fly-ins had to work wherever the artwork is placed, the layering had to hold up, and performance had to stay smooth. Texture assets scale to each device.
 *   Faking the light shimmer of the original
     *   A texture is UV-projected across four tiles to recreate the shimmer.
 *   Sprite outlines
-    *   Drawing sprites offset repeatedly by a few pixels per axis produced jagged edges. Sprites are now padded so the border fits the texture page, then outlined by a shader derived from a Gaussian blur with the alpha pass stripped and the output forced to white, followed by a second pass for softer edges. The shader was written without prior knowledge of GLSL.
+    *   Drawing sprites repeatedly, offset by a few pixels per axis, produced jagged edges. Now the sprites are padded so the border still fits the texture page, and a shader draws the outline. It is derived from a Gaussian blur with the alpha pass stripped and the output forced to white, followed by a second pass for softer edges. Dynamotivation wrote the shader without any prior knowledge of GLSL.
 *   Custom UI components and the first HTML5 export
-    *   Flexible sizes, lengths and translations on the web target caused the long development pause.
+    *   Flexible sizes, lengths and translations on the web target were what caused the long pause in development.
 
 
 ## Features
 
 ---
 
-In the latest version (1.2.2) the features include:
+Here is what the latest version (1.2.2) can do:
 
 *   Character uploads
-    *   Up to four images for the teammates and four for the enemies.
+    *   Add up to four images for the teammates and four for the enemies.
 *   Kill splash artwork
-    *   An arranger editor lays out the artwork and sets its fly-in motions.
+    *   An arranger editor places the artwork and sets how it flies in.
 *   Settings
-    *   Optimisation options, anti-aliasing and a non-red colour scheme. The original runs at 30 fps, while the generator can export 60 fps with interpolation.
+    *   Optimization options, anti-aliasing and a non-red color scheme. The original runs at 30 fps, while the generator can export 60 fps with interpolation.
 *   Exporting
-    *   PNG sequences everywhere, a PNG strip on Android, and GIF and video on Windows through optional FFmpeg and OpenH264 downloads.
+    *   PNG sequences everywhere, a PNG strip on Android, and GIF and video on Windows. The Windows GIF and video export needs the optional FFmpeg and OpenH264 downloads.
 *   Languages
-    *   Community translations for German, Spanish and French.
+    *   Community translations in German, Spanish and French, thanks to the community members who made them.
 
 
 ## Availability
 
 ---
 
-Windows and Android builds are published on [GitHub Releases](https://github.com/Dynamotivation/All-Out-Attack-Generator/releases) as freeware, and the [browser version](https://dynamotivation.github.io/All-Out-Attack-Generator-Web/) runs online. The source code is private. A revival of the project is planned, and it is meant to stay cross-platform.
+You can get the Windows and Android builds as freeware from [GitHub Releases](https://github.com/Dynamotivation/All-Out-Attack-Generator/releases), or use the [browser version](https://dynamotivation.github.io/All-Out-Attack-Generator-Web/) online. The source code is private. A revival of the project is planned, and it is meant to stay cross-platform.
 
-Thanks to [The Daphinator](https://www.youtube.com/@TheDaphinator) for featuring the generator in a [YouTube Short](https://www.youtube.com/shorts/xIT_cD-Xh30) and in the [full video](https://www.youtube.com/watch?v=n6sGM67Qxcw) shown above.
+A big thank you to [The Daphinator](https://www.youtube.com/@TheDaphinator) for featuring the generator in a [YouTube Short](https://www.youtube.com/shorts/xIT_cD-Xh30) and in the [full video](https://www.youtube.com/watch?v=n6sGM67Qxcw) shown above.
 
 
 ## Lessons Learned
 
 ---
 
-*All-Out Attack Generator* taught Dynamotivation a lot beyond the tool itself:
+Making *All-Out Attack Generator* taught Dynamotivation plenty beyond the tool itself:
 
-*   Designing a themed menu from a game's design language
-*   Handling translation of software
-*   Using 3D in GameMaker beyond simple plane projections
-*   Exporting video on Windows, including compiling FFmpeg and building C code with a non-Microsoft toolchain
+*   How to design a themed menu from a game's design language
+*   How to handle translation of software
+*   How to use 3D in GameMaker beyond simple plane projections
+*   How to export video on Windows, including compiling FFmpeg and building C code with a non-Microsoft toolchain
 
 {{ legal_notice(paragraphs=[
     "This is an unofficial, fan-made tool inspired by the All-Out Attack animation and menu style of Persona 5.",
