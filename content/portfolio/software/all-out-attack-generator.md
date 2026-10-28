@@ -1,7 +1,7 @@
 +++
 title = "All-Out Attack Generator"
 date = 2021-09-05
-description = "Create All-Out Attack style animations from your own images. Free for Windows and Android, with a browser version."
+description = "Create Persona 5 style All-Out Attack animations from your own images. Free for Windows and Android, with a browser version."
 
 [taxonomies]
 software-categories = ["App", "Android", "Windows"]
@@ -34,7 +34,7 @@ availability = "InStock"
 
 
 # JSON-LD SEO for Software
-operatingSystem = "Windows, Android"
+operatingSystem = "Windows, Android, Web browser"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
 license = "Closed Source"
