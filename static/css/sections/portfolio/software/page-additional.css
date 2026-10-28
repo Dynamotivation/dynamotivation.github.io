@@ -54,6 +54,10 @@
     content: attr(data-text);
 }
 
+#contentContainer .project-legal-notice-unindexed p:first-of-type {
+    font-weight: 700;
+}
+
 @media (max-width: 30rem) {
     #contentContainer .project-legal-notice {
         --project-legal-padding: 1rem;
