@@ -20,7 +20,7 @@
 <meta property="og:url" content="{{ page.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="{% if page.extra.image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:creator" content="@Dynamotivation">
 {% set _site_url = get_url(path='', trailing_slash=true) | safe %}
 {% set twitter_domain = _site_url | replace(from='https://', to='') | replace(from='http://', to='') | replace(from='/', to='') %}

@@ -171,7 +171,7 @@
 {% endif %}
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="{% if page.image or page.extra.image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:creator" content="@Dynamotivation">
 {% set _site_url = get_url(path='', trailing_slash=true) | safe %}
 {% set twitter_domain = _site_url | replace(from='https://', to='') | replace(from='http://', to='') | replace(from='/', to='') %}

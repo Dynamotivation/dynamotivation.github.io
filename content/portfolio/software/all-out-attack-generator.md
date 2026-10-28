@@ -1,7 +1,7 @@
 +++
 title = "All-Out Attack Generator"
 date = 2021-09-05
-description = "Free All-Out Attack animation maker for Windows, Android and the web. Add your own characters and artwork, then export PNG, GIF or video."
+description = "Free animation maker for Persona-esque All-Out Attack finishers. Add your own characters and artwork, then export PNG, GIF or video on Windows, Android and the web."
 
 [taxonomies]
 software-categories = ["App", "Android", "Windows"]
@@ -46,7 +46,7 @@ aggregate_rating = ""
 questions = [
     {
         question = "What is the All-Out Attack Generator?",
-        answer = "A free animation maker that recreates the flashy All-Out Attack team finisher of turn-based RPGs with your own images. You add your characters and a kill splash artwork, and it renders the animated sequence."
+        answer = "A free animation maker for Persona-esque All-Out Attack finishers. You add your own characters and a kill splash artwork, and it renders the animated sequence."
     },
     {
         question = "Does it cost anything?",
@@ -94,18 +94,18 @@ questions = [
 {% end %}
 
 
-***All-Out Attack Generator*** is a free animation maker by Dynamotivation that recreates the flashy All-Out Attack team finisher of turn-based RPGs. Users add their own characters and kill splash artwork, and the tool renders the stylised animation they know from the game. It was first released in September 2021 for Windows and Android, and a browser version is available as well.
+***All-Out Attack Generator*** is a free animation maker by Dynamotivation that creates All-Out Attack animations in a Persona-esque style. Users add their own characters and kill splash artwork, and the tool renders the stylised animation they know from the game. It was first released in September 2021 for Windows and Android, and a browser version is available as well.
 
 
 ## Development
 
 ---
 
-The project started after [Mix and Jam](https://github.com/mixandjam/Persona-AllOut) recreated the All-Out Attack effect in Unity. The effect oozes style, and it was a good excuse to try 3D in GameMaker beyond simple plane projections.
+The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlnoJX8) recreated the All-Out Attack effect in Unity. The distinctive look of the effect made it a good opportunity to explore 3D in GameMaker beyond simple plane projections.
 
 The animation opens with a mirror breaking into shards, and those shards had to be real 3D elements. The 3D was working by mid-August 2019, after a start around June or July. Development then took a long hiatus. Writing custom UI components with arbitrary sizes, lengths and translations while targeting HTML5 for the first time proved difficult. Version 1.0.0 shipped on September 5, 2021.
 
-The whole menu follows the bold, high-contrast style of the effect it recreates, toned down a little.
+The menus use a toned down style of *Persona 5*.
 
 
 ## Challenges
@@ -159,3 +159,9 @@ Windows and Android builds are published on [GitHub Releases](https://github.com
 *   Handling translation of software
 *   Using 3D in GameMaker beyond simple plane projections
 *   Exporting video on Windows, including compiling FFmpeg and building C code with a non-Microsoft toolchain
+
+{{ legal_notice(paragraphs=[
+    "This is an unofficial, fan-made tool inspired by the All-Out Attack animation and menu style of Persona 5. Users supply their own character images.",
+    "Persona, Persona 5 and related names, characters and artwork are copyright or trademarks of their respective owners. This work is not affiliated with or endorsed by ATLUS or SEGA.",
+    "Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games."
+]) }}
