@@ -592,7 +592,6 @@ figcaption {
 
     display: block;
     width: 100%;
-    max-width: 60rem;
     margin: 2rem 0;
 }
 
@@ -645,33 +644,16 @@ figcaption {
 }
 
 :is(#contentContainer, #portRedmond) .qna-answer {
-    display: grid;
-    grid-template-rows: 1fr;
     overflow: clip;
 }
 
-:is(#contentContainer, #portRedmond) .qna-item[open] > .qna-answer {
-    animation: qna-open 0.3s ease;
-}
-
-@keyframes qna-open {
-    from { grid-template-rows: 0fr; opacity: 0; }
-    to { grid-template-rows: 1fr; opacity: 1; }
-}
-
 @media (prefers-reduced-motion: reduce) {
-    :is(#contentContainer, #portRedmond) .qna-item[open] > .qna-answer {
-        animation: none;
-    }
-
     :is(#contentContainer, #portRedmond) .qna-question::after {
         transition: none;
     }
 }
 
 :is(#contentContainer, #portRedmond) .qna-answer-inner {
-    min-height: 0;
-    overflow: clip;
     max-width: 70ch;
     padding: 0 0 1.25rem;
     color: var(--qna-muted);
