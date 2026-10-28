@@ -134,7 +134,7 @@ During the development of *All-Out Attack Generator* a few challenges arose:
 *   Sprite outlines
     *   Drawing sprites repeatedly, offset by a few pixels per axis, produced jagged edges. Now the sprites are padded so the border still fits the texture page, and a shader draws the outline. It is derived from a Gaussian blur with the alpha pass stripped and the output forced to white, followed by a second pass for softer edges. Dynamotivation wrote the shader without any prior knowledge of GLSL.
 *   Custom UI components and the first HTML5 export
-    *   Flexible sizes, lengths and translations on the web target were what caused the long pause in development.
+    *   Flexible sizes, lengths and translations on the web target caused the long pause in development.
 
 
 ## Features
@@ -152,7 +152,7 @@ Here is what the latest version (1.2.2) can do:
 *   Exporting
     *   PNG sequences everywhere, a PNG strip on Android, and GIF and video on Windows. The Windows GIF and video export needs the optional FFmpeg and OpenH264 downloads.
 *   Languages
-    *   Community translations in German, Spanish and French, thanks to the community members who made them.
+    *   Translations in German, Spanish and French, thanks to the community members who made them.
 
 
 ## Availability
