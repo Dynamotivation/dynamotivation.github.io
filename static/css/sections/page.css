@@ -255,6 +255,13 @@ ul ul {
     margin: 0 auto;
 }
 
+/* Two (or more) videos in one row; stacks on narrow screens via the media query below. */
+.blogVideoList.blogVideoList-side-by-side > div {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+}
+
 .blogVideoList iframe {
     display: block;
     border-radius: 0.5rem;

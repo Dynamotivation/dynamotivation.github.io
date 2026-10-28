@@ -103,11 +103,16 @@ questions = [
 
 The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlnoJX8) recreated the All-Out Attack effect in Unity. The distinctive look of the effect made it a good opportunity to explore 3D in GameMaker beyond simple plane projections.
 
-<div class="blogVideoList">
+<div class="blogVideoList blogVideoList-side-by-side">
 {{ blog_video(
     url="TyJJmlnoJX8",
     title="Mix and Jam recreating the All-Out Attack effect in Unity",
     description="Mix and Jam's episode recreating the All-Out Attack effect in Unity, which inspired the project."
+) }}
+{{ blog_video(
+    url="n6sGM67Qxcw",
+    title="The Daphinator creating a custom All-Out Attack",
+    description="The Daphinator's video on creating a custom All-Out Attack animation."
 ) }}
 </div>
 
@@ -155,6 +160,8 @@ In the latest version (1.2.2) the features include:
 ---
 
 Windows and Android builds are published on [GitHub Releases](https://github.com/Dynamotivation/All-Out-Attack-Generator/releases) as freeware, and the [browser version](https://dynamotivation.github.io/All-Out-Attack-Generator-Web/) runs online. The source code is private. A revival of the project is planned, and it is meant to stay cross-platform.
+
+Thanks to [The Daphinator](https://www.youtube.com/@TheDaphinator) for featuring the generator in a [YouTube Short](https://www.youtube.com/shorts/xIT_cD-Xh30) and in the [full video](https://www.youtube.com/watch?v=n6sGM67Qxcw) shown above.
 
 
 ## Lessons Learned
