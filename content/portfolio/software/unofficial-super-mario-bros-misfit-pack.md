@@ -34,7 +34,7 @@ price_usd = 0
 operatingSystem = "Windows"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
-license = "Proprietary"
+license = "Closed Source"
 # No rating yet; an empty value keeps AggregateRating out of the JSON-LD
 aggregate_rating = ""
 # No FAQ yet

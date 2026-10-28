@@ -14,14 +14,14 @@ targets = { windows = ["x86"], macos = [], linux = [] }
 [extra]
 project_title = "All-Out Attack Generator"
 date_label = "First released"
-logo = "https://raw.githubusercontent.com/Dynamotivation/All-Out-Attack-Generator-Web/main/android-chrome-256x256.png"
-logo_width = 256
-logo_height = 256
+logo = "/images/allOutAttackGenerator/icon.webp"
+logo_width = 512
+logo_height = 512
 infobox_images = [
     {
-        path = "https://raw.githubusercontent.com/Dynamotivation/All-Out-Attack-Generator-Web/main/android-chrome-256x256.png",
-        imageWidthPx = 256,
-        imageHeightPx = 256,
+        path = "/images/allOutAttackGenerator/icon.webp",
+        imageWidthPx = 512,
+        imageHeightPx = 512,
         description = "All-Out Attack Generator logo",
         radius = "20%"
     }
@@ -37,7 +37,7 @@ availability = "InStock"
 operatingSystem = "Windows, Android"
 programming_language = "GML (GameMaker Language)"
 development_environment = "GameMaker Studio 1.4"
-license = "Proprietary"
+license = "Closed Source"
 price_usd = 0
 # No rating yet; an empty value keeps AggregateRating out of the JSON-LD
 aggregate_rating = ""

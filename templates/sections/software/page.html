@@ -12,10 +12,11 @@
 {%- else %}
 {%- set _title = "Project" %}
 {%- endif %}
+{%- set _logo = page.extra.logo | default(value="") %}{%- if _logo is starting_with("/") %}{% set _logo = get_url(path=_logo | trim_start_matches(pat="/")) %}{% endif %}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ _title }} | Dynamotivation">
 <meta property="og:description" content="{{ page.description }}">
-<meta property="og:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
+<meta property="og:image" content="{{ page.extra.image | default(value=_logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
 <meta property="og:url" content="{{ page.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
@@ -27,7 +28,7 @@
 <meta property="twitter:url" content="{{ page.permalink | safe }}">
 <meta name="twitter:title" content="{{ _title }} | Dynamotivation">
 <meta name="twitter:description" content="{{ page.description }}">
-<meta name="twitter:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
+<meta name="twitter:image" content="{{ page.extra.image | default(value=_logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
 {% endblock %}
 
 {% block releases %}
@@ -63,6 +64,7 @@
 {% endblock releases %}
 
 {% block jsonld %}
+{%- set _logo = page.extra.logo | default(value="") %}{%- if _logo is starting_with("/") %}{% set _logo = get_url(path=_logo | trim_start_matches(pat="/")) %}{% endif %}
 {%- if page.extra["project_title"] is defined %}
 {%- set _title = page.extra["project_title"] %}
 {%- elif page.title is defined %}
@@ -135,7 +137,7 @@
   {% endif %}{% endif %}{% if page.extra.logo %},
   "image": {
     "@type": "ImageObject",
-    "url": "{{ page.extra.logo | safe }}",
+    "url": "{{ _logo | safe }}",
     "width": {{ page.extra.logo_width | default(value=512) }},
     "height": {{ page.extra.logo_height | default(value=512) }},
     "caption": "{{ _title }} logo"
