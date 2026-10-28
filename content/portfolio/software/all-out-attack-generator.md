@@ -96,7 +96,18 @@ questions = [
 
 ***All-Out Attack Generator*** is a free animation maker by Dynamotivation for creating All-Out Attack animations in a Persona-esque style. Users bring their own characters and kill splash artwork, and it renders the animation they know from the game. It was first released in September 2021 for Windows and Android, and you can also use it in a browser.
 
-<div class="blogVideoList blogVideoList-sidebar">
+
+## Development
+
+---
+
+The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlnoJX8) recreated the All-Out Attack effect in Unity. The effect has such a distinctive look that it made a good excuse to try real 3D in GameMaker, beyond simple plane projections.
+
+The animation opens with a mirror breaking into shards, so those shards had to be real 3D elements. Work started around June or July, and the 3D was working by mid-August 2019. Then the project went quiet for a long while. Writing custom UI components with arbitrary sizes, lengths and translations, while targeting HTML5 for the first time, turned out to be difficult. Version 1.0.0 finally shipped on September 5, 2021.
+
+The menus use a toned down style of *P5*.
+
+<div class="blogVideoList blogVideoList-side-by-side">
 {{ blog_video(
     url="TyJJmlnoJX8",
     title="Mix and Jam recreating the All-Out Attack effect in Unity",
@@ -108,17 +119,6 @@ questions = [
     description="The Daphinator's video on creating a custom All-Out Attack animation."
 ) }}
 </div>
-
-
-## Development
-
----
-
-The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlnoJX8) recreated the All-Out Attack effect in Unity. The effect has such a distinctive look that it made a good excuse to try real 3D in GameMaker, beyond simple plane projections.
-
-The animation opens with a mirror breaking into shards, so those shards had to be real 3D elements. Work started around June or July, and the 3D was working by mid-August 2019. Then the project went quiet for a long while. Writing custom UI components with arbitrary sizes, lengths and translations, while targeting HTML5 for the first time, turned out to be difficult. Version 1.0.0 finally shipped on September 5, 2021.
-
-The menus use a toned down style of *P5*.
 
 
 ## Challenges

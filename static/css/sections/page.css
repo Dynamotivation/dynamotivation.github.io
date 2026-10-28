@@ -256,6 +256,11 @@ ul ul {
 }
 
 /* Two (or more) videos in one row; stacks on narrow screens via the media query below. */
+/* clear: both starts the row below a floated infobox so it can use the full content width. */
+.blogVideoList.blogVideoList-side-by-side {
+    clear: both;
+}
+
 .blogVideoList.blogVideoList-side-by-side > div {
     flex: 1 1 0;
     min-width: 0;
