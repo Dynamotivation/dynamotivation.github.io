@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ _title }} | Dynamotivation">
 <meta property="og:description" content="{{ page.description }}">
-<meta property="og:image" content="{{ page.extra.image | default(value=_logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
+<meta property="og:image" content="{{ page.extra.image | default(value=_logo | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png')) | safe }}">
 <meta property="og:url" content="{{ page.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
@@ -28,7 +28,7 @@
 <meta property="twitter:url" content="{{ page.permalink | safe }}">
 <meta name="twitter:title" content="{{ _title }} | Dynamotivation">
 <meta name="twitter:description" content="{{ page.description }}">
-<meta name="twitter:image" content="{{ page.extra.image | default(value=_logo | default(value=get_url(path='images/fullLogo.png'))) | safe }}">
+<meta name="twitter:image" content="{{ page.extra.image | default(value=_logo | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png')) | safe }}">
 {% endblock %}
 
 {% block releases %}
@@ -87,7 +87,7 @@
         "description": "{{ page.description }}",
         "datePublished": "{{ page.date }}",
         "author": {"@type": "Person", "name": "Dynamotivation"},
-        "publisher": {"@type": "Organization", "name": "Dynamotivation", "url": "{{ get_url(path='', trailing_slash=true) | safe }}", "logo": {"@type": "ImageObject", "url": "{{ get_url(path='images/fullLogo.png') }}"}},
+        "publisher": {"@type": "Organization", "name": "Dynamotivation", "url": "{{ get_url(path='', trailing_slash=true) | safe }}", "logo": {"@type": "ImageObject", "url": "https://assets.dynamotivation.com/files/site/fullLogo.png"}},
         {% if page.updated %}"dateModified": "{{ page.updated }}",{% endif %}
         {% if image_url %}"image": "{{ image_url | safe }}",{% endif %}
         "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ page.permalink | safe }}"}
@@ -109,7 +109,7 @@
     "url": "{{ page.extra.publisher_url | default(value=get_url(path='', trailing_slash=true)) | safe }}",
     "logo": {
       "@type": "ImageObject",
-  "url": "{{ page.extra.publisher_logo | default(value=get_url(path='images/fullLogo.png')) | safe }}"
+  "url": "{{ page.extra.publisher_logo | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png') | safe }}"
     }
   },
   "creator": {

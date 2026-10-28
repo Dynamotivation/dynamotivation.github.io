@@ -98,7 +98,7 @@
     color: transparent;
     animation: pulse 5s infinite;
     animation-play-state: paused;
-    mask-image: url(/images/innerLogoBackground.svg);
+    mask-image: url(https://assets.dynamotivation.com/files/site/innerLogoBackground.svg);
     mask-size: contain;
 }
 

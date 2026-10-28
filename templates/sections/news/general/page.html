@@ -23,7 +23,7 @@
         "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
         "logo": {
             "@type": "ImageObject",
-            "url": "{{ get_url(path='images/fullLogo.png') }}"
+            "url": "https://assets.dynamotivation.com/files/site/fullLogo.png"
         }
     },
     "datePublished": "{{ page.date }}"{% if page.updated %},
@@ -42,7 +42,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ page.title }} | Dynamotivation">
 <meta property="og:description" content="{{ page.description }}">
-<meta property="og:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value=get_url(path='images/fullLogo.png'))) }}">
+<meta property="og:image" content="{{ page.extra.image | default(value=page.extra.logo | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png')) }}">
 <meta property="og:url" content="{{ page.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 

@@ -9,7 +9,7 @@
 <!-- OpenGraph -->
 <meta property="og:title" content="{{ taxonomy.name | replace(from="-", to=" ") | capitalize }} | Dynamotivation">
 <meta property="og:description" content="Browse all {{ taxonomy.name | replace(from="-", to=" ") }} on Dynamotivation">
-<meta property="og:image" content="{{ get_url(path='images/fullLogo.png') }}">
+<meta property="og:image" content="https://assets.dynamotivation.com/files/site/fullLogo.png">
 <meta property="og:url" content="{{ current_url | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
@@ -41,7 +41,7 @@
           "url": "{{ get_url(path='', trailing_slash=true) | safe }}",
           "logo": {
               "@type": "ImageObject",
-              "url": "{{ get_url(path='images/fullLogo.png') }}"
+              "url": "https://assets.dynamotivation.com/files/site/fullLogo.png"
           }
       }
   }

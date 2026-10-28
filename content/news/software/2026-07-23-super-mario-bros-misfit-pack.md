@@ -4,7 +4,7 @@ title = "Super Mario Bros. Misfit Pack Announced"
 description = "The Super Mario Bros. Misfit Pack was first revealed during Kaze Emanuar's F3 2026 event."
 
 [extra]
-image = "https://dynamotivation.com/images/fullLogo.png"
+image = "https://assets.dynamotivation.com/files/site/fullLogo.png"
 +++
 
 The **Super Mario Bros. Misfit Pack** was first revealed during **Kaze Emanuar's F3 2026 (Free Fangame Festival)** event.

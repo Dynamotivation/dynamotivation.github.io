@@ -3,13 +3,13 @@
         <div id="footerTop">
             <div id="logos">
                 <a class="siteLinks" href="{{ get_url(path='', trailing_slash=true) }}" title="Home">
-                    <img id="logo" src="{{ get_url(path='images/innerLogoOutline.svg') }}" alt="Dynamotivation Logo"
+                    <img id="logo" src="https://assets.dynamotivation.com/files/site/innerLogoOutline.svg" alt="Dynamotivation Logo"
                         draggable="false"/>
                 </a>
                 {% set social_links = load_data(path="data/social_links.json") %}
                 {% for link in social_links %}
                 <a class="siteLinks" href="{{ link.url }}" title="{{ link.title }}">
-                    <img src="{{ get_url(path=link.image) }}" alt="{{ link.alt }}" draggable="false"/>
+                    <img src="{{ link.image }}" alt="{{ link.alt }}" draggable="false"/>
                 </a>
                 {% endfor %}
             </div>

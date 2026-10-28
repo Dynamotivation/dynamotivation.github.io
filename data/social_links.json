@@ -3,14 +3,14 @@
     "name": "github",
     "url": "https://github.com/Dynamotivation",
     "title": "Dynamotivation on GitHub",
-    "image": "images/gitHub/icon.svg",
+    "image": "https://assets.dynamotivation.com/files/site/gitHub/icon.svg",
     "alt": "GitHub"
   },
   {
     "name": "youtube",
     "url": "https://www.youtube.com/channel/UCH1vGbeWqtwtDL0aRef2TeA",
     "title": "Dynamotivation on YouTube",
-    "image": "images/youTube/icon.svg",
+    "image": "https://assets.dynamotivation.com/files/site/youTube/icon.svg",
     "alt": "YouTube"
   }
 ]
