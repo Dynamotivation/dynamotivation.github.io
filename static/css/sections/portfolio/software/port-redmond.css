@@ -299,50 +299,6 @@
     margin-top: 5rem;
 }
 
-.pr-faq__list {
-    margin-top: 1.5rem;
-    max-width: 60rem;
-}
-
-.pr-qa {
-    border-bottom: 0.0625rem solid var(--pr-hairline);
-}
-
-.pr-qa:first-child {
-    border-top: 0.0625rem solid var(--pr-hairline);
-}
-
-.pr-qa summary {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding: 1rem 0;
-    cursor: pointer;
-    font-weight: 500;
-    list-style: none;
-}
-
-.pr-qa summary::-webkit-details-marker {
-    display: none;
-}
-
-.pr-qa summary::after {
-    content: "+";
-    flex: 0 0 auto;
-    color: var(--pr-accent);
-    font-weight: 700;
-}
-
-.pr-qa[open] summary::after {
-    content: "\2212";
-}
-
-.pr-qa p {
-    padding: 0 0 1.25rem;
-    color: var(--pr-muted);
-    max-width: 70ch;
-}
-
 .pr-colophon {
     margin-top: 5rem;
     padding-top: 1.5rem;

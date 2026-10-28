@@ -10,6 +10,7 @@
    rather than an HTML one. #}
 
 {% extends "sections/software/page.html" %}
+{% import "macros/qna.html" as qna_macro %}
 
 {% block moreAdditionalResources %}
 <link rel="stylesheet" href="{{ get_url(path='css/sections/portfolio/software/port-redmond.css') }}">
@@ -85,14 +86,7 @@
   {% if page.extra.questions and page.extra.questions | length > 0 %}
   <section class="pr-faq">
     <h2 class="pr-h2" id="faq">Questions</h2>
-    <div class="pr-faq__list">
-      {% for f in page.extra.questions %}
-      <details class="pr-qa">
-        <summary>{{ f.question }}</summary>
-        <p>{{ f.answer }}</p>
-      </details>
-      {% endfor %}
-    </div>
+    {{ qna_macro::qna(items=page.extra.questions, page_slug="port-redmond") }}
   </section>
   {% endif %}
 
