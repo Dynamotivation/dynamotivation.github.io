@@ -20,7 +20,7 @@
 <meta property="og:url" content="{{ page.permalink | safe }}">
 <meta property="og:site_name" content="Dynamotivation">
 
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="{% if page.extra.image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:creator" content="@Dynamotivation">
 {% set _site_url = get_url(path='', trailing_slash=true) | safe %}
 {% set twitter_domain = _site_url | replace(from='https://', to='') | replace(from='http://', to='') | replace(from='/', to='') %}
@@ -109,7 +109,7 @@
     "url": "{{ page.extra.publisher_url | default(value=get_url(path='', trailing_slash=true)) | safe }}",
     "logo": {
       "@type": "ImageObject",
-  "url": "{{ page.extra.publisher_logo | default(value='https://assets.dynamotivation.com/files/site/fullLogo.png') | safe }}"
+  "url": "{% if page.extra.publisher_logo %}{{ page.extra.publisher_logo | safe }}{% else %}https://assets.dynamotivation.com/files/site/fullLogo.png{% endif %}"
     }
   },
   "creator": {
@@ -163,7 +163,7 @@
     "priceCurrency": "USD"{% if page.extra.availability %},
     "availability": "https://schema.org/{{ page.extra.availability | safe }}"{% endif %}
   }{% endif %}{% if page.extra.release_notes %},
-  "release_notes": "{{ page.extra.release_notes }}"{% endif %}{% set _sv_rel = load_data(path="data/releases.json") %}{% set _sv_list = [] %}{% if _sv_rel[page.slug] is defined %}{% set _sv_list = _sv_rel[page.slug].releases | default(value=[]) %}{% endif %}{% set _sv = page.extra.software_version | default(value="") %}{% if _sv_list | length > 0 %}{% set _sv_latest = _sv_list | first %}{% set _sv = _sv_latest.version %}{% endif %}{% if _sv %},
+  "releaseNotes": "{{ page.extra.release_notes }}"{% endif %}{% set _sv_rel = load_data(path="data/releases.json") %}{% set _sv_list = [] %}{% if _sv_rel[page.slug] is defined %}{% set _sv_list = _sv_rel[page.slug].releases | default(value=[]) %}{% endif %}{% set _sv = page.extra.software_version | default(value="") %}{% if _sv_list | length > 0 %}{% set _sv_latest = _sv_list | first %}{% set _sv = _sv_latest.version %}{% endif %}{% if _sv %},
     "softwareVersion": "{{ _sv }}"{% endif %}{% if page.date %},
     "dateCreated": "{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z", timezone="UTC") }}"{% endif %}{% if page.permalink %},
   "mainEntity": { "@id": "{{ page.permalink | safe }}#webpage" }{% endif %}

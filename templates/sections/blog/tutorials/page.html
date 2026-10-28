@@ -55,6 +55,6 @@
 {% endif %}
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="{% if page.extra.image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:creator" content="@Dynamotivation">
 {% endblock %}

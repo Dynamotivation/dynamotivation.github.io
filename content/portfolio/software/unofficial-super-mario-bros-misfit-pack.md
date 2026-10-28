@@ -41,7 +41,7 @@ aggregate_rating = ""
 questions = []
 +++
 
-The **Unofficial Super Mario Bros. Misfit Pack** is an upcoming unofficial fan work and Mario fangame. It brings five of Mario's most underrepresented platforming adventures into one collection. The project was first revealed during **[Kaze Emanuar](https://www.youtube.com/@kazen64)'s F3 2026 (Free Fangame Festival)** event.
+The ***Unofficial Super Mario Bros. Misfit Pack*** is an upcoming unofficial fan work and Mario fangame. It brings five of Mario's most underrepresented platforming adventures into one collection. The project was first revealed during [Kaze Emanuar](https://www.youtube.com/@kazen64)'s F3 2026 (Free Fangame Festival) event.
 
 ## Announcement Trailer
 
@@ -89,17 +89,16 @@ Later releases spread small fixes and presentation changes across different vers
 
 ## Follow development
 
-The project is in development, with a planned PC launch in **2027**. Development updates will be public and will cover gameplay clips, visual changes, and feature discussions.
+The project is in development, with a planned PC launch in 2027. Development updates will be public and will cover gameplay clips, visual changes, and feature discussions.
 
 <ul class="project-cta-list">
 <li><a class="project-cta-button project-cta-button-primary" href="https://www.youtube.com/@DynamotivationSoftware/videos">Subscribe on YouTube</a><span>Video development logs, gameplay trailers, and visual updates.</span></li>
 <li><a class="project-cta-button" href="https://www.reddit.com/r/Dynamotivation/">Join r/Dynamotivation on Reddit</a><span>Long-form discussions, suggestions, searchable questions and answers, and links to the community Discord server.</span></li>
 </ul>
 
-<aside class="project-legal-notice" aria-labelledby="misfit-legal-notice-title">
-<h2 id="misfit-legal-notice-title">Copyright and legal notice</h2>
-<p><strong>This is an unofficial work inspired by <em>Super Mario Bros.</em>, <em>Super Mario Bros. 2 (The Lost Levels)</em>, <em>Vs. Super Mario Bros.</em>, <em>All Night Nippon Super Mario Bros.</em>, and <em>Super Mario Bros. Special</em>.</strong></p>
-<p>The <em>Super Mario</em> franchise and the original games are copyright Nintendo. <em>Super Mario Bros. Special</em> is additionally copyright Hudson Soft. Selected elements of <em>All Night Nippon</em> are copyright Nippon Broadcasting System.</p>
-<p>A copy of each original game is required. All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by Nintendo, Hudson Soft, Nippon Broadcasting System, or YoYo Games.</p>
-<p>Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games.</p>
-</aside>
+{{ legal_notice(paragraphs=[
+    "This is an unofficial, fan-made work inspired by Super Mario Bros., Super Mario Bros. 2 (The Lost Levels), Vs. Super Mario Bros., All Night Nippon Super Mario Bros., and Super Mario Bros. Special.",
+    "The Super Mario franchise and the original games are copyright Nintendo. Super Mario Bros. Special is additionally copyright Hudson Soft. Selected elements of All Night Nippon are copyright Nippon Broadcasting System. A copy of each original game is required.",
+    "All rights are reserved by their respective copyright holders. This work is not affiliated with or endorsed by Nintendo, Hudson Soft, Nippon Broadcasting System, or YoYo Games.",
+    "Powered by GameMaker: Studio 1.4 Engine, copyright YoYo Games."
+]) }}

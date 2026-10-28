@@ -255,6 +255,18 @@ ul ul {
     margin: 0 auto;
 }
 
+/* Two (or more) videos in one row; stacks on narrow screens via the media query below. */
+/* clear: both starts the row below a floated infobox so it can use the full content width. */
+.blogVideoList.blogVideoList-side-by-side {
+    clear: both;
+}
+
+.blogVideoList.blogVideoList-side-by-side > div {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+}
+
 .blogVideoList iframe {
     display: block;
     border-radius: 0.5rem;
@@ -605,12 +617,11 @@ figcaption {
     display: flex;
     align-items: center;
     gap: 1rem;
+    list-style: none;
 }
 
-#contentContainer .qna-toggle {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+#contentContainer .qna-question::-webkit-details-marker {
+    display: none;
 }
 
 #contentContainer .qna-question::after {
@@ -623,7 +634,7 @@ figcaption {
     transition: transform 0.2s ease;
 }
 
-#contentContainer .qna-toggle:checked + .qna-question::after {
+#contentContainer .qna-item[open] > .qna-question::after {
     transform: rotate(270deg);
 }
 
@@ -634,19 +645,24 @@ figcaption {
 
 #contentContainer .qna-answer {
     display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows .3s ease;
-    overflow: clip;
-    padding-bottom: 0;
-}
-
-#contentContainer .qna-toggle:checked ~ .qna-answer {
     grid-template-rows: 1fr;
+    overflow: clip;
     padding-bottom: 1rem;
 }
 
-#contentContainer .qna-toggle:not(:checked) ~ .qna-answer .qna-answer-inner {
-    border: 0;
+#contentContainer .qna-item[open] > .qna-answer {
+    animation: qna-open .3s ease;
+}
+
+@keyframes qna-open {
+    from { grid-template-rows: 0fr; }
+    to { grid-template-rows: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #contentContainer .qna-item[open] > .qna-answer {
+        animation: none;
+    }
 }
 
 #contentContainer .qna-answer-inner {

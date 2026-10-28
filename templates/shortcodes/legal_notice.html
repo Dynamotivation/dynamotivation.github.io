@@ -1,0 +1,7 @@
+{#- Legal notice box whose text is rendered by CSS (data-text) and marked data-nosnippet, so
+    disclaimers that name third-party brands are not indexed or used in search snippets. -#}
+<aside class="project-legal-notice project-legal-notice-unindexed" data-nosnippet aria-label="{{ label | default(value="Legal notice") }}">
+{%- for paragraph in paragraphs %}
+<p data-text="{{ paragraph }}"></p>
+{%- endfor %}
+</aside>
