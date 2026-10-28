@@ -40,7 +40,11 @@ price_usd = 0
 tagline = "The Windows apps you already know, on macOS and Linux."
 lede = "Changing operating system means relearning a hundred small things at once. Port Redmond removes some of them."
 intro = "Windows ships its core applications in a form that cannot leave Windows. Port Redmond rebuilds them so they run on macOS and Linux, looking and behaving the way you already expect. There is no account to sign in to and no Copilot button in the corner. Where your new desktop does things differently, you choose which way you prefer."
-colophon = "Port Redmond is an independent, open source project. It is not affiliated with, endorsed by or sponsored by Microsoft. Windows is a trademark of Microsoft Corporation."
+legal_notice = [
+    "This is an unofficial, independent, open source project inspired by the Windows applications it brings to macOS and Linux.",
+    "Windows and related names and artwork are copyright or trademarks of Microsoft Corporation.",
+    "All rights are reserved by their respective copyright holders. This work is not affiliated with, endorsed by or sponsored by Microsoft."
+]
 
 shots = [
     { image = "https://assets.dynamotivation.com/files/projects/redmond-calculator/screenshot-standard.jpg", alt = "Redmond Calculator in standard mode" },

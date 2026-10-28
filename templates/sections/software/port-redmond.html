@@ -14,6 +14,7 @@
 
 {% block moreAdditionalResources %}
 <link rel="stylesheet" href="{{ get_url(path='css/sections/portfolio/software/port-redmond.css') }}">
+<link rel="stylesheet" href="{{ get_url(path='css/sections/portfolio/software/legal-notice.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -90,6 +91,6 @@
   </section>
   {% endif %}
 
-  <p class="pr-colophon">{{ page.extra.colophon }}</p>
+  {% if page.extra.legal_notice %}{% set paragraphs = page.extra.legal_notice %}{% include "shortcodes/legal_notice.html" %}{% endif %}
 </article>
 {% endblock content %}

@@ -299,15 +299,6 @@
     margin-top: 5rem;
 }
 
-.pr-colophon {
-    margin-top: 5rem;
-    padding-top: 1.5rem;
-    border-top: 0.0625rem solid var(--pr-hairline);
-    font-size: 0.8rem;
-    color: var(--pr-muted);
-    max-width: 70ch;
-}
-
 @media (prefers-reduced-motion: reduce) {
     .pr-app {
         transition: none;
