@@ -17,7 +17,7 @@ programming-languages = ["C#", "XAML"]
 project_title = "Port Redmond"
 alternate_name = "Port Redmond Project"
 date_label = "Announced"
-logo = "/images/placeholder/iconBackground.svg"
+logo = "https://assets.dynamotivation.com/files/site/placeholder/iconBackground.svg"
 infobox_images = []
 screenshot_urls = []
 
@@ -43,8 +43,7 @@ intro = "Windows ships its core applications in a form that cannot leave Windows
 colophon = "Port Redmond is an independent, open source project. It is not affiliated with, endorsed by or sponsored by Microsoft. Windows is a trademark of Microsoft Corporation."
 
 shots = [
-    { image = "/images/portRedmond/__PLACEHOLDER__-windows-calculator.png", alt = "Calculator running on Windows 11" },
-    { image = "/images/portRedmond/__PLACEHOLDER__-windows-notepad.png", alt = "Notepad running on Windows 11" },
+    { image = "https://assets.dynamotivation.com/files/projects/redmond-calculator/screenshot-standard.jpg", alt = "Redmond Calculator in standard mode" },
 ]
 
 claims = [
@@ -71,8 +70,8 @@ differences = [
 ]
 
 apps = [
-    { name = "Redmond Calculator", page = "/portfolio/software/redmond-calculator/", icon_bg = "/images/placeholder/iconBackground.svg", icon_fg = "/images/placeholder/iconForeground.svg", summary = "Standard, scientific and programmer modes, with the keypad and shortcuts in the places you expect." },
-    { name = "Redmond Notepad", page = "/portfolio/software/redmond-notepad/", icon_bg = "/images/placeholder/iconBackground.svg", icon_fg = "/images/placeholder/iconForeground.svg", summary = "Plain text editing, with the same find and replace, the same status bar and the same encoding handling." },
+    { name = "Redmond Calculator", page = "/portfolio/software/redmond-calculator/", icon = "https://assets.dynamotivation.com/files/projects/redmond-calculator/logo.svg", summary = "Standard, scientific and programmer modes, with the keypad and shortcuts in the places you expect." },
+    { name = "Redmond Notepad", page = "/portfolio/software/redmond-notepad/", icon = "https://assets.dynamotivation.com/files/projects/redmond-notepad/logo.svg", summary = "Plain text editing, with the same find and replace, the same status bar and the same encoding handling." },
 ]
 
 # Also feeds the FAQ structured data inherited from the software page template.

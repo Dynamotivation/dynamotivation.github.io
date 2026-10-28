@@ -11,9 +11,9 @@ programming-languages = ["C#", "XAML"]
 # Graphic enrichment
 project_title = "Redmond Calculator"
 date_label = "Announced"
-logo = "/images/placeholder/iconBackground.svg"
+logo = "https://assets.dynamotivation.com/files/projects/redmond-calculator/logo.svg"
 infobox_images = [
-    { path = "/images/placeholder/iconBackground.svg", imageWidthPx = 512, imageHeightPx = 512, description = "Redmond Calculator placeholder icon, artwork still to come", radius = "20%" }
+    { path = "https://assets.dynamotivation.com/files/projects/redmond-calculator/logo.svg", imageWidthPx = 512, imageHeightPx = 512, description = "Redmond Calculator application icon", radius = "20%" }
 ]
 screenshot_urls = []
 

@@ -30,7 +30,7 @@
     </div>
     <div class="pr-banner__shots">
       {% for s in page.extra.shots %}
-      <img class="pr-banner__shot" src="{{ get_url(path=s.image) }}" alt="{{ s.alt }}" loading="lazy" decoding="async">
+      <img class="pr-banner__shot" src="{{ s.image }}" alt="{{ s.alt }}" loading="lazy" decoding="async">
       {% endfor %}
     </div>
   </div>
@@ -70,11 +70,9 @@
     <div class="pr-apps__grid">
       {% for a in page.extra.apps %}
       <a class="pr-app" href="{{ get_url(path=a.page) }}">
-        {# The site's existing placeholder mark, stacked the way app icons are
-           stacked elsewhere on the site. A screenshot is unreadable at this size. #}
+        {# The application's own icon, served from the assets CDN. #}
         <span class="pr-app__icon">
-          <img src="{{ get_url(path=a.icon_bg) }}" alt="" aria-hidden="true" loading="lazy">
-          <img src="{{ get_url(path=a.icon_fg) }}" alt="" aria-hidden="true" loading="lazy">
+          <img src="{{ a.icon }}" alt="" aria-hidden="true" loading="lazy">
         </span>
         <h3 class="pr-app__name">{{ a.name }}</h3>
         <p class="pr-app__summary">{{ a.summary }}</p>

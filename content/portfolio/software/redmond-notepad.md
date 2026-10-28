@@ -11,9 +11,9 @@ programming-languages = ["C#", "XAML"]
 # Graphic enrichment
 project_title = "Redmond Notepad"
 date_label = "Announced"
-logo = "/images/placeholder/iconBackground.svg"
+logo = "https://assets.dynamotivation.com/files/projects/redmond-notepad/logo.svg"
 infobox_images = [
-    { path = "/images/placeholder/iconBackground.svg", imageWidthPx = 512, imageHeightPx = 512, description = "Redmond Notepad placeholder icon, artwork still to come", radius = "20%" }
+    { path = "https://assets.dynamotivation.com/files/projects/redmond-notepad/logo.svg", imageWidthPx = 512, imageHeightPx = 512, description = "Redmond Notepad application icon", radius = "20%" }
 ]
 screenshot_urls = []
 
