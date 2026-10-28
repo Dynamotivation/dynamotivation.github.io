@@ -103,6 +103,14 @@ questions = [
 
 The project started after [Mix and Jam](https://www.youtube.com/watch?v=TyJJmlnoJX8) recreated the All-Out Attack effect in Unity. The distinctive look of the effect made it a good opportunity to explore 3D in GameMaker beyond simple plane projections.
 
+<div class="blogVideoList">
+{{ blog_video(
+    url="TyJJmlnoJX8",
+    title="Mix and Jam recreating the All-Out Attack effect in Unity",
+    description="Mix and Jam's episode recreating the All-Out Attack effect in Unity, which inspired the project."
+) }}
+</div>
+
 The animation opens with a mirror breaking into shards, and those shards had to be real 3D elements. The 3D was working by mid-August 2019, after a start around June or July. Development then took a long hiatus. Writing custom UI components with arbitrary sizes, lengths and translations while targeting HTML5 for the first time proved difficult. Version 1.0.0 shipped on September 5, 2021.
 
 The menus use a toned down style of *Persona 5*.
