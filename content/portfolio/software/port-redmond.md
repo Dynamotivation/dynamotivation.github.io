@@ -53,7 +53,7 @@ shots = [
 claims = [
     { title = "Familiar layout", body = "The interface is modeled on the Windows apps, so the layout looks familiar." },
     { title = "Window style options", body = "On macOS the Calculator can use macOS or Windows window corners and window buttons. Both are set in Settings." },
-    { title = "Shortcuts", body = "The Calculator uses the Windows shortcuts. On macOS, copy, paste and graph zoom use Command instead of Ctrl." },
+    { title = "Shortcuts", body = "The Calculator uses the Windows shortcuts. On macOS, copy, paste and graph zoom use Command instead of Ctrl, and a setting switches it back." },
     { title = "No sign-in", body = "The Calculator has no accounts. It only goes online for currency rates, and only after you agree to it." },
 ]
 
@@ -80,7 +80,7 @@ questions = [
     { question = "Do I need an account?", answer = "The Calculator has no accounts. Its only network use is currency rates, and each rate source needs your consent first." },
     { question = "Does it run on Linux?", answer = "Yes. Both apps run on macOS and Linux." },
     { question = "Why not run the Windows versions?", answer = "The Windows versions are made for Windows. Redmond Calculator reuses the calculation engine of Microsoft's open-source Windows Calculator and adds a new Avalonia interface, so that it can run on other systems." },
-    { question = "Do the keyboard shortcuts work?", answer = "In the Calculator, yes. It uses the Windows shortcuts, and on macOS copy, paste and graph zoom use Command instead of Ctrl. The Notepad page describes its own shortcuts." },
+    { question = "Do the keyboard shortcuts work?", answer = "In the Calculator, yes. It uses the Windows shortcuts, and on macOS copy, paste and graph zoom use Command instead of Ctrl, which you can change in Settings. The Notepad page describes its own shortcuts." },
     { question = "Are these official Microsoft applications?", answer = "No. Port Redmond is an independent project with no connection to Microsoft." },
     { question = "When will it be finished?", answer = "There is no date. Both apps are still in development." }
 ]
