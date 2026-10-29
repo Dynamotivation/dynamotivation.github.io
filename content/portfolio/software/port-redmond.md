@@ -1,7 +1,7 @@
 +++
 title = "Port Redmond"
 date = 2026-07-25
-description = "The Windows apps you already know, rebuilt to run on macOS and Linux. Free, open source, no account and no Copilot."
+description = "A project to make versions of the Windows Calculator and Notepad for macOS and Linux. In development and not yet released."
 
 # Custom splash template. A page's own `template` always wins over the
 # `page_template` set by the parent section, so this one page opts out of the
@@ -37,9 +37,9 @@ price_usd = 0
 # this is a splash page rather than an article, so adding an application or a
 # platform difference is an edit here rather than in HTML.
 
-tagline = "The Windows apps you already know, on macOS and Linux."
-lede = "Changing operating system means relearning a hundred small things at once. Port Redmond removes some of them."
-intro = "Windows ships its core applications in a form that cannot leave Windows. Port Redmond rebuilds them so they run on macOS and Linux, looking and behaving the way you already expect. There is no account to sign in to and no Copilot button in the corner. Where your new desktop does things differently, you choose which way you prefer."
+tagline = "Calculator and Notepad for macOS and Linux, in development."
+lede = "Port Redmond is an attempt to make a few everyday Windows apps available on macOS and Linux with a familiar layout."
+intro = "The Windows Calculator and Notepad only run on Windows. Port Redmond builds versions of them with Avalonia and .NET so they can run on macOS and Linux. Redmond Calculator reuses the calculation engine of Microsoft's open-source Windows Calculator. Neither app has been released yet."
 legal_notice = [
     "This is an unofficial, independent, open source project inspired by the Windows applications it brings to macOS and Linux.",
     "Windows and related names and artwork are copyright or trademarks of Microsoft Corporation.",
@@ -51,49 +51,38 @@ shots = [
 ]
 
 claims = [
-    { title = "Familiar by default", body = "Same layout, same commands, in the same places. Nothing to relearn on the first day." },
-    { title = "At home on your new desktop", body = "Menus, window buttons and rounded corners can follow the platform you moved to instead. One setting each." },
-    { title = "Your shortcuts come with you", body = "Keep pressing Ctrl, or let it become Command. You decide which habit is worth keeping." },
-    { title = "No accounts, no Copilot", body = "Nothing to sign in to, nothing to agree to, and no assistant offering to rewrite your text. Open it and use it." },
+    { title = "Familiar layout", body = "The interface is modeled on the Windows apps, so the layout looks familiar." },
+    { title = "Window style options", body = "On macOS the Calculator can use macOS or Windows window corners and window buttons. Both are set in Settings." },
+    { title = "Shortcuts", body = "The Calculator uses the Windows shortcuts. On macOS, copy, paste and graph zoom use Command instead of Ctrl." },
+    { title = "No sign-in", body = "The Calculator has no accounts. It only goes online for currency rates, and only after you agree to it." },
 ]
 
 differences = [
-    { platform = "macOS", rows = [
-        { from = "Menus inside the window", to = "Menu bar at the top of the screen" },
-        { from = "Window buttons on the right", to = "Window buttons on the left" },
-        { from = "Ctrl for shortcuts", to = "Command for shortcuts" },
-        { from = "Dialogs centred on screen", to = "Dialogs attached to the window" },
-        { from = "Asks before closing unsaved work", to = "Saves as you go" }
-    ] },
-    { platform = "Linux", rows = [
-        { from = "Menus inside the window", to = "A header bar with a single menu button" },
-        { from = "Minimise, maximise and close", to = "Only the buttons your desktop shows" },
-        { from = "Windows corner rounding", to = "Whatever your desktop uses" },
-        { from = "Paste from the clipboard", to = "Middle-click to paste as well" }
+    { platform = "macOS, compared with Windows", rows = [
+        { from = "Window buttons on the right", to = "Window buttons on the left (optional)" },
+        { from = "Rounded Windows 11 corners", to = "macOS rounded corners (optional)" },
+        { from = "Ctrl + C and Ctrl + V", to = "Command + C and Command + V" },
+        { from = "Ctrl with plus, minus or 0 to zoom the graph", to = "Command with plus, minus or 0" }
     ] },
 ]
 
 apps = [
-    { name = "Redmond Calculator", page = "/portfolio/software/redmond-calculator/", icon = "https://assets.dynamotivation.com/files/projects/redmond-calculator/logo.svg", summary = "Standard, scientific and programmer modes, with the keypad and shortcuts in the places you expect." },
-    { name = "Redmond Notepad", page = "/portfolio/software/redmond-notepad/", icon = "https://assets.dynamotivation.com/files/projects/redmond-notepad/logo.svg", summary = "Plain text editing, with the same find and replace, the same status bar and the same encoding handling." },
+    { name = "Redmond Calculator", page = "/portfolio/software/redmond-calculator/", icon = "https://assets.dynamotivation.com/files/projects/redmond-calculator/logo.svg", summary = "Standard, scientific, programmer, graphing and date modes, plus unit and currency converters." },
+    { name = "Redmond Notepad", page = "/portfolio/software/redmond-notepad/", icon = "https://assets.dynamotivation.com/files/projects/redmond-notepad/logo.svg", summary = "Plain text editing with find and replace, a status bar and encoding handling." },
 ]
 
 # Also feeds the FAQ structured data inherited from the software page template.
 questions = [
-    { question = "What is Port Redmond, in one sentence?", answer = "A set of free applications that recreate the everyday Windows tools on macOS and Linux, so that switching operating system costs you less of what you already know." },
-    { question = "Which applications are there?", answer = "Calculator and Notepad are being built now. More will follow, and each one gets its own page here when it is ready." },
-    { question = "Can I download it yet?", answer = "No. Nothing has been released. This page exists to announce the project rather than to distribute it." },
-    { question = "Is there any Copilot or AI in these?", answer = "No. There is no assistant, no suggestions, and no button in the corner offering to rewrite what you typed. The applications do the job they are named after and nothing else." },
-    { question = "Do I need an account?", answer = "No. There is nothing to sign in to, nothing to register, and no prompt on first run asking you to create anything. Install it and it works." },
-    { question = "Does it cost anything?", answer = "No. Every application is free, and the source code is open for anyone who wants to read or change it." },
-    { question = "Will these look out of place on my Mac or Linux desktop?", answer = "Only if you want them to. By default they look the way they do on Windows. Every place where your new desktop does things differently is offered as a setting, so you can make each application feel as native or as familiar as you like." },
-    { question = "Why rebuild the applications instead of running the Windows versions?", answer = "The Windows versions are built with technology that only works on Windows, so they cannot simply be copied across. These are new builds written to run on all three systems from the same source." },
-    { question = "Do my keyboard shortcuts still work?", answer = "Yes. They match Windows out of the box. On a Mac you can also switch them over to the Command key, which is what other Mac applications use." },
-    { question = "Are these official Microsoft applications?", answer = "No. Port Redmond is an independent project with no connection to Microsoft. It follows the interface design guidelines Microsoft publishes openly, which is what lets the applications look the way they do." },
-    { question = "Will my files work the same way?", answer = "Yes. Files are saved in the same formats, and things like text encoding and line endings are handled the way Windows handles them, so documents move between machines without surprises." },
-    { question = "Some things are not offered as a choice. Why?", answer = "A few differences are not a matter of taste. Where your files are stored, how the system file picker opens, and how the applications are installed all follow your new platform, because doing otherwise would make them behave badly on it." },
-    { question = "How do I install them once they are released?", answer = "In the normal way for your system: an application bundle on macOS, and the usual package formats on Linux. There will be no unfamiliar installer to work through." },
-    { question = "When will it be finished?", answer = "There is no date yet. Calculator and Notepad both run today, but neither is ready for other people to rely on." },
+    { question = "What is Port Redmond?", answer = "A project to make versions of the Windows Calculator and Notepad that run on macOS and Linux." },
+    { question = "Which applications are there?", answer = "Redmond Calculator and Redmond Notepad. Each has its own page." },
+    { question = "Can I download it yet?", answer = "No. Nothing has been released. The source code of both apps is public on GitHub." },
+    { question = "Does it cost anything?", answer = "No. The apps are free. The Calculator is under the MIT licence. The Notepad repository does not have a licence file yet." },
+    { question = "Do I need an account?", answer = "The Calculator has no accounts. Its only network use is currency rates, and each rate source needs your consent first." },
+    { question = "Does it run on Linux?", answer = "Linux is a goal, but there is no Linux build or packaging yet. The Calculator has build steps for macOS and Windows." },
+    { question = "Why not run the Windows versions?", answer = "The Windows versions are made for Windows. Redmond Calculator reuses the calculation engine of Microsoft's open-source Windows Calculator and adds a new Avalonia interface, so that it can run on other systems." },
+    { question = "Do the keyboard shortcuts work?", answer = "In the Calculator, yes. It uses the Windows shortcuts, and on macOS copy, paste and graph zoom use Command instead of Ctrl. The Notepad page describes its own shortcuts." },
+    { question = "Are these official Microsoft applications?", answer = "No. Port Redmond is an independent project with no connection to Microsoft." },
+    { question = "When will it be finished?", answer = "There is no date. Both apps are still in development." }
 ]
 
 +++

@@ -1,10 +1,10 @@
 +++
 title = "Redmond Calculator"
 date = 2026-07-25
-description = "The Windows calculator rebuilt on Avalonia for macOS and Linux, with the same keypad layout, the same modes and the same keyboard shortcuts."
+description = "A version of the Windows calculator built with Avalonia and .NET, using the open-source Windows Calculator engine. In development and not yet released."
 
 [taxonomies]
-software-categories = ["Application", "Utility", "Upcoming", "Open Source", "macOS", "Linux", "Windows"]
+software-categories = ["Application", "Utility", "Upcoming", "Open Source", "macOS", "Windows"]
 programming-languages = ["C#", "XAML"]
 
 [extra]
@@ -16,13 +16,14 @@ infobox_images = [
     { path = "https://assets.dynamotivation.com/files/projects/redmond-calculator/logo.svg", imageWidthPx = 512, imageHeightPx = 512, description = "Redmond Calculator application icon", radius = "20%" }
 ]
 screenshot_urls = []
+same_as = ["https://github.com/Dynamotivation/port-redmond-calculator"]
 
 # JSON-LD SEO for Software
-operatingSystem = "macOS, Linux, Windows"
+operatingSystem = "macOS, Windows"
 release_notes = "In development. Not yet released."
 programming_language = "C#, XAML"
 development_environment = "Avalonia UI, .NET"
-license = "Open source, licence not yet finalised"
+license = "MIT"
 availability = "PreOrder"
 application_category = "UtilitiesApplication"
 price_usd = 0
@@ -30,9 +31,11 @@ price_usd = 0
 
 # FAQ
 questions = [
-    { question = "Which calculator modes are supported?", answer = "Standard, scientific and programmer, matching the modes offered by the Windows calculator." },
-    { question = "Do the keyboard shortcuts match Windows?", answer = "Yes by default. Mode switching, memory keys and operators use the same bindings. On macOS you can choose whether those bindings stay on Ctrl or move to Command." },
-    { question = "Can I download it?", answer = "Not yet. Builds exist and run, but nothing has been published for general use." }
+    { question = "Which modes does it have?", answer = "Standard, scientific, programmer, graphing and date calculation, plus unit converters for volume, length, weight, temperature, energy, area, speed, time, power, data, pressure and angle, and a currency converter." },
+    { question = "Do the keyboard shortcuts match Windows?", answer = "Mostly. The shortcut list comes from the Windows Calculator's own definitions. On macOS, copy, paste and the graph zoom and reset shortcuts use Command instead of Ctrl, and everything else keeps the Windows keys. There is no setting to change this." },
+    { question = "Does it need an account or an internet connection?", answer = "There are no accounts and calculations run locally. The only network use is currency rates. Each rate source stays off until you agree to it in Settings, and only the latest rate table is requested. The amounts and currencies you enter are not sent." },
+    { question = "Where does the calculation engine come from?", answer = "From Microsoft's open-source Windows Calculator, which is included unmodified as a pinned Git submodule and used under its MIT licence. Redmond Calculator adds the Avalonia interface and the code that connects the two." },
+    { question = "Can I download it?", answer = "Not yet. No release has been published. The source code is on GitHub under the MIT licence and can be built with the steps in its README." }
 ]
 
 +++
@@ -49,36 +52,48 @@ questions = [
     <dt>Written in</dt>
     <dd>C#<br>XAML</dd>
     <dt>Operating system(s)</dt>
-    <dd>macOS<br>Linux<br>Windows</dd>
+    <dd>macOS<br>Windows</dd>
     <dt>Source code</dt>
-    <dd>Open source<br>Licence not finalised</dd>
+    <dd><a href="https://github.com/Dynamotivation/port-redmond-calculator">Open source</a><br>MIT licence</dd>
 </dl>
 {% end %}
 
-***Redmond Calculator*** is a rebuild of the Windows calculator for macOS and Linux, and one of the first two applications in the [Port Redmond](/portfolio/software/port-redmond/) project. It reproduces the keypad layout, the calculation modes and the keyboard shortcuts of the original, on a codebase that runs outside Windows.
+***Redmond Calculator*** is a version of the Windows calculator built with Avalonia and .NET. It is one of the first two applications in the [Port Redmond](/portfolio/software/port-redmond/) project, together with [Redmond Notepad](/portfolio/software/redmond-notepad/). The calculation engine is the open-source code of Microsoft's Windows Calculator, included unmodified, and Redmond Calculator adds an interface modeled on the original.
 
-## Scope
 
----
-
-The application covers the three modes people actually reach for:
-
-*   Standard
-*   Scientific
-*   Programmer
-
-Unit and date conversion are not implemented yet. They are the parts of the Windows calculator least tied to muscle memory, so they sit behind the core modes in priority.
-
-## Keyboard behaviour
+## Features
 
 ---
 
-The shortcut set matches Windows by default, including the mode switches, the memory keys and the operator bindings.
+The current version has:
 
-On macOS this creates the one genuinely contested decision in the whole project: whether <kbd>Ctrl</kbd> should stay <kbd>Ctrl</kbd> or become <kbd>⌘</kbd>. Both are defensible, so both are available, and the choice is a setting rather than an opinion baked into the build. See [platform integration](/portfolio/software/port-redmond/) for the full list.
+*   Calculator modes
+    *   Standard, scientific, programmer, graphing and date calculation.
+*   Converters
+    *   Volume, length, weight, temperature, energy, area, speed, time, power, data, pressure and angle, plus currency.
+*   History and memory
+    *   A history pane and a memory panel.
+*   Currency rates
+    *   Four sources to choose from: the European Central Bank, the Federal Reserve H.10 tables, the Bank of Canada and Frankfurter. The app only contacts a source after you agree to it in Settings.
+*   Appearance
+    *   A light, dark or system theme and a choice of font. On macOS the window corners and window buttons can follow either Windows or macOS styles.
 
-## Status
+
+## Keyboard shortcuts
 
 ---
 
-Builds exist and run. Nothing has been published for general use, and there is no download yet.
+The shortcut list comes from the Windows Calculator's own definitions, including the mode switches and memory keys. On macOS, copy, paste and the graph zoom and reset shortcuts use <kbd>⌘</kbd> instead of <kbd>Ctrl</kbd>. All other shortcuts keep their Windows keys. There is no setting to change this.
+
+
+## Availability
+
+---
+
+No release has been published yet. The source code is on [GitHub](https://github.com/Dynamotivation/port-redmond-calculator) under the MIT licence, and the README has build steps for macOS and Windows. Linux is a goal, but there is no Linux build or packaging yet.
+
+{{ legal_notice(paragraphs=[
+    "This is an unofficial, independent, open source project inspired by the Windows calculator.",
+    "Windows, Windows Calculator and related names and artwork are copyright or trademarks of Microsoft Corporation. The calculation engine is Microsoft's open-source Windows Calculator code, used under its MIT licence.",
+    "All rights are reserved by their respective copyright holders. This work is not affiliated with, endorsed by or sponsored by Microsoft."
+]) }}

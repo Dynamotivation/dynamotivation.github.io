@@ -1,7 +1,7 @@
 +++
 title = "Redmond Notepad"
 date = 2026-07-25
-description = "The Windows notepad rebuilt on Avalonia for macOS and Linux, keeping its find and replace behaviour, status bar and encoding handling."
+description = "A version of the Windows notepad built with Avalonia for macOS and Linux, with find and replace, a status bar and encoding handling."
 
 [taxonomies]
 software-categories = ["Application", "Utility", "Upcoming", "Open Source", "macOS", "Linux", "Windows"]
@@ -31,8 +31,8 @@ price_usd = 0
 # FAQ
 questions = [
     { question = "Does it handle line endings and encodings like Windows notepad?", answer = "That is the intent. CRLF and LF are both handled, the detected encoding is shown in the status bar, and files are saved in the encoding they were opened with unless you change it." },
-    { question = "Why does text navigation differ on macOS?", answer = "Windows and macOS disagree about what Home, End and the word-jump modifiers do. Redmond Notepad defaults to the Windows behaviour and lets you switch to the macOS one, because this is the difference most likely to trip up someone editing text on their first day." },
-    { question = "Can I download it?", answer = "Not yet. Builds exist and run, but nothing has been published for general use." }
+    { question = "Why does text navigation differ on macOS?", answer = "Windows and macOS disagree about what Home, End and the word-jump modifiers do. Redmond Notepad defaults to the Windows behaviour and lets you switch to the macOS one." },
+    { question = "Can I download it?", answer = "Not yet. Nothing has been released." }
 ]
 
 +++
@@ -55,34 +55,34 @@ questions = [
 </dl>
 {% end %}
 
-***Redmond Notepad*** is a rebuild of the Windows notepad for macOS and Linux, and one of the first two applications in the [Port Redmond](/portfolio/software/port-redmond/) project. It keeps the find and replace behaviour, the status bar and the encoding handling of the original.
+***Redmond Notepad*** is a version of the Windows notepad built with Avalonia for macOS and Linux. It is one of the first two applications in the [Port Redmond](/portfolio/software/port-redmond/) project, together with [Redmond Calculator](/portfolio/software/redmond-calculator/). It has find and replace, a status bar and encoding handling.
 
 ## Scope
 
 ---
 
-Plain text editing, kept deliberately plain:
+Plain text editing, with:
 
-*   Find and replace, with the same wrap-around behaviour
+*   Find and replace, with wrap-around
 *   Word wrap toggle
 *   Status bar with line and column, zoom level, line endings and encoding
-*   Encoding and line-ending handling that survives a round trip
+*   Encoding and line-ending handling
 
-Tabs are not implemented. The Windows notepad gained them recently enough that they are not yet anyone's muscle memory.
+Tabs are not implemented yet.
 
 ## Text navigation
 
 ---
 
-This is where Windows and macOS disagree most sharply, and it is the difference most likely to be noticed within the first minute of editing:
+Windows and macOS handle text navigation differently:
 
 *   On Windows, <kbd>Ctrl</kbd> + <kbd>←</kbd> and <kbd>→</kbd> move by word, and <kbd>Home</kbd> and <kbd>End</kbd> move the caret to the ends of the line.
 *   On macOS, <kbd>⌥</kbd> + <kbd>←</kbd> and <kbd>→</kbd> move by word, <kbd>⌘</kbd> + <kbd>←</kbd> and <kbd>→</kbd> go to the line ends, and <kbd>Home</kbd> and <kbd>End</kbd> scroll the document without moving the caret at all.
 
-Redmond Notepad defaults to the Windows behaviour and offers the macOS one as a setting. On Linux it also supports middle-click paste from the PRIMARY selection, which has no Windows equivalent and is easier to leave enabled than to explain.
+Redmond Notepad defaults to the Windows behaviour and offers the macOS one as a setting. On Linux it also supports middle-click paste from the PRIMARY selection.
 
 ## Status
 
 ---
 
-Builds exist and run. Nothing has been published for general use, and there is no download yet.
+Nothing has been released yet, and there is no download.
