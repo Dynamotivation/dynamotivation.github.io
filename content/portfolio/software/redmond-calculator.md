@@ -4,7 +4,7 @@ date = 2026-07-25
 description = "A version of the Windows calculator built with Avalonia and .NET, using the open-source Windows Calculator engine. In development and not yet released."
 
 [taxonomies]
-software-categories = ["Application", "Utility", "Upcoming", "Open Source", "macOS", "Windows"]
+software-categories = ["Application", "Utility", "Upcoming", "Open Source", "macOS", "Linux", "Windows"]
 programming-languages = ["C#", "XAML"]
 
 [extra]
@@ -19,7 +19,7 @@ screenshot_urls = []
 same_as = ["https://github.com/Dynamotivation/port-redmond-calculator"]
 
 # JSON-LD SEO for Software
-operatingSystem = "macOS, Windows"
+operatingSystem = "macOS, Linux, Windows"
 release_notes = "In development. Not yet released."
 programming_language = "C#, XAML"
 development_environment = "Avalonia UI, .NET"
@@ -32,7 +32,7 @@ price_usd = 0
 # FAQ
 questions = [
     { question = "Which modes does it have?", answer = "Standard, scientific, programmer, graphing and date calculation, plus unit converters for volume, length, weight, temperature, energy, area, speed, time, power, data, pressure and angle, and a currency converter." },
-    { question = "Do the keyboard shortcuts match Windows?", answer = "Mostly. The shortcut list comes from the Windows Calculator's own definitions. On macOS, copy, paste and the graph zoom and reset shortcuts use Command instead of Ctrl, and everything else keeps the Windows keys. There is no setting to change this." },
+    { question = "Do the keyboard shortcuts match Windows?", answer = "Mostly. The shortcut list comes from the Windows Calculator's own definitions. On macOS, copy, paste and the graph zoom and reset shortcuts use Command instead of Ctrl, and everything else keeps the Windows keys. In Settings you can switch Command back to Ctrl." },
     { question = "Does it need an account or an internet connection?", answer = "There are no accounts and calculations run locally. The only network use is currency rates. Each rate source stays off until you agree to it in Settings, and only the latest rate table is requested. The amounts and currencies you enter are not sent." },
     { question = "Where does the calculation engine come from?", answer = "From Microsoft's open-source Windows Calculator, which is included unmodified as a pinned Git submodule and used under its MIT licence. Redmond Calculator adds the Avalonia interface and the code that connects the two." },
     { question = "Can I download it?", answer = "Not yet. No release has been published. The source code is on GitHub under the MIT licence and can be built with the steps in its README." }
@@ -52,7 +52,7 @@ questions = [
     <dt>Written in</dt>
     <dd>C#<br>XAML</dd>
     <dt>Operating system(s)</dt>
-    <dd>macOS<br>Windows</dd>
+    <dd>macOS<br>Linux<br>Windows</dd>
     <dt>Source code</dt>
     <dd><a href="https://github.com/Dynamotivation/port-redmond-calculator">Open source</a><br>MIT licence</dd>
 </dl>
@@ -83,14 +83,14 @@ The current version has:
 
 ---
 
-The shortcut list comes from the Windows Calculator's own definitions, including the mode switches and memory keys. On macOS, copy, paste and the graph zoom and reset shortcuts use <kbd>⌘</kbd> instead of <kbd>Ctrl</kbd>. All other shortcuts keep their Windows keys. There is no setting to change this.
+The shortcut list comes from the Windows Calculator's own definitions, including the mode switches and memory keys. On macOS, copy, paste and the graph zoom and reset shortcuts use <kbd>⌘</kbd> instead of <kbd>Ctrl</kbd>. All other shortcuts keep their Windows keys. In Settings you can switch <kbd>⌘</kbd> back to <kbd>Ctrl</kbd>.
 
 
 ## Availability
 
 ---
 
-No release has been published yet. The source code is on [GitHub](https://github.com/Dynamotivation/port-redmond-calculator) under the MIT licence, and the README has build steps for macOS and Windows. Linux is a goal, but there is no Linux build or packaging yet.
+No release has been published yet. The source code is on [GitHub](https://github.com/Dynamotivation/port-redmond-calculator) under the MIT licence, and the README has build steps for macOS and Windows. It also runs on Linux.
 
 {{ legal_notice(paragraphs=[
     "This is an unofficial, independent, open source project inspired by the Windows calculator.",

@@ -78,7 +78,7 @@ questions = [
     { question = "Can I download it yet?", answer = "No. Nothing has been released. The source code of both apps is public on GitHub." },
     { question = "Does it cost anything?", answer = "No. The apps are free. The Calculator is under the MIT licence. The Notepad repository does not have a licence file yet." },
     { question = "Do I need an account?", answer = "The Calculator has no accounts. Its only network use is currency rates, and each rate source needs your consent first." },
-    { question = "Does it run on Linux?", answer = "Linux is a goal, but there is no Linux build or packaging yet. The Calculator has build steps for macOS and Windows." },
+    { question = "Does it run on Linux?", answer = "Yes. Both apps run on macOS and Linux." },
     { question = "Why not run the Windows versions?", answer = "The Windows versions are made for Windows. Redmond Calculator reuses the calculation engine of Microsoft's open-source Windows Calculator and adds a new Avalonia interface, so that it can run on other systems." },
     { question = "Do the keyboard shortcuts work?", answer = "In the Calculator, yes. It uses the Windows shortcuts, and on macOS copy, paste and graph zoom use Command instead of Ctrl. The Notepad page describes its own shortcuts." },
     { question = "Are these official Microsoft applications?", answer = "No. Port Redmond is an independent project with no connection to Microsoft." },

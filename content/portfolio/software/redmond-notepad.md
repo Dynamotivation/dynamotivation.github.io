@@ -1,7 +1,7 @@
 +++
 title = "Redmond Notepad"
 date = 2026-07-25
-description = "A version of the Windows notepad built with Avalonia for macOS and Linux, with find and replace, a status bar and encoding handling."
+description = "A version of the Windows notepad built with Avalonia for macOS and Linux, with tabs, find and replace, a status bar and encoding handling."
 
 [taxonomies]
 software-categories = ["Application", "Utility", "Upcoming", "Open Source", "macOS", "Linux", "Windows"]
@@ -30,8 +30,11 @@ price_usd = 0
 
 # FAQ
 questions = [
-    { question = "Does it handle line endings and encodings like Windows notepad?", answer = "That is the intent. CRLF and LF are both handled, the detected encoding is shown in the status bar, and files are saved in the encoding they were opened with unless you change it." },
-    { question = "Why does text navigation differ on macOS?", answer = "Windows and macOS disagree about what Home, End and the word-jump modifiers do. Redmond Notepad defaults to the Windows behaviour and lets you switch to the macOS one." },
+    { question = "Does it have tabs?", answer = "Yes. Files open in a new tab by default, and you can change that in Settings to open them in a new window instead." },
+    { question = "Does it keep my work if it closes unexpectedly?", answer = "It saves your open tabs and unsaved text as you work, so it can restore them after a crash. In Settings you can also choose to continue your previous session when Notepad starts." },
+    { question = "Does it handle line endings and encodings like Windows notepad?", answer = "It reads CRLF, LF and CR line endings, detects the file's encoding (including byte order marks) and shows both in the status bar. A file is saved in the encoding it was opened with." },
+    { question = "Can I print?", answer = "On macOS and Windows, yes, using the system's own print dialogs with Notepad's header and footer fields. Printing is not available on Linux yet." },
+    { question = "Does it check spelling?", answer = "Yes, using the spell checker of your system, and you can switch it on or off per file type in Settings." },
     { question = "Can I download it?", answer = "Not yet. Nothing has been released." }
 ]
 
@@ -55,31 +58,30 @@ questions = [
 </dl>
 {% end %}
 
-***Redmond Notepad*** is a version of the Windows notepad built with Avalonia for macOS and Linux. It is one of the first two applications in the [Port Redmond](/portfolio/software/port-redmond/) project, together with [Redmond Calculator](/portfolio/software/redmond-calculator/). It has find and replace, a status bar and encoding handling.
+***Redmond Notepad*** is a version of the Windows notepad built with Avalonia for macOS and Linux. It is one of the first two applications in the [Port Redmond](/portfolio/software/port-redmond/) project, together with [Redmond Calculator](/portfolio/software/redmond-calculator/). It has tabs, find and replace, a status bar and encoding handling.
 
-## Scope
+## Features
 
 ---
 
 Plain text editing, with:
 
-*   Find and replace, with wrap-around
-*   Word wrap toggle
-*   Status bar with line and column, zoom level, line endings and encoding
-*   Encoding and line-ending handling
+*   Tabs, and the option to open files in a new window instead
+*   Find, find next and previous, replace, and go to line
+*   Word wrap and zoom from 10% to 500%
+*   A status bar with the cursor position, zoom level, line endings and encoding
+*   CRLF, LF and CR line endings, and encoding detection that keeps byte order marks
+*   Recovery of open tabs and unsaved text after a crash
+*   A recent files list
+*   Spell checking with your system's spell checker
+*   Printing on macOS and Windows with header and footer fields
+*   A light, dark or system theme and a choice of font
 
-Tabs are not implemented yet.
-
-## Text navigation
+## Keyboard shortcuts
 
 ---
 
-Windows and macOS handle text navigation differently:
-
-*   On Windows, <kbd>Ctrl</kbd> + <kbd>←</kbd> and <kbd>→</kbd> move by word, and <kbd>Home</kbd> and <kbd>End</kbd> move the caret to the ends of the line.
-*   On macOS, <kbd>⌥</kbd> + <kbd>←</kbd> and <kbd>→</kbd> move by word, <kbd>⌘</kbd> + <kbd>←</kbd> and <kbd>→</kbd> go to the line ends, and <kbd>Home</kbd> and <kbd>End</kbd> scroll the document without moving the caret at all.
-
-Redmond Notepad defaults to the Windows behaviour and offers the macOS one as a setting. On Linux it also supports middle-click paste from the PRIMARY selection.
+On Windows and Linux, Redmond Notepad uses the Windows shortcuts. On macOS it uses the usual Mac ones, such as <kbd>⌘</kbd> + <kbd>T</kbd> for a new tab and <kbd>⌘</kbd> + <kbd>G</kbd> for find next. In Settings you can switch the <kbd>⌘</kbd> key to <kbd>Ctrl</kbd> instead.
 
 ## Status
 
