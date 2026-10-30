@@ -81,7 +81,7 @@ Plain text editing, with:
 
 ---
 
-On Windows and Linux, Redmond Notepad uses the Windows shortcuts. On macOS it uses the usual Mac ones, such as <kbd>⌘</kbd> + <kbd>T</kbd> for a new tab and <kbd>⌘</kbd> + <kbd>G</kbd> for find next. In Settings you can switch the <kbd>⌘</kbd> key to <kbd>Ctrl</kbd> instead.
+Redmond Notepad uses the Windows shortcuts on every system. On macOS the <kbd>Ctrl</kbd> key becomes <kbd>⌘</kbd>, so a new tab is <kbd>⌘</kbd> + <kbd>N</kbd>. In Settings you can keep <kbd>Ctrl</kbd> instead. Key names follow your keyboard language, so a German layout shows <kbd>Strg</kbd>.
 
 ## Status
 
